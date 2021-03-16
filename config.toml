@@ -15,15 +15,15 @@ paginate = 3
   mainSections = ["posts", "photos"]
   email = "mail@example.com"
   about = """
-About section. Enter details about you here.
+[[ BAJO CONSTRUCCIÓN ]]
 """
 
   [[params.links]]
     [[params.links.link]]
-      name = "Resume"
+      name = "f"
       href = "/Resume.pdf"
     [[params.links.link]]
-      name = "Email"
+      name = "f2"
       href = "/contact"
       smart_email_link = true
 
