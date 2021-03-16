@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>alejandro9r</title>
-    <link>https://blog.alejandro9r.xyz/</link>
-    <description>Recent content on alejandro9r</description>
+    <title>Posts on alejandro9r</title>
+    <link>https://blog.alejandro9r.xyz/posts/</link>
+    <description>Recent content in Posts on alejandro9r</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Tue, 16 Mar 2021 13:01:00 -0300</lastBuildDate><atom:link href="https://blog.alejandro9r.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Mar 2021 13:01:00 -0300</lastBuildDate><atom:link href="https://blog.alejandro9r.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cookies con chips</title>
       <link>https://blog.alejandro9r.xyz/posts/cookies/</link>
