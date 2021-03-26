@@ -33,9 +33,16 @@ Receta por Marcos di Cesare
 
 Una salsa de tomate debería cocinarse entre 60 a 90 minutos, dependiendo de lo bueno o malo que sea el tomate.
 
-Previo a la sartén, sacar la piel a los tomates con ayuda de agua hervida por unos segundos. También quitar la pulpa y las semillas. Esto quitará acidez a la salsa.
+### Previo a la olla
+Sacar la piel a los tomates con ayuda de agua hervida por unos segundos. También quitar la pulpa y las semillas. Esto quitará acidez a la salsa.
 
+También cortar las zanahorias, puerros, cebolla, y cebolla de verdeo.
+
+### Ahora sí, a la olla
 En una sartén, cubrir con 1 cm de aceite de oliva a fuego lento. Siempre a fuego lento. No queremos que el aceite de oliva llegue a altas temperaturas. Entonces, vamos moviendo constantemente. 
+
+Agregar zanahoria, puerro y cebolla de verdeo.
+
 Queremos que los vegetales suden (liberen líquido). Para ello, usamos sal.
 
 Pasados 5-10 minutos, colocamos las cebollas. Opcionalmente, extracto de tomate.
