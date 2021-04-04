@@ -17,7 +17,7 @@ Para 4 pizzas:
 - Sal Rosada ```24gr```
 - Levadura ```2gr```
 - Aceite de oliva
-- [Salsa de tomate](/posts/salsa_tomate)
+- Salsa de tomate para pizza
 - Queso. En Nápoles cada pizza lleva ```100gr```. En Buenos Aires ```300gr```.
 
 <br>
