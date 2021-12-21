@@ -5,8 +5,10 @@
          class="post-card"
       >
          <img
-            class="post-card-cover"
-            :src="require(`~/content/recipes-covers/${recipe.cover}`)"
+            class="post-card-cover lazyload"
+            :data-src="require(`~/content/recipes-covers/${recipe.cover.file}`)"
+            :width="`${recipe.cover.width}`"
+            :height="`${recipe.cover.height}`"
          />
          <div class="post-card-info">
             <span class="post-card-title link-arrow">{{ recipe.title }}</span>

@@ -1,7 +1,10 @@
 ---
 title: Pizza
 description: Una pizza clásica con 72 horas de fermentación ⏲️
-cover: pizza.webp
+cover:
+   file: pizza.webp
+   width: 1152
+   height: 768
 alt: Pizza
 ---
 

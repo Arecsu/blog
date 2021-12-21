@@ -58,7 +58,7 @@ export default {
    components: true,
 
    // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-   buildModules: [],
+   buildModules: ['nuxt-lazysizes'],
 
    // Modules: https://go.nuxtjs.dev/config-modules
    modules: ['@nuxt/content', '@nuxtjs/dayjs', '@nuxtjs/style-resources'],
