@@ -45,14 +45,11 @@
                      <NuxtLink @click.native="hide_menu" to="/recipes"
                         ><span>🍕</span> Recetas</NuxtLink
                      >
-                     <NuxtLink @click.native="hide_menu" to="/about"
-                        ><span>👻</span> Hola!</NuxtLink
-                     >
                      <a
                         @click.prevent="hide_menu(true)"
                         href="https://alejandro9r.xyz"
                         target="_blank"
-                        ><span>🏠</span> Casita</a
+                        ><span>👻</span> Hola!</a
                      >
                   </div>
                </div>
