@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/recipes", {data:[{recipes:[{slug:"pizza",description:"Una pizza clásica bien hecha con 72 horas de fermentación ⏲️",title:"Pizza 🍕",cover:"pizza.webp",updatedAt:"2021-12-21T06:11:34.610Z"}]}],fetch:{},mutations:void 0});

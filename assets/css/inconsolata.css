@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Inconsolata';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/inconsolata/Inconsolata-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/inconsolata/Inconsolata-Bold.ttf") format("truetype");
+}
+/* -------------------------------------------------------
+Variable font.
+Usage:
+
+  html { font-family: 'Inter', sans-serif; }
+  @supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', sans-serif; }
+  }
+*/
+@font-face {
+  font-family: 'Inconsolata var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'SemiExpanded';
+  src: url("/fonts/inconsolata/Inconsolata-Variable.ttf") format("truetype");
+}

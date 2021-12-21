@@ -1,0 +1,183 @@
+html
+   font-family: 'Inter', sans-serif
+@supports (font-variation-settings: normal)
+   html
+      font-family: 'Inter var', sans-serif
+
+// default transitions for pages
+.page-enter-active, .page-leave-active
+   transition: opacity .15s
+
+.page-enter, .page-leave-active
+   opacity: 0
+
+:root
+   --fg-color-1: #1b1b1b
+   --bg-color-1: #e3e9e9
+   --bg-color-2: #0000000a
+   --hr-color: #1b1b1b
+   --t-time-normal: .35s cubic-bezier(.68,.12,0,1)
+
+html[data-theme='light']
+   --fg-color-1: #1b1b1b
+   --bg-color-1: #e3e9e9
+   --bg-color-2: #0000000a
+   --hr-color: #1b1b1b
+
+html[data-theme='dark']
+   --fg-color-1: #d1d1d1
+   --bg-color-1: #0c1320
+   --bg-color-2: #0000000a
+   --hr-color: #d1d1d1
+   color-scheme: dark
+
+body
+   color: var(--fg-color-1)
+   background-color: var(--bg-color-1)
+   overflow-y: scroll
+   width: 100%
+   min-height: 100%
+   font-size: 0.92rem
+   letter-spacing: .005em
+
+// pa los titulos de los blogs en modo gigant
+// font-size: calc(10em + (100 - 14) * ((100vw - 800px) / (1600 - 800)));
+// font-weight: 700;
+// text-transform: capitalize;
+// letter-spacing: -0.06em;
+
+// y su container del titulo
+// height: calc(100vh - 4em);
+// display: flex;
+// align-content: center;
+// place-content: center;
+// justify-content: center;
+// flex-flow: column;
+// padding: 0 1.8em;
+
+body, pre, code, code span, header
+   transition: color $t-time-normal, background-color $t-time-normal
+a
+   transition: color $t-time-normal,
+svg path
+   transition: fill $t-time-normal
+table
+   th, td
+      transition: border-color $t-time-normal
+blockquote
+   transition: border-color $t-time-normal
+
+p
+   line-height: 1.4em
+   font-size: 1em
+   a
+      border-bottom: 0.05em solid var(--fg-color-1)
+
+h1
+   margin-top: 0
+   font-size: 3.15em
+   letter-spacing: -0.050em
+
+h2
+   font-size: 2.367em
+   letter-spacing: -0.040em
+
+h3
+   font-size: 1.776em
+   letter-spacing: -0.03em
+
+h4
+   font-size: 1.332em
+   letter-spacing: -0.03em
+
+h5
+   margin-top: 2.5em
+   margin-bottom: 0em
+   font-size: 0.8em
+   text-transform: uppercase
+   letter-spacing: -0.03em
+
+h6
+   font-size: 0.75em
+   letter-spacing: -0.03em
+
+// h4, h5, h6
+   // text-transform: uppercase
+
+hr
+   border-top: 0
+   border-bottom: 1px solid var(--hr-color)
+
+ul, ol
+   list-style-position: inside
+   padding: 0
+
+ul ul, ol ul, ul ol
+   padding-left: 1em
+
+li
+   margin: 0.7em 0
+   p
+      display: inline
+
+a, a:hover, a:focus, a:active
+   text-decoration: none
+   color: var(--fg-color-1)
+   //padding-bottom: 2px
+
+sup > a
+   border: 0
+   &:before
+      content: '['
+   &:after
+      content: ']'
+
+.link-arrow
+   transition: transform .4s cubic-bezier(.46,-0.13,.02,1.13)
+
+   &:hover
+      transform: translateX(1.1em)
+
+   &:before
+      transition: transform .4s cubic-bezier(.46,-0.13,.02,1.13), color $t-time-normal, opacity .4s cubic-bezier(.46,-0.13,.02,1.13)
+      opacity: 0
+      content: '→'
+      position: absolute
+      transform: translateX(-1.9em)
+      color: var(--fg-color-1)
+
+   &:hover:before
+      opacity: 1
+      transform: translateX(-1.2em)
+
+blockquote
+   border-left: 2px solid var(--fg-color-1)
+   padding: 0.1em 1em
+   margin: 2em
+
+table
+   border-collapse: collapse
+   border-spacing: 0
+   border: 1px solid var(--fg-color-1)
+
+th, td
+   border: 1px solid var(--fg-color-1)
+   padding: 0.7em
+
+button
+   background: none
+   border: 0
+   padding: 0
+
+.button-1, .button-2, .button-3
+   padding: 0.2em
+   cursor: pointer
+
+.button-2
+   &:hover
+      background: var(--bg-color-2)
+
+.button-3
+   transition: ease 0.2s
+   &:hover
+      opacity: 0.5
