@@ -1,6 +1,6 @@
 ---
 title: Pizza 🍕
-description: Una pizza clásica bien hecha con 72 horas de fermentación ⏲️
+description: Una pizza clásica con 72 horas de fermentación ⏲️
 cover: pizza.webp
 alt: Pizza
 ---
