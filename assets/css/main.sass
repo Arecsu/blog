@@ -55,6 +55,15 @@ body
 // flex-flow: column;
 // padding: 0 1.8em;
 
+*
+   -webkit-tap-highlight-color: transparent
+   -webkit-touch-callout: none
+   -webkit-user-select: none
+   user-select: none
+
+   &:focus
+      outline: none !important
+
 body, pre, code, code span, header
    transition: color $t-time-normal, background-color $t-time-normal
 a

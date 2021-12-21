@@ -1,5 +1,7 @@
 export default {
    // Target: https://go.nuxtjs.dev/config-target
+
+   // ssr: false,
    target: 'static',
    router: {
       base: '/',
@@ -16,11 +18,11 @@ export default {
          { name: 'viewport', content: 'width=device-width, initial-scale=1' },
          { hid: 'description', name: 'description', content: '' },
          { name: 'format-detection', content: 'telephone=no' },
-         {
-            name: 'apple-mobile-web-app-status-bar-style',
-            content: '',
-         },
-         { name: 'theme-color', content: '' },
+         // {
+         // name: 'apple-mobile-web-app-status-bar-style',
+         // content: '',
+         // },
+         // { name: 'theme-color', content: '' },
       ],
       link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
 

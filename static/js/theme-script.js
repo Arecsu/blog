@@ -7,17 +7,22 @@ if (storedTheme) {
    document.documentElement.setAttribute('data-theme', storedTheme);
 }
 
-var color_background = getComputedStyle(
-   document.documentElement
-).getPropertyValue('--bg-color-1');
-
 document.addEventListener('DOMContentLoaded', function () {
-   document
-      .querySelector('meta[name="theme-color"]')
-      .setAttribute('content', color_background);
-   document
-      .querySelector('meta[name="apple-mobile-web-app-status-bar-style"]')
-      .setAttribute('content', color_background);
+   var color_background = getComputedStyle(
+      document.documentElement
+   ).getPropertyValue('--bg-color-1');
+
+   var meta = document.createElement('meta');
+   meta.name = 'theme-color';
+   meta.content = color_background;
+   document.head.appendChild(meta);
+
+   // document
+   // .querySelector('meta[name="theme-color"]')
+   // .setAttribute('content', color_background);
+   // document
+   // .querySelector('meta[name="apple-mobile-web-app-status-bar-style"]')
+   // .setAttribute('content', color_background);
 });
 
 // dark theme
