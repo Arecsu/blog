@@ -4,10 +4,10 @@
          :to="{ name: 'blog-slug', params: { slug: article.slug } }"
          class="post-card"
       >
-         <img
-            class="post-card-cover"
-            :src="require(`~/assets/covers/${article.cover}`)"
-         />
+         <!-- <img -->
+         <!-- class="post-card-cover" -->
+         <!-- :src="require(`~/assets/covers/${article.cover}`)" -->
+         <!-- /> -->
          <span class="post-card-title link-arrow">{{ article.title }}</span>
          <span class="post-card-date">{{
             $dayjs(article.updatedAt).fromNow()

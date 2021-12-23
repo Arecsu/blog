@@ -25,7 +25,7 @@ La clave es el tiempo. Y muy poca levadura.
 ##### Masa
 
 -  `500gr` Harina 000
--  `300gr` Agua (agregar de a poco, más si es necesario)
+-  `300gr` Agua fría de heladera (agregar más si es necesario de a poco)
 -  `10gr` Sal rosada
 -  `2gr` Levadura
 -  `20gr` Aceite de oliva
@@ -49,14 +49,15 @@ Si vas a hacerla por **primera vez**, es super recomendable para tener los pasos
 
 ##### Masa
 
-1. Mezclar agua + sal + levadura. Luego integrar todo con la harina. La sal no mata la levadura. Es un mito!
-2. Una vez hecha la masa, mezclar con un poco de aceite de oliva.
-3. Dejar descansar 10 minutos.
-4. Amasar sensualmente 30 segundos. Bollar y tapar.
-5. Dejar descansar 10 minutos.
-6. Amasarla un poco mas, cortarla en las partes necesarias para hacer cada pizza. Recordar que estas proporciones son para 2 pizzas.
-7. Bollar cada parte y tapar 5 minutos.
-8. Amasar y bollar de nuevo, y a un taper a la heladera.
+1. Mezclar agua + sal + levadura. La sal no mata la levadura. Es un mito 🧂
+2. Luego integrar todo con la harina. Si la masa está seca, aumentar agua **MUY de a poco**.
+3. Una vez hecha la masa, mezclar con un poco de aceite de oliva.
+4. Dejar descansar 10 minutos.
+5. Amasar sensualmente 30 segundos. Bollar y tapar.
+6. Dejar descansar 10 minutos.
+7. Amasarla un poco mas, cortarla en las partes necesarias para hacer cada pizza. Recordar que estas proporciones son para 2 pizzas.
+8. Bollar cada parte y tapar 5 minutos.
+9. Amasar y bollar de nuevo, y a un taper a la heladera.
 
 En la heladera debería estar entre 24 a 72 horas. Más no tiene sentido. El punto óptimo es a las 72 horas.
 
