@@ -32,10 +32,12 @@ La clave es el tiempo. Y muy poca levadura.
 
 ##### Salsa
 
--  Aceite de oliva. Una bocha.
 -  Salsa de tomate 🍅. A ojo.
 -  Ajo. Una bochita.
 -  Hojas de albahaca. Las que se te canten.
+-  Aceite de oliva. Un buen poco.
+-  Sal
+-  Pimienta
 
 ##### Queso
 
@@ -65,7 +67,9 @@ En la heladera debería estar entre 24 a 72 horas. Más no tiene sentido. El pun
 
 La salsa de tomate recomendada es usar alguna orgánica en lo posible. La de los supermercados es muy extraña. Si no, hacer una triturando tomates.
 
-Mezclar salsa de tomate. Cantidad necesaria. + Ajo, a gusto. + Hojas de albahaca, a gusto tambien. Y un buen poco de aceite de oliva.
+Mezclar salsa de tomate – cantidad necesaria, a ojo – y todos los ingredientes mencionados al comienzo.
+
+Cortar en pedazitos las hojas de albahaca y el ajo, por supuesto.
 
 ##### Preparación final
 
