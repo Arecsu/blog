@@ -14,7 +14,7 @@ En Argentina, ya sea en casa o en muchas pizzerías, tenemos la costumbre de no 
 
 El resultado es una pizza sin vida. Para cubrir este error, acudimos a cantidades absurdas de salsa y queso. La masa brilla por su ausencia.
 
-Con estos pasos, el sabor de la masa **cambia completamente**. Originalmente, es así. Las harinas toman un sabor muy distintos cuando se desarrollan y fermentan en la heladera correctamente.
+Con estos pasos, el sabor de la masa **cambia completamente**. Originalmente, es así. Las harinas toman un sabor muy distinto cuando se desarrollan y fermentan en la heladera correctamente.
 
 La clave es el tiempo. Y muy poca levadura.
 
@@ -55,7 +55,7 @@ Si vas a hacerla por **primera vez**, es super recomendable para tener los pasos
 2. Luego integrar todo con la harina. Si la masa está seca, aumentar agua **MUY de a poco**.
 3. Una vez hecha la masa, mezclar con un poco de aceite de oliva.
 4. Dejar descansar 10 minutos.
-5. Amasar sensualmente 30 segundos. Bollar y tapar.
+5. Amasar suavemente por 30 segundos. Bollar y tapar.
 6. Dejar descansar 10 minutos.
 7. Amasarla un poco mas, cortarla en las partes necesarias para hacer cada pizza. Recordar que estas proporciones son para 2 pizzas.
 8. Bollar cada parte y tapar 5 minutos.

@@ -47,9 +47,9 @@ function theme_toggle() {
    document
       .querySelector('meta[name="theme-color"]')
       .setAttribute('content', color_background);
-   document
-      .querySelector('meta[name="apple-mobile-web-app-status-bar-style"]')
-      .setAttribute('content', color_background);
+   //document
+   //   .querySelector('meta[name="apple-mobile-web-app-status-bar-style"]')
+   //   .setAttribute('content', color_background);
 }
 
 Array.from(toggle).forEach((element) => {
