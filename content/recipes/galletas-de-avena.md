@@ -3,47 +3,53 @@ title: Galletas de Avena
 description: Con chips de chocolate. La mejor. 🍪
 cover:
    file: galletas_de_avena.jpg
-   width: 1152
-   height: 768
-alt: Pizza
+   width: 1516
+   height: 1102
+alt: Galletas de Avena
 ---
+
+Las mejores galletas de avena del mundo 🌎. En serio.
 
 ### Ingredientes
 
--  `440g` - 2 tazas de harina leudante
--  `150g` - 1 taza de avena
--  `7gr sal
--  `200g de manteca blanda
--  `150g - azúcar rubia
--  `300g - azúcar blanca
--  `2 huevos
--  `10g - 2 cucharaditas de esencia de vainilla
--  `80g - nueces picadas
--  `?? - 1 taza de chocolate picado
-
----
-
--  2 tazas de harina leudante
--  1 taza de avena
--  (opcional) 1 pizca de sal
--  200g de manteca blanda
--  3/4 de taza de azúcar rubia (en caso de no tener, equivale a 3/4 de azucar blanca)
--  3/4 de taza de azúcar blanca
--  2 huevos
--  2 cucharaditas de esencia de vainilla
--  (opcional) 1 taza de nueces picadas
--  1 taza de chocolate picado
+-  `380g` Harina leudante
+-  `140g` Avena
+-  `4gr` 🧂 Sal
+-  `200g` 🧈 Manteca blanda
+-  `360g` Azúcar blanca
+-  `70g` Azúcar mascabo
+-  `2` 🥚 Huevos
+-  `10g` 🍦 Esencia de vainilla real. No artificial.
+-  `230g` 🍫 Chips de chocolate o chocolate picado
+-  `70g` _Opcional_ → 🌰 Nueces picadas
 
 ### Procedimiento
 
+##### Masa
+
 Mezclar en orden:
 
--  Azúcar, mantec, vainillin y pizca de sal
--  Huevos
--  Harina
--  Avena
--  Trocitos de chocolate y nueces
+1. Azúcar, manteca, esencia de vainilla y sal
+2. Huevos
+3. Harina. ⚠️ Solamente mezclar hasta integrar la harina. No amasar más que eso, para no desarrollar el glúten. De lo contrario, haría una masa elástica que no es muy atractiva de comer. Queremos algo quebradizo.
+4. Avena, trocitos de chocolate y nueces. De nuevo: hasta integrar, amasando lo menos posible.
 
-Se preparan rollos en forma de cilindros del diametro un poco mas pequeños que la galleta. Envolverlos en papel manteca/film y llevarlos a la heladera hasta que se endurezcan.
+##### Rollos y heladera
 
-Una vez duros, cortarlos en rodajas y colocarlos sobre una placa enmantecada y enharinada. Dejar espacio entre las galletas. Cocinar a horno moderado.
+El siguiente paso es armar rollos. Puede que la mezcla esté muy blanda como para formar rollos sólidos. Si es así, llevar a la heladera por ⌚ 30 minutos a 1 hora para que tome más dureza.
+
+Con la masa más sólida, se preparan rollos en forma de cilindros del diámetro un poco mas pequeños que la galleta. Recordar que las galletas crecerán un poco más de tamaño en el horneado.
+
+Colocar los rollos en una bandeja. Cubrir la bandeja con papel manteca, film o de aluminio. Se puede usar un tupper también.
+
+Llevarlos a la heladera donde estarán por aproximadamente 24 horas. Con esto, la harina hará una correcta hidratación y la masa tendrá un sabor más rico e intenso.
+
+##### Horneado
+
+Retirar de la heladera.
+
+Cortar los cilindros en rodajas y colocarlos sobre una placa enmantecada y enharinada.
+
+Dejar espacio entre las galletas. Cocinar a horno moderado.
+
+El punto justo es cuando la parte de abajo de las galletas está tornandose un poquitito oscuro, como un beige muy suave. Es un punto crítico, así que en las primeras tandas requerirá de constante inspección para calcular el tiempo justo.
