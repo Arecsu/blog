@@ -1,12 +1,12 @@
 <template>
    <div>
       <NuxtLink
-         :to="{ name: 'recipes-slug', params: { slug: recipe.slug } }"
+         :to="{ name: 'recetas-slug', params: { slug: recipe.slug } }"
          class="post-card"
       >
          <img
             class="post-card-cover lazyload"
-            :data-src="require(`~/content/recipes-covers/${recipe.cover.file}`)"
+            :data-src="require(`~/content/recetas-covers/${recipe.cover.file}`)"
             :width="`${recipe.cover.width}`"
             :height="`${recipe.cover.height}`"
          />

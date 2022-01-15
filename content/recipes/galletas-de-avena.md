@@ -18,8 +18,8 @@ Las mejores galletas de avena del mundo 🌎. En serio.
 -  `200g` 🧈 Manteca blanda
 -  `360g` Azúcar blanca
 -  `70g` Azúcar mascabo
--  `2` 🥚 Huevos
--  `10g` 🍦 Esencia de vainilla real. No artificial.
+-  `3` 🥚 Yemas y `1` Clara
+-  `18g` 🍦 Esencia de vainilla real. No artificial.
 -  `230g` 🍫 Chips de chocolate o chocolate picado
 -  `70g` _Opcional_ → 🌰 Nueces picadas
 

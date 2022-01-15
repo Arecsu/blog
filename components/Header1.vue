@@ -42,7 +42,7 @@
                      <NuxtLink @click.native="hide_menu" to="/blog"
                         ><span>✏️</span> Blog</NuxtLink
                      >
-                     <NuxtLink @click.native="hide_menu" to="/recipes"
+                     <NuxtLink @click.native="hide_menu" to="/recetas"
                         ><span>🍕</span> Recetas</NuxtLink
                      >
                      <a

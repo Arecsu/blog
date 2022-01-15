@@ -2,7 +2,7 @@
    <article class="post-content">
       <h1>{{ recipe.title }}</h1>
       <img
-         :src="require(`~/content/recipes-covers/${recipe.cover.file}`)"
+         :src="require(`~/content/recetas-covers/${recipe.cover.file}`)"
          :width="`${recipe.cover.width}`"
          :height="`${recipe.cover.height}`"
       />
