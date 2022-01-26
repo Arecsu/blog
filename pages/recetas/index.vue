@@ -13,7 +13,7 @@ export default {
    async asyncData({ $content, params }) {
       const recipes = await $content('recipes')
          .only(['title', 'description', 'cover', 'slug', 'updatedAt'])
-         .sortBy('createdAt', 'asc')
+         .sortBy('updatedAt', 'desc')
          .fetch();
 
       return {
