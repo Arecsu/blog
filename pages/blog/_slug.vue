@@ -1,6 +1,11 @@
 <template>
    <article class="post-content">
       <h1>{{ article.title }}</h1>
+      <img
+         :src="require(`~/content/articles-covers/${article.cover.file}`)"
+         :width="`${article.cover.width}`"
+         :height="`${article.cover.height}`"
+      />
       <nuxt-content :document="article" />
       <!-- <p>Post last updated: {{ formatDate(article.updatedAt) }}</p> -->
       <!-- <p>Post last updated: {{ $dayjs(article.updatedAt).fromNow() }}</p> -->
@@ -33,6 +38,7 @@ export default {
 
 <style lang="sass">
 article img
+   height: auto
    border-radius: 0.4em
    width: 100%
 </style>

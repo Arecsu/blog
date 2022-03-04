@@ -4,10 +4,14 @@
          :to="{ name: 'blog-slug', params: { slug: article.slug } }"
          class="post-card"
       >
-         <!-- <img -->
-         <!-- class="post-card-cover" -->
-         <!-- :src="require(`~/assets/covers/${article.cover}`)" -->
-         <!-- /> -->
+         <img
+            class="post-card-cover lazyload"
+            :data-src="
+               require(`~/content/articles-covers/${article.cover.file}`)
+            "
+            :width="`${article.cover.width}`"
+            :height="`${article.cover.height}`"
+         />
          <span class="post-card-title link-arrow">{{ article.title }}</span>
          <span class="post-card-date">{{
             $dayjs(article.updatedAt).fromNow()
@@ -36,6 +40,8 @@ export default {
       display: block
       align-self: flex-start
       margin-bottom: 1em
+      object-fit: cover
+
 
    &-title
       font-size: 2em

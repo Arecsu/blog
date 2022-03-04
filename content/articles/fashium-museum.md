@@ -1,11 +1,11 @@
 ---
 title: Fashium Museum
 description: Una colección Argentina de marcas, diseñadores independientes, shops donde conseguir colecciones y prendas.
-cover: second.webp
-alt: my first blog post
+cover:
+   file: fashium-2.jpg
+   width: 1125
+   height: 1120
 ---
-
-Una colección Argentina de marcas, diseñadores independientes, shops donde conseguir colecciones y prendas.
 
 ### No Mainstream
 
