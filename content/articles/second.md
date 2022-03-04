@@ -1,9 +1,15 @@
 ---
 title: Fashium Museum
-description: Aliquam erat volutpat. Morbi eget arcu vel nibh molestie rutrum. Suspendisse id mi lacus. Suspendisse sed metus at neque tempus elementum. Donec malesuada arcu sit amet mi tristique mattis. Integer imperdiet semper lectus. Mauris eget magna dolor.
+description: Una colección Argentina de marcas, diseñadores independientes, shops donde conseguir colecciones y prendas.
 cover: second.webp
 alt: my first blog post
 ---
+
+Una colección Argentina de marcas, diseñadores independientes, shops donde conseguir colecciones y prendas.
+
+### No Mainstream
+
+<div class="list-no-style link-no-style">
 
 -  [010 BY T0M1T0](https://www.instagram.com/byt0m1t0/)
 -  [FIDA™](https://www.fidaclothes.com/) --- [ig](https://www.instagram.com/fidaclothes/)
@@ -34,3 +40,19 @@ alt: my first blog post
 -  [92y93](https://92y93streetclothing.empretienda.com.ar/) --- [ig](https://instagram.com/92y93/)
 -  [NXBO](https://www.nxbo.com.ar/) --- [ig](https://instagram.com/nxbo.ok)
 -  [Bendeyan](https://www.bendeyan.com.ar/) --- [ig](https://instagram.com/bendeyan_/)
+
+</div>
+
+### Mainstream
+
+<div class="list-no-style link-no-style">
+
+-  [Moov](https://www.moovbydexter.com.ar/)
+-  [Dexter](https://www.dexter.com.ar/)
+-  [Adidas](https://adidas.com.ar/)
+-  [Nike](https://www.nike.com/ar/)
+-  [Vans](https://www.vans.com.ar/)
+-  [Converse](https://www.converse.com.ar/)
+-  [Dafiti](https://www.dafiti.com.ar/)
+
+</div>
