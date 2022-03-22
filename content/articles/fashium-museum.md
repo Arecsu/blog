@@ -40,6 +40,11 @@ cover:
 -  [92y93](https://92y93streetclothing.empretienda.com.ar/) --- [ig](https://instagram.com/92y93/)
 -  [NXBO](https://www.nxbo.com.ar/) --- [ig](https://instagram.com/nxbo.ok)
 -  [Bendeyan](https://www.bendeyan.com.ar/) --- [ig](https://instagram.com/bendeyan_/)
+-  [BURGUÉS](https://www.elburgues.com/)
+-  [Batuk](https://batukjeans.com.ar/)
+-  [Boston Hype](https://bostonhype.com.ar/) - ⭐ Muy buena guía y tablas para escoger el talle adecuado
+-  [SUICIDAL TREND®](https://suicidaltrendlp.com/)
+-  [CROSS CLOTHING](https://crossclothing.com.ar/)
 
 </div>
 
