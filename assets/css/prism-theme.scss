@@ -2,7 +2,8 @@ html {
    code,
    code[class*='language-'],
    pre[class*='language-'] {
-      font-family: 'Monaco', 'Consolas', monospace;
+      // font-family: 'Monaco', 'Consolas', monospace;
+      font-family: 'Inconsolata', monospace;
       direction: ltr;
       text-align: left;
       white-space: pre;

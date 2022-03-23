@@ -37,7 +37,7 @@ export default {
    css: [
       '~/assets/css/normalize.css',
       '~/assets/css/inter.css',
-      //'~/assets/css/inconsolata.css',
+      '~/assets/css/inconsolata.css',
       '~/assets/css/main.sass',
       '~/assets/css/prism-theme.scss',
    ],

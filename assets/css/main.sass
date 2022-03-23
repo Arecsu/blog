@@ -36,7 +36,7 @@ body
    background-color: var(--bg-color-1)
    overflow-y: scroll
    width: 100%
-   min-height: 100%
+   min-height: 100vh
    font-size: 0.92rem
    letter-spacing: .005em
 
@@ -215,3 +215,19 @@ svg
 .link-no-style
    a
       border-bottom: none
+
+// youtubeWrapper
+
+.youtubeWrapper
+   position: relative
+   padding-bottom: 56.25%
+   /* 16:9 */
+   height: 0
+
+.youtubeWrapper iframe
+   position: absolute
+   top: 0
+   left: 0
+   width: 100%
+   height: 100%
+
