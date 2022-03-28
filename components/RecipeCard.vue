@@ -36,7 +36,7 @@ export default {
    &-cover
       height: auto
       min-width: 0
-      max-width: 12em
+      max-width: 10em
       display: block
       align-self: flex-start
       border-radius: 4px
