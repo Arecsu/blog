@@ -1,6 +1,6 @@
 ---
 title: Facturas
-description: Crema o membrillo, mi debilidad
+description: 🥐 Crema o membrillo (L)
 cover:
    file: facturas.jpg
    width: 2000

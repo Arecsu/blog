@@ -58,14 +58,17 @@ export default {
    components: true,
 
    // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-   buildModules: ['nuxt-lazysizes'],
+   buildModules: ['nuxt-lazysizes', '@nuxt/image'],
 
    // Modules: https://go.nuxtjs.dev/config-modules
-   modules: ['@nuxt/content', '@nuxtjs/dayjs', '@nuxtjs/style-resources'],
+   modules: ['@nuxt/content', '@nuxtjs/dayjs', '@nuxtjs/style-resources', '@nuxt/image'],
 
    styleResources: {
       sass: ['./assets/css/_variables.sass'], // here I use only main scss with globally styles (variables, base etc)
    },
+
+   // nuxt-image
+   image: {},
 
    // Build Configuration: https://go.nuxtjs.dev/config-build
    build: {},

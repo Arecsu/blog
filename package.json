@@ -20,6 +20,7 @@
     "v-click-outside": "^3.1.2"
   },
   "devDependencies": {
+    "@nuxt/image": "^0.6.2",
     "nuxt-lazysizes": "^1.4.0",
     "push-dir": "^0.4.1"
   }
