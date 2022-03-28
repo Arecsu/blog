@@ -1,9 +1,9 @@
 <template>
    <article class="post-content">
       <h1>{{ recipe.title }}</h1>
-      <nuxt-img
+      <img
          v-if="!recipe.cover.hide"
-         :src="`recetas-covers/${recipe.cover.file}`"
+         :src="require(`~/content/recetas-covers/${recipe.cover.file}`)"
          :width="`${recipe.cover.width}`"
          :height="`${recipe.cover.height}`"
       />

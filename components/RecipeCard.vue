@@ -6,7 +6,7 @@
       >
          <img
             class="post-card-cover lazyload"
-            :data-src="`/recetas-covers/${recipe.cover.file}`"
+            :data-src="require(`~/content/recetas-covers/${recipe.cover.file}`)"
             :width="`${recipe.cover.width}`"
             :height="`${recipe.cover.height}`"
          />
@@ -35,15 +35,17 @@ export default {
 
    &-cover
       height: auto
-      width: 12em
+      min-width: 0
+      max-width: 12em
       display: block
       align-self: flex-start
       border-radius: 4px
       z-index: 1
-      object-fit: cover
+      object-fit: contain
       margin: auto 0
 
    &-info
+      min-width: 60%
       p
          margin-bottom: 0
 
