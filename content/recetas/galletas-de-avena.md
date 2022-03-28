@@ -1,6 +1,6 @@
 ---
 title: Galletas de Avena
-description: Con chips de chocolate. La mejor. 🍪
+description: Con chips de chocolate. La mejor 🍪
 cover:
    file: galletas_de_avena.jpg
    width: 1516

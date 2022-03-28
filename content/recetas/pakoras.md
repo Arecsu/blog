@@ -1,12 +1,12 @@
 ---
-title: Pakoras de la India
+title: Pakoras
 description: Principalmente espinacas, y muchas cosas más.
 cover:
    file: pakoras.jpg
    width: 640
    height: 360
    hide: True
-alt: Pakoras de la India
+alt: Pakoras
 ---
 
 <div class="youtubeWrapper">
@@ -17,32 +17,32 @@ alt: Pakoras de la India
 
 ##### Masa
 
-- `3 partes` Espinacas ([cocidas a la inglesa](https://www.youtube.com/watch?v=V7udYC1FDQU))
-- `1 parte` Harina de garbanzos
-- `1` Huevo
+-  `3 partes` Espinacas ([cocidas a la inglesa](https://www.youtube.com/watch?v=V7udYC1FDQU))
+-  `1 parte` Harina de garbanzos
+-  `1` Huevo
 
 En mi experiencia, hice `500g` de espinaca y tuve que usar `180g` de harina de garbanzo con `2` huevos.
 
-- Pimienta de cayena
-- Garam masala
-- Curry suave
-- Sal
-- Una mezcla de ajo y jengibre (ver preparación)
-- Agua
+-  Pimienta de cayena
+-  Garam masala
+-  Curry suave
+-  Sal
+-  Una mezcla de ajo y jengibre (ver preparación)
+-  Agua
 
 ##### Salsa
 
-- Yogurt natural
-- Pepino
-- Menta
-- Jugo de limón
-- Cayena
-- La mezcla de ajo y jengibre mencionada anteriormente
-- Sal
+-  Yogurt natural
+-  Pepino
+-  Menta
+-  Jugo de limón
+-  Cayena
+-  La mezcla de ajo y jengibre mencionada anteriormente
+-  Sal
 
 ##### Fritura
 
-- Aceite
+-  Aceite
 
 ### Preparación
 
@@ -58,13 +58,13 @@ Luego de realizar la cocida inglesa con las espinacas, dejarlas en un bowl. En l
 
 1. En un bowl las espinacas cocidas, y en otro el resto de los ingredientes menos el agua.
 
-En ese último bowl, mezclar hasta integrar. Ir agregando agua de a poquito hasta tener la textura necesaria. 
+En ese último bowl, mezclar hasta integrar. Ir agregando agua de a poquito hasta tener la textura necesaria.
 
 ¿Cuál es esa textura? Ni muy dura ni muy blanda. Si está muy harinoso, puede llegar a quedar con sabor a cruda la preparación.
 
 Para corregir la masa, se puede usar más harina, o un huevo, o agua, según el estado.
 
-2. Terminada la mezcla, lo mezclamos con las espinacas. No tiene que quedar una masa muy líquida o muy dura. 
+2. Terminada la mezcla, lo mezclamos con las espinacas. No tiene que quedar una masa muy líquida o muy dura.
 
 Si queda muy dura, corregir haciendo otra masa con un poco de harina y un huevo en el bowl anterior. Si queda muy líquida, pues... más espinaca :)
 
@@ -82,4 +82,4 @@ Pasar por una procesadora o mixeadora todos los ingredientes. La contextura tien
 
 El aceite tiene que estar CALIENTE al momento de sumergir las pakoras. A mayor tamaño de la pakora, más tardará en cocinarse en el aceite.
 
-A disfrutar 🤗 
+A disfrutar 🤗
