@@ -17,18 +17,20 @@ La factura va a ser más rica y de mejor calidad :)
 ##### Etc
 
 -  🧻 Papel film
--  🧻 Papel manteca
+-  Tupper (opcional)
 -  🖌️ Pincel
 
 ##### Amasijo
 
 -  `600g` 🌽 Harina 0000
--  `1 cucharadita` 🧂 Sal
--  `225ml` 🥛 Leche
--  `12g` Levadura fresca o `6g` Levadura seca
+-  `225ml` 🥛 Leche Entera
+-  `10g` Levadura fresca
+-  `10g` 🧂 Sal
 -  `100g` Azúcar
--  `4` 🥚 Yemas
--  `A ojo` 🍦 Esencia de vainilla
+-  `2` 🥚 Huevos
+-  `10g` 🍯 Miel
+-  `3gr` 🍦 Esencia de vainilla
+-  Ralladura de `media` 🍊 naranja
 
 ##### Empaste
 
@@ -36,80 +38,99 @@ La factura va a ser más rica y de mejor calidad :)
 
 ##### Doradura
 
--  `2` 🥚 Yemas
--  `1 cucharadita` Azúcar
+-  `2` 🥚 Huevos
+-  `100gr` Leche
+-  `1 cucharadita` 🍯 Miel
 -  `1 pizca` Sal
--  `1 cucharada` Leche
 
 ##### Almíbar
 
--  `1/2 taza` Azúcar
--  `1/2 taza` Agua
-
-<br />
-
-Si tus facturas llevan **crema**:
+-  `300gr` Agua
+-  `300gr` Azúcar
+-  Jugo de `1` 🍊 naranja
+-  `20g` o `1 buena cucharada` 🍯 Miel
 
 ##### Crema Pastelera
 
--  `500ml` 🥛 Leche
--  `150g` Azúcar
--  `50g` Almidón de maiz
--  `6` 🥚 Yemas
+-  `335ml` 🥛 Leche
+-  `100g` Azúcar
+-  `10g` Almidón de maiz
+-  `27g` Harina 0000
+-  `4` 🥚 Yemas
 -  `A ojo` Esencia de vainilla
 
-<br />
-
-Y si llevan **membrillo**:
+##### Membrillo
 
 -  `A ojo?` Dulce de membrillo.
 
 <br />
 
-### Preparación
+## Preparación
 
-📼 [**Video de referencia**](https://www.youtube.com/watch?v=Ys5wAOtHYo4)
+<div class="youtubeWrapper">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3BPFp2uPmRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
-Ver el video al menos la primera vez es bastante útil para seguir mejor los pasos de la preparación. Hay algunos pasos que yo los hago diferentes y están aquí escritos. Los encontré más cómodos o que dan mejores resultados así.
+📼 [**Video de referencia**](https://www.youtube.com/watch?v=3BPFp2uPmRk)
 
-##### Amasijo
+⭐ Ver el video al menos una primera vez es **NECESARIO**.
+
+Los pasos aquí son una referencia básica si ya tenés la experiencia. Hay etapas, como el armado del amasijo y el empaste, que es mucho mejor seguirlos con el video.
+
+Muchos detalles, secretos y cosas importantes allí. Muy buen material.
+
+#### Amasijo
+
+Primero se mezclarán los líquidos, y luegos los secos. Esto hará que todos los sabores e ingredientes se integren mucho mejor en la masa final.
+
+Con levadura fresca se refiere a una levadura que se desgrane, que no esté apelmazada. Probablemente una recién comprada del súper y de buena marca. Se puede hacer con levadura seca (se usa la mitad del peso), pero tendrá mejor sabor con una fresca.
+
+Luego, para conservar el restante de la levadura, se puede congerlar. Pero al descongelar ya habrá perdido un poco su poder. En vez de `10g` de levadura, en este caso, se usarían `15g` para compensar eso.
 
 1. En un bowl, agregar todo menos la harina.
 2. Mezclar e integrar bien todos estos ingredientes.
 3. Luego, agregar la harina.
 4. Mezclar e integrar todo de a poco
-5. No hace falta amasarla bien. Envolver en papel film y llevar a la heladera durante 1 hora. No tiene que ser una masa blanda. Tiene que tener un poquito de dureza.
 
-##### Empaste
+La masa no necesita un buen amasado. De hecho, sería muy malo porque la masa tomaría mucha fuerza y complicaría los pasos siguientes.
 
-1. En un bowl, colocar la manteca blanda y batir para que quede más manejable.
-2. Colocarla sobre papel film. Que la envuelva de atrás y de adelante.
-3. Aplastarla con las manos y luego con el palo de amasar para darle forma rectangular
-4. Guardar en la heladera por 15-45 minutos.
+¿Qué quiere decir que tiene mucha fuerza? La harina de trigo tiene glúten, y cuando uno la trabaja en un medio de hidratación, se activan sus cadenas de proteínas. Si la masa está recién hecha o se la sigue amasando, va a crear resistencia. A esta resistencia es la referencia a la "mucha fuerza". Si la masa descansa un tiempo, estas cadenas le proporcionan elasticidad a la masa (se dice que está relajada) y se hace mucho mas fácil de trabajar.
+
+5. Tapar la masa y dejarla en descanso por unos 15 minutos
+6. Estirar la masa de manera rectangular
+
+#### Empaste
+
+Con la manteca pomada:
+
+1. Colocarla sobre papel film o papeles plásticos. Que la envuelva de atrás y de adelante.
+2. Aplastarla con las manos y luego con el palo de amasar para darle forma rectangular
+3. Llevar este empaste a la heladera por un tiempo.
 
 ⏲️ De qué depende el tiempo? De que se endurezca el empaste lo suficiente.
 
 El empaste tiene que estar un poquito duro. Si está muy blando, puede resultar en un desastre y explotar al momento de estirarlo junto a la masa.
 
-##### Amasijo ya reposado
+#### Amasijo ya reposado
 
-1. Pasada la hora en la heladera, retirar la masa y estirarla de forma rectangular (medio cuadrada, un poquito rectangularizada) con 3mm de espesor.
+En este apartado, realmente es muy conveniente ver el video para saber cómo integrar el empaste con el amasijo y hacer las láminas de hojaldre. A partir del minuto `15:00` del video de referencia.
 
-Guarda con el espesor. Si es muy fino, puede romperse al ser estirado junto al empaste y romper todo. YA ME PASÓ :D
+Aquí van unas notas importantes como referencias:
 
-2. Colocar el empaste en el medio de la masa estirada (sin el papel film por supuesto JEJE)
-3. Envolver el empase con la masa, llevando los costados al centro y apretamos un poquito
-4. Lo damos vuelta y le damos unos cuantos golpes con el palo de amasar para aflojar la manteca
-5. Estirar toda la masa a unos 3 mm de espesor, esta vez más rectangular que antes.
-6. Llevar un extremo hacia la mitad, y luego el otro extremo por encima de esa mitad. Ambas partes deberian tener la misma longitud, así cierren perfecto.
+Al colocar el empaste en el amasijo, necesita un descanso de entre 1hs y 2hs en la heladera antes de ser trabajado y estirado. De lo contrario, podría romperse todo.
 
-Esto que acabamos de hacer es una vuelta de hojaldre.
+Todos los descansos de la masa a partir de aquí tienen ser de entre 1hs y 2hs en la **heladera**.
 
-7. Envolver con el mismo papel film y llevar a la heladera por 1h 30min.
+Si la manteca consigue romper el amasijo, no hay que asustarse. Si eso sucedió es porque:
 
-El procedimiento del punto 4 al 7 hay que hacerlo unas 4 veces en total. Como verás, lleva mucho tiempo hasta tener la masa hojaldrada completamente.
+-  Faltó frío
+-  Hubo exceso de frío y la manteca endureció
 
-##### Crema Pastelera
+Como referencia, la masa debería sentirse helada pero trabajable y estirable al mismo tiempo. Si hay exceso de frío, se puede descansar un poco a temperatura ambiente y ahí proceder a estirarla.
+
+Este proceso de estirado y dar vueltas la masa se sugiere hacer 2 vueltas doble, 2 veces.
+
+#### Crema Pastelera
 
 1. En una cacerola colocamos la leche y la mitad del azúcar de los ingredientes. Tenemos `150g`, así que agregaremos `75g`
 2. Llevar la cacerola a un fuego medio
@@ -128,35 +149,38 @@ El procedimiento del punto 4 al 7 hay que hacerlo unas 4 veces en total. Como ve
 9. Apagamos el fuego y agregamos esencia de vainilla. Mezclamos.
 10.   Colocar la mezcla en otro bowl. Cubrir con papel film. Esperar que se enfríe un poco y llevar luego a la heladera.
 
-##### Hojaldrado terminado
+#### Preparar las formas de las facturas
 
-1. Retirar la masa de la heladera y estirar hasta formar un cuadrado de 3~5mm de espesor.
-2. Cortar todos los bordes para dejar un cuadrado perfecto y liberar el hojaldrado.
-3. En este punto, es mejor seguir el 📼 [Video de referencia](https://www.youtube.com/watch?v=Ys5wAOtHYo4) para saber como cortar y dar las distintas formas a las facturas.
+Con la masa descansada de heladera:
 
-En una bandeja que irá directo al horno usar el papel manteca para la base e ir depositando allí las facturas. Con esta receta es bastante probable que se necesiten varias bandejas.
+1. Estirar la masa. Que no sea quede muy gruesa. `3-4mm` de espesor.
+2. Armar las facturas. De nuevo, ir al video de referencia. Minuto `28:00`.
 
-⚡ **Aclaración importante**: Las medidas que menciona en el video me resultaron en facturas muy pequeñas. Puede que yo haya tenido un problema con el leudado? Puede ser.
+Varias de las formas son rectángulos de 9x3cm.
 
-Mas allá de eso, les diría que al darle forma a las facturas no tienen que quedar tan pequeñas. Van a crecer un poco al descansar y luego en el horno, pero solo un poco más.
+Ir armándolas y dejarlas en la bandeja que irá al horno. No es necesario enmantecar la bandeja, dada la cantidad de manteca que lleva ya la masa.
 
-4. Al terminar de darles las formas dejarlas descansar por 40min-1hora.
+3. Tapar con papel film y dejarlos leudar a temperatura ambiente por aprox 1hs - 1hs30min.
 
-##### Almíbar
+#### Almíbar
 
-1. Poner el agua y azúcar en una olla a fuego medio. Mezclar.
+Aporta una humedad y sabor **muy importantes** a las facturas.
+
+La miel ayuda a que no se formen cristales (esos granitos de azúcar) en la preparación del almíbar. También aportará mucho brillo en las facturas.
+
+1. Colocar los ingredientes en una olla a fuego medio. Mezclar.
 2. Cuando rompa el hervor, poner a fuego mínimo por 5 minutos
 3. Retirar
 
-##### Doradura
+#### Doradura
 
 1. Mezclar los ingredientes y listo.
 
-##### Luego del descanso final
+#### Luego del descanso final
 
-1. Poner el horno a precalentar a 190º por 15 minutos.
-2. Colocar los membrillos y cremas sobre las facturas. Si querías hacer sacramentos, pues bueno, el membrillo iba en el proceso anterior ya :)
-3. Pincelar con la doradura sobre todas las facturas delicadamente para no bajar el leudado de la masa.
+1. Poner el horno a precalentar a 190º por 15 minutos. Es medio-alto en un horno de casa.
+2. Pincelar con la doradura sobre todas las facturas.
+3. Colocar los membrillos y cremas sobre las facturas. Si querías hacer sacramentos, pues bueno, el membrillo iba en el proceso anterior ya :)
 4. Llevar al horno
 5. Cuando estén bien doradas, es sinónimo de que ya están listas
-6. Retirarlas y pincelarlas con el almíbar.
+6. Retirarlas. Dejarlas que se enfrien solo un poquito, que queden tibias. Y ahí aplicar el almíbar.

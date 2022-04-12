@@ -107,7 +107,8 @@ export default {
 header
    display: flex
    justify-content: space-between
-   height: 4em
+   height: 5em
+   max-width: $body-max-width
    align-items: center
    position: sticky
    top: 0

@@ -26,7 +26,7 @@ html[data-theme='light']
 
 html[data-theme='dark']
    --fg-color-1: #d1d1d1
-   --bg-color-1: #0c1320
+   --bg-color-1: #11151b
    --bg-color-2: #0000000a
    --hr-color: #d1d1d1
    color-scheme: dark
@@ -75,7 +75,7 @@ blockquote
    transition: border-color $t-time-normal
 
 p
-   line-height: 1.4em
+   line-height: 1.5em
    font-size: 1em
 
 article
@@ -98,13 +98,14 @@ h3
 h4
    font-size: 1.332em
    letter-spacing: -0.03em
+   margin: 2.2em 0 1.2em 0
 
 h5
-   margin-top: 2.5em
+   margin-top: 3em
    margin-bottom: 0em
-   font-size: 0.8em
+   font-size: 0.85em
    text-transform: uppercase
-   letter-spacing: -0.03em
+   letter-spacing: -0.01em
 
 h6
    font-size: 0.75em
@@ -124,8 +125,13 @@ ul, ol
 ul ul, ol ul, ul ol
    padding-left: 1em
 
+ol li:before
+   content: ""
+   width: .5em
+   display: inline-block
+
 li
-   line-height: 1.4em
+   line-height: 1.5em
    margin: 0.8em 0
    p
       display: inline
@@ -230,4 +236,3 @@ svg
    left: 0
    width: 100%
    height: 100%
-

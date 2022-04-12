@@ -13,5 +13,5 @@
    padding: 0 2em
 
 #content-container-1
-   max-width: 600px
+   max-width: $body-max-width
 </style>
