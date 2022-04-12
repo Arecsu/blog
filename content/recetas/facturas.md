@@ -10,10 +10,6 @@ alt: Flan
 
 ### Ingredientes
 
-Estos ingredientes son un poco distintos al los del video de referencia.
-
-La factura va a ser más rica y de mejor calidad :)
-
 ##### Etc
 
 -  🧻 Papel film

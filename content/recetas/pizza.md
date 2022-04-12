@@ -32,10 +32,10 @@ La clave es el tiempo. Y muy poca levadura.
 
 ##### Salsa
 
--  Salsa de tomate 🍅. A ojo.
--  Ajo. Una bochita.
--  Hojas de albahaca. Las que se te canten.
--  Aceite de oliva. Un buen poco.
+-  Salsa de tomate 🍅
+-  Ajo
+-  Hojas de albahaca
+-  Aceite de oliva
 -  Sal
 -  Pimienta
 
