@@ -1,6 +1,6 @@
 ---
 title: Facturas
-description: 🥐 Crema o membrillo (L)
+description: 🥐 de crema o membrillo
 cover:
    file: facturas.jpg
    width: 2000
