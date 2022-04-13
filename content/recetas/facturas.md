@@ -75,6 +75,22 @@ Los pasos aquí son una referencia básica si ya tenés la experiencia. Hay etap
 
 Muchos detalles, secretos y cosas importantes allí. Muy buen material.
 
+#### Empaste
+
+Vamos con el empaste primero, ya que deberá descansar un rato en el freezer/heladera al mismo tiempo que hacemos el amasijo.
+
+Con la manteca pomada:
+
+1. Colocarla sobre papel film o papeles plásticos. Que la envuelva de atrás y de adelante.
+2. Aplastarla con las manos y luego con el palo de amasar para darle forma rectangular
+3. Llevar este empaste a la heladera por un tiempo.
+
+⏲️ De qué depende el tiempo? De que se endurezca el empaste lo suficiente.
+
+El empaste tiene que estar un poquito duro. Si está muy blando, puede resultar en un desastre y explotar al momento de estirarlo junto a la masa.
+
+Recomiendo dejarlo en el freezer para que esté justo cuando terminamos el amasijo.
+
 #### Amasijo
 
 Primero se mezclarán los líquidos, y luegos los secos. Esto hará que todos los sabores e ingredientes se integren mucho mejor en la masa final.
@@ -95,25 +111,15 @@ La masa no necesita un buen amasado. De hecho, sería muy malo porque la masa to
 5. Tapar la masa y dejarla en descanso por unos 15 minutos
 6. Estirar la masa de manera rectangular
 
-#### Empaste
+#### Colocar el empaste en el amasijo
 
-Con la manteca pomada:
-
-1. Colocarla sobre papel film o papeles plásticos. Que la envuelva de atrás y de adelante.
-2. Aplastarla con las manos y luego con el palo de amasar para darle forma rectangular
-3. Llevar este empaste a la heladera por un tiempo.
-
-⏲️ De qué depende el tiempo? De que se endurezca el empaste lo suficiente.
-
-El empaste tiene que estar un poquito duro. Si está muy blando, puede resultar en un desastre y explotar al momento de estirarlo junto a la masa.
-
-#### Amasijo ya reposado
-
-En este apartado, realmente es muy conveniente ver el video para saber cómo integrar el empaste con el amasijo y hacer las láminas de hojaldre. A partir del minuto `15:00` del video de referencia.
+En este apartado y el siguiente realmente es muy conveniente ver el video para saber cómo integrar el empaste con el amasijo y hacer las láminas de hojaldre. A partir del minuto `15:00` del video de referencia.
 
 Aquí van unas notas importantes como referencias:
 
-Al colocar el empaste en el amasijo, necesita un descanso de entre 1hs y 2hs en la heladera antes de ser trabajado y estirado. De lo contrario, podría romperse todo.
+Una vez colocado el empaste en el amasijo, necesita un descanso de entre 1hs y 2hs en la heladera antes de ser trabajado y estirado. De lo contrario, podría romperse todo.
+
+#### Hojaldrado
 
 Todos los descansos de la masa a partir de aquí tienen ser de entre 1hs y 2hs en la **heladera**.
 
@@ -124,7 +130,7 @@ Si la manteca consigue romper el amasijo, no hay que asustarse. Si eso sucedió 
 
 Como referencia, la masa debería sentirse helada pero trabajable y estirable al mismo tiempo. Si hay exceso de frío, se puede descansar un poco a temperatura ambiente y ahí proceder a estirarla.
 
-Este proceso de estirado y dar vueltas la masa se sugiere hacer 2 vueltas doble, 2 veces.
+Este proceso de estirado y dar vueltas la masa (hojaldrado) se sugiere hacer 2 vueltas doble, 2 veces.
 
 #### Crema Pastelera
 
