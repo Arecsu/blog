@@ -126,20 +126,26 @@ Todos los descansos de la masa a partir de aquí tienen ser de entre 1hs y 2hs e
 Si la manteca consigue romper el amasijo, no hay que asustarse. Si eso sucedió es porque:
 
 -  Faltó frío
--  Hubo exceso de frío y la manteca endureció
+-  Hubo exceso de frío y la manteca endureció mucho.
 
-Como referencia, la masa debería sentirse helada pero trabajable y estirable al mismo tiempo. Si hay exceso de frío, se puede descansar un poco a temperatura ambiente y ahí proceder a estirarla.
+Como referencia, la masa debería sentirse bastante helada pero, algo trabajable y estirable al mismo tiempo. Si hay exceso de frío, se puede descansar un poquito a temperatura ambiente y ahí proceder a estirarla.
+
+Te puede pasar como a mí que la heladera no llegar a darle ese frío necesario y podes usar el freezer para llegar a ese punto justo.
 
 Este proceso de estirado y dar vueltas la masa (hojaldrado) se sugiere hacer 2 vueltas doble, 2 veces.
 
+⚠️ Nota IMPORTANTE: luego de realizado todo el proceso de hojaldrado, NO DEJAR por más que el tiempo mencionado en la heladera: entre 1hs y 2hs. Yo solía hacer la masa a la noche, terminar todo el hojaldrado y dejarla hasta el otro día en la heladera para despertar y hacer el resto de los pasos. Pero en todas esas horas la masa empieza a leudar en la heladera y las cosas no salen bien.
+
+Así que respetar esos tiempos y no dejar las cosas de más.
+
 #### Crema Pastelera
 
-1. En una cacerola colocamos la leche y la mitad del azúcar de los ingredientes. Tenemos `150g`, así que agregaremos `75g`
+1. En una cacerola colocamos toda la leche y la mitad del azúcar de los ingredientes. Tenemos `100g`, así que agregaremos `50g`
 2. Llevar la cacerola a un fuego medio
 
 🥣 En otro bowl:
 
-3. Colocar el almidón de maiz y el restante del azúcar.
+3. Colocar el almidón de maiz, harina y el restante del azúcar.
 4. Agregamos los huevos y mezclamos
 
 🥛 Con la leche ya caliente de la cacerola:
@@ -167,16 +173,6 @@ Ir armándolas y dejarlas en la bandeja que irá al horno. No es necesario enman
 
 3. Tapar con papel film y dejarlos leudar a temperatura ambiente por aprox 1hs - 1hs30min.
 
-#### Almíbar
-
-Aporta una humedad y sabor **muy importantes** a las facturas.
-
-La miel ayuda a que no se formen cristales (esos granitos de azúcar) en la preparación del almíbar. También aportará mucho brillo en las facturas.
-
-1. Colocar los ingredientes en una olla a fuego medio. Mezclar.
-2. Cuando rompa el hervor, poner a fuego mínimo por 5 minutos
-3. Retirar
-
 #### Doradura
 
 1. Mezclar los ingredientes y listo.
@@ -188,4 +184,17 @@ La miel ayuda a que no se formen cristales (esos granitos de azúcar) en la prep
 3. Colocar los membrillos y cremas sobre las facturas. Si querías hacer sacramentos, pues bueno, el membrillo iba en el proceso anterior ya :)
 4. Llevar al horno
 5. Cuando estén bien doradas, es sinónimo de que ya están listas
-6. Retirarlas. Dejarlas que se enfrien solo un poquito, que queden tibias. Y ahí aplicar el almíbar.
+
+Por mientras se cocinan en el horno, hacemos el almíbar
+
+#### Almíbar
+
+Aporta una humedad y sabor **muy importantes** a las facturas.
+
+La miel ayuda a que no se formen cristales (esos granitos de azúcar) en la preparación del almíbar. También aportará mucho brillo en las facturas.
+
+1. Colocar los ingredientes en una olla a fuego medio. Mezclar.
+2. Cuando rompa el hervor, poner a fuego mínimo por 5 minutos
+3. Retirar
+
+A este punto, hay que esperar que salgan las facturas del horno. Dejarlas que se enfrien solo un poquito, que queden tibias. Y ahí aplicar el almíbar. Si no, absorberá mucho almíbar y quedarán muy pesadas (a algunos les gusta que sean así).
