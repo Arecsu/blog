@@ -156,6 +156,9 @@ Este proceso de estirado y dar vueltas la masa (hojaldrado) se sugiere hacer 2 v
 Con la masa descansada de heladera:
 
 1. Estirar la masa. Que no sea quede muy gruesa. `3-4mm` de espesor.
+
+Si la masa quedó muy fría, tener la precaución de esperar un poco para que pueda ser estirada sin problemas.
+
 2. Armar las facturas. De nuevo, ir al video de referencia. Minuto `28:00`.
 
 Varias de las formas son rectángulos de 9x3cm.
