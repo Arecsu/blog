@@ -1,82 +1,62 @@
 export default {
-   // Target: https://go.nuxtjs.dev/config-target
+  // Target: https://go.nuxtjs.dev/config-target
+  target: 'static',
 
-   // ssr: false,
-   target: 'static',
-   router: {
-      base: '/',
-   },
+  // Global page headers: https://go.nuxtjs.dev/config-head
+  head: {
+    title: 'a9r',
+    htmlAttrs: {
+      lang: 'es'
+    },
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: '' },
+      { name: 'format-detection', content: 'telephone=no' }
+    ],
+    link: [
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+    ]
+  },
 
-   // Global page headers: https://go.nuxtjs.dev/config-head
-   head: {
-      title: '_a9r',
-      htmlAttrs: {
-         lang: 'en',
-      },
-      meta: [
-         { charset: 'utf-8' },
-         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-         { hid: 'description', name: 'description', content: '' },
-         { name: 'format-detection', content: 'telephone=no' },
-         // {
-         // name: 'apple-mobile-web-app-status-bar-style',
-         // content: '',
-         // },
-         // { name: 'theme-color', content: '' },
-      ],
-      link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+  // Global CSS: https://go.nuxtjs.dev/config-css
+  css: [
+    'sanitize.css',
+    '@/assets/css/main.scss'
+  ],
 
-      script: [
-         {
-            src: '/js/theme-script.js',
-         },
-      ],
-   },
+  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  plugins: [
+  ],
 
-   // Global CSS: https://go.nuxtjs.dev/config-css
-   css: [
-      '~/assets/css/normalize.css',
-      '~/assets/css/inter.css',
-      '~/assets/css/inconsolata.css',
-      '~/assets/css/main.sass',
-      '~/assets/css/prism-theme.scss',
-   ],
+  // Auto import components: https://go.nuxtjs.dev/config-components
+  components: true,
 
-   // load the prism-theme from a local css file
-   content: {
-      markdown: {
-         prism: {
-            theme: false,
-         },
-      },
-   },
+  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  buildModules: [
+    '@nuxtjs/google-fonts'
+  ],
 
-   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-   plugins: [{ src: './plugins/vClickOutside', ssr: false }],
+  googleFonts: {
+    families: {
+      'Roboto+Slab': {
+        wght: [100 + '..' + 900]
+      }
+    },
+    download: true,
+    inject: true,
+    overwriting: true,
+  },
 
-   // Auto import components: https://go.nuxtjs.dev/config-components
-   components: true,
+  layoutTransition: 'default',
 
-   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-   buildModules: ['nuxt-lazysizes', '@nuxt/image'],
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: [
+    '@nuxt/image',
+    '@nuxt/content'
+  ],
 
-   // Modules: https://go.nuxtjs.dev/config-modules
-   modules: ['@nuxt/content', '@nuxtjs/dayjs', '@nuxtjs/style-resources', '@nuxt/image'],
-
-   styleResources: {
-      sass: ['./assets/css/_variables.sass'], // here I use only main scss with globally styles (variables, base etc)
-   },
-
-   // nuxt-image
-   image: {},
-
-   // Build Configuration: https://go.nuxtjs.dev/config-build
-   build: {},
-
-   // modules config
-   dayjs: {
-      locales: ['es'],
-      defaultLocale: 'es',
-      plugins: ['relativeTime', 'advancedFormat'],
-   },
-};
+  // Build Configuration: https://go.nuxtjs.dev/config-build
+  build: {
+  }
+}

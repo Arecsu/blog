@@ -2,72 +2,17 @@
 title: Facturas
 description: 🥐 de crema o membrillo
 cover:
-   file: facturas.jpg
-   width: 2000
-   height: 1500
+  file: facturas.jpg
+  width: 2000
+  height: 1500
 alt: Flan
 ---
-
-### Ingredientes
-
-##### Etc
-
--  🧻 Papel film
--  Tupper (opcional)
--  🖌️ Pincel
-
-##### Amasijo
-
--  `600g` 🌽 Harina 0000
--  `225ml` 🥛 Leche Entera
--  `10g` Levadura fresca
--  `10g` 🧂 Sal
--  `100g` Azúcar
--  `2` 🥚 Huevos
--  `10g` 🍯 Miel
--  `3gr` 🍦 Esencia de vainilla
--  Ralladura de `media` 🍊 naranja
-
-##### Empaste
-
--  `200g` 🧈 Manteca blanda
-
-##### Doradura
-
--  `2` 🥚 Huevos
--  `100gr` Leche
--  `1 cucharadita` 🍯 Miel
--  `1 pizca` Sal
-
-##### Almíbar
-
--  `300gr` Agua
--  `300gr` Azúcar
--  Jugo de `1` 🍊 naranja
--  `20g` o `1 buena cucharada` 🍯 Miel
-
-##### Crema Pastelera
-
--  `335ml` 🥛 Leche
--  `100g` Azúcar
--  `10g` Almidón de maiz
--  `27g` Harina 0000
--  `4` 🥚 Yemas
--  `A ojo` Esencia de vainilla
-
-##### Membrillo
-
--  `A ojo?` Dulce de membrillo.
-
-<br />
 
 ## Preparación
 
 <div class="youtubeWrapper">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3BPFp2uPmRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-📼 [**Video de referencia**](https://www.youtube.com/watch?v=3BPFp2uPmRk)
 
 ⭐ Ver el video al menos una primera vez es **NECESARIO**.
 
@@ -125,8 +70,8 @@ Todos los descansos de la masa a partir de aquí tienen ser de entre 1hs y 2hs e
 
 Si la manteca consigue romper el amasijo, no hay que asustarse. Si eso sucedió es porque:
 
--  Faltó frío
--  Hubo exceso de frío y la manteca endureció mucho.
+- Faltó frío
+- Hubo exceso de frío y la manteca endureció mucho.
 
 Como referencia, la masa debería sentirse bastante helada pero, algo trabajable y estirable al mismo tiempo. Si hay exceso de frío, se puede descansar un poquito a temperatura ambiente y ahí proceder a estirarla.
 
@@ -155,7 +100,7 @@ Así que respetar esos tiempos y no dejar las cosas de más.
 7. Mezclamos y llevamos a un fuego medio sin parar de revolver
 8. Una vez que la preparación rompe el hervor cocinamos por un minuto más sin dejar de revolver
 9. Apagamos el fuego y agregamos esencia de vainilla. Mezclamos.
-10.   Colocar la mezcla en otro bowl. Cubrir con papel film. Esperar que se enfríe un poco y llevar luego a la heladera.
+10. Colocar la mezcla en otro bowl. Cubrir con papel film. Esperar que se enfríe un poco y llevar luego a la heladera.
 
 #### Preparar las formas de las facturas
 

@@ -1,4 +1,4 @@
-# blog-nuxt
+# blog-a9r
 
 ## Build Setup
 

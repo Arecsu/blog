@@ -1,17 +1,20 @@
 <template>
-   <div>
-      <Header1 />
-      <Nuxt id="content-container-1" />
-      <Footer1 />
-   </div>
+	<main>
+		<Header />
+		<Nuxt />
+		<!-- <Footer1 /> -->
+	</main>
 </template>
 
-<style lang="sass" scoped>
+<script>
+export default {
+	transition: 'default',
+};
+</script>
 
-#content-container-1, header
-   margin: 0 auto
-   padding: 0 2em
-
-#content-container-1
-   max-width: $body-max-width
+<style lang="scss">
+main {
+	margin-inline: clamp(1rem, 5vw, 4rem);
+	margin-block: 2rem;
+}
 </style>

@@ -2,46 +2,11 @@
 title: Pizza
 description: Una pizza clásica con 72 horas de fermentación ⏲️
 cover:
-   file: pizza.webp
-   width: 1152
-   height: 768
+  file: pizza.webp
+  width: 1152
+  height: 768
 alt: Pizza
 ---
-
-La pizza que todos conocemos. O... **tal vez no**?
-
-En Argentina, ya sea en casa o en muchas pizzerías, tenemos la costumbre de no realizar la correcta fermentación de la masa. No respetamos su tiempo. Ponemos una cantidad absurda de levadura para cocinarla a las pocas horas de comenzar todo el proceso.
-
-El resultado es una pizza sin vida. Para cubrir este error, acudimos a cantidades absurdas de salsa y queso. La masa brilla por su ausencia.
-
-Con estos pasos, el sabor de la masa **cambia completamente**. Originalmente, es así. Las harinas toman un sabor muy distinto cuando se desarrollan y fermentan en la heladera correctamente.
-
-La clave es el tiempo. Y muy poca levadura.
-
-### Ingredientes
-
-**Para 2 pizzas grandes**
-
-##### Masa
-
--  `500gr` Harina 000
--  `300gr` Agua fría de heladera (agregar más si es necesario de a poco)
--  `10gr` Sal rosada. Si no, sal marina.
--  `2gr` Levadura
--  `20gr` Aceite de oliva
-
-##### Salsa
-
--  Salsa de tomate 🍅
--  Ajo
--  Hojas de albahaca
--  Aceite de oliva
--  Sal
--  Pimienta
-
-##### Queso
-
--  `260g` Mozzarella fior di latte
 
 ### Procedimiento
 

@@ -1,31 +1,16 @@
 ---
-title: Galletas de Avena
+title: Galletas de avena con chips
 description: Con chips de chocolate. La mejor 🍪
 cover:
-   file: galletas_de_avena.jpg
-   width: 1516
-   height: 1102
+  file: galletas_de_avena.jpg
+  width: 1516
+  height: 1102
 alt: Galletas de Avena
 ---
 
-Las mejores galletas de avena del mundo 🌎. En serio.
+## Procedimiento
 
-### Ingredientes
-
--  `380g` Harina leudante
--  `140g` Avena
--  `4gr` 🧂 Sal
--  `200g` 🧈 Manteca blanda
--  `360g` Azúcar blanca
--  `70g` Azúcar mascabo
--  `3` 🥚 Yemas y `1` Clara
--  `18g` 🍦 Esencia de vainilla real. No artificial.
--  `230g` 🍫 Chips de chocolate o chocolate picado
--  `70g` _Opcional_ → 🌰 Nueces picadas
-
-### Procedimiento
-
-##### Masa
+### Masa
 
 Mezclar en orden:
 
@@ -34,7 +19,7 @@ Mezclar en orden:
 3. Harina. ⚠️ Solamente mezclar hasta integrar la harina. No amasar más que eso, para no desarrollar el glúten. De lo contrario, haría una masa elástica que no es muy atractiva de comer. Queremos algo quebradizo.
 4. Avena, trocitos de chocolate y nueces. De nuevo: hasta integrar, amasando lo menos posible.
 
-##### Rollos y heladera
+### Rollos y heladera
 
 El siguiente paso es armar rollos. Puede que la mezcla esté muy blanda como para formar rollos sólidos. Si es así, llevar a la heladera por ⌚ 30 minutos a 1 hora para que tome más dureza.
 
@@ -44,7 +29,7 @@ Colocar los rollos en una bandeja. Cubrir la bandeja con papel manteca, film o d
 
 Llevarlos a la heladera donde estarán por aproximadamente 24 horas. Con esto, la harina hará una correcta hidratación y la masa tendrá un sabor más rico e intenso.
 
-##### Horneado
+### Horneado
 
 Retirar de la heladera.
 

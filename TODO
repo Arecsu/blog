@@ -1,8 +1,0 @@
-fashium museum:
-   ☐ make CSV file with
-      - name
-      - shop
-      - instagram
-   ☐ writing content and fetching content: https://content.nuxtjs.org/writing
-   ☐ make a component to fetch that file and process it. Call them from markdown, something like:
-      - <component database="museum.csv"></component>
