@@ -19,7 +19,15 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+    ],
+    /*
+    script: [
+      {
+        src: 'https://twemoji.maxcdn.com/v/latest/twemoji.min.js',
+        crossorigin: 'anonymous'
+      }
     ]
+    */
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -46,6 +54,7 @@ export default {
         wght: [100 + '..' + 900]
       }
     },
+    display: 'swap',
     download: true,
     inject: true,
     overwriting: true,

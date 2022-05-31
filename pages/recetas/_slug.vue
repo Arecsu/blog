@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<article>
-			<nuxt-content v-if="receta_ingredientes" id="receta-ingr" :document="receta_ingredientes" />
-			<nuxt-content v-if="receta_intro" id="receta-intro" :document="receta_intro" />
+			<nuxt-content v-show="receta_ingredientes" id="receta-ingr" :document="receta_ingredientes" />
+			<nuxt-content v-show="receta_intro" id="receta-intro" :document="receta_intro" />
 			<h1 id="receta-title">{{ receta_main.title }}</h1>
 			<nuxt-content id="receta-main" :document="receta_main" />
 		</article>

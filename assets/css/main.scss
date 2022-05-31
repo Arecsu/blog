@@ -19,11 +19,22 @@ code {
    background-color: hsla(0, 0%, 95%, 10%);
 }
 
+ol {
+   padding-left: 2.3em;
+}
+
 ul {
    padding: 0;
    list-style-type: none;
 }
 
+p {
+   margin-block: 1.1em;
+}
+
+ol li {
+   margin-block: .4em;
+}
 ul li {
    margin-block: .3em;
 }
@@ -36,6 +47,12 @@ a:link,
 a:visited {
    color: #f4bd1a;
 }
+
+
+ol li {
+
+}
+
 
 .youtubeWrapper iframe {
 	height: auto;
