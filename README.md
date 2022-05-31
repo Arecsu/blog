@@ -1,15 +1,12 @@
-# blog-a9r
+## blog.alejandro9r.xyz
 
-best blog ever. 
-well, maybe someday...
-
-## Build Setup
+best blog ever. <br> well, maybe someday...
 
 ```bash
 # install dependencies
 $ yarn install
 
-# serve with hot reload at localhost:3000
+# serve with hot reload at localhost:????
 $ yarn dev
 
 # generate static project
