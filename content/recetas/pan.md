@@ -5,5 +5,5 @@ cover:
   file: pakoras.jpg
   width: 640
   height: 360
-alt: Pakoras
+alt: Pan con semillas
 ---
