@@ -53,7 +53,17 @@ export default {
     families: {
       'Roboto+Slab': {
         wght: [100 + '..' + 900]
+      },
+      /*
+      'Noto+Color+Emoji+Compat': {
+        wght: 400
+      },
+      */
+      /*
+      'Noto+Colr+Emoji+Glyf': {
+        wght: 400
       }
+      */
     },
     display: 'swap',
     download: true,

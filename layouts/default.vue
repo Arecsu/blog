@@ -13,6 +13,10 @@ export default {
 </script>
 
 <style lang="scss">
+.emoji {
+	height: 1em;
+}
+
 main {
 	margin-inline: clamp(1rem, 5vw, 4rem);
 	margin-block: 2rem;
