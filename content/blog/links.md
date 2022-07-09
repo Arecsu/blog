@@ -25,6 +25,9 @@ Esto necesita organización. Eventualmente la tendrá. Creo. 🙃
 - [Mark Manson](https://markmanson.net/archive) — Filosofía de vida y consejos
 - [Seth's Blog](seths.blog)
 - [LOW-TECH MAGAZINE](https://solar.lowtechmagazine.com/)
+- [The Imperfectionist – Oliver Burkeman](https://www.oliverburkeman.com/posts)
+- [James Clear](https://jamesclear.com)
+- [Mr Money Mustache](https://www.mrmoneymustache.com/2013/02/22/getting-rich-from-zero-to-hero-in-one-blog-post/) - Striving to be independent of the system
 
 ## 🖼️ Inspiración
 

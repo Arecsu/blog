@@ -9,6 +9,7 @@ description: Una colección Argentina de marcas, diseñadores independientes, sh
 -  <brand-link name="REVOLVER" link="https://roparevolver.com/" instagram="https://instagram.com/roparevolver"></brand-link> 🚀
 -  <brand-link name="This Is Feliz Navidad" link="https://www.thisisfeliznavidad.com/" instagram="https://instagram.com/thisisfeliznavidad"></brand-link>
 -  <brand-link name="HIPPY KILLER" link="https://www.hippykillercompany.com/" instagram="https://instagram.com/hippykillercompany"></brand-link>
+-  <brand-link name="VALLES" link="https://vallesoficial.com" instagram="https://www.instagram.com/valles_oficial/"></brand-link>
 
 ### Calzados
 
