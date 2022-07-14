@@ -31,7 +31,7 @@ En el bowl de la batidora:
 8. Incorporar los huevos de a uno mientras se mezcla
 9. Tamizar la harina y el polvo de hornear y mezclar hasta que la totalidad de la harina se encuentre hidratada.
 
-    ⚠️ **No trabajar tanto la harina para no desarrollar tanto el gluten.** Gluten desarrollado = masa elástica. No desarrolado: masa quebradiza y sedosa.
+⚠️ **No trabajar tanto la harina para no desarrollar tanto el gluten.** Gluten desarrollado = masa elástica. No desarrolado: masa quebradiza y sedosa.
 
 10. Colocar la masa en el molde y al horno.
 
@@ -41,7 +41,7 @@ En el bowl de la batidora:
 2. En otro bowl, integrar el cafe con el cacao como en los pasos del bizcochuelo.
 3. En otro bowl (si, un tercer bowl) integrar el dulce de leche con la manteca
 
-    💡 *¿Por qué dividir en tantos bowls? Para que se integren mejor todos los ingredientes, y con menos trabajo.*
+💡 *¿Por qué dividir en tantos bowls? Para que se integren mejor todos los ingredientes, y con menos trabajo.*
 
 4. Integrar todas las preparaciones de los 3 bowls, dejando la de la crema y el chocolate cobertura para el final.
 5. Separar 300g de esta crema en otro bowl
