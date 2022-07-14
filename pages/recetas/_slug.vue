@@ -47,7 +47,7 @@ article {
 		'receta-intro'
 		'receta-ingr'
 		'receta-main';
-	grid-template-rows: auto;
+	grid-auto-rows: auto auto 1fr;
 	//margin-inline: auto;
 	grid-template-columns: min(40rem, 100%);
 }
