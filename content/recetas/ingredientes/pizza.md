@@ -1,8 +1,8 @@
 ## Ingredientes
 
-**Para 2 pizzas grandes**
+**→ Para 2 pizzas grandes**
 
-#### Masa
+### Masa
 
 - `500gr` Harina 000
 - `300gr` Agua fría de heladera (agregar más si es necesario de a poco)
@@ -10,15 +10,15 @@
 - `2gr` Levadura
 - `20gr` Aceite de oliva
 
-#### Salsa
+### Salsa
 
-- Salsa de tomate 🍅
-- Ajo
+- Tomates triturados 🍅
+- Ajo en polvo. De no ser posible, un ajo cortado en trozitos pequeños.
 - Hojas de albahaca
 - Aceite de oliva
 - Sal
 - Pimienta
 
-#### Queso
+### Queso
 
 - `260g` Mozzarella fior di latte

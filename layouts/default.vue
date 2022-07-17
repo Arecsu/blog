@@ -36,7 +36,7 @@ main {
 footer {
 	height: 8rem;
 	display: flex;
-	align-items: end;
+	align-items: flex-end;
 	place-content: space-between;
 }
 </style>

@@ -8,15 +8,15 @@ cover:
 alt: Pizza
 ---
 
-### Procedimiento
+## Procedimiento
 
-La referencia que usé para hacer todo la saqué de [aquí, por Marcos Di Cesare](https://www.youtube.com/watch?v=gQ0l1hT8BnQ). Esto no es más que un resumen de todo.
+La referencia que usé para hacer todo la saqué de [aquí, por Marcos Di Cesare](https://www.youtube.com/watch?v=gQ0l1hT8BnQ).
 
 Si vas a hacerla por **primera vez**, es super recomendable para tener los pasos visuales, que son mucho mas fáciles de seguir y necesarios para obtener una buena masa.
 
-##### Masa
+### Masa
 
-1. Mezclar agua + sal + levadura. La sal no mata la levadura. Es un mito 🧂
+1. Mezclar agua + sal + levadura.
 2. Luego integrar todo con la harina. Si la masa está seca, aumentar agua **MUY de a poco**.
 3. Una vez hecha la masa, mezclar con un poco de aceite de oliva.
 4. Dejar descansar 10 minutos.
@@ -26,24 +26,25 @@ Si vas a hacerla por **primera vez**, es super recomendable para tener los pasos
 8. Bollar cada parte y tapar 5 minutos.
 9. Amasar y bollar de nuevo, y a un taper a la heladera.
 
-En la heladera debería estar entre 24 a 72 horas. Más no tiene sentido. El punto óptimo es a las 72 horas.
+En la heladera debería estar entre 24 a 72 horas. El punto óptimo es a las 72 horas. Al usar poca levadura y dejarla descansar todo ese tiempo, conseguiremos una masa riquísima.
 
-##### Salsa
+### Salsa
 
-La salsa de tomate recomendada es usar alguna orgánica en lo posible. La de los supermercados es muy extraña. Si no, hacer una triturando tomates.
+**Importante que sean tomates triturados.** Usualmente los venden en botellas de vidrio. No confundir con las salsas de tomate ya preparadas o los tetra pack que venden. Honestamente, no sé que son, pero no son tan buenos.
 
-Mezclar salsa de tomate – cantidad necesaria, a ojo – y todos los ingredientes mencionados al comienzo.
+Mezclar los tomates triturados – cantidad necesaria, a ojo – y todos los ingredientes mencionados al comienzo.
 
-Cortar en pedazitos las hojas de albahaca y el ajo, por supuesto.
+Cortar en pedazitos las hojas de albahaca y el ajo, por supuesto. Si podes usar ajo en polvo, mejor.
 
-##### Preparación final
+
+### Preparación final
 
 1. Luego de reposar la masa todos esos días en la heladera, sacarla.
 2. Tirar harina sobre la mesada.
 3. Estirar la masa del centro hacia afuera, teniendo cuidado de proteger el aire en los bordes. No importa si no es perfecto o se rompe un poco tampoco. Igual estará tremendo :)
 4. Colocar la salsa y el queso, y al horno.
 
-Para el horno, lo ideal sería tener un horno de barro o pizzero. No es común ver eso en las casas. Probablemente tengan un horno común y corriente. Así que aquí va mi pro tip:
+Para el horno, lo ideal sería tener un horno de barro o pizzero. No es común ver eso en las casas. Probablemente tengas un horno común y corriente, como yo. Así que aquí va un pro tip con el que hago mis pizzas:
 
 ⭐ Si no tenés una piedra refractaria, usar un molde pizzero pero dado vuelta. Si. Colocar otras piezas de metal o moldes debajo. Eso creará una "piedra" en términos de dispersión del calor y la pizza se cocinará de forma más pareja. El sabor y la textura es mejor así, en mi opinión.
 
