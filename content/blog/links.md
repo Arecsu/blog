@@ -27,7 +27,9 @@ Esto necesita organización. Eventualmente la tendrá. Creo. 🙃
 - [LOW-TECH MAGAZINE](https://solar.lowtechmagazine.com/)
 - [The Imperfectionist – Oliver Burkeman](https://www.oliverburkeman.com/posts)
 - [James Clear](https://jamesclear.com)
-- [Mr Money Mustache](https://www.mrmoneymustache.com/2013/02/22/getting-rich-from-zero-to-hero-in-one-blog-post/) - Striving to be independent of the system
+- [Mr Money Mustache](https://www.mrmoneymustache.com/2013/02/22/getting-rich-from-zero-to-hero-in-one-blog-post/) — Striving to be independent of the system
+- [Slate Star Codex](https://slatestarcodex.com/) — Ciencia, psiquiatría, filosofía, política y futurismo.
+- [Astral Codex Ten](https://astralcodexten.substack.com/) — Continuación de Slate Star Codex
 
 ## 🖼️ Inspiración
 
@@ -37,10 +39,15 @@ Esto necesita organización. Eventualmente la tendrá. Creo. 🙃
 
 ## 📰 Noticias
 
-- [Legible News](https://legiblenews.com/) - Buen wrapper de Wikipedia's Current Events
-- [Wikipedia: Current Events](https://en.wikipedia.org/wiki/Portal:Current_events) - Noticias del mundo. Minimalista.
-- [The Brutalist Report](https://brutalist.report/) - Agregador de muchas fuentes. Solo títulos. Excelente.
+- [Legible News](https://legiblenews.com/) — Buen wrapper de Wikipedia's Current Events
+- [Wikipedia: Current Events](https://en.wikipedia.org/wiki/Portal:Current_events) — Noticias del mundo. Minimalista.
+- [The Brutalist Report](https://brutalist.report/) — Agregador de muchas fuentes. Solo títulos. Excelente.
 
+## 🏐 Fitness
+
+- [Stronger by Science](https://www.strongerbyscience.com/) — Uno de los mejores recursos sobre nutrición y entrenamiento de fuerza
+- [The Definitive Diet Setup Guide — Stronger by Science](https://www.strongerbyscience.com/diet/)
+- [Legion Athletics](https://legionathletics.com/blog/) — Para cosas específicas, como los mejores ejercicios – y por qué – para desarrollar un grupo muscular o saber la forma mecánicamente eficiente de hacerlos, voy aquí.
 
 ## ✂️ Utilidades
 
