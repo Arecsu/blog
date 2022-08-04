@@ -14,6 +14,10 @@ La referencia que usé para hacer todo la saqué de [aquí, por Marcos Di Cesare
 
 Si vas a hacerla por **primera vez**, es super recomendable para tener los pasos visuales, que son mucho mas fáciles de seguir y necesarios para obtener una buena masa.
 
+Respecto a la **levadura**: mucho mejor si fue comprada hace poco y el paquete todavía no fue abierto. Si bien se puede conservar levadura en la heladera, solo deben pasar un par de días y tiene que estar muy bien cerrada. Y aún así habría perdido un poco de fuerza. Así que lo recomendable es aumentar un poco más (1.5x) la cantidad como para compensar. Hay algunos que congelan las levaduras. El consejo es igual de válido para esos casos también.
+
+Probablemente no sea lo mismo que una levadura super fresca, pero seguirá siendo una muy buena pizza.
+
 ### Masa
 
 1. Mezclar agua + sal + levadura.
@@ -24,7 +28,9 @@ Si vas a hacerla por **primera vez**, es super recomendable para tener los pasos
 6. Dejar descansar 10 minutos.
 7. Amasarla un poco mas, cortarla en las partes necesarias para hacer cada pizza. Recordar que estas proporciones son para 2 pizzas.
 8. Bollar cada parte y tapar 5 minutos.
-9. Amasar y bollar de nuevo, y a un taper a la heladera.
+9. Amasar y bollar de nuevo.
+10. Enharinar un poco la superficie del bollo
+11. Guardar en un taper y llevar a la heladera.
 
 En la heladera debería estar entre 24 a 72 horas. El punto óptimo es a las 72 horas. Al usar poca levadura y dejarla descansar todo ese tiempo, conseguiremos una masa riquísima.
 

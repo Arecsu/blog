@@ -1,7 +1,14 @@
----
-title: Pan con semillas
-titleAlt: Pan con semillas de masa madre
-alt: Pan con semillas
----
+## Ingredientes
 
-Soon™
+**→ Para 2 panes**
+
+- `700gr` Harina 000
+- `250gr` Harina integral
+- `50gr` Harina 000 tostada
+- `500gr` Leche. Podría ser mas o menos. Prestar atención al procedimiento.
+- `20gr` Sal Marina
+- `50gr` Manteca
+- `50gr` Azúcar
+- `200gr` Masa madre activa
+- `125gr` Semillas
+- `125gr` Agua caliente
