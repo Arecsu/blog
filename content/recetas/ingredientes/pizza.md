@@ -7,7 +7,7 @@
 - `500gr` Harina 000
 - `300gr` Agua fría de heladera (agregar más si es necesario de a poco)
 - `10gr` Sal rosada. Si no, sal marina.
-- `4gr` Levadura
+- `2gr` Levadura
 - `20gr` Aceite de oliva
 
 ### Salsa
