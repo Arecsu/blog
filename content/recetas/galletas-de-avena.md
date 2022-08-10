@@ -19,6 +19,8 @@ Mezclar en orden:
 3. Harina. ⚠️ Solamente mezclar hasta integrar la harina. No amasar más que eso, para no desarrollar el glúten. De lo contrario, haría una masa elástica que no es muy atractiva de comer. Queremos algo quebradizo.
 4. Avena, trocitos de chocolate y nueces. De nuevo: hasta integrar, amasando lo menos posible.
 
+**Nueces**: lo que yo hago para trituar las nueces es ponerlas sobre un plato o tabla de madera, y las cubro con una servilleta de tela, de esas grandes para uso general en la cocina. Y con un martillo de cocina las voy aplastando. Así no salen volando a todos lados.
+
 ### Rollos y heladera
 
 El siguiente paso es armar rollos. Puede que la mezcla esté muy blanda como para formar rollos sólidos. Si es así, llevar a la heladera por ⌚ 30 minutos a 1 hora para que tome más dureza.
@@ -37,4 +39,6 @@ Cortar los cilindros en rodajas y colocarlos sobre una placa enmantecada y enhar
 
 Dejar espacio entre las galletas. Cocinar a horno moderado.
 
-El punto justo es cuando la parte de abajo de las galletas está tornandose un poquitito oscuro, como un beige muy suave. Es un punto crítico, así que en las primeras tandas requerirá de constante inspección para calcular el tiempo justo.
+El punto justo es cuando la parte de abajo de las galletas se pone un poco oscura, como un bronceado. Es un punto crítico, así que en las primeras tandas requerirá de constante inspección para calcular el tiempo justo. Menos de ese punto sale un poco cruda, y de más ya con un sabor quemado.
+
+La galleta final tiene que tener la crocantez y textura de una típica galleta.
