@@ -1,42 +1,50 @@
 <template>
-	<main>
-		<Header />
-		<Nuxt id="main-nuxt" />
-		<!-- <Footer1 /> -->
-		<footer>
-			<span>//------------</span>
-			<span>+</span>
-		</footer>
-	</main>
+   <div class="container">
+      <div class="sub-container">
+
+         <Header />
+         <main>
+            <slot />
+         </main>
+      </div>
+      <ClientOnly>
+         <RadialBackground class="radial-background" />
+      </ClientOnly>
+   </div>
 </template>
 
-<script>
-export default {
-	transition: 'default',
-};
+<script setup>
+
+
 </script>
 
-<style lang="scss">
-.emoji {
-	height: 1em;
+<style scoped>
+.container {
+   display: grid;
+   height: 100vh;
+   overflow: hidden;
+}
+
+.sub-container {
+   padding-inline: clamp(1em, 0.5em + 2vw, 2.5em);
+   display: flex;
+   flex-direction: column;
+   grid-area: 1 / 1 / 2 / 2;
+   overflow: auto;
+   overflow-x: hidden;
+
+}
+
+.radial-background {
+   grid-area: 1 / 1 / 2 / 2;
+   z-index: -1;
 }
 
 main {
-	margin-inline: clamp(1rem, 5vw, 4rem);
-	margin-block: 2rem;
-	min-height: calc(100vh - 4rem);
-	display: flex;
-	flex-flow: column;
-}
+   padding-block: 1.5em;
+   flex-grow: 1;
+   flex-shrink: 0;
+   display: flex;
 
-#main-nuxt {
-	flex-grow: 1;
-}
-
-footer {
-	height: 8rem;
-	display: flex;
-	align-items: flex-end;
-	place-content: space-between;
 }
 </style>

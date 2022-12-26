@@ -8,19 +8,18 @@ cover:
 alt: Flan
 ---
 
+<div>
+
+# Facturas
+
 ## Preparación
-
-<div class="youtubeWrapper">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3BPFp2uPmRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-⭐ Ver el video al menos una primera vez es **NECESARIO**.
+⭐ Ver el [video](https://www.youtube.com/watch?v=3BPFp2uPmRk&feature=emb_title) al menos una primera vez es **NECESARIO**.
 
 Los pasos aquí son una referencia básica si ya tenés la experiencia. Hay etapas, como el armado del amasijo y el empaste, que es mucho mejor seguirlos con el video.
 
 Muchos detalles, secretos y cosas importantes allí. Muy buen material.
 
-#### Empaste
+### Empaste
 
 Vamos con el empaste primero, ya que deberá descansar un rato en el freezer/heladera al mismo tiempo que hacemos el amasijo.
 
@@ -35,6 +34,8 @@ Con la manteca pomada:
 El empaste tiene que estar un poquito duro. Si está muy blando, puede resultar en un desastre y explotar al momento de estirarlo junto a la masa.
 
 Recomiendo dejarlo en el freezer para que esté justo cuando terminamos el amasijo.
+
+</div>
 
 #### Amasijo
 

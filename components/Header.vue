@@ -1,21 +1,45 @@
 <template>
-	<header>
-		<nav>
-			<span>//</span>
-			<NuxtLink to="/recetas">recetas</NuxtLink>
-			<NuxtLink to="/blog">blog</NuxtLink>
-			<a href="https://alejandro9r.xyz/">hola!</a>
-		</nav>
-	</header>
+   <header>
+      <nav>
+         <ul>
+            <li><NuxtLink to="/notas">notas</NuxtLink></li>
+            <li><NuxtLink to="/recetas">recetas</NuxtLink></li>
+            <li><NuxtLink to="https://alejandro9r.xyz" target="_blank">_hola!</NuxtLink></li>
+         </ul>
+      </nav>
+      <span>↙</span>
+   </header>
 </template>
 
 <style scoped>
-nav {
-	margin-bottom: 1.2rem;
-	display: flex;
-	gap: calc(2rem - clamp(0.8rem, 2vw, 1rem));
+
+header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   font-weight: 500;
+   border-bottom: dashed;
+   position: sticky;
+   top: 0;
 }
-nav a {
-	color: white;
+
+nav ul {
+   display: flex;
+   list-style-type: none;
+   gap: 1.5em;
+   height: clamp(3em, 1.5em + 2vw, 4em);
+   align-items: center;
+   padding: 0;
+}
+a {
+   text-decoration: none;
+}
+a.router-link-active {
+   text-decoration: underline;
+}
+
+span {
+   font-weight: 700;
 }
 </style>
