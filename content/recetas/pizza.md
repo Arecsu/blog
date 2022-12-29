@@ -8,6 +8,31 @@ cover:
 alt: Pizza
 ---
 
+::Ingredients
+:::Subingredient{name="Masa"}
+- `500gr` Harina 000
+- `300gr` Agua fría de heladera (agregar más si es necesario de a poco)
+- `10gr` Sal rosada. Si no, sal marina.
+- `2gr` Levadura
+- `20gr` Aceite de oliva
+:::
+:::Subingredient{name="Salsa"}
+- Tomates triturados 🍅
+- Ajo en polvo. De no ser posible, un ajo cortado en trozitos pequeños.
+- Hojas de albahaca
+- Aceite de oliva
+- Sal
+- Pimienta
+:::
+:::Subingredient{name="Queso"}
+- `260g` Mozzarella fior di latte
+:::
+
+#intro
+🍕 *Para **2 pizzas** grandes*
+::
+
+::RecipeText
 ## Procedimiento
 
 La referencia que usé para hacer todo la saqué de [aquí, por Marcos Di Cesare](https://www.youtube.com/watch?v=gQ0l1hT8BnQ).
@@ -55,3 +80,4 @@ Para el horno, lo ideal sería tener un horno de barro o pizzero. No es común v
 ⭐ Si no tenés una piedra refractaria, usar un molde pizzero pero dado vuelta. Si. Colocar otras piezas de metal o moldes debajo. Eso creará una "piedra" en términos de dispersión del calor y la pizza se cocinará de forma más pareja. El sabor y la textura es mejor así, en mi opinión.
 
 Como último consejo: si el horno es muy débil, agregar solo la salsa a la masa. Llevar al horno, y una vez pasados unos minutos, agregar recién el queso. Esto evitará que el queso se queme y toda la pizza esté bien cocinada.
+::

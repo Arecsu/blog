@@ -19,7 +19,7 @@ onMounted(() => {
 
 <style scoped>
 div {
-   background: radial-gradient(circle at var(--mouse-x, 50%) 350%, rgba(255, 102, 0, 0.8) 0%, rgba(255, 0, 0, 0) 75%);
+   background: var(--bg-radial-gradient);
 
 }
 </style>

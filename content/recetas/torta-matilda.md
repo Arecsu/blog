@@ -2,11 +2,41 @@
 title: Torta Matilda
 ---
 
-<div class="youtubeWrapper">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1AP7UzWD4Gs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+::Ingredients
+:::Subingredient{name="Bizcochuelo"}
+- `200g` 🧈 Manteca pomada
+- `400g`  Azúcar
+- `1 cucharada` Extracto de vainilla
+- `100g` 🍫 Cacao amargo
+- `200g` ☕ Café preparado (un poco fuerte)
+- `4` 🥚 Huevos
+- `200g` Harina 0000
+- `15g` Polvo de hornear
+:::
+:::Subingredient{name="Crema de chocolate"}
+- `400g` 🍫 Chocolate cobertura semiamargo
+- `300g` Crema de leche
+- `200g` Dulce de leche
+- `100g` 🧈 Manteca pomada
+- `100g` ☕ Café preparado (un poco fuerte)
+- `50g` 🍫 Cacao amargo
+:::
+:::Subingredient{name="Falsa mousse"}
+- `150g` 🥛 Crema de leche
+- `300g` Crema de chocolate (de los ingredientes anteriores)
+:::
+:::Subingredient{name="Almíbar de entremets"}
+- `150g` Azúcar
+- `150g` Agua
+:::
+::
+
+::RecipeText
+
 
 ## Procedimiento
+
+📺 [**Referencia**](https://www.youtube.com/watch?v=1AP7UzWD4Gs)
 
 **Paso previo a todo**: Enmantecar los moldes (o de tener uno solo, bueno uno solo) para los bizcochuelos y llevarlos al freezer.
 
@@ -58,3 +88,4 @@ En el bowl de la batidora:
 1. Usar el almibar sobre las capas de bizcochuelos para incrementar su humedad
 2. Colocar la falsa mousse entre las capas
 3. Usar la crema de chocolate como cobertura
+::

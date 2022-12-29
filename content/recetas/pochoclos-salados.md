@@ -2,10 +2,24 @@
 title: Pochoclos salados
 titleAlt: Pochoclos salados - 2 recetas
 ---
+::Ingredients
+:::Subingredient{name="Al perejil"}
+- Manteca
+- Ajo en polvo
+- Perejil
+- Queso Parmesano, Reggianito o Sardo
+:::
 
-## Procedimiento
+:::Subingredient{name="Al curry"}
+- Manteca
+- Curry
+- Sal
+:::
+::
 
-### Tipo 1
+::RecipeText
+
+### Al perejil
 
 1. Cortar el perejil
 2. Calentar la manteca en una olla pequeña. La cantidad es la necesaria para cubrir todos los pochoclos.
@@ -16,9 +30,10 @@ titleAlt: Pochoclos salados - 2 recetas
 
 Lo ideal es que los pochoclos estén calientes al juntarlos con el queso, así se derritan y adhieran.
 
-### Tipo 2
+### Al curry
 
 1. Calentar la manteca en una olla pequeña. La cantidad es la necesaria para cubrir todos los pochoclos.
 2. Agregar curry y sal
 3. Mezclar y retirar del fuego
 4. Integrar con los pochoclos
+::

@@ -1,23 +1,57 @@
-html { font-family: "Inter", "system-ui"; }
+html {
+	font-family: "Inter", "system-ui";
+}
 
 @supports (font-variation-settings: normal) {
-  html { font-family: "Inter var", "system-ui"; }
+	html {
+		font-family: "Inter var", "system-ui";
+	}
 }
 
 :root {
 	--font-mono: 'Fira Mono', monospace;
-	--color-bg-0: rgb(202, 216, 228);
+	/* --font-headings-1: 'UnboundedVariable', serif; */
+	/* --font-serif: 'Noto Serif DisplayVariable', serif; */
+	/* --font-serif: 'Noto Serif', serif; */
+	--font-headings-1: 'Noto Serif', serif;
+	/* --font-headings-1: 'Noto Serif DisplayVariable', serif; */
+	--color-bg-0: rgb(252, 250, 245);
 	--color-bg-1: hsl(209, 36%, 86%);
 	--color-bg-2: hsl(224, 44%, 95%);
-	--color-theme-1: #ff3e00;
+	--color-theme-1: #ff5117;
 	--color-theme-2: #40b3ff;
 	--color-text: hsl(0, 0%, 10%);
 	--color-link: blue;
+   
+	--color-bg-quantity-subingredient: rgba(255, 153, 0, 0.091);
+
+	--color-subingredient-name: #ffa12e;
+	/* --color-subingredient-name: #ff3916; */
+	--color-sidebar: var(--color-subingredient-name);
+	--border-size-1: 1.5px;
+
+	/* --header-height: clamp(3em, 1.5em + 2vw, 4em); */
+	--header-height: 2.2rem;
+	/* --header-border-bottom: solid 1px var(--color-text); */
+	--header-border-bottom: dashed var(--border-size-1);
+	--sidebar-recipe-border: dashed var(--border-size-1);
+	--padding-1: clamp(1rem, 0.5rem + 2vw, 2.5rem);
+
+   --padding-inline-main: var(--padding-1);
+	--padding-block-main: 1.5rem;
+	--padding-inline-header: var(--padding-1);
+	/* --margin-inline-header: var(--padding-1); */
+
+
+
 	--pre-bg: hsl(0, 0%, 70%);
 	color: var(--color-text);
+	--bg-radial-gradient: radial-gradient(circle at var(--mouse-x, 50%) 200%, rgba(255, 162, 0, 0.292) 0%, rgba(255, 0, 0, 0) 75%);
+
 }
 
-body, header {
+body,
+header {
 	background-color: var(--color-bg-0);
 }
 
@@ -28,7 +62,14 @@ body, header {
 		--color-link: hsl(223, 100%, 74%);
 		--pre-bg: hsl(0, 0%, 20%);
 
-		--color-bg-0: hsl(0, 0%, 4%)
+		--color-bg-0: #0e141b;
+		--color-bg-quantity-subingredient: rgba(103, 154, 182, 0.116);
+
+		/* --color-subingredient-name: #2dafd3; */
+		--color-subingredient-name: #edac21;
+		--bg-radial-gradient: radial-gradient(circle at var(--mouse-x, 50%) 200%, #2535477b 0%, rgba(255, 0, 0, 0) 75%);
+
+
 	}
 }
 

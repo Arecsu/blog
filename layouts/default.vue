@@ -1,7 +1,6 @@
 <template>
    <div class="container">
       <div class="sub-container">
-
          <Header />
          <main>
             <slot />
@@ -26,7 +25,7 @@
 }
 
 .sub-container {
-   padding-inline: clamp(1em, 0.5em + 2vw, 2.5em);
+   /* padding-inline: clamp(1em, 0.5em + 2vw, 2.5em); */
    display: flex;
    flex-direction: column;
    grid-area: 1 / 1 / 2 / 2;
@@ -41,10 +40,11 @@
 }
 
 main {
-   padding-block: 1.5em;
+   padding-block: var(--padding-block-main);
    flex-grow: 1;
    flex-shrink: 0;
    display: flex;
+   padding-inline: var(--padding-inline-main);
 
 }
 </style>

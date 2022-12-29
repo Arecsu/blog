@@ -8,11 +8,61 @@ cover:
 alt: Flan
 ---
 
-<div>
+::Ingredients
 
-# Facturas
+:::Subingredient{name="Cosas"}
+- 🧻 Papel film
+- Tupper (opcional)
+- 🖌️ Pincel
+:::
 
-## Preparación
+:::Subingredient{name="Amasijo"}
+- `600g` 🌽 Harina 0000
+- `225ml` 🥛 Leche Entera
+- `10g` Levadura fresca
+- `10g` 🧂 Sal
+- `100g` Azúcar
+- `2` 🥚 Huevos
+- `10g` 🍯 Miel
+- `3gr` 🍦 Esencia de vainilla
+- Ralladura de `media` 🍊 naranja
+:::
+
+:::Subingredient{name="Empaste"}
+- `200g` 🧈 Manteca blanda
+:::
+
+:::Subingredient{name="Doradura"}
+- `2` 🥚 Huevos
+- `100gr` Leche
+- `1 cucharadita` 🍯 Miel
+- `1 pizca` Sal
+:::
+
+:::Subingredient{name="Almíbar"}
+- `300gr` Agua
+- `300gr` Azúcar
+- Jugo de `1` 🍊 naranja
+- `20g` o `1 buena cucharada` 🍯 Miel
+:::
+
+:::Subingredient{name="Crema Pastelera"}
+- `335ml` 🥛 Leche
+- `100g` Azúcar
+- `10g` Almidón de maiz
+- `27g` Harina 0000
+- `4` 🥚 Yemas
+- `A ojo` Esencia de vainilla
+:::
+
+:::Subingredient{name="Membrillo"}
+- `A ojo?` Dulce de membrillo.
+:::
+
+::
+
+::RecipeText
+## Proceso
 ⭐ Ver el [video](https://www.youtube.com/watch?v=3BPFp2uPmRk&feature=emb_title) al menos una primera vez es **NECESARIO**.
 
 Los pasos aquí son una referencia básica si ya tenés la experiencia. Hay etapas, como el armado del amasijo y el empaste, que es mucho mejor seguirlos con el video.
@@ -34,8 +84,6 @@ Con la manteca pomada:
 El empaste tiene que estar un poquito duro. Si está muy blando, puede resultar en un desastre y explotar al momento de estirarlo junto a la masa.
 
 Recomiendo dejarlo en el freezer para que esté justo cuando terminamos el amasijo.
-
-</div>
 
 #### Amasijo
 
@@ -144,3 +192,4 @@ La miel ayuda a que no se formen cristales (esos granitos de azúcar) en la prep
 3. Retirar
 
 A este punto, hay que esperar que salgan las facturas del horno. Dejarlas que se enfrien solo un poquito, que queden tibias. Y ahí aplicar el almíbar. Si no, absorberá mucho almíbar y quedarán muy pesadas (a algunos les gusta que sean así).
+::

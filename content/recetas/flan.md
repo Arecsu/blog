@@ -8,9 +8,21 @@ cover:
 alt: Flan
 ---
 
-## Procedimiento
+::Ingredients
+:::Subingredient{name="Flan"}
+- `1 litro` 🥛 Leche
+- `6` 🥚 Huevos completos
+- `6` 🥚 Yemas
+- `250g` Azúcar blanca
+- `A ojo` Esencia de Vainilla
+:::
+:::Subingredient{name="Caramelo"}
+- `A ojo` Azúcar blanca
+:::
+::
 
-### Flan
+::RecipeText
+## Proceso
 
 1. Mezclar los 6 huevos completos + las 6 yemas extras + 250gr de azúcar.
 2. Revolver con el **batidor** francés solo un poco, muy despacio para no meter aire en la mezcla y asi evitar agujeritos y grumos en la cocción. Que los alambres pasen entre los huevos simplemente.
@@ -48,3 +60,4 @@ Horno a temperatura muy baja. Alrededor de una hora a 150 grados.
 La forma de darse cuenta si un flan está listo es acercarse al horno, atravesar el flan con un cuchillo, y el cuchillo tiene que salir completamente limpio. Si no, le falta tiempo de cocción.
 
 Dejarlo enfriar a temperatura ambiente. Recomendado dejarlo un día antes de comerlo. Estas preparaciones se ponen mejores luego de pasados los días.
+::

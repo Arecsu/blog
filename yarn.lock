@@ -484,6 +484,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/noto-serif/-/noto-serif-4.5.11.tgz#b8c2a531e1d47e5d069138617a4c5f55b9eb106d"
   integrity sha512-Cq7M8oD0eNQbsQUJ6RVAi78Iw7DiVHrDKHkNyAW78jJ4UvIPNASApBsrhYvaExa9eD+Efd/kwhm+CWSImo5GtQ==
 
+"@fontsource/unbounded@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/unbounded/-/unbounded-4.5.0.tgz#81dcde86d8dc3d6b9233aba10ea46e8a5930f5c7"
+  integrity sha512-gwMoHGHl+qWrLtZ4kA/Zy8OoR4NQAjCAQArRTE0G/o7JDdSGa+PUlWgaer9krMONXZwIwnliQ9dAGjXD7UHTHw==
+
 "@ioredis/commands@^1.1.1":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@ioredis/commands/-/commands-1.2.0.tgz#6d61b3097470af1fdbbe622795b8921d42018e11"
