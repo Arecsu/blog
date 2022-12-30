@@ -1,6 +1,7 @@
 ---
 title: Facturas
 description: 🥐 de crema o membrillo
+icon: fluent-emoji:croissant
 cover:
   file: facturas.jpg
   width: 2000
@@ -61,8 +62,7 @@ alt: Flan
 
 ::
 
-::RecipeText
-## Proceso
+::RecipeText{:process="true"}
 ⭐ Ver el [video](https://www.youtube.com/watch?v=3BPFp2uPmRk&feature=emb_title) al menos una primera vez es **NECESARIO**.
 
 Los pasos aquí son una referencia básica si ya tenés la experiencia. Hay etapas, como el armado del amasijo y el empaste, que es mucho mejor seguirlos con el video.

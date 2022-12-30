@@ -42,6 +42,12 @@ p {
    margin-block: 1em;
 }
 
+ul li,
+ol li {
+   margin-bottom: .4em;
+
+}
+
 .recipe {
    display: grid;
    grid-template-areas:

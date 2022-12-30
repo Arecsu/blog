@@ -18,8 +18,4 @@ onMounted(() => {
 </script>
 
 <style scoped>
-div {
-   background: var(--bg-radial-gradient);
-
-}
 </style>

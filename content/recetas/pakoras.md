@@ -39,19 +39,19 @@ alt: Pakoras
 ::
 
 ::RecipeText
-## Preparación
+## Proceso
 
 📺 [**Referencia**](https://www.youtube.com/watch?v=nodZFwjLi8U)
 
-#### Ajo y jengibre
+### Ajo y jengibre
 
 Picar mismas cantidades de ajo y jengibre con un poquito de aceite para que se mantenga bien a lo largo de varios días.
 
-#### Hervir las espinacas
+### Hervir las espinacas
 
 Luego de realizar la cocida inglesa con las espinacas, dejarlas en un bowl. En lo mayor posible, sacar todo el líquido que se pueda de las espinacas y el bowl. De otra forma, nos podría hacer mas dificil calcular bien la consistencia de la masa a la hora de mezclar todo.
 
-#### Masa
+### Masa
 
 1. En un bowl las espinacas cocidas, y en otro el resto de los ingredientes menos el agua.
 
@@ -67,11 +67,11 @@ Si queda muy dura, corregir haciendo otra masa con un poco de harina y un huevo 
 
 3. Integrado todo, dejar descansar. Mientras, hacemos la salsa.
 
-#### Salsa
+### Salsa
 
 Pasar por una procesadora o mixeadora todos los ingredientes. La contextura tiene que ser medio aguada, un poquito densa.
 
-#### Fritura
+### Fritura
 
 1. En una olla, poner aceite. Bastante. Lo suficiente como para poder sumergir las pakoras. Calentarlo.
 2. Las pakoras tienen que ser como bolitas. Si están muy húmedas, algo malo ocurrió al momento de hacer la masa. De ser así, exprimirlas un poco porque si no se desarmarán en el aceite.

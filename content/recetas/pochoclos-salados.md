@@ -1,6 +1,7 @@
 ---
 title: Pochoclos salados
 titleAlt: Pochoclos salados - 2 recetas
+icon: fluent-emoji:popcorn
 ---
 ::Ingredients
 :::Subingredient{name="Al perejil"}

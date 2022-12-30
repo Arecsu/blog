@@ -1,6 +1,7 @@
 ---
 title: Pizza
 description: Una pizza clásica con 72 horas de fermentación ⏲️
+icon: fluent-emoji:pizza
 cover:
   file: pizza.webp
   width: 1152
@@ -28,12 +29,11 @@ alt: Pizza
 - `260g` Mozzarella fior di latte
 :::
 
-#intro
+#IngredientsIntro
 🍕 *Para **2 pizzas** grandes*
 ::
 
-::RecipeText
-## Procedimiento
+::RecipeText{:process="true"}
 
 La referencia que usé para hacer todo la saqué de [aquí, por Marcos Di Cesare](https://www.youtube.com/watch?v=gQ0l1hT8BnQ).
 

@@ -1,5 +1,6 @@
 ---
 title: Torta Matilda
+icon: fluent-emoji:chocolate-bar
 ---
 
 ::Ingredients
@@ -31,10 +32,7 @@ title: Torta Matilda
 :::
 ::
 
-::RecipeText
-
-
-## Procedimiento
+::RecipeText{:process="true"}
 
 📺 [**Referencia**](https://www.youtube.com/watch?v=1AP7UzWD4Gs)
 

@@ -1,6 +1,7 @@
 ---
 title: Flan
 description: Esencia de vainilla real y muchas yemas 🍮
+icon: fluent-emoji:custard
 cover:
   file: flan.jpg
   width: 2000
@@ -21,8 +22,7 @@ alt: Flan
 :::
 ::
 
-::RecipeText
-## Proceso
+::RecipeText{:process="true"}
 
 1. Mezclar los 6 huevos completos + las 6 yemas extras + 250gr de azúcar.
 2. Revolver con el **batidor** francés solo un poco, muy despacio para no meter aire en la mezcla y asi evitar agujeritos y grumos en la cocción. Que los alambres pasen entre los huevos simplemente.

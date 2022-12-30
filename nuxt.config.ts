@@ -2,9 +2,14 @@
 
 export default defineNuxtConfig({
    modules: [
-      '@nuxt/content'
+      '@vueuse/nuxt',
+      '@nuxt/content',
+      'nuxt-icon'
    ],
+   // ssr: false,
+
    css: [
+      // fonts
       "@/assets/fonts/inter/inter.css",
       "@fontsource/fira-mono",
       "@fontsource/noto-serif/400.css",
@@ -17,8 +22,10 @@ export default defineNuxtConfig({
       "@fontsource/noto-serif-display/variable-italic.css",
       // "@fontsource/noto-serif-display/variable-full-italic.css",
       // "@fontsource/noto-serif",
+
+      // global styles
       "@/assets/css/reset.css",
-      "@/assets/css/styles.css"
+      "@/assets/css/styles.css",
    ],
    content: {
       markdown: {

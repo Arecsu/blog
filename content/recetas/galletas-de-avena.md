@@ -1,6 +1,8 @@
 ---
 title: Galletas de avena con chips
 description: Con chips de chocolate. La mejor 🍪
+# icon: fluent-emoji-flat:cookie
+icon: fluent-emoji:cookie
 cover:
   file: galletas_de_avena.jpg
   width: 1516
@@ -20,9 +22,8 @@ alt: Galletas de Avena
 - `230g` 🍫 Chips de chocolate o chocolate picado
 - `Opcional 70g` 🌰 Nueces picadas
 ::
-::RecipeText
-## Proceso
 
+::RecipeText{:process="true"}
 #### Masa
 
 Mezclar en orden:
