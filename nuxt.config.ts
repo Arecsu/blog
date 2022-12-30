@@ -6,7 +6,7 @@ export default defineNuxtConfig({
       '@nuxt/content',
       'nuxt-icon'
    ],
-   // ssr: false,
+   ssr: false,
 
    css: [
       // fonts

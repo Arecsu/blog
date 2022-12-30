@@ -16,10 +16,8 @@
             </ul>
          </nav>
          <div class="header-right-side">
-            <ClientOnly>
                <DarkModeButton class="dark-mode-button"/>
-            </ClientOnly>
-            <span>↙</span>
+            <span class="header-arrow">↙</span>
          </div>
       </header>
    </div>
@@ -55,6 +53,7 @@ header {
    align-items: center;
    justify-content: space-between;
    overflow: hidden;
+   height: var(--header-height);
    font-weight: 500;
    /* border-bottom: dashed; */
    border-bottom: var(--header-border-bottom, none);
@@ -66,10 +65,9 @@ nav ul {
    display: flex;
    list-style-type: none;
    gap: 1.5em;
-   height: var(--header-height);
    align-items: center;
    padding: 0;
-   transform: translateY(.2em)
+   transform: translateY(.1em)
 }
 
 a {
@@ -81,10 +79,12 @@ a.router-link-active {
 }
 
 .dark-mode-button {
-   margin-right: 3rem;
+   margin-right: 1rem;
 }
 
-span {
+.header-arrow {
    font-weight: 700;
+   font-size: 1.3em;
+   transform: translateY(-.04em)
 }
 </style>

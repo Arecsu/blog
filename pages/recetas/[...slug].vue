@@ -32,6 +32,7 @@ const recipe = await queryContent('recetas').where({ _path: route.path }).findOn
   width: auto;
   font-size: clamp(1.3em, 0.5em + 1vw, 1.6em);
   padding-block: 1.5em;
+  color: var(--color-subingredient-name);
 
   margin-left: calc(var(--padding-inline-main) * -1);
   position: sticky;

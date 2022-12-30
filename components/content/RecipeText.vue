@@ -23,4 +23,9 @@ defineProps({
    grid-area: three;
 
 }
+
+.recipe-text ul li,
+.recipe-text ol li {
+   margin-bottom: .4em;
+}
 </style>
