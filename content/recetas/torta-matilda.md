@@ -3,8 +3,8 @@ title: Torta Matilda
 icon: fluent-emoji:chocolate-bar
 ---
 
-::Ingredients
-:::Subingredient{name="Bizcochuelo"}
+::RecipeIngredients
+:::RecipeSubingredient{name="Bizcochuelo"}
 - `200g` 🧈 Manteca pomada
 - `400g`  Azúcar
 - `1 cucharada` Extracto de vainilla
@@ -14,7 +14,7 @@ icon: fluent-emoji:chocolate-bar
 - `200g` Harina 0000
 - `15g` Polvo de hornear
 :::
-:::Subingredient{name="Crema de chocolate"}
+:::RecipeSubingredient{name="Crema de chocolate"}
 - `400g` 🍫 Chocolate cobertura semiamargo
 - `300g` Crema de leche
 - `200g` Dulce de leche
@@ -22,17 +22,17 @@ icon: fluent-emoji:chocolate-bar
 - `100g` ☕ Café preparado (un poco fuerte)
 - `50g` 🍫 Cacao amargo
 :::
-:::Subingredient{name="Falsa mousse"}
+:::RecipeSubingredient{name="Falsa mousse"}
 - `150g` 🥛 Crema de leche
 - `300g` Crema de chocolate (de los ingredientes anteriores)
 :::
-:::Subingredient{name="Almíbar de entremets"}
+:::RecipeSubingredient{name="Almíbar de entremets"}
 - `150g` Azúcar
 - `150g` Agua
 :::
 ::
 
-::RecipeText{:process="true"}
+::RecipeProcess{:process="true"}
 
 📺 [**Referencia**](https://www.youtube.com/watch?v=1AP7UzWD4Gs)
 

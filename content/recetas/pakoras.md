@@ -9,8 +9,8 @@ cover:
 alt: Pakoras
 ---
 
-::Ingredients
-:::Subingredient{name="Masa"}
+::RecipeIngredients
+:::RecipeSubingredient{name="Masa"}
 - `3 partes` Espinacas ([cocidas a la inglesa](https://www.youtube.com/watch?v=V7udYC1FDQU))
 - `1 parte` Harina de garbanzos
 - `1` Huevo
@@ -24,7 +24,7 @@ alt: Pakoras
 - Una mezcla de ajo y jengibre (ver preparación)
 - Agua
 :::
-:::Subingredient{name="Salsa"}
+:::RecipeSubingredient{name="Salsa"}
 - Yogurt natural
 - Pepino
 - Menta
@@ -33,12 +33,12 @@ alt: Pakoras
 - La mezcla de ajo y jengibre mencionada anteriormente
 - Sal
 :::
-:::Subingredient{name="Fritura"}
+:::RecipeSubingredient{name="Fritura"}
 - Aceite
 :::
 ::
 
-::RecipeText
+::RecipeProcess
 ## Proceso
 
 📺 [**Referencia**](https://www.youtube.com/watch?v=nodZFwjLi8U)

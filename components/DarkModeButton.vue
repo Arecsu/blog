@@ -1,5 +1,5 @@
 <template>
-      <button v-tippy="{ content: `${themeState}` }" class="button-no-style" @click="next()">
+      <button v-tippy="{ content: `${themeState}`, placement: 'bottom-start' }" class="button-no-style" @click="next()">
          <Transition name="slide-up">
             <Icon v-if="isActuallyDark() === 'dark'" name="fluent:weather-moon-16-regular" size="1.1em" />
             <Icon v-else name="fluent:weather-sunny-16-filled" size="1.1em" />

@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-   font-size: 3.998rem;
+   font-size: clamp(3rem, 5vw, 3.998rem);
 }
 
 h3 {
@@ -50,6 +50,7 @@ p {
       "three two";
    column-gap: 10rem;
    grid-template-columns: auto clamp(20rem, 0rem + 40vw, 56rem);
+   align-self: flex-start;
 }
 
 @media (max-width: 90rem) {
@@ -59,6 +60,8 @@ p {
          "two"
          "three";
       grid-template-columns: auto;
+      row-gap: 2rem;
+      align-self: stretch;
    }
 }
 

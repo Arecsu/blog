@@ -27,7 +27,8 @@
 <style scoped>
 .header-container {
    display: grid;
-	background-color: var(--color-bg-0);
+	background-color: var(--color-header-bg);
+      backdrop-filter: blur(14px);
    position: sticky;
    top: 0;
    z-index: 1;

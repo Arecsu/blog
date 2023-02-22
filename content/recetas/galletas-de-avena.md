@@ -10,7 +10,7 @@ cover:
 alt: Galletas de Avena
 ---
 
-::Ingredients
+::RecipeIngredients
 - `380g` Harina leudante
 - `140g` Avena
 - `4gr` 🧂 Sal
@@ -23,7 +23,7 @@ alt: Galletas de Avena
 - `Opcional 70g` 🌰 Nueces picadas
 ::
 
-::RecipeText{:process="true"}
+::RecipeProcess{:process="true"}
 #### Masa
 
 Mezclar en orden:

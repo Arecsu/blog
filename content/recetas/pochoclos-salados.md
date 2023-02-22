@@ -3,22 +3,22 @@ title: Pochoclos salados
 titleAlt: Pochoclos salados - 2 recetas
 icon: fluent-emoji:popcorn
 ---
-::Ingredients
-:::Subingredient{name="Al perejil"}
+::RecipeIngredients
+:::RecipeSubingredient{name="Al perejil"}
 - Manteca
 - Ajo en polvo
 - Perejil
 - Queso Parmesano, Reggianito o Sardo
 :::
 
-:::Subingredient{name="Al curry"}
+:::RecipeSubingredient{name="Al curry"}
 - Manteca
 - Curry
 - Sal
 :::
 ::
 
-::RecipeText
+::RecipeProcess
 
 ### Al perejil
 

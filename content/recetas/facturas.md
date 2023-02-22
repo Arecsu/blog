@@ -9,60 +9,60 @@ cover:
 alt: Flan
 ---
 
-::Ingredients
+::RecipeIngredients
 
-:::Subingredient{name="Cosas"}
+:::RecipeSubingredient{name="Cosas"}
 - 🧻 Papel film
 - Tupper (opcional)
 - 🖌️ Pincel
 :::
 
-:::Subingredient{name="Amasijo"}
-- `600g` 🌽 Harina 0000
-- `225ml` 🥛 Leche Entera
-- `10g` Levadura fresca
-- `10g` 🧂 Sal
-- `100g` Azúcar
+:::RecipeSubingredient{name="Amasijo"}
+- `600 gr` 🌽 Harina 0000
+- `225 ml` 🥛 Leche Entera
+- `10 gr` Levadura fresca
+- `10 gr` 🧂 Sal
+- `100 gr` Azúcar
 - `2` 🥚 Huevos
-- `10g` 🍯 Miel
-- `3gr` 🍦 Esencia de vainilla
+- `10 gr` 🍯 Miel
+- `3 gr` 🍦 Esencia de vainilla
 - Ralladura de `media` 🍊 naranja
 :::
 
-:::Subingredient{name="Empaste"}
-- `200g` 🧈 Manteca blanda
+:::RecipeSubingredient{name="Empaste"}
+- `200 gr` 🧈 Manteca blanda
 :::
 
-:::Subingredient{name="Doradura"}
+:::RecipeSubingredient{name="Doradura"}
 - `2` 🥚 Huevos
-- `100gr` Leche
+- `100 gr` Leche
 - `1 cucharadita` 🍯 Miel
 - `1 pizca` Sal
 :::
 
-:::Subingredient{name="Almíbar"}
-- `300gr` Agua
-- `300gr` Azúcar
+:::RecipeSubingredient{name="Almíbar"}
+- `300 gr` Agua
+- `300 gr` Azúcar
 - Jugo de `1` 🍊 naranja
-- `20g` o `1 buena cucharada` 🍯 Miel
+- `20 gr` o `1 buena cucharada` 🍯 Miel
 :::
 
-:::Subingredient{name="Crema Pastelera"}
-- `335ml` 🥛 Leche
-- `100g` Azúcar
-- `10g` Almidón de maiz
-- `27g` Harina 0000
+:::RecipeSubingredient{name="Crema Pastelera"}
+- `335 ml` 🥛 Leche
+- `100 gr` Azúcar
+- `10 gr` Almidón de maiz
+- `27 gr` Harina 0000
 - `4` 🥚 Yemas
 - `A ojo` Esencia de vainilla
 :::
 
-:::Subingredient{name="Membrillo"}
+:::RecipeSubingredient{name="Membrillo"}
 - `A ojo?` Dulce de membrillo.
 :::
 
 ::
 
-::RecipeText{:process="true"}
+::RecipeProcess{:process="true"}
 ⭐ Ver el [video](https://www.youtube.com/watch?v=3BPFp2uPmRk&feature=emb_title) al menos una primera vez es **NECESARIO**.
 
 Los pasos aquí son una referencia básica si ya tenés la experiencia. Hay etapas, como el armado del amasijo y el empaste, que es mucho mejor seguirlos con el video.

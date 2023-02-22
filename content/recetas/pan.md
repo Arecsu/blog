@@ -1,3 +1,14 @@
+---
+title: Pan con semillas de masa madre
+description: Una pizza clásica con 72 horas de fermentación ⏲️
+icon: fluent-emoji:bread
+cover:
+  file: pizza.webp
+  width: 1152
+  height: 768
+alt: Pizza
+---
+
 ## Ingredientes
 
 **→ Para 2 panes**

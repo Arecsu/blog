@@ -1,24 +1,25 @@
 ---
-title: Flan
-description: Esencia de vainilla real y muchas yemas 🍮
-icon: fluent-emoji:custard
-cover:
-  file: flan.jpg
-  width: 2000
-  height: 1500
-alt: Flan
+title: Mantecados y Polvorones
+# icon: fluent-emoji:cookie
 ---
 
 ::RecipeIngredients
-:::RecipeSubingredient{name="Flan"}
-- `1 litro` 🥛 Leche
-- `6` 🥚 Huevos completos
-- `6` 🥚 Yemas
-- `250g` Azúcar blanca
-- `A ojo` Esencia de Vainilla
+:::RecipeSubingredient{name="Mantecado"}
+- `500 gr` 🥛 Harina 000
+- `250 gr` Grasa vacuna
+- `250 gr` Azúcar
+- `6` 🥚 Huevos
+- `10 gr` Bicarbonato de amonio
+- `?` Esencia de Vainilla
+- `?` Esencia de limón
+- `?` Colorante líquido
 :::
-:::RecipeSubingredient{name="Caramelo"}
-- `A ojo` Azúcar blanca
+:::RecipeSubingredient{name="Polvorone"}
+- `50 gr` Cacao amargo
+- `?` Colorante caramelo
+:::
+:::RecipeSubingredient{name="Etc"}
+- → Cortante de 8cm de diámetro
 :::
 ::
 

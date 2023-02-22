@@ -16,7 +16,8 @@ html[theme="light"] {
 	/* --font-serif: 'Noto Serif', serif; */
 	--font-headings-1: 'Noto Serif', serif;
 	/* --font-headings-1: 'Noto Serif DisplayVariable', serif; */
-	--color-bg-0: rgb(252, 250, 245);
+	--color-bg-0: rgb(251, 249, 243);
+	--color-header-bg: rgba(252, 250, 245, 0.7);
 	--color-bg-1: hsl(209, 36%, 86%);
 	--color-bg-2: hsl(224, 44%, 95%);
 	--color-fg-1: hsl(0, 0%, 0%);
@@ -74,7 +75,8 @@ html[theme="dark"] {
 	--color-link: hsl(223, 100%, 74%);
 	--pre-bg: hsl(0, 0%, 20%);
 
-	--color-bg-0: #0e141b;
+	--color-bg-0: rgb(14, 20, 27);
+	--color-header-bg: rgb(14, 20, 27, 0.84);
 	--color-fg-1: hsl(0, 0%, 100%);
 	--color-bg-quantity-subingredient: rgba(103, 154, 182, 0.116);
 
