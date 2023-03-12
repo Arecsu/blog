@@ -1,6 +1,6 @@
 ---
 title: Tarta de Higo
-icon: fluent-emoji:shortcake
+# icon: fluent-emoji:shortcake
 cover:
   file: facturas.jpg
   width: 2000
@@ -11,7 +11,7 @@ alt: Tarta de Higo
 
 ::RecipeIngredients
 :::RecipeSubingredient{name="Nota"}
-Esta receta es para molde de _X_ diámetro y Z alto.
+Esta receta es para molde de 27cm de diámetro y 4cm de alto.
 
 Adaptar los ingredientes de acuerdo a los distintos tamaños.
 :::
@@ -28,11 +28,10 @@ Adaptar los ingredientes de acuerdo a los distintos tamaños.
 :::RecipeSubingredient{name="Crema chantilly"}
 - `300gr` Crema doble de leche (mayor a 34% grasa)
 - `60gr` Azúcar impalpable o azúcar
-- `15gr` Leche en polvo
 :::
 
 :::RecipeSubingredient{name="Higos en almíbar"}
-Se puede usar higos ya en almíbar, o hacerlos con:
+Se puede comprar higos ya en almíbar, o hacerlos con:
 
 - `100gr` Higos
 - `75gr` Azúcar
@@ -47,8 +46,80 @@ Se puede usar higos ya en almíbar, o hacerlos con:
 :::
 
 :::RecipeSubingredient{name="Etc"}
+- Colador tamizador
 - Cerezas en almíbar
 - Dulce de leche
+- Papel film
+- Papel de aluminio
+- Porotos o algo para hacer peso sobre la masa en el horno
 :::
+
+::
+
+::RecipeProcess{:process="true"}
+
+Inspirado por una tarta producida por Tello, aquí en Tucumán, Argentina. De hecho, es la misma. Probablemente más rica 🤗
+
+### Masa sablée
+
+La manteca debe estar pomada. Lo ideal es que alcance ese punto estando en temperatura ambiente.
+
+Si no, se puede ayudar un poco con un microondas y setearlo en 10 segundos. Comprobar y seguir si falta un poco más. No tiene que derretirse. Solo ablandarse.
+
+Importante NO USAR manteca derretida, en estado líquido. La masa no va a salir bien así. Lo digo por experiencia 🙃
+
+Luego, en un bowl, mezclar en orden:
+
+1. Manteca
+2. Azúcar impalpable
+3. Las yemas y la esencia de vainilla
+
+Una vez incorporados los ingredientes:
+
+4. Pasar la harina y sal por el tamizador hacia el bowl.
+5. Mezclar hasta que no quede ningun rastro de harina visible en la masa, pero no más que eso. De lo contrario, trabajaría más el gluten y haría la masa más elástica.
+
+Colocamos la masa sobre un papel film. La aplastamos para que quede plana y con un grosor un poco más alto que el final que llevará en el molde.
+
+La cubrimos completamente con el papel film. Llevar a la heladera por ⌚ 30 minutos. Necesitamos que esté más fría y lo suficientemente dura como para que sea amasable con un palo de amasar.
+
+### Al molde
+
+Sacamos la masa de la heladera. La estiramos con el palo de amasar sobre una superficie un poquito enharinada o sobre el mismo papel film.
+
+Si es sobre el mismo film, lo podemos usar para llevar la masa al molde más fácilmente.
+
+Ya con la masa en el grosor y tamaño adecuado, llevar al molde. Con sumo cuidado, porque es bastante frágil. 
+
+Si en el proceso se corta un poco, se puede tratar de unificar esas partes ya dentro del molde. Pero si está muy cortada, lo mejor es volver a unir todo y estirar de nuevo fuera del molde.
+
+Con las manos, acomodar la masa a los bordes y fondo del molde. También, para dejar la masa lo más prolija posible.
+
+Si sobra masa, se puede reutilizar para hacer galletitas luego.
+
+Una vez terminado, llevar al freezer a congelar hasta que sea una piedra. Siempre que necesitamos cocinar una masa que lleve mucha manteca y no tiene que perder la forma en el horno, hay que hacer este proceso.
+
+### Al horno
+
+Pasado un tiempo en el freezer, retirar y colocar papel aluminio sobre la masa en el molde, cubriendola completamente.
+
+Necesitamos algo que tome la forma del molde y haga peso contra la masa para que ésta no se contraiga en el horno. 
+
+Personalmente, me gusta usar porotos. Los tengo guardados y los uso solo para estos procesos. Se pueden volver a reutilizar muchas veces y no interfieren con el sabor ni nada en el proceso.
+
+Agregar los porotos sobre el molde ya con el papel aluminio. 
+
+Llevar a un horno medio durante 30 min, tal vez un poco más. El tiempo depende de como funciona cada horno. Si es la primera vez, se puede controlar cada tanto checkeando el color de los bordes. Con los bordes de color beige, la masa entera puede que ya esté lista.
+
+La masa final no debe ser crocante, ni tampoco estar cruda. Es una línea fina entre ambos puntos.
+
+Retirar del horno y dejar enfriar a temperatura ambiente.
+
+### Crema chantilly
+
+### Nueces caramelizadas
+
+### Preparación de la tarta
+
 
 ::

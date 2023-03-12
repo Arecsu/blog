@@ -1,9 +1,9 @@
 <template>
-    <ul>
-      <li v-for="{ _path: slug, title } in blogPosts" :key="slug">
-        <NuxtLink :to="slug">{{ title }}</NuxtLink>
-      </li>
-    </ul>
+  <div class="recipes-list-container">
+    <NuxtLink v-for="{ _path: slug, title } in blogPosts" :key="slug" :to="slug">
+      <span>{{ title }}</span>
+    </NuxtLink>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -12,7 +12,7 @@
 // data is the destructuring and blogPosts the name of the new variable
 // same as `const blogPosts = ...find()).data`
 const { data: blogPosts } = await useAsyncData('recetas', () => {
-  return queryContent('recetas').sort({ title: 1 }).find()
+  return queryContent('recetas').where({ draft: { $ne: true } }).sort({ title: 1 }).find()
 })
 
 
@@ -43,14 +43,47 @@ const { data: asd } = await useAsyncData('recetasDulces', () => {
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+  padding-bottom: 0.1em;
+  font-weight: 400;
+  text-transform: lowercase;
+  box-sizing: border-box;
+}
+
+a {
+  background:
+    linear-gradient(to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)),
+    linear-gradient(to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1));
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+.recipes-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1.3em;
+  align-items: flex-start;
+}
 
 ul {
   list-style: none;
   padding: 0;
-  font-size: 1.3em;
 }
+
 li {
   margin-bottom: 0.5em;
 }
-
 </style>

@@ -17,6 +17,7 @@ const recipe = await queryContent('recetas').where({ _path: route.path }).findOn
 </script>
 
 <style scoped>
+
 .recipe-layout {
   display: flex;
   flex-direction: row;

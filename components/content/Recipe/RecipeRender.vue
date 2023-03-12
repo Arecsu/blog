@@ -37,6 +37,9 @@ h5 {
    font-size: 1.414rem;
 }
 
+ol { 
+   padding-left: 1.22em;
+}
 
 p {
    margin-block: 1em;
@@ -46,7 +49,8 @@ p {
 .recipe {
    display: grid;
    grid-template-areas:
-      "one two"
+      /* "one two" */
+      "three two"
       "three two";
    column-gap: 10rem;
    grid-template-columns: auto clamp(20rem, 0rem + 40vw, 56rem);

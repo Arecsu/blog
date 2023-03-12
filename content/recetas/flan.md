@@ -33,7 +33,7 @@ La mezcla tiene que estar líquida, que no tenga estructura fuerte. Levantar el 
 
 ### Caramelo
 
-🔗 Referencia importante para hacer el caramelo → [aquí](https://www.youtube.com/watch?v=57GcDecpZi4).
+<!-- 🔗 Referencia importante para hacer el caramelo → [aquí](https://www.youtube.com/watch?v=57GcDecpZi4). -->
 
 Usar una sartén. Poner el fuego fuerte al principio. Azúcar común, no mucho, ponerle sobre la sartén.
 
