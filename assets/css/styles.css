@@ -25,6 +25,15 @@ html[theme="light"] {
 	--color-theme-2: #40b3ff;
 	--color-text: hsl(0, 0%, 10%);
 	--color-link: blue;
+	--color-underline-link: 
+		linear-gradient(to right,
+			rgba(100, 200, 200, 1),
+			rgba(100, 200, 200, 1));
+   --color-underline-link-hover: 
+		linear-gradient(to right,
+		rgb(70, 87, 175),
+			rgb(20, 58, 185),
+			rgb(118, 39, 244));
 
 	--transition-1: 0.15s;
 
@@ -53,7 +62,7 @@ html[theme="light"] {
 
 	--pre-bg: hsl(0, 0%, 70%);
 	color: var(--color-text);
-	--bg-radial-gradient: radial-gradient(circle at var(--mouse-x, 50%) 200%, rgba(255, 162, 0, 0.292) 0%, rgba(255, 0, 0, 0) 75%);
+	--bg-radial-gradient: radial-gradient(circle at var(--mouse-x, 50%) 190%, rgba(255, 162, 0, 0.452) 0%, rgba(255, 0, 0, 0) 70%);
 
 }
 

@@ -21,7 +21,7 @@
 .container {
    display: grid;
    height: 100vh;
-   overflow: hidden;
+   /* overflow: hidden; */
 }
 
 .sub-container {
@@ -29,14 +29,19 @@
    display: flex;
    flex-direction: column;
    grid-area: 1 / 1 / 2 / 2;
-   overflow: auto;
-   overflow-x: hidden;
+   /* overflow: auto; */
+   /* overflow-x: hidden; */
 
 }
 
 .radial-background {
    grid-area: 1 / 1 / 2 / 2;
    z-index: -1;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
 }
 
 main {

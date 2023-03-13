@@ -7,6 +7,7 @@ cover:
   width: 1152
   height: 768
 alt: Pizza
+draft: true
 ---
 
 ## Ingredientes

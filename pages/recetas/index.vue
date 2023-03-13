@@ -53,13 +53,8 @@ a {
 
 a {
   background:
-    linear-gradient(to right,
-      rgba(100, 200, 200, 1),
-      rgba(100, 200, 200, 1)),
-    linear-gradient(to right,
-      rgba(255, 0, 0, 1),
-      rgba(255, 0, 180, 1),
-      rgba(0, 100, 200, 1));
+    var(--color-underline-link),
+    var(--color-underline-link-hover);
   background-size: 100% 3px, 0 3px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;

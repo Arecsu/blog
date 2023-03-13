@@ -1,11 +1,7 @@
 ---
-title: Tarta de Higo
+title: Tarta de higo
 # icon: fluent-emoji:shortcake
-cover:
-  file: facturas.jpg
-  width: 2000
-  height: 1500
-alt: Tarta de Higo
+alt: Tarta de higo
 ---
 
 
@@ -46,9 +42,9 @@ Se puede comprar higos ya en almíbar, o hacerlos con:
 :::
 
 :::RecipeSubingredient{name="Etc"}
-- Colador tamizador
 - Cerezas en almíbar
 - Dulce de leche
+- Colador tamizador
 - Papel film
 - Papel de aluminio
 - Porotos o algo para hacer peso sobre la masa en el horno
@@ -72,7 +68,7 @@ Luego, en un bowl, mezclar en orden:
 
 1. Manteca
 2. Azúcar impalpable
-3. Las yemas y la esencia de vainilla
+3. Las yemas y esencia de vainilla
 
 Una vez incorporados los ingredientes:
 
@@ -117,9 +113,25 @@ Retirar del horno y dejar enfriar a temperatura ambiente.
 
 ### Crema chantilly
 
+[El procedimiento está aquí](/recetas/crema-chantilly).
+
+Las proporciones de los ingredientes son las listadas en esta receta.
+
 ### Nueces caramelizadas
 
-### Preparación de la tarta
+1. En una sartén, vertir azúcar y un poco de agua. Calentar.
+2. Luego, agregar las nueces
+3. Mover constantemente hasta que el azúcar se seque y se haga polvo
+4. Seguir moviendo hasta que se derrita el azúcar y se abrillanten las nueces
+5. Retirar las nueces del fuego a una superficie
+6. Esperar a que se enfríen y triturar un poco con un martillo de cocina. Se pueden colocar las nueces sobre una bolsa o algo de tela para que sea mas fácil romperlas en partes pequeñas y que no se dispersen.
 
+### Relleno de la tarta
+
+Retirar la masa del molde. Yo lo suelo hacer luego de agregar el dulce de leche, para evitar que se rompa.
+
+1. Ahora, para preparar la tarta, primero va el dulce de leche sobre la masa
+2. Luego la crema chantilly
+3. Y por último, las nueces, higos en almíbar y cerezas
 
 ::

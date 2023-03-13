@@ -55,6 +55,7 @@ p {
    column-gap: 10rem;
    grid-template-columns: auto clamp(20rem, 0rem + 40vw, 56rem);
    align-self: flex-start;
+   margin-bottom: 8rem;
 }
 
 @media (max-width: 90rem) {
