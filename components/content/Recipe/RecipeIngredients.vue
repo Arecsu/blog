@@ -33,25 +33,26 @@
 
 .subingredients :deep(ul) {
    list-style: none;
-   padding: 0
+   padding: 0;
 }
 
 .subingredients :deep(li) {
    margin-bottom: .7em;
 }
 
-/*
-.subingredient :deep(li:before) {
+.subingredients :deep(li:before) {
    content: '- ';
+   opacity: .7;
 }
-*/
 
 .subingredients :deep(code) {
    /* background: red; */
    font-family: inherit;
    background-color: var(--color-bg-quantity-subingredient);
-   padding: .15em .35em;
-   font-size: .9em;
+   font-weight: 500;
+   padding: .20em .35em;
+   font-size: .88em;
    border-radius: .2em;
 }
+
 </style>

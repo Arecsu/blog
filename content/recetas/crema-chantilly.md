@@ -16,7 +16,7 @@ icon: fluent-emoji:soft-ice-cream
 ### Sobre los ingredientes
 
 - Se puede usar crema de leche común con menos porcentajes grasos. Lo que cambiará es la firmeza de la crema. A mayor porcentaje graso, mayor firmeza.
-- Los diferentes azúcares no cambian significativamente el sabor, si no la textura. A veces el azúcar común no se desarma completamente. Puede que no sea de mucha importancia.
+- Los diferentes azúcares no cambian significativamente el sabor, si no la textura. A veces el azúcar común no se desarma completamente. Vos mandale igual con el azúcar que tengas :\)
 - La esencia de vainilla da un poquito más de sabor a la crema. En algunas preparaciones, es mejor no usarla para dar un sabor más neutral y balanceado con el resto de los ingredientes (como en la [tarta de higo](/recetas/tarta-de-higo))
 - Super recomendado conseguir extracto real de vainilla. Las esencias _artificiales_ de vainilla no tienen nada que ver con la real vainilla.
 

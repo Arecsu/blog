@@ -25,21 +25,21 @@ html[theme="light"] {
 	--color-theme-2: #40b3ff;
 	--color-text: hsl(0, 0%, 10%);
 	--color-link: blue;
-	--color-underline-link: 
+	--color-underline-link:
 		linear-gradient(to right,
 			rgba(100, 200, 200, 1),
 			rgba(100, 200, 200, 1));
-   --color-underline-link-hover: 
+	--color-underline-link-hover:
 		linear-gradient(to right,
-		rgb(70, 87, 175),
+			rgb(70, 87, 175),
 			rgb(20, 58, 185),
 			rgb(118, 39, 244));
 
 	--transition-1: 0.15s;
 
-	--color-bg-quantity-subingredient: rgba(255, 153, 0, 0.091);
+	--color-bg-quantity-subingredient: rgba(255, 153, 0, 0.151);
 
-	--color-subingredient-name: #ffa12e;
+	--color-subingredient-name: #ff962e;
 	/* --color-subingredient-name: #ff3916; */
 	--border-size-1: 1.5px;
 
@@ -87,11 +87,21 @@ html[theme="dark"] {
 	--color-bg-0: rgb(14, 20, 27);
 	--color-header-bg: rgb(14, 20, 27, 0.84);
 	--color-fg-1: hsl(0, 0%, 100%);
-	--color-bg-quantity-subingredient: rgba(103, 154, 182, 0.116);
+	--color-bg-quantity-subingredient: rgba(19, 82, 116, 0.233);
+
+	--color-underline-link:
+		linear-gradient(to right,
+			rgb(200, 144, 47),
+			rgb(200, 144, 47));
+	--color-underline-link-hover:
+		linear-gradient(to right,
+			rgb(220, 35, 35),
+			rgb(205, 52, 64),
+			rgb(225, 38, 97));
 
 	/* --color-subingredient-name: #2dafd3; */
 	--color-subingredient-name: #edac21;
-	--bg-radial-gradient: radial-gradient(circle at var(--mouse-x, 50%) 200%, #2535477b 0%, rgba(255, 0, 0, 0) 75%);
+	--bg-radial-gradient: radial-gradient(circle at var(--mouse-x, 50%) 190%, rgba(146, 18, 18, 0.361) 0%, rgba(255, 0, 0, 0) 70%);
 
 
 }

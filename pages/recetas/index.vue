@@ -7,6 +7,10 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'recetas',
+})
+
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 // data is the destructuring and blogPosts the name of the new variable
@@ -14,7 +18,6 @@
 const { data: blogPosts } = await useAsyncData('recetas', () => {
   return queryContent('recetas').where({ draft: { $ne: true } }).sort({ title: 1 }).find()
 })
-
 
 /*
 const data2 = await queryContent('recetas').find()

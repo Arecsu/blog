@@ -13,17 +13,23 @@
 <script setup>
 const route = useRoute()
 
+useContentHead({
+  head: {
+    titleTemplate: (title) => `${title.toLowerCase()} · a9r`,
+  }
+})
+
 const recipe = await queryContent('recetas').where({ _path: route.path }).findOne()
 </script>
 
 <style scoped>
-
 .recipe-layout {
   display: flex;
   flex-direction: row;
 }
 
-.recipe-layout, .recipe-container {
+.recipe-layout,
+.recipe-container {
   width: 100%;
 }
 

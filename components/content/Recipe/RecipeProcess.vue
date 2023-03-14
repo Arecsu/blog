@@ -11,7 +11,7 @@ defineProps({
 })
 </script>
 
-<style>
+<style lang="scss">
 .recipe-process-icon {
    transform: translateY(-.1em);
 }
@@ -25,8 +25,22 @@ defineProps({
    margin-top: 0;
 }
 
-.recipe-process ul li,
-.recipe-process ol li {
-   margin-bottom: .4em;
+.recipe-process {
+   ul {
+      list-style: none;
+   }
+
+   ul li {
+      text-indent: -0.7em;
+   }
+
+   ul li:before {
+      content: '- '
+   }
+   
+   ul li,
+   ol li {
+      margin-bottom: .8em;
+   }
 }
 </style>

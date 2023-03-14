@@ -2,49 +2,52 @@
    <ContentDoc class="recipe" tag="div" />
 </template>
 
-<style>
-h1,
-h2,
-h3,
-h4,
-h5 {
-   margin: 3rem 0 1.38rem;
-   font-family: var(--font-headings-1);
-   letter-spacing: -0.03em;
-   /* font-weight: 600; */
-   font-weight: 400;
-   line-height: 1.3;
-}
+<style lang="scss">
+.recipe {
+   h1,
+   h2,
+   h3,
+   h4,
+   h5 {
+      margin: 3rem 0 1.38rem;
+      font-family: var(--font-headings-1);
+      letter-spacing: -0.03em;
+      /* font-weight: 600; */
+      font-weight: 400;
+      line-height: 1.3;
+   }
 
-h1 {
-   margin-top: 0;
-   font-size: 5.653rem;
-}
+   h1 {
+      margin-top: 0;
+      font-size: 5.653rem;
+   }
 
-h2 {
-   font-size: clamp(3rem, 5vw, 3.998rem);
-}
+   h2 {
+      font-size: clamp(3rem, 5vw, 3.998rem);
+   }
 
-h3 {
-   font-size: 2.827rem;
-}
+   h3 {
+      font-size: 2.827rem;
+   }
 
-h4 {
-   font-size: 1.999rem;
-}
+   h4 {
+      font-size: 1.999rem;
+   }
 
-h5 {
-   font-size: 1.414rem;
-}
+   h5 {
+      font-size: 1.414rem;
+   }
 
-ol { 
-   padding-left: 1.22em;
-}
+   ul,
+   ol {
+      padding-left: 2em;
+   }
 
-p {
-   margin-block: 1em;
-}
 
+   p {
+      margin-block: 1em;
+   }
+}
 
 .recipe {
    display: grid;
