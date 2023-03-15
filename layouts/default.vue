@@ -7,6 +7,7 @@
          </main>
       </div>
       <ClientOnly>
+         <div class="noise-background"></div>
          <RadialBackground class="radial-background" />
       </ClientOnly>
    </div>
@@ -33,7 +34,7 @@
    /* overflow-x: hidden; */
 
 }
-
+.noise-background,
 .radial-background {
    grid-area: 1 / 1 / 2 / 2;
    z-index: -1;
@@ -42,6 +43,13 @@
    left: 0;
    right: 0;
    bottom: 0;
+}
+
+.noise-background {
+   background-image: url('/nnnoise.svg');
+   mix-blend-mode: plus-lighter;
+   background-repeat: repeat;
+   opacity: .12;
 }
 
 main {
