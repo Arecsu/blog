@@ -13,29 +13,29 @@ Adaptar los ingredientes de acuerdo a los distintos tamaños.
 :::
 
 :::RecipeSubingredient{name="Masa sablée"}
-- `300gr` Harina 0000
-- `180gr` Manteca
+- `300 gr` Harina 0000
+- `180 gr` Manteca
 - `3` Yemas
-- `120gr` Azúcar impalpable
+- `120 gr` Azúcar impalpable
 - `1 pizca` Sal
 - `1 cucharadita` Esencia de vainilla
 :::
 
 :::RecipeSubingredient{name="Crema chantilly"}
-- `300gr` Crema doble de leche (mayor a 34% grasa)
-- `60gr` Azúcar impalpable o azúcar
+- `300 gr` Crema doble de leche (mayor a 34% grasa)
+- `60 gr` Azúcar impalpable o azúcar
 :::
 
 :::RecipeSubingredient{name="Higos en almíbar"}
 Se puede comprar higos ya en almíbar, o hacerlos con:
 
-- `100gr` Higos
-- `75gr` Azúcar
+- `100 gr` Higos
+- `75 gr` Azúcar
 - Agua
 :::
 
 :::RecipeSubingredient{name="Nueces caramelizadas"}
-- `40gr` Nueces sin cáscara
+- `50 gr` Nueces sin cáscara
 - Azúcar
 - Agua
 - Manteca
