@@ -7,77 +7,82 @@ alt: Macarons
 
 ::RecipeIngredients
 
-:::RecipeSubingredient{name="Masa"}
-- `200gr` Harina 0000
-- `300gr` Almidón de maíz
-- `3` Yemas
-- `1` Clara
-- `150g` Azúcar
-- `1/2 cucharadita` Bicarbonato de sodio
-- `1 cucharadita` Esencia de vainilla
-- `1 y 1/2 cucharadita` Ralladura de limón
-- `2 cucharaditas` Polvo de hornear
+:::RecipeSubingredient{name="Tapas"}
+- `110 gr` Clara (aproximadamente 3 claras)
+- `50 gr` Azúcar
+- `100 gr` Harna de almendras
+- `200 gr` Azúcar impalpable
+- `10 gr` Cacao amargo (opcional)
 :::
 
-:::RecipeSubingredient{name="Relleno"}
-- Dulce de leche
-- Coco rallado
+#### Rellenos
+:::RecipeSubingredient{name="🍫 Chocolate"}
+- `2 cdtas` Café instantáneo
+- `10 gr` Cognac, ron, wisky o vino blanco
+- `200 gr` Dulce de leche repostero
+- `50 gr` Chocolate semiamargo
 :::
+
+:::RecipeSubingredient{name="🍓 Ganache de frutos rojos"}
+- `100 gr` Frambuesas frescas, frutos rojos o frutillas
+- `100 gr` Chocolate blanco 
+:::
+
+:::RecipeSubingredient{name="🧈 Crema manteca base"}
+- `100 gr` Manteca
+- `40 gr` Leche condensada
+- `100 gr` Chocolate blanco
+:::
+:::RecipeSubingredient{name="🍋 Crema de limón"}
+- `240 gr` Crema manteca base
+- `80 gr` Jugo de limón (agua + limón exprimido)
+- `40 gr` Azúcar
+- Ralladura de limón
+:::
+:::RecipeSubingredient{name="🍓 Crema de frambuesa o frutilla"}
+- `240 gr` Crema manteca base
+- `50 gr` Mermelada de frambuesa o frutilla
+:::
+:::RecipeSubingredient{name="🧀 Queso crema de frutilla"}
+- `73 gr` Queso crema pomada
+- `36 gr` Manteca pomada
+- `170 gr` Azúcar impalpable
+- `14 gr` Frutillas congeladas
+- `1/2 cucharadita` Esencia de vainilla
+:::
+
 ::
 
 ::RecipeProcess{:process="true"}
 
-### Referencias
-
-- Esta que tiene una [decoración con chocolate blanco]((https://www.youtube.com/watch?v=zxp4soMrJ-A)).
-
 ### Masa
 
-La manteca debe estar pomada. Lo ideal es que alcance ese punto estando en temperatura ambiente.
+1. Batir las claras con los 50g de azúcar con la batidora. Por 10 minutos. Debería quedar un merengue bien firme.
+2. En otro bowl, con un tamizador, incorporar la harina de almendras, el cacao amargo (opcional) y el azúcar impalpable.
+3. Si se va a usar colorante, agregarlo a las claras en los últimos segundos del batido.
+4. Incorporar el merengue con los ingredientes del otro bowl con movimientos envolventes.
+5. Con una manga, colocar el macaronage en una bandeja con papel manteca o placa de silicona.
+6. Dar unos golpes a la bandeja para sacar el aire del interior de las masas.
+7. Esperar a que sequen las masas unos minutos. Deberían quedar con una capa de "piel" en la superficie.
+8. A un horno medio/bajo hasta que el exterior endurezca solo un poco.
 
-Si no, se puede ayudar un poco con un microondas y setearlo en 10 segundos. Comprobar y seguir si falta un poco más. No tiene que derretirse. Solo ablandarse.
+### Extras
 
-Importante NO USAR manteca derretida, en estado líquido. La masa no va a salir bien así. Lo digo por experiencia 🙃
-
-Luego, en un bowl, mezclar en orden:
-
-1. Manteca
-2. Azúcar impalpable
-3. Las yemas y esencia de vainilla
-
-Una vez incorporados los ingredientes:
-
-4. Pasar la harina y sal por el tamizador hacia el bowl.
-5. Mezclar hasta que no quede ningun rastro de harina visible en la masa, pero no más que eso. De lo contrario, trabajaría más el gluten y haría la masa más elástica.
-
-Colocamos la masa sobre un papel film. La aplastamos para que quede plana y con un grosor un poco más alto que el final que llevará en el molde.
-
-La cubrimos completamente con el papel film. Llevar a la heladera por ⌚ 30 minutos. Necesitamos que esté más fría y lo suficientemente dura como para que sea amasable con un palo de amasar.
-
-### Al molde
-
-Sacamos la masa de la heladera. La estiramos con el palo de amasar sobre una superficie un poquito enharinada o sobre el mismo papel film.
-
-Si es sobre el mismo film, lo podemos usar para llevar la masa al molde más fácilmente.
-
-Ya con la masa en el grosor y tamaño adecuado, llevar al molde. Con sumo cuidado, porque es bastante frágil. 
-
-Si en el proceso se corta un poco, se puede tratar de unificar esas partes ya dentro del molde. Pero si está muy cortada, lo mejor es volver a unir todo y estirar de nuevo fuera del molde.
-
-Con las manos, acomodar la masa a los bordes y fondo del molde. También, para dejar la masa lo más prolija posible.
-
-Si sobra masa, se puede reutilizar para hacer galletitas luego.
-
-Una vez terminado, llevar al freezer a congelar hasta que sea una piedra. Siempre que necesitamos cocinar una masa que lleve mucha manteca y no tiene que perder la forma en el horno, hay que hacer este proceso.
+- Estos macarons que tiene una [decoración con chocolate blanco](https://www.youtube.com/watch?v=zxp4soMrJ-A){:target="_blank"}.
 
 # Rellenos
 
-### Ganache de frutos rojos
+### 🍫 Chocolate
+
+1. Mezclar la bebida alcohólica con el café instantáneo
+2. Integrar esta mezcla con el dulce de leche
+3. Derretir el chocolate semiamargo
+4. Mezclar el chocolate derretido con la mezcla anterior
+
+
+### 🍓 Ganache de frutos rojos
 
 Este ganache es válido para frutos rojos, frambuesas y frutillas.
-
-- 100gr frambuesas frescas, frutos rojos o frutillas
-- 100gr chocolate blanco 
 
 1. Deshidratar las frambuesas un poco antes de proceder
 2. Llevarlas a una olla a fuego medio. Revolver constantemente.
@@ -88,23 +93,14 @@ Este ganache es válido para frutos rojos, frambuesas y frutillas.
 7. Dejar enfriar a temperatura ambiente
 8. Llevar a la heladera y dejar que se enfríe
 
-### Crema manteca base
-
-- 100gr manteca
-- 40gr leche condensada
-- 100gr chocolate blanco
+### 🧈 Crema manteca base
 
 1. Cortar la manteca en cubitos y dejar ablandar a temperatura ambiente o con golpes de microondas
 2. Derretir el chocolate hasta volverlo líquido
 3. En un bowl, integrar la manteca y chocolate derretido con una batidora por unos 3-4 minutos. Debería volverse cremosa.
 4. Agregar la leche condensada e integrar con la batidora
 
-### Crema de limón
-
-- 240gr Crema manteca base
-- 80gr jugo de limón (agua + limón exprimido)
-- 40gr azúcar
-- Ralladura de limón
+### 🍋 Crema de limón
 
 Usar la crema manteca base del paso anterior
 
@@ -113,21 +109,13 @@ Usar la crema manteca base del paso anterior
 3. Retirar el almíbar a un bowl que esté montado sobre otro bowl con muchos hielos, hasta enfriar.
 4. Incorporar con la crema manteca base
 
-### Crema de frambuesa o frutilla
-
-- `240 gr` crema manteca base
-- `50 gr` mermelada de frambuesa o frutilla
+### 🍓 Crema de frambuesa o frutilla
 
 Usar la crema manteca base del paso anterior.
 
 Simplemente mezclar con la batidora la crema y la mermelada.
 
-### Queso crema de frutilla
-- `73 gr` queso crema pomada
-- `36 gr` manteca pomada
-- `170 gr` azúcar impalpable
-- `14 gr` frutillas congeladas
-- `1/2 cucharadita` esencia de vainilla
+### 🧀 Queso crema de frutilla
 
 Necesitamos obtener un polvo de frutillas. Para eso, pasarlas por un procesador de alimentos o mixer hasta que queden un polvo.
 
@@ -136,6 +124,5 @@ Necesitamos obtener un polvo de frutillas. Para eso, pasarlas por un procesador 
 3. Incorporar la esencia de vainilla y batir.
 
 Si la mezcla quedó muy firme, agregar un poquito de agua o de leche para que quede más cremosa.
-
 
 ::
