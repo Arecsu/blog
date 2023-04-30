@@ -29,7 +29,11 @@ export default defineNuxtConfig({
    ],
    content: {
       markdown: {
-         anchorLinks: false
+         anchorLinks: false,
+         remarkPlugins: [
+            'remark-external-links' // Enables opening external links in new tab
+         ],
+         rehypePlugins: []
       },
       // https://content.nuxtjs.org/api/configuration
       watch: {

@@ -41,7 +41,7 @@ html[theme="light"] {
 
 	--color-subingredient-name: #ff962e;
 	/* --color-subingredient-name: #ff3916; */
-	--border-size-1: 1.5px;
+	--border-size-1: 1px;
 
 	/* --header-height: clamp(3em, 1.5em + 2vw, 4em); */
 	--header-height: 2.3rem;

@@ -19,8 +19,9 @@ useHead({
 <style>
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.20s;
+  transition: all 0.1s;
   transition-timing-function: ease-out; 
+  /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
   /* transition-timing-function: cubic-bezier(.54, 1.2, .38, 1.11); */
 }
 .page-enter-from,
@@ -28,10 +29,10 @@ useHead({
   opacity: 0;
 }
 .page-enter-from {
-  transform: translateX(20px);
+  transform: translateX(.5rem);
 }
 .page-leave-to {
-  transform: translateX(-30px);
+  transform: translateX(-1rem);
   transition-timing-function: ease-in;
 }
 </style>

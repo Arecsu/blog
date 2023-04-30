@@ -55,7 +55,7 @@ header {
    justify-content: space-between;
    overflow: hidden;
    height: var(--header-height);
-   font-weight: 500;
+   font-weight: 400;
    /* border-bottom: dashed; */
    border-bottom: var(--header-border-bottom, none);
    padding-inline: var(--padding-inline-header, 0);
