@@ -1,6 +1,7 @@
 ---
 title: Facturas
 description: 🥐 de crema o membrillo
+icon: fluent-emoji:croissant
 cover:
   file: facturas.jpg
   width: 2000
@@ -8,19 +9,67 @@ cover:
 alt: Flan
 ---
 
-## Preparación
+::RecipeIngredients
 
-<div class="youtubeWrapper">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3BPFp2uPmRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+:::RecipeSubingredient{name="Cosas"}
+- 🧻 Papel film
+- Tupper (opcional)
+- 🖌️ Pincel
+:::
 
-⭐ Ver el video al menos una primera vez es **NECESARIO**.
+:::RecipeSubingredient{name="Amasijo"}
+- `600 gr` 🌽 Harina 0000
+- `225 ml` 🥛 Leche Entera
+- `10 gr` Levadura fresca
+- `10 gr` 🧂 Sal
+- `100 gr` Azúcar
+- `2` 🥚 Huevos
+- `10 gr` 🍯 Miel
+- `3 gr` 🍦 Esencia de vainilla
+- Ralladura de `media` 🍊 naranja
+:::
+
+:::RecipeSubingredient{name="Empaste"}
+- `200 gr` 🧈 Manteca blanda
+:::
+
+:::RecipeSubingredient{name="Doradura"}
+- `2` 🥚 Huevos
+- `100 gr` Leche
+- `1 cucharadita` 🍯 Miel
+- `1 pizca` Sal
+:::
+
+:::RecipeSubingredient{name="Almíbar"}
+- `300 gr` Agua
+- `300 gr` Azúcar
+- Jugo de `1` 🍊 naranja
+- `20 gr` o `1 buena cucharada` 🍯 Miel
+:::
+
+:::RecipeSubingredient{name="Crema Pastelera"}
+- `335 ml` 🥛 Leche
+- `100 gr` Azúcar
+- `10 gr` Almidón de maiz
+- `27 gr` Harina 0000
+- `4` 🥚 Yemas
+- `A ojo` Esencia de vainilla
+:::
+
+:::RecipeSubingredient{name="Membrillo"}
+- `A ojo?` Dulce de membrillo.
+:::
+
+::
+
+::RecipeProcess{:process="true"}
+⭐ Ver el [video](https://www.youtube.com/watch?v=3BPFp2uPmRk&feature=emb_title) al menos una primera vez es **NECESARIO**.
 
 Los pasos aquí son una referencia básica si ya tenés la experiencia. Hay etapas, como el armado del amasijo y el empaste, que es mucho mejor seguirlos con el video.
 
 Muchos detalles, secretos y cosas importantes allí. Muy buen material.
 
-#### Empaste
+### Empaste
 
 Vamos con el empaste primero, ya que deberá descansar un rato en el freezer/heladera al mismo tiempo que hacemos el amasijo.
 
@@ -143,3 +192,4 @@ La miel ayuda a que no se formen cristales (esos granitos de azúcar) en la prep
 3. Retirar
 
 A este punto, hay que esperar que salgan las facturas del horno. Dejarlas que se enfrien solo un poquito, que queden tibias. Y ahí aplicar el almíbar. Si no, absorberá mucho almíbar y quedarán muy pesadas (a algunos les gusta que sean así).
+::

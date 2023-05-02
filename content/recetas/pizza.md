@@ -1,6 +1,7 @@
 ---
 title: Pizza
 description: Una pizza clásica con 72 horas de fermentación ⏲️
+icon: fluent-emoji:pizza
 cover:
   file: pizza.webp
   width: 1152
@@ -8,7 +9,31 @@ cover:
 alt: Pizza
 ---
 
-## Procedimiento
+::RecipeIngredients
+:::RecipeSubingredient{name="Masa"}
+- `500 gr` Harina 000
+- `300 gr` Agua fría de heladera (agregar más si es necesario de a poco)
+- `10 gr` Sal rosada. Si no, sal marina.
+- `2 gr` Levadura
+- `20 gr` Aceite de oliva
+:::
+:::RecipeSubingredient{name="Salsa"}
+- Tomates triturados 🍅
+- Ajo en polvo. De no ser posible, un ajo cortado en trozitos pequeños.
+- Hojas de albahaca
+- Aceite de oliva
+- Sal
+- Pimienta
+:::
+:::RecipeSubingredient{name="Queso"}
+- `260 gr` Mozzarella fior di latte
+:::
+
+#IngredientsIntro
+🍕 *Para **2 pizzas** grandes*
+::
+
+::RecipeProcess{:process="true"}
 
 La referencia que usé para hacer todo la saqué de [aquí, por Marcos Di Cesare](https://www.youtube.com/watch?v=gQ0l1hT8BnQ).
 
@@ -55,3 +80,4 @@ Para el horno, lo ideal sería tener un horno de barro o pizzero. No es común v
 ⭐ Si no tenés una piedra refractaria, usar un molde pizzero pero dado vuelta. Si. Colocar otras piezas de metal o moldes debajo. Eso creará una "piedra" en términos de dispersión del calor y la pizza se cocinará de forma más pareja. El sabor y la textura es mejor así, en mi opinión.
 
 Como último consejo: si el horno es muy débil, agregar solo la salsa a la masa. Llevar al horno, y una vez pasados unos minutos, agregar recién el queso. Esto evitará que el queso se queme y toda la pizza esté bien cocinada.
+::

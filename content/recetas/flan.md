@@ -1,6 +1,7 @@
 ---
 title: Flan
 description: Esencia de vainilla real y muchas yemas 🍮
+icon: fluent-emoji:custard
 cover:
   file: flan.jpg
   width: 2000
@@ -8,9 +9,20 @@ cover:
 alt: Flan
 ---
 
-## Procedimiento
+::RecipeIngredients
+:::RecipeSubingredient{name="Flan"}
+- `1 litro` 🥛 Leche
+- `6` 🥚 Huevos completos
+- `6` 🥚 Yemas
+- `250g` Azúcar blanca
+- `A ojo` Esencia de Vainilla
+:::
+:::RecipeSubingredient{name="Caramelo"}
+- `A ojo` Azúcar blanca
+:::
+::
 
-### Flan
+::RecipeProcess{:process="true"}
 
 1. Mezclar los 6 huevos completos + las 6 yemas extras + 250gr de azúcar.
 2. Revolver con el **batidor** francés solo un poco, muy despacio para no meter aire en la mezcla y asi evitar agujeritos y grumos en la cocción. Que los alambres pasen entre los huevos simplemente.
@@ -21,7 +33,7 @@ La mezcla tiene que estar líquida, que no tenga estructura fuerte. Levantar el 
 
 ### Caramelo
 
-🔗 Referencia importante para hacer el caramelo → [aquí](https://www.youtube.com/watch?v=57GcDecpZi4).
+<!-- 🔗 Referencia importante para hacer el caramelo → [aquí](https://www.youtube.com/watch?v=57GcDecpZi4). -->
 
 Usar una sartén. Poner el fuego fuerte al principio. Azúcar común, no mucho, ponerle sobre la sartén.
 
@@ -48,3 +60,4 @@ Horno a temperatura muy baja. Alrededor de una hora a 150 grados.
 La forma de darse cuenta si un flan está listo es acercarse al horno, atravesar el flan con un cuchillo, y el cuchillo tiene que salir completamente limpio. Si no, le falta tiempo de cocción.
 
 Dejarlo enfriar a temperatura ambiente. Recomendado dejarlo un día antes de comerlo. Estas preparaciones se ponen mejores luego de pasados los días.
+::

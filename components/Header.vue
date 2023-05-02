@@ -1,21 +1,105 @@
 <template>
-	<header>
-		<nav>
-			<span>//</span>
-			<NuxtLink to="/recetas">recetas</NuxtLink>
-			<NuxtLink to="/blog">blog</NuxtLink>
-			<a href="https://alejandro9r.xyz/">hola!</a>
-		</nav>
-	</header>
+   <div class="header-container">
+      <div class="noise-background"></div>
+      <div class="radial-background"></div>
+      <header>
+         <nav>
+            <ul>
+               <li class="lines">
+                  //----
+               </li>
+               <li>
+                  <NuxtLink to="/notas">notas</NuxtLink>
+               </li>
+               <li>
+                  <NuxtLink to="/recetas">recetas</NuxtLink>
+               </li>
+               <li>
+                  <NuxtLink to="https://alejandro9r.xyz" target="_blank">_hola!</NuxtLink>
+               </li>
+            </ul>
+         </nav>
+         <div class="header-right-side">
+            <DarkModeButton class="dark-mode-button" />
+            <span class="header-arrow">↙</span>
+         </div>
+      </header>
+   </div>
 </template>
 
-<style scoped>
-nav {
-	margin-bottom: 1.2rem;
-	display: flex;
-	gap: calc(2rem - clamp(0.8rem, 2vw, 1rem));
+
+<style scoped lang="scss">
+.header-container {
+   display: grid;
+   background-color: var(--color-header-bg);
+   backdrop-filter: blur(14px);
+   position: sticky;
+   top: 0;
+   z-index: 1;
 }
-nav a {
-	color: white;
+
+.header-container .noise-background,
+.header-container .radial-background,
+header {
+   grid-area: 1 / 1 / 2 / 2;
+}
+
+.header-right-side {
+   display: flex;
+   align-items: center;
+}
+
+header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   overflow: hidden;
+   height: var(--header-height);
+   font-weight: 400;
+   /* border-bottom: dashed; */
+   border-bottom: var(--header-border-bottom, none);
+   padding-inline: var(--padding-inline-header, 0);
+   margin-inline: var(--margin-inline-header, 0);
+}
+
+nav {
+   ul {
+      display: flex;
+      list-style-type: none;
+      gap: 1.5em;
+      align-items: center;
+      padding: 0;
+      transform: translateY(.1em);
+      font-size: 0.9em; 
+      margin-bottom: .05em;
+   }
+
+   .lines {
+      font-size: .85em;
+      margin-bottom: -.1.2em;
+      font-weight: 600;
+      font-style: italic;
+      letter-spacing: .05em;
+      user-select: none;
+   }
+}
+
+a {
+   text-decoration: none;
+}
+
+a.router-link-active {
+   /* text-decoration: underline; */
+}
+
+.dark-mode-button {
+   margin-right: .9rem;
+}
+
+.header-arrow {
+   font-weight: 400;
+   font-size: 1.3em;
+   transform: translateY(-.04em)
 }
 </style>

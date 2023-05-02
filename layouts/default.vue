@@ -1,42 +1,76 @@
 <template>
-	<main>
-		<Header />
-		<Nuxt id="main-nuxt" />
-		<!-- <Footer1 /> -->
-		<footer>
-			<span>//------------</span>
-			<span>+</span>
-		</footer>
-	</main>
+   <div class="global-container">
+      <div class="the-page">
+         <Header />
+         <main>
+            <slot />
+         </main>
+      </div>
+         <div class="noise-background"></div>
+         <div class="radial-background"></div>
+   </div>
 </template>
 
-<script>
-export default {
-	transition: 'default',
-};
+<script setup>
+
+const r = window.document.querySelector(':root')
+
+const update = (event) => {
+   const xMousePercent = parseFloat(event.pageX / window.innerWidth * 100);
+   r.style.setProperty('--mouse-x', xMousePercent + '%')
+}
+onMounted(() => {
+   window.addEventListener('mousemove', update)
+})
+
 </script>
 
-<style lang="scss">
-.emoji {
-	height: 1em;
+<style>
+.global-container {
+   display: grid;
+   height: 100vh;
+   /* overflow: hidden; */
+}
+
+.the-page {
+   /* padding-inline: clamp(1em, 0.5em + 2vw, 2.5em); */
+   display: flex;
+   flex-direction: column;
+   grid-area: 1 / 1 / 2 / 2;
+   /* overflow: auto; */
+   /* overflow-x: hidden; */
+
+}
+.noise-background,
+.radial-background {
+   grid-area: 1 / 1 / 2 / 2;
+   z-index: -1;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
+
+.noise-background {
+   background-image: url('/nnnoise.svg');
+   mix-blend-mode: plus-lighter;
+   background-repeat: repeat;
+   opacity: var(--bg-noise-background-opacity);
+}
+
+.radial-background {
+	background: var(--bg-radial-gradient);
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
 }
 
 main {
-	margin-inline: clamp(1rem, 5vw, 4rem);
-	margin-block: 2rem;
-	min-height: calc(100vh - 4rem);
-	display: flex;
-	flex-flow: column;
-}
+   padding-block: var(--padding-block-main);
+   flex-grow: 1;
+   flex-shrink: 0;
+   display: flex;
+   padding-inline: var(--padding-inline-main);
 
-#main-nuxt {
-	flex-grow: 1;
-}
-
-footer {
-	height: 8rem;
-	display: flex;
-	align-items: flex-end;
-	place-content: space-between;
 }
 </style>
