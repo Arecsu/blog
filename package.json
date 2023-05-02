@@ -5,10 +5,12 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "nuxt generate && gh-pages --dotfiles -d .output/public"
   },
   "devDependencies": {
     "@nuxt/content": "^2.5.2",
+    "gh-pages": "^5.0.0",
     "nuxt": "3.2.3",
     "nuxt-icon": "^0.3.2",
     "sass": "^1.59.2"
