@@ -2,12 +2,11 @@
 
 export default defineNuxtConfig({
    modules: [
-      '@vueuse/nuxt',
       '@nuxt/content',
+      '@vueuse/nuxt',
       'nuxt-icon'
    ],
-   ssr: false,
-
+   ssr: true,
    css: [
       // fonts
       "@/assets/fonts/inter/inter.css",
@@ -26,6 +25,7 @@ export default defineNuxtConfig({
       // global styles
       "@/assets/css/reset.css",
       "@/assets/css/styles.scss",
+      // "@/assets/css/tippy.scss",
    ],
    content: {
       markdown: {
@@ -36,21 +36,15 @@ export default defineNuxtConfig({
          rehypePlugins: []
       },
       // https://content.nuxtjs.org/api/configuration
-      watch: {
-         ws: {
-            hostname: 'localhost'
-         }
-      }
+      // watch: {
+      //    ws: {
+      //       hostname: 'localhost'
+      //    }
+      // }
+      watch: false
    },
    typescript: {
       shim: false,
-   },
-   vite: {
-      server: {
-         watch: {
-            usePolling: true
-         }
-      }
    },
    app: {
       pageTransition: { name: 'page', mode: 'out-in' }

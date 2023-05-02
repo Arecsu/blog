@@ -1,5 +1,5 @@
 import VueTippy from 'vue-tippy';
-import '/assets/css/tippy.css'
+import '/assets/css/tippy.scss'
 
 export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.use(VueTippy, {

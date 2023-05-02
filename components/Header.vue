@@ -20,7 +20,9 @@
             </ul>
          </nav>
          <div class="header-right-side">
-            <DarkModeButton class="dark-mode-button" />
+            <ClientOnly>
+               <DarkModeButton class="dark-mode-button" />
+            </ClientOnly>
             <span class="header-arrow">↙</span>
          </div>
       </header>

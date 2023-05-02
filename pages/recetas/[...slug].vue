@@ -12,6 +12,8 @@
 
 <script setup>
 const route = useRoute()
+const slug = route.params.slug[0]
+const dataKey = `recipe-${slug}`
 
 useContentHead({
   head: {
@@ -19,7 +21,12 @@ useContentHead({
   }
 })
 
-const recipe = await queryContent('recetas').where({ _path: route.path }).findOne()
+// need to use useAsyncData otherwise it doesn't work at static generation
+const { data: recipe } = await useAsyncData(dataKey, () => {
+  return queryContent('recetas').where({ _path: route.path }).findOne()
+})
+
+
 </script>
 
 <style lang="scss">

@@ -1,36 +1,32 @@
 <template>
-      <button v-tippy="{ content: `${themeState}`, placement: 'bottom-start' }" class="button-no-style" @click="next()">
-         <Transition name="slide-up">
-            <Icon v-if="isActuallyDark() === 'dark'" name="tabler:ghost-filled" size="1.2em" />
-            <Icon v-else name="ic:outline-lightbulb" size="1.1em" />
-         </Transition>
-      </button>
+   <button v-tippy="{ content: `${themeState.tooltip}`, placement: 'bottom-start' }" class="button-no-style"
+      @click="next()">
+      <Transition name="slide-up">
+         <Icon v-if="themeState.icon === 'dark'" name="tabler:ghost-filled" size="1.2em" />
+         <Icon v-else-if="themeState.icon === 'light'" name="ic:outline-lightbulb" size="1.1em" />
+      </Transition>
+   </button>
 </template>
 
 <script setup>
 // fluent-emoji:crescent-moon
 // fluent-emoji:sun-behind-small-cloud
 
-const { state, next } = useCycleList(['dark', 'light', 'auto'], { initialValue: colorMode })
-const isDark = usePreferredDark()
+// systemColorMode.value can be 'dark' or 'light'
+// pageColorMode.value can be 'dark', 'light' or 'auto'
+const { state, next } = useCycleList(['dark', 'light', 'auto'], { initialValue: pageColorMode })
+watchEffect(() => pageColorMode.value = state.value)
 
-const isActuallyDark = () => {
-   if (state.value !== 'auto') {
-      return state.value
-   }
-   return isDark.value ? 'dark' : 'light'
-}
 
 const themeState = computed(() => {
-   switch (state.value) {
+   switch (pageColorMode.value) {
       case 'light':
-         return 'vitamina D 🏖️'
+         return { tooltip: 'vitamina D 🏖️', icon: 'light' }
       case 'dark':
-         return 'oscuroOooOo 🦉'
-      case 'auto':
-         return 'igual que el sistema 💿'
+         return { tooltip: 'oscuroOooOo 🦉', icon: 'dark' }
    }
-   return ''
+   // case 'auto':
+   return { tooltip: 'igual que el sistema 💿', icon: systemColorMode.value }
 })
 
 </script>
@@ -56,7 +52,7 @@ const themeState = computed(() => {
 <style scoped>
 button {
    display: inline-grid;
-   width: 1.85em; 
+   width: 1.85em;
 }
 
 button svg {
