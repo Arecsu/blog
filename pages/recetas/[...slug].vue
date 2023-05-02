@@ -35,7 +35,7 @@ const recipe = await queryContent('recetas').where({ _path: route.path }).findOn
 
 .recipe-sidebar-title,
 .recipe-title {
-  font-family: var(--font-headings-1);
+  font-family: var(--font-serif);
   /* letter-spacing: -.06em; */
   /* text-transform: lowercase; */
 
@@ -93,7 +93,7 @@ const recipe = await queryContent('recetas').where({ _path: route.path }).findOn
   h4,
   h5 {
     margin: 3rem 0 1.38rem;
-    font-family: var(--font-headings-1);
+    font-family: var(--font-serif);
     letter-spacing: -0.03em;
     /* font-weight: 600; */
     font-weight: 400;

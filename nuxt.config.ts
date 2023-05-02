@@ -25,7 +25,7 @@ export default defineNuxtConfig({
 
       // global styles
       "@/assets/css/reset.css",
-      "@/assets/css/styles.css",
+      "@/assets/css/styles.scss",
    ],
    content: {
       markdown: {

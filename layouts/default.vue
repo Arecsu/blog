@@ -1,31 +1,38 @@
 <template>
-   <div class="container">
-      <div class="sub-container">
+   <div class="global-container">
+      <div class="the-page">
          <Header />
          <main>
             <slot />
          </main>
       </div>
-      <ClientOnly>
          <div class="noise-background"></div>
-         <RadialBackground class="radial-background" />
-      </ClientOnly>
+         <div class="radial-background"></div>
    </div>
 </template>
 
 <script setup>
 
+const r = window.document.querySelector(':root')
+
+const update = (event) => {
+   const xMousePercent = parseFloat(event.pageX / window.innerWidth * 100);
+   r.style.setProperty('--mouse-x', xMousePercent + '%')
+}
+onMounted(() => {
+   window.addEventListener('mousemove', update)
+})
 
 </script>
 
-<style scoped>
-.container {
+<style>
+.global-container {
    display: grid;
    height: 100vh;
    /* overflow: hidden; */
 }
 
-.sub-container {
+.the-page {
    /* padding-inline: clamp(1em, 0.5em + 2vw, 2.5em); */
    display: flex;
    flex-direction: column;
@@ -49,7 +56,13 @@
    background-image: url('/nnnoise.svg');
    mix-blend-mode: plus-lighter;
    background-repeat: repeat;
-   opacity: .12;
+   opacity: var(--bg-noise-background-opacity);
+}
+
+.radial-background {
+	background: var(--bg-radial-gradient);
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
 }
 
 main {

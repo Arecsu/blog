@@ -1,8 +1,8 @@
 <template>
       <button v-tippy="{ content: `${themeState}`, placement: 'bottom-start' }" class="button-no-style" @click="next()">
          <Transition name="slide-up">
-            <Icon v-if="isActuallyDark() === 'dark'" name="fluent:weather-moon-16-regular" size="1.1em" />
-            <Icon v-else name="fluent:weather-sunny-16-filled" size="1.1em" />
+            <Icon v-if="isActuallyDark() === 'dark'" name="tabler:ghost-filled" size="1.2em" />
+            <Icon v-else name="ic:outline-lightbulb" size="1.1em" />
          </Transition>
       </button>
 </template>
@@ -38,8 +38,8 @@ const themeState = computed(() => {
 <style>
 .slide-up-enter-active,
 .slide-up-leave-active {
-   transition: opacity 1s, transform 1s;
-   transition-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+   transition: opacity .9s, transform .9s;
+   transition-timing-function: cubic-bezier(0.68, -0.5, 0.15, 1.38);
 }
 
 .slide-up-enter-from {
@@ -56,6 +56,7 @@ const themeState = computed(() => {
 <style scoped>
 button {
    display: inline-grid;
+   width: 1.85em; 
 }
 
 button svg {

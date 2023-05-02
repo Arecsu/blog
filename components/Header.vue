@@ -1,9 +1,13 @@
 <template>
    <div class="header-container">
-      <div class="header-radial-blur"></div>
+      <div class="noise-background"></div>
+      <div class="radial-background"></div>
       <header>
          <nav>
             <ul>
+               <li class="lines">
+                  //----
+               </li>
                <li>
                   <NuxtLink to="/notas">notas</NuxtLink>
                </li>
@@ -16,7 +20,7 @@
             </ul>
          </nav>
          <div class="header-right-side">
-               <DarkModeButton class="dark-mode-button"/>
+            <DarkModeButton class="dark-mode-button" />
             <span class="header-arrow">↙</span>
          </div>
       </header>
@@ -24,23 +28,20 @@
 </template>
 
 
-<style scoped>
+<style scoped lang="scss">
 .header-container {
    display: grid;
-	background-color: var(--color-header-bg);
-      backdrop-filter: blur(14px);
+   background-color: var(--color-header-bg);
+   backdrop-filter: blur(14px);
    position: sticky;
    top: 0;
    z-index: 1;
 }
 
-.header-radial-blur,
+.header-container .noise-background,
+.header-container .radial-background,
 header {
    grid-area: 1 / 1 / 2 / 2;
-}
-
-.header-radial-blur {
-   /* z-index: 2; */
 }
 
 .header-right-side {
@@ -62,13 +63,26 @@ header {
    margin-inline: var(--margin-inline-header, 0);
 }
 
-nav ul {
-   display: flex;
-   list-style-type: none;
-   gap: 1.5em;
-   align-items: center;
-   padding: 0;
-   transform: translateY(.1em)
+nav {
+   ul {
+      display: flex;
+      list-style-type: none;
+      gap: 1.5em;
+      align-items: center;
+      padding: 0;
+      transform: translateY(.1em);
+      font-size: 0.9em; 
+      margin-bottom: .05em;
+   }
+
+   .lines {
+      font-size: .85em;
+      margin-bottom: -.1.2em;
+      font-weight: 600;
+      font-style: italic;
+      letter-spacing: .05em;
+      user-select: none;
+   }
 }
 
 a {
@@ -80,11 +94,11 @@ a.router-link-active {
 }
 
 .dark-mode-button {
-   margin-right: 1rem;
+   margin-right: .9rem;
 }
 
 .header-arrow {
-   font-weight: 700;
+   font-weight: 400;
    font-size: 1.3em;
    transform: translateY(-.04em)
 }
