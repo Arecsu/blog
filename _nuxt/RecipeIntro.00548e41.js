@@ -1,0 +1,1 @@
+/* empty css                        */import{_ as o}from"./_plugin-vue_export-helper.c27b6911.js";import{o as r,a as t,r as s}from"./entry.43657bc1.js";const c={},n={class:"recipe-intro"};function a(e,d){return r(),t("div",n,[s(e.$slots,"default",{},void 0,!0)])}const p=o(c,[["render",a],["__scopeId","data-v-d86fa855"]]);export{p as default};
