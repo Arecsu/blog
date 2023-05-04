@@ -2,9 +2,9 @@
 
 export default defineNuxtConfig({
    modules: [
-      '@nuxt/content',
       '@vueuse/nuxt',
-      'nuxt-icon'
+      '@nuxt/content',
+      'nuxt-icon',
    ],
    ssr: true,
    css: [
@@ -27,6 +27,17 @@ export default defineNuxtConfig({
       "@/assets/css/styles.scss",
       // "@/assets/css/tippy.scss",
    ],
+   routeRules: {
+      '/assets/**': { swr: 30 * 24 * 60 * 60 },
+      // '/images/**': swr: 30 * 24 * 60 * 60 },
+      '/_nuxt/**': { swr: 30 * 24 * 60 * 60 },
+      // '/**/*.js': swr: 30 * 24 * 60 * 60 },
+      '/**/*.css': { swr: 30 * 24 * 60 * 60 },
+      // '/**/*.json': swr: 30 * 24 * 60 * 60 },
+      // '/**/*.html': swr: 30 * 24 * 60 * 60 },
+      // '/**/*.xml': swr: 30 * 24 * 60 * 60 },
+      '/**/*.svg': { swr: 30 * 24 * 60 * 60 },
+   },
    content: {
       markdown: {
          anchorLinks: false,
