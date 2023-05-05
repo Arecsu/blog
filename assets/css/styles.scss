@@ -53,8 +53,8 @@ html {
 
 	--pre-bg: hsl(0, 0%, 70%);
 	color: var(--color-text);
-	--bg-radial-gradient: radial-gradient(circle at var(--mouse-x, 50%) 190%, rgba(255, 162, 0, 0.452) 0%, rgba(255, 0, 0, 0) 70%);
-	--bg-noise-background-opacity: .4;
+	--bg-radial-gradient: radial-gradient(circle at var(--mouse-x, 50%) 190%, rgba(255, 162, 0, .4) 0%, rgba(255, 0, 0, 0) 70%);
+	--bg-noise-background-opacity: 1;
 
 
 
@@ -81,7 +81,7 @@ html {
 
 		/* --color-subingredient-name: #2dafd3; */
 		--color-subingredient-name: #edac21;
-		--bg-radial-gradient: radial-gradient(circle at var(--mouse-x, 50%) 190%, rgba(146, 18, 18, 0.361) 0%, rgba(255, 0, 0, 0) 70%);
+		--bg-radial-gradient: radial-gradient(circle at var(--mouse-x, 50%) 200%, rgba(151, 2, 2, 0.261) 10%, rgba(255, 0, 0, 0) 70%);
 		--bg-noise-background-opacity: .1;
 	}
 }
@@ -141,6 +141,7 @@ ul.ul-1,
 			content: "-";
 			margin-right: 0.5em;
 		}
+
 		ul {
 			margin-top: 0.5em;
 			margin-left: 1.4em;
