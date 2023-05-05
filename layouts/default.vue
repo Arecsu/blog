@@ -48,11 +48,19 @@
    opacity: var(--bg-noise-background-opacity);
 }
 
+
+html[theme="dark"] .radial-background {
+   mix-blend-mode: plus-lighter;
+}
+html[theme="light"] .radial-background {
+   mix-blend-mode: darken;
+}
 .radial-background {
 	background: var(--bg-radial-gradient);
 	background-size: 100vw 100vh;
 	background-repeat: no-repeat;
 }
+
 
 main {
    padding-block: var(--padding-block-main);
