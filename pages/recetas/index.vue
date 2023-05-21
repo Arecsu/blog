@@ -1,23 +1,28 @@
 <template>
   <div class="recipes-list-container">
-    <NuxtLink v-for="{ _path: slug, title } in recetas" :key="slug" :to="slug">
+    <NuxtLink v-for="{ _path, title } in recetas" :key="_path" :to="_path">
       <span>{{ title }}</span>
     </NuxtLink>
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 useHead({
   title: 'recetas',
 })
 
-
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 // data is the destructuring and blogPosts the name of the new variable
 // same as `const blogPosts = ...find()).data`
+
 const { data: recetas } = await useAsyncData('recetas', () => {
-  return queryContent('recetas').where({ draft: { $ne: true } }).sort({ title: 1 }).find()
+  return queryContent('recetas')
+    .where({ draft: { $ne: true } })
+    .sort({ title: 1 })
+    .only(['_path', 'title'])
+    .find()
 })
+
 
 /*
 const data2 = await queryContent('recetas').find()

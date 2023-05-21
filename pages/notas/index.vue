@@ -1,8 +1,8 @@
 <template>
   <div class="notas-index-container">
     <ul class="ul-1">
-      <li v-for="{ _path: slug, title } in notas" :key="slug">
-        <NuxtLink :to="slug">
+      <li v-for="{ _path, title } in notas" :key="_path">
+        <NuxtLink :to="_path">
           {{ title }}
         </NuxtLink>
       </li>
@@ -10,13 +10,17 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 useHead({
   title: 'notas',
 })
 
 const { data: notas } = await useAsyncData('notas', () => {
-  return queryContent('notas').where({ draft: { $ne: true } }).sort({ title: 1 }).find()
+  return queryContent('notas')
+  .where({ draft: { $ne: true } })
+  .sort({ title: 1 })
+  .only(['_path', 'title'])
+  .find()
 })
 
 
