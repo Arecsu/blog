@@ -6,29 +6,29 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deployold": "nuxt generate && gh-pages --dotfiles -d .output/public",
-    "deploy": "vercel deploy --prod"
+    "deploy": "nuxt generate && gh-pages --dotfiles -d .output/public",
+    "deployold": "vercel deploy --prod"
   },
   "devDependencies": {
     "@nuxt/content": "^2.6.0",
-    "@types/three": "^0.152.0",
+    "@nuxtjs/color-mode": "^3.2.0",
     "gh-pages": "^5.0.0",
-    "nuxt": "3.4.3",
-    "nuxt-icon": "^0.4.0",
-    "sass": "^1.62.1"
+    "nuxt": "3.5.3",
+    "nuxt-icon": "^0.4.1",
+    "sass": "^1.63.3"
   },
   "dependencies": {
-    "@fontsource/archivo": "^4.5.11",
-    "@fontsource/fira-mono": "^4.5.10",
-    "@fontsource/inter": "^4.5.15",
-    "@fontsource/noto-serif": "^4.5.11",
-    "@fontsource/noto-serif-display": "^4.5.15",
-    "@fontsource/unbounded": "^4.5.1",
+    "@fontsource-variable/inter": "^5.0.3",
+    "@fontsource/archivo": "^5.0.3",
+    "@fontsource/fira-mono": "^5.0.3",
+    "@fontsource/inter": "^5.0.3",
+    "@fontsource/noto-serif": "^5.0.3",
+    "@fontsource/noto-serif-display": "^5.0.3",
+    "@fontsource/unbounded": "^5.0.3",
     "@vueuse/components": "^10.1.2",
     "@vueuse/core": "^10.1.2",
     "@vueuse/nuxt": "^10.1.2",
     "remark-external-links": "^9.0.1",
-    "three": "^0.152.2",
-    "vue-tippy": "^6.1.0"
+    "vue-tippy": "^6.2.0"
   }
 }

@@ -7,11 +7,12 @@ description: Una colección Argentina de marcas, diseñadores independientes, sh
 
 -  <RopaLink name="Batuk / Huoky" link="https://batukjeans.com.ar/" instagram="https://instagram.com/deliver.ind"></RopaLink> 🚀
 -  <RopaLink name="Boston Hype" link="https://bostonhype.com.ar/"></RopaLink> 🚀 —  Muy buena guía de talles
--  <RopaLink name="Deliver Ind" link="https://deliverind.com.ar/" instagram="https://instagram.com/deliver.ind"></RopaLink>
+-  <RopaLink name="Deliver Ind" link="https://deliverind.com.ar/" instagram="https://instagram.com/deliver.ind"></RopaLink> 🚀
 -  <RopaLink name="REVOLVER" link="https://roparevolver.com/" instagram="https://instagram.com/roparevolver"></RopaLink> 🚀
 -  <RopaLink name="This Is Feliz Navidad" link="https://www.thisisfeliznavidad.com/" instagram="https://instagram.com/thisisfeliznavidad"></RopaLink>
 -  <RopaLink name="HIPPY KILLER" link="https://www.hippykillercompany.com/" instagram="https://instagram.com/hippykillercompany"></RopaLink>
 -  <RopaLink name="VALLES" link="https://vallesoficial.com" instagram="https://www.instagram.com/valles_oficial/"></RopaLink>
+-  <RopaLink name="SER.BASICS" link="https://serbasics.com/" instagram="https://instagram.com/ser.basics"></RopaLink> 🚀
 
 ### Calzados
 

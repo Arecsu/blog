@@ -1,7 +1,7 @@
 <template>
    <div class="header-container">
       <div class="noise-background"></div>
-      <div class="radial-background"></div>
+      <!-- <div class="radial-background"></div> -->
       <header>
          <nav>
             <ul>
@@ -21,7 +21,7 @@
          </nav>
          <div class="header-right-side">
             <ClientOnly>
-               <DarkModeButton class="dark-mode-button" />
+               <HeaderThemeSwitch class="dark-mode-button" />
             </ClientOnly>
             <span class="header-arrow">↙</span>
          </div>

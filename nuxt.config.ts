@@ -2,42 +2,31 @@
 
 export default defineNuxtConfig({
    modules: [
+      '@nuxtjs/color-mode',
       '@vueuse/nuxt',
       '@nuxt/content',
       'nuxt-icon',
    ],
-   ssr: true,
+   ssr: false,
    css: [
-      // fonts
-      "@/assets/fonts/inter/inter.css",
+      // fonts. Inter is loaded in app head link at the bottom, from Cloudflare CDN
       "@fontsource/fira-mono",
       "@fontsource/noto-serif/400.css",
       "@fontsource/noto-serif/400-italic.css",
       "@fontsource/noto-serif/700.css",
-      "@fontsource/unbounded/variable.css",
       "@fontsource/noto-serif/700-italic.css",
-      "@fontsource/noto-serif-display/variable.css",
-      // "@fontsource/noto-serif-display/variable-full.css",
-      "@fontsource/noto-serif-display/variable-italic.css",
-      // "@fontsource/noto-serif-display/variable-full-italic.css",
-      // "@fontsource/noto-serif",
-
       // global styles
       "@/assets/css/reset.css",
       "@/assets/css/styles.scss",
       // "@/assets/css/tippy.scss",
    ],
-   // routeRules: {
-      // '/assets/**': { swr: 30 * 24 * 60 * 60 },
-      // '/images/**': swr: 30 * 24 * 60 * 60 },
-      // '/_nuxt/**': { swr: 30 * 24 * 60 * 60 },
-      // '/**/*.js': swr: 30 * 24 * 60 * 60 },
-      // '/**/*.css': { swr: 30 * 24 * 60 * 60 },
-      // '/**/*.json': swr: 30 * 24 * 60 * 60 },
-      // '/**/*.html': swr: 30 * 24 * 60 * 60 },
-      // '/**/*.xml': swr: 30 * 24 * 60 * 60 },
-      // '/**/*.svg': { swr: 30 * 24 * 60 * 60 },
-   // },
+   colorMode: {
+      preference: 'system',
+      fallback: 'light',
+      classSuffix: '',
+      classPrefix: 'theme-',
+      storageKey: 'nuxt-color-mode'
+   },
    content: {
       markdown: {
          anchorLinks: false,
@@ -46,18 +35,24 @@ export default defineNuxtConfig({
          ],
          rehypePlugins: []
       },
-      // https://content.nuxtjs.org/api/configuration
-      // watch: {
-      //    ws: {
-      //       hostname: 'localhost'
-      //    }
-      // }
-      watch: false
+      // creates a server to watch for 
+      // changes in content files and refresh on change
+      watch: {
+         ws: {
+            hostname: 'localhost'
+         }
+      }
    },
    typescript: {
       shim: false,
    },
    app: {
+      head: {
+         link: [
+            { rel: 'preconnect', href: 'https://rsms.me' },
+            { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' },
+         ]
+      },
       pageTransition: { name: 'page', mode: 'out-in' }
    },
 

@@ -1,6 +1,6 @@
 <template>
    <button v-tippy="{ content: `${themeState.tooltip}`, placement: 'bottom-start' }" class="button-no-style"
-      @click="next()">
+      @click="cycleThemeNext()">
       <Transition name="slide-up">
          <Icon v-if="themeState.icon === 'dark'" name="tabler:ghost-filled" size="1.2em" />
          <Icon v-else-if="themeState.icon === 'light'" name="ic:outline-lightbulb" size="1.1em" />
@@ -9,32 +9,32 @@
 </template>
 
 <script setup>
-// fluent-emoji:crescent-moon
-// fluent-emoji:sun-behind-small-cloud
+// useCycleList has { state, next, prev }
+// const { state, next } = useCycleList(['dark', 'light', 'cafe', 'contrast', 'auto'], { initialValue: mode })
+// connecting this to https://color-mode.nuxtjs.org/
+const colorMode = useColorMode()
+const { state: cycleThemeState, next: cycleThemeNext } = useCycleList(['dark', 'light', 'system'], { initialValue: colorMode.value })
+watchEffect(() => colorMode.preference = cycleThemeState.value)
 
-// systemColorMode.value can be 'dark' or 'light'
-// pageColorMode.value can be 'dark', 'light' or 'auto'
-const { state, next } = useCycleList(['dark', 'light', 'auto'], { initialValue: pageColorMode })
-watchEffect(() => pageColorMode.value = state.value)
 
-
+// colorMode.preference:  Actual color-mode selected (can be 'system'), update it to change the user preferred color mode
+// colorMode.value:       Useful to know what color mode has been detected when $colorMode === 'system', you should not update it
 const themeState = computed(() => {
-   switch (pageColorMode.value) {
+   switch (colorMode.preference) {
       case 'light':
          return { tooltip: 'vitamina D 🏖️', icon: 'light' }
       case 'dark':
          return { tooltip: 'oscuroOooOo 🦉', icon: 'dark' }
    }
-   // case 'auto':
-   return { tooltip: 'igual que el sistema 💿', icon: systemColorMode.value }
+   // case 'system':
+   return { tooltip: 'igual que el sistema 💿', icon: colorMode.value /* could be 'light' or 'dark' */ }
 })
-
 </script>
 
 <style>
 .slide-up-enter-active,
 .slide-up-leave-active {
-   transition: opacity .9s, transform .9s;
+   transition: opacity .7s, transform .7s;
    transition-timing-function: cubic-bezier(0.68, -0.5, 0.15, 1.38);
 }
 

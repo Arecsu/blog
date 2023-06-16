@@ -1,17 +1,19 @@
 <template>
-   <div class="global-container">
-      <div class="the-page">
-         <Header />
-         <main>
-            <slot />
-         </main>
-      </div>
+   <ColorScheme>
+      <div class="global-container">
+         <div class="the-page">
+            <Header />
+            <main>
+               <slot />
+            </main>
+         </div>
          <div class="noise-background"></div>
-         <div class="radial-background"></div>
+         <!-- <div class="radial-background"></div> -->
          <ClientOnly>
             <MousePositionToVar />
          </ClientOnly>
-   </div>
+      </div>
+   </ColorScheme>
 </template>
 
 <style>
@@ -30,6 +32,7 @@
    /* overflow-x: hidden; */
 
 }
+
 .noise-background,
 .radial-background {
    grid-area: 1 / 1 / 2 / 2;
@@ -52,13 +55,15 @@
 html[theme="dark"] .radial-background {
    mix-blend-mode: plus-lighter;
 }
+
 html[theme="light"] .radial-background {
    mix-blend-mode: darken;
 }
+
 .radial-background {
-	background: var(--bg-radial-gradient);
-	background-size: 100vw 100vh;
-	background-repeat: no-repeat;
+   background: var(--bg-radial-gradient);
+   background-size: 100vw 100vh;
+   background-repeat: no-repeat;
 }
 
 
@@ -69,5 +74,4 @@ main {
    display: flex;
    padding-inline: var(--padding-inline-main);
 
-}
-</style>
+}</style>
