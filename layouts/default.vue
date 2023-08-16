@@ -2,7 +2,7 @@
   <div class="global-container">
     <div class="the-page">
       <Header />
-      <Transition appear name="show-full-page">
+      <Transition name="show-full-page">
         <main v-show="display">
           <slot />
         </main>
