@@ -1,19 +1,17 @@
 <template>
-   <ColorScheme>
-      <div class="global-container">
-         <div class="the-page">
-            <Header />
-            <main>
-               <slot />
-            </main>
-         </div>
-         <div class="noise-background"></div>
-         <!-- <div class="radial-background"></div> -->
-         <ClientOnly>
-            <MousePositionToVar />
-         </ClientOnly>
+   <div class="global-container">
+      <div class="the-page">
+         <Header />
+         <main>
+            <slot />
+         </main>
       </div>
-   </ColorScheme>
+      <div class="noise-background"></div>
+      <!-- <div class="radial-background"></div> -->
+      <ClientOnly>
+         <MousePositionToVar />
+      </ClientOnly>
+   </div>
 </template>
 
 <style>
@@ -74,4 +72,5 @@ main {
    display: flex;
    padding-inline: var(--padding-inline-main);
 
-}</style>
+}
+</style>

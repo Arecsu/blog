@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       '@nuxt/content',
       'nuxt-icon',
    ],
-   ssr: false,
+   ssr: true,
    css: [
       // fonts. Inter is loaded in app head link at the bottom, from Cloudflare CDN
       "@fontsource/fira-mono",
