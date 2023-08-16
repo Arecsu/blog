@@ -1,5 +1,5 @@
 <template>
-   <div class="header-container">
+   <div class="header-container" :class="display ? 'header-show' : 'header-hide'">
       <div class="noise-background"></div>
       <!-- <div class="radial-background"></div> -->
       <header>
@@ -20,18 +20,30 @@
             </ul>
          </nav>
          <div class="header-right-side">
-            <ClientOnly>
                <HeaderThemeSwitch class="dark-mode-button" />
-            </ClientOnly>
             <span class="header-arrow">↙</span>
          </div>
       </header>
    </div>
 </template>
 
+<script setup>
+const display = ref(false)
+onMounted(() => {
+   display.value = true
+})
+</script>
+
 
 <style scoped lang="scss">
+.header-hide {
+   transform: translateY(calc(var(--header-height) * -1));
+   opacity: 0;
+}
+
 .header-container {
+   transition: transform .5s cubic-bezier(0.65, 0, 0.35, 1), opacity .5s cubic-bezier(0.65, 0, 0.35, 1);;
+   transition-delay: 0s;
    display: grid;
    background-color: var(--color-header-bg);
    backdrop-filter: blur(14px);

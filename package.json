@@ -10,25 +10,25 @@
     "deployold": "vercel deploy --prod"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.6.0",
-    "@nuxtjs/color-mode": "^3.2.0",
-    "gh-pages": "^5.0.0",
-    "nuxt": "3.5.3",
-    "nuxt-icon": "^0.4.1",
-    "sass": "^1.63.3"
+    "@nuxt/content": "^2.7.2",
+    "@nuxtjs/color-mode": "^3.3.0",
+    "gh-pages": "^6.0.0",
+    "nuxt": "3.6.5",
+    "nuxt-icon": "^0.5.0",
+    "sass": "^1.65.1"
   },
   "dependencies": {
-    "@fontsource-variable/inter": "^5.0.3",
-    "@fontsource/archivo": "^5.0.3",
-    "@fontsource/fira-mono": "^5.0.3",
-    "@fontsource/inter": "^5.0.3",
-    "@fontsource/noto-serif": "^5.0.3",
-    "@fontsource/noto-serif-display": "^5.0.3",
-    "@fontsource/unbounded": "^5.0.3",
-    "@vueuse/components": "^10.1.2",
-    "@vueuse/core": "^10.1.2",
-    "@vueuse/nuxt": "^10.1.2",
+    "@fontsource-variable/inter": "^5.0.8",
+    "@fontsource/archivo": "^5.0.8",
+    "@fontsource/fira-mono": "^5.0.8",
+    "@fontsource/inter": "^5.0.8",
+    "@fontsource/noto-serif": "^5.0.9",
+    "@fontsource/noto-serif-display": "^5.0.9",
+    "@fontsource/unbounded": "^5.0.8",
+    "@vueuse/components": "^10.3.0",
+    "@vueuse/core": "^10.3.0",
+    "@vueuse/nuxt": "^10.3.0",
     "remark-external-links": "^9.0.1",
-    "vue-tippy": "^6.2.0"
+    "vue-tippy": "^6.3.1"
   }
 }

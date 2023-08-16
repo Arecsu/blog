@@ -42,7 +42,8 @@ html.theme-light {
 	--header-height: 2.3rem;
 	/* --header-border-bottom: solid 1px var(--color-text); */
 	--header-border-bottom: dashed var(--border-size-1) var(--color-fg-1);
-	--sidebar-recipe-border: dashed var(--border-size-1) var(--color-subingredient-name);
+	// --sidebar-recipe-border: dashed var(--border-size-1) var(--color-subingredient-name);
+	--sidebar-recipe-border: dashed var(--border-size-1) var(--color-fg-1);
 	--tippy-border: dashed var(--border-size-2) var(--color-fg-1);
 	--padding-1: clamp(1rem, 0.5rem + 2vw, 2.5rem);
 
