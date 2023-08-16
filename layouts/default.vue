@@ -2,6 +2,19 @@
   <div class="global-container">
     <div class="the-page">
       <Header />
+      <NoScript>
+        <style>
+          main {
+            display: block !important;
+          }
+          .header-container {
+            display: grid !important;
+          }
+          .dark-mode-button {
+            display: none !important;
+          }
+        </style>
+      </NoScript>
       <Transition name="show-full-page">
         <main v-show="display">
           <slot />
@@ -40,21 +53,14 @@ onMounted(() => {
 <style>
 .show-full-page-enter-active,
 .show-full-page-leave-active {
-  transition: opacity 0.4s;
+  transition: opacity 0.35s, transform 0.35s;
   transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
-
 }
 
-.show-full-page-enter-from {
-  opacity: 0;
-  /* transform: translateY(.3rem); */
-  /* transform: scale(0.99); */
-}
-
+.show-full-page-enter-from,
 .show-full-page-leave-to {
   opacity: 0;
-  /* transform: translateY(-1em); */
-  /* transform: scale(0.5); */
+  transform: translateY(-.8rem) scale(0.995);
 }
 
 .global-container {

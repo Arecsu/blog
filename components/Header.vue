@@ -1,28 +1,31 @@
 <template>
-  <div class="header-container" :class="display ? 'header-show' : 'header-hide'">
-    <div class="noise-background"></div>
-    <!-- <div class="radial-background"></div> -->
-    <header>
-      <nav>
-        <ul>
-          <li class="lines">//----</li>
-          <li>
-            <NuxtLink to="/notas">notas</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/recetas">recetas</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="https://alejandro9r.xyz" target="_blank">_hola!</NuxtLink>
-          </li>
-        </ul>
-      </nav>
-      <div class="header-right-side">
+  <Transition>
+    <div class="header-container" v-show="display">
+      <div class="noise-background"></div>
+      <!-- <div class="radial-background"></div> -->
+      <header>
+        <nav>
+          <ul>
+            <li class="lines">//----</li>
+            <li>
+              <NuxtLink to="/notas">notas</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/recetas">recetas</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="https://alejandro9r.xyz" target="_blank">_hola!</NuxtLink>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-right-side">
+          <!-- <Weather /> -->
           <HeaderThemeSwitch class="dark-mode-button" />
-        <span class="header-arrow">↙</span>
-      </div>
-    </header>
-  </div> 
+          <span class="header-arrow">↙</span>
+        </div>
+      </header>
+    </div>
+  </Transition>
 </template>
 
 <script setup>
@@ -33,14 +36,7 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
-.header-hide {
-  transform: translateY(calc(var(--header-height) * -1));
-  opacity: 0;
-}
-
 .header-container {
-  transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1), opacity 0.5s cubic-bezier(0.65, 0, 0.35, 1);
-  transition-delay: 0s;
   display: grid;
   background-color: var(--color-header-bg);
   backdrop-filter: blur(14px);
@@ -112,5 +108,20 @@ a.router-link-active {
   font-weight: 400;
   font-size: 1.3em;
   transform: translateY(-0.04em);
+}
+</style>
+
+<style>
+.v-enter-active,
+.v-leave-active {
+  transition: transform 0.5s, opacity 0.5s;
+  transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+  transition-delay: .1s;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+  transform: translateY(calc(var(--header-height) * -1));
 }
 </style>
