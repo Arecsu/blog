@@ -4,7 +4,6 @@
       <Transition name="slide-up">
          <Icon v-if="themeState.icon === 'dark'" name="tabler:ghost-filled" size="1.2em" />
          <Icon v-else-if="themeState.icon === 'light'" name="ic:outline-lightbulb" size="1.1em" />
-         <Icon v-else name="ic:outline-lightbulb" size="1.1em" />
       </Transition>
    </button>
 </template>
