@@ -42,17 +42,21 @@ title: Links
 ## ✂️ Utilidades
 
 - [Posy's improved cursors for Windows 10/11](http://www.michieldb.nl/other/cursors/) — SON GENIALES 🖱️
-- [SmoothScroll](https://www.smoothscroll.net/)
+- [Sound schemes for Windows](https://github.com/ORelio/Sound-Manager)
 - [Libgen](https://libgen.fun/) — Buscador de libros y papers
 - [Sci-hub](https://sci-hub.se/) — Otro buscador de papers
 
-## +Links
+## + Links
 
 - [Hotline Webring](https://hotlinewebring.club/)
 - [Yesterlinks](https://links.yesterweb.org/)
 - [href.cool](https://href.cool/)
    - [href.cool: Links of the 2010s](https://href.cool/2010s/)
 - [Indieseek.xyz Indie Web Directory](https://indieseek.xyz)
+- [Jason's homepage](https://jason.nabein.me/#links)
+- [Wiby.me](https://wiby.me/)
+- [The Forest](https://theforest.link/)
+- [Cloudhiker](https://cloudhiker.net/)
 
 ## 🤔 ???
 
@@ -72,7 +76,6 @@ title: Links
 - [Windows 93](https://v2.windows93.xyz)
 - [Riju.code](https://riju.codes/) - Fast online playground for every programming language
 - [My 90's TV](https://my90stv.com/)
-- [Jason's homepage](https://jason.nabein.me/#links)
 - [SUPP.AI](https://supp.ai/) - Discover Supplement-Drug Interactions
 - [FREEMEDIAHECKYEAH](https://old.reddit.com/r/FREEMEDIAHECKYEAH/wiki/index)
 
