@@ -22,11 +22,9 @@
       </Transition>
     </div>
 
-    <div class="noise-background"></div>
+    <!-- <div class="noise-background"></div> -->
+    <!-- <div class="dotted-background"></div> -->
     <!-- <div class="radial-background"></div> -->
-    <ClientOnly>
-      <MousePositionToVar />
-    </ClientOnly>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <Transition>
     <div class="header-container" v-show="display">
-      <div class="noise-background"></div>
+      <!-- <div class="noise-background"></div> -->
       <!-- <div class="radial-background"></div> -->
       <header>
         <nav>
