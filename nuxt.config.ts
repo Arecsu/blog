@@ -9,6 +9,7 @@ export default defineNuxtConfig({
    ],
    ssr: true,
    css: [
+      "@/assets/css/inter.css",
       // fonts. Inter is loaded in app head link at the bottom, from Cloudflare CDN
       "@fontsource/fira-mono",
       "@fontsource/noto-serif/400.css",
@@ -47,12 +48,6 @@ export default defineNuxtConfig({
       shim: false,
    },
    app: {
-      head: {
-         link: [
-            { rel: 'preconnect', href: 'https://rsms.me' },
-            { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' },
-         ]
-      },
       pageTransition: { name: 'page', mode: 'out-in' }
    },
 
