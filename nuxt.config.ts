@@ -7,6 +7,9 @@ export default defineNuxtConfig({
       '@nuxt/content',
       'nuxt-icon',
    ],
+   // HTML content will NOT prerender if ssr: false.
+   // That means, every markdown file and pretty much anything else. 
+   // https://nuxt.com/docs/getting-started/deployment#static-hosting.
    ssr: true,
    css: [
       "@/assets/css/inter.css",
