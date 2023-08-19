@@ -21,7 +21,7 @@
         <div class="header-right-side">
           <!-- <Weather /> -->
           <ClientOnly>
-          <HeaderThemeSwitch class="dark-mode-button" />
+            <HeaderThemeSwitch class="dark-mode-button" />
           </ClientOnly>
           <span class="header-arrow">↙</span>
         </div>
@@ -32,7 +32,8 @@
 
 <script setup>
 const display = ref(false)
-onMounted(() => {
+onMounted(async () => {
+  await nextTick()
   display.value = true
 })
 </script>
@@ -116,9 +117,9 @@ a.router-link-active {
 <style>
 .v-enter-active,
 .v-leave-active {
-  transition: transform 0.5s, opacity 0.5s;
-  transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
-  transition-delay: .1s;
+  transition: transform .8s, opacity .8s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: .7s;
 }
 
 .v-enter-from,

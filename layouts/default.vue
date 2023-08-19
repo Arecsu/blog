@@ -43,7 +43,8 @@
    in the recipes!
 */
 const display = ref(false)
-onMounted(() => {
+onMounted(async () => {
+  await nextTick()
   display.value = true
 })
 </script>
@@ -51,14 +52,15 @@ onMounted(() => {
 <style>
 .show-full-page-enter-active,
 .show-full-page-leave-active {
-  transition: opacity 0.35s, transform 0.35s;
-  transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+  transition: opacity 2s, transform 0.35s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: .1s;
 }
 
 .show-full-page-enter-from,
 .show-full-page-leave-to {
   opacity: 0;
-  transform: translateY(-.8rem) scale(0.995);
+  /* transform: translateY(-.8rem) scale(0.995); */
 }
 
 .global-container {
@@ -76,11 +78,12 @@ onMounted(() => {
   /* overflow-x: hidden; */
 }
 
+.dotted-background,
 .noise-background,
 .radial-background {
   grid-area: 1 / 1 / 2 / 2;
   z-index: -1;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   right: 0;
