@@ -29,7 +29,11 @@ export default defineNuxtConfig({
       fallback: 'light',
       classSuffix: '',
       classPrefix: 'theme-',
-      storageKey: 'nuxt-color-mode'
+      storageKey: 'nuxt-color-mode',
+      themeColors: {
+         dark: '#0e141b',
+         light: '#fbf9f3',
+      }
    },
    content: {
       markdown: {
