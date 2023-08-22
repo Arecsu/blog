@@ -7,3 +7,5 @@ node_modules
 .env
 dist
 .vercel
+scripts/fluent-emoji-a9r/fluentui-emoji
+scripts/fluent-emoji-a9r/output
