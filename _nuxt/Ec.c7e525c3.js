@@ -1,1 +1,0 @@
-import{_ as t}from"./Emoji.vue.c4c1f366.js";import{k as n,o as a,i as r}from"./entry.f0122258.js";const m=n({__name:"Ec",props:{e:{},t:{default:"c"}},setup(s){return(e,c)=>{const o=t;return a(),r(o,{e:e.e,t:e.t},null,8,["e","t"])}}});export{m as default};
