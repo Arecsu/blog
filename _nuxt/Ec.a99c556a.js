@@ -1,0 +1,1 @@
+import{_ as t}from"./Emoji.vue.a311b6ce.js";import{k as n,o as r,i as a}from"./entry.60dc6bbe.js";import"./asyncData.4671778d.js";const i=n({__name:"Ec",props:{e:{},t:{default:"c"}},setup(p){return(e,s)=>{const o=t;return r(),a(o,{e:e.e,t:e.t},null,8,["e","t"])}}});export{i as default};
