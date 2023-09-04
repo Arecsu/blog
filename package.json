@@ -6,7 +6,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "nuxt generate && sed -i 's/font-display:swap/font-display:block/g' .output/public/index.html && gh-pages --dotfiles -d .output/public",
+    "deploy": "nuxt generate && gh-pages --dotfiles -d .output/public",
+    "deploy2": "nuxt generate && sed -i 's/font-display:swap/font-display:block/g' .output/public/index.html && gh-pages --dotfiles -d .output/public",
     "deployold": "vercel deploy --prod"
   },
   "devDependencies": {
