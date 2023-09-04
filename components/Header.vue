@@ -6,7 +6,10 @@
       <header>
         <nav>
           <ul>
-            <li class="lines">//----</li>
+          <!-- <li class="lines">//----</li> -->
+          <li>
+            <NuxtLink to="/"><span style="font-style: italic">/--</span>base</NuxtLink>
+          </li>
             <li>
               <NuxtLink to="/notas">notas</NuxtLink>
             </li>
@@ -89,6 +92,7 @@ nav {
     font-size: 0.85em;
     margin-bottom: -0.1.2em;
     font-weight: 600;
+    vertical-align: baseline;
     font-style: italic;
     letter-spacing: 0.05em;
     user-select: none;
