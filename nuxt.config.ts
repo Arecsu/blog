@@ -13,12 +13,11 @@ export default defineNuxtConfig({
    ssr: true,
    css: [
       "@/assets/css/inter.css",
-      // fonts. Inter is loaded in app head link at the bottom, from Cloudflare CDN
       "@fontsource/fira-mono",
       "@fontsource/noto-serif/400.css",
-      "@fontsource/noto-serif/400-italic.css",
-      "@fontsource/noto-serif/700.css",
-      "@fontsource/noto-serif/700-italic.css",
+      // "@fontsource/noto-serif/400-italic.css",
+      // "@fontsource/noto-serif/700.css",
+      // "@fontsource/noto-serif/700-italic.css",
       // global styles
       "@/assets/css/reset.css",
       "@/assets/css/styles.scss",
