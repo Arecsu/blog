@@ -1,51 +1,79 @@
 <template>
-  <Transition>
-    <div class="header-container" v-show="display">
-      <!-- <div class="noise-background"></div> -->
-      <!-- <div class="radial-background"></div> -->
-      <header>
-        <nav>
-          <ul>
+  <div class="header-container">
+    <!-- <div class="noise-background"></div> -->
+    <!-- <div class="radial-background"></div> -->
+    <header>
+      <nav>
+        <ul>
           <!-- <li class="lines">//----</li> -->
           <li>
             <NuxtLink to="/"><span style="font-style: italic">/--</span>base</NuxtLink>
           </li>
-            <li>
-              <NuxtLink to="/notas">notas</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/recetas">recetas</NuxtLink>
-            </li>
+          <li>
+            <NuxtLink to="/notas">notas</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/recetas">recetas</NuxtLink>
+          </li>
           <!-- <li> -->
           <!-- <NuxtLink to="https://alejandro9r.xyz" target="_blank">_hola!</NuxtLink> -->
           <!-- </li> -->
-          </ul>
-        </nav>
-        <div class="header-right-side">
-          <!-- <Weather /> -->
+        </ul>
+      </nav>
+      <div class="header-right-side">
+        <!-- <Weather /> -->
         <!-- <ClientOnly> -->
-            <HeaderThemeSwitch class="dark-mode-button" />
+        <HeaderThemeSwitch class="dark-mode-button" />
         <!-- </ClientOnly> -->
-          <span class="header-arrow">↙</span>
-        </div>
-      </header>
-    </div>
-  </Transition>
+        <span class="header-arrow">↙</span>
+      </div>
+    </header>
+  </div>
 </template>
 
-<script setup>
-const display = ref(false)
-onMounted(async () => {
-  await nextTick()
-  display.value = true
-})
-</script>
-
 <style scoped lang="scss">
+@keyframes headerAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(calc(var(--header-height) * -1));
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes headerDelay {
+  from {
+    opacity: 0;
+    transform: translateY(calc(var(--header-height) * -1));
+  }
+  to {
+    opacity: 0;
+    transform: translateY(calc(var(--header-height) * -1));
+  }
+}
+/*
+.header-container {
+  $header-animation-delay: 1s;
+  animation: 1s ease-out 0s 1 headerDelay,
+    0.8s cubic-bezier(0.16, 1, 0.3, 1) $header-animation-delay 1 headerAppear;
+}
+*/
+
+/*
+animation-duration: 1s; // the duration of the animation 
+animation-timing-function: ease-out; // how the animation will behave
+animation-delay: 0s; // how long to delay the animation from starting
+animation-iteration-count: 1;//  how many times the animation will play
+animation-name: slideInFromLeft; // the name of the animation we defined above
+*/
+
 .header-container {
   display: grid;
-  background-color: var(--color-header-bg);
-  backdrop-filter: blur(14px);
+  /* background-color: var(--color-header-bg); */
+  background-color: var(--color-bg-0);
+  /* backdrop-filter: blur(14px); */
   position: sticky;
   top: 0;
   z-index: 1;
@@ -115,20 +143,5 @@ a.router-link-active {
   font-weight: 400;
   font-size: 1.3em;
   transform: translateY(-0.04em);
-}
-</style>
-
-<style>
-.v-enter-active,
-.v-leave-active {
-  transition: transform .8s, opacity .8s;
-  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-  transition-delay: .7s;
-}
-
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
-  transform: translateY(calc(var(--header-height) * -1));
 }
 </style>

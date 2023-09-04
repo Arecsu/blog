@@ -1,7 +1,10 @@
 <template>
   <div class="global-container">
     <div class="the-page">
-      <Header />
+      <Transition name="header">
+        <!-- <Header v-if="$route.path !== '/'" /> -->
+        <Header />
+      </Transition>
       <NoScript>
         <style>
           main {
@@ -15,53 +18,50 @@
           }
         </style>
       </NoScript>
-      <Transition name="show-full-page">
-        <main v-show="display">
-          <slot />
-        </main>
-      </Transition>
+      <main>
+        <slot />
+      </main>
     </div>
-
-    <!-- <div class="noise-background"></div> -->
-    <!-- <div class="dotted-background"></div> -->
-    <!-- <div class="radial-background"></div> -->
   </div>
 </template>
 
-<script setup>
-/* 
-   this hacky workaround ensures that we don't 
-   get dark mode icon to flash because nuxt hasn't
-   run yet to populate the reactive values while the
-   rest of the HTML document has finished rendering.
-   
-   This way, onMounted() is called together with all
-   the reactive values needed to properly display
-   everything at the same time.
-
-   This also solves some jump of content in the ingredients
-   in the recipes!
-*/
-const display = ref(false)
-onMounted(async () => {
-  await nextTick()
-  display.value = true
-})
-</script>
-
-<style>
-.show-full-page-enter-active,
-.show-full-page-leave-active {
-  transition: opacity 2s, transform 0.35s;
-  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-  transition-delay: .1s;
+<style lang="scss">
+/* we will explain what these classes do next! */
+.header-enter-active,
+.header-leave-active {
+  transition: opacity 0.5s ease;
 }
 
-.show-full-page-enter-from,
-.show-full-page-leave-to {
+.header-enter-from,
+.header-leave-to {
   opacity: 0;
-  /* transform: translateY(-.8rem) scale(0.995); */
 }
+
+@keyframes contentAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes contentDelay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/*
+main {
+  $main-animation-delay: .2s;
+  animation: $main-animation-delay ease-out 0s 1 contentDelay, 
+             1.3s cubic-bezier(0.16, 1, 0.3, 1) $main-animation-delay 1 contentAppear;
+}
+*/
+
 
 .global-container {
   display: grid;
