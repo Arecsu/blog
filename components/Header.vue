@@ -16,9 +16,9 @@
             <li>
               <NuxtLink to="/recetas">recetas</NuxtLink>
             </li>
-            <li>
-              <NuxtLink to="https://alejandro9r.xyz" target="_blank">_hola!</NuxtLink>
-            </li>
+          <!-- <li> -->
+          <!-- <NuxtLink to="https://alejandro9r.xyz" target="_blank">_hola!</NuxtLink> -->
+          <!-- </li> -->
           </ul>
         </nav>
         <div class="header-right-side">
