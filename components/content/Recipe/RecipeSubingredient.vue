@@ -1,24 +1,27 @@
 <template>
-   <div class="subingredient">
-      <h5 v-if="name">{{ name }}</h5>
-      <slot />
-   </div>
+  <div class="subingredient">
+    <h5 class="recipe-subingredient-title" v-if="name">{{ name }}</h5>
+    <h5 class="recipe-subingredient-title" v-else>
+      <ContentSlot :use="$slots.title" unwrap="p" />
+    </h5>
+    <ContentSlot :use="$slots.default" />
+  </div>
 </template>
 
 <script setup>
-   defineProps(['name'])
+defineProps(["name"])
 </script>
 
 <style scoped>
-h5 {
-   margin-block: 0 .4em;
-   color: var(--color-subingredient-name);
-   font-style: italic;
-   /* text-transform: lowercase; */
+h5.recipe-subingredient-title {
+  margin-block: 0 0.4em;
+  color: var(--color-subingredient-name);
+  /* font-style: italic; */
+  /* text-transform: lowercase; */
 }
 
 .subingredient {
-   break-inside: avoid;
-   margin-bottom: 2rem;
+  break-inside: avoid;
+  margin-bottom: 2rem;
 }
 </style>

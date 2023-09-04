@@ -12,18 +12,16 @@
 
 <script setup>
 useHead({
-  title: 'notas',
+  title: "notas",
 })
 
-const { data: notas } = await useAsyncData('notas', () => {
-  return queryContent('notas')
-  .where({ draft: { $ne: true } })
-  .sort({ title: 1 })
-  .only(['_path', 'title'])
-  .find()
+const { data: notas } = await useAsyncData("notas", () => {
+  return queryContent("notas")
+    .where({ draft: { $ne: true } })
+    .sort({ title: 1 })
+    .only(["_path", "title"])
+    .find()
 })
-
-
 </script>
 
 <style>
