@@ -18,7 +18,7 @@ alt: Pizza
 - `20 gr` Aceite de oliva
 :::
 :::RecipeSubingredient{name="Salsa"}
-- Tomates triturados 🍅
+- Tomates triturados :🍅:
 - Ajo en polvo. De no ser posible, un ajo cortado en trozitos pequeños.
 - Hojas de albahaca
 - Aceite de oliva
@@ -30,7 +30,7 @@ alt: Pizza
 :::
 
 #IngredientsIntro
-🍕 *Para **2 pizzas** grandes*
+*Para **2 pizzas** :🍕: grandes*
 ::
 
 ::RecipeProcess{:process="true"}
@@ -72,12 +72,12 @@ Cortar en pedazitos las hojas de albahaca y el ajo, por supuesto. Si podes usar 
 
 1. Luego de reposar la masa todos esos días en la heladera, sacarla.
 2. Tirar harina sobre la mesada.
-3. Estirar la masa del centro hacia afuera, teniendo cuidado de proteger el aire en los bordes. No importa si no es perfecto o se rompe un poco tampoco. Igual estará tremendo :)
+3. Estirar la masa del centro hacia afuera, teniendo cuidado de proteger el aire en los bordes. No importa si no es perfecto o se rompe un poco tampoco. Igual estará tremendo :🥳:
 4. Colocar la salsa y el queso, y al horno.
 
 Para el horno, lo ideal sería tener un horno de barro o pizzero. No es común ver eso en las casas. Probablemente tengas un horno común y corriente, como yo. Así que aquí va un pro tip con el que hago mis pizzas:
 
-⭐ Si no tenés una piedra refractaria, usar un molde pizzero pero dado vuelta. Si. Colocar otras piezas de metal o moldes debajo. Eso creará una "piedra" en términos de dispersión del calor y la pizza se cocinará de forma más pareja. El sabor y la textura es mejor así, en mi opinión.
+:⭐: Si no tenés una piedra refractaria, usar un molde pizzero pero dado vuelta. Si. Colocar otras piezas de metal o moldes debajo. Eso creará una "piedra" en términos de dispersión del calor y la pizza se cocinará de forma más pareja. El sabor y la textura es mejor así, en mi opinión.
 
 Como último consejo: si el horno es muy débil, agregar solo la salsa a la masa. Llevar al horno, y una vez pasados unos minutos, agregar recién el queso. Esto evitará que el queso se queme y toda la pizza esté bien cocinada.
 ::

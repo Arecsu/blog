@@ -13,14 +13,14 @@ alt: Galletas de Avena
 ::RecipeIngredients
 - `380g` Harina leudante
 - `140g` Avena
-- `4gr` 🧂 Sal
-- `200g` 🧈 Manteca blanda
+- `4gr` ;🧂; Sal
+- `200g` ;🧈; Manteca blanda
 - `360g` Azúcar blanca
 - `70g` Azúcar mascabo
-- `3` 🥚 Yemas y `2` Claras (2 huevos y 1 yema adicional)
-- `18g` 🍦 Esencia de vainilla real
-- `230g` 🍫 Chips de chocolate o chocolate picado
-- `Opcional 70g` 🌰 Nueces picadas
+- `3` Yemas y `2` Claras (;🥚; 2 huevos y 1 yema adicional)
+- `18g` ;🍦; Esencia de vainilla real
+- `230g` ;🍫; Chips de chocolate o chocolate picado
+- `Opcional 70g` Nueces picadas
 ::
 
 ::RecipeProcess{:process="true"}
@@ -30,14 +30,14 @@ Mezclar en orden:
 
 1. Azúcar, manteca, esencia de vainilla y sal
 2. Huevos
-3. Harina. ⚠️ Solamente mezclar hasta integrar la harina. No amasar más que eso, para no desarrollar el glúten. De lo contrario, haría una masa elástica que no es muy atractiva de comer. Queremos algo quebradizo.
+3. Harina. ;⚠️; Solamente mezclar hasta integrar la harina. No amasar más que eso, para no desarrollar el glúten. De lo contrario, haría una masa elástica que no es muy atractiva de comer. Queremos algo quebradizo.
 4. Avena, trocitos de chocolate y nueces. De nuevo: hasta integrar, amasando lo menos posible.
 
 **Nueces**: lo que yo hago para trituar las nueces es ponerlas sobre un plato o tabla de madera, y las cubro con una servilleta de tela, de esas grandes para uso general en la cocina. Y con un martillo de cocina las voy aplastando. Así no salen volando a todos lados.
 
 #### Rollos y heladera
 
-El siguiente paso es armar rollos. Puede que la mezcla esté muy blanda como para formar rollos sólidos. Si es así, llevar a la heladera por ⌚ 30 minutos a 1 hora para que tome más dureza.
+El siguiente paso es armar rollos. Puede que la mezcla esté muy blanda como para formar rollos sólidos. Si es así, llevar a la heladera por ;⌚; 30 minutos a 1 hora para que tome más dureza.
 
 Con la masa más sólida, se preparan rollos en forma de cilindros del diámetro un poco mas pequeños que la galleta. Recordar que las galletas crecerán un poco más de tamaño en el horneado.
 

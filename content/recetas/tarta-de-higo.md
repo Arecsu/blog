@@ -54,7 +54,7 @@ Se puede comprar higos ya en almíbar, o hacerlos con:
 
 ::RecipeProcess{:process="true"}
 
-Inspirado por una tarta producida por Tello, aquí en Tucumán, Argentina. De hecho, es la misma. Probablemente más rica 🤗
+Inspirado por una tarta producida por Tello, aquí en Tucumán, Argentina. De hecho, es la misma. Probablemente más rica :🤗:
 
 ### Masa sablée
 
@@ -62,7 +62,7 @@ La manteca debe estar pomada. Lo ideal es que alcance ese punto estando en tempe
 
 Si no, se puede ayudar un poco con un microondas y setearlo en 10 segundos. Comprobar y seguir si falta un poco más. No tiene que derretirse. Solo ablandarse.
 
-Importante NO USAR manteca derretida, en estado líquido. La masa no va a salir bien así. Lo digo por experiencia 🙃
+Importante NO USAR manteca derretida, en estado líquido. La masa no va a salir bien así. Lo digo por experiencia :🙃:
 
 Luego, en un bowl, mezclar en orden:
 
@@ -77,7 +77,7 @@ Una vez incorporados los ingredientes:
 
 Colocamos la masa sobre un papel film. La aplastamos para que quede plana y con un grosor un poco más alto que el final que llevará en el molde.
 
-La cubrimos completamente con el papel film. Llevar a la heladera por ⌚ 30 minutos. Necesitamos que esté más fría y lo suficientemente dura como para que sea amasable con un palo de amasar.
+La cubrimos completamente con el papel film. Llevar a la heladera por ;⌚; 30 minutos. Necesitamos que esté más fría y lo suficientemente dura como para que sea amasable con un palo de amasar.
 
 ### Al molde
 

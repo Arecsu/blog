@@ -4,29 +4,48 @@ icon: fluent-emoji:chocolate-bar
 ---
 
 ::RecipeIngredients
-:::RecipeSubingredient{name="Bizcochuelo"}
-- `200g` 🧈 Manteca pomada
+:::RecipeSubingredient
+
+#title
+Bizcochuelo
+#default
+- `200g` ;🧈; Manteca pomada
 - `400g`  Azúcar
 - `1 cucharada` Extracto de vainilla
-- `100g` 🍫 Cacao amargo
-- `200g` ☕ Café preparado (un poco fuerte)
-- `4` 🥚 Huevos
+- `100g` ;🍫; Cacao amargo
+- `200g` ;☕; Café preparado (un poco fuerte)
+- `4` ;🥚; Huevos
 - `200g` Harina 0000
 - `15g` Polvo de hornear
 :::
-:::RecipeSubingredient{name="Crema de chocolate"}
-- `400g` 🍫 Chocolate cobertura semiamargo
+
+:::RecipeSubingredient
+
+#title
+Crema de chocolate
+#default
+- `400g` ;🍫; Chocolate cobertura semiamargo
 - `300g` Crema de leche
 - `200g` Dulce de leche
-- `100g` 🧈 Manteca pomada
-- `100g` ☕ Café preparado (un poco fuerte)
-- `50g` 🍫 Cacao amargo
+- `100g` ;🧈; Manteca pomada
+- `100g` ;☕; Café preparado (un poco fuerte)
+- `50g` ;🍫; Cacao amargo
 :::
-:::RecipeSubingredient{name="Falsa mousse"}
-- `150g` 🥛 Crema de leche
+
+:::RecipeSubingredient
+
+#title
+Falsa mousse
+#default
+- `150g` ;🥛; Crema de leche
 - `300g` Crema de chocolate (de los ingredientes anteriores)
 :::
-:::RecipeSubingredient{name="Almíbar de entremets"}
+
+:::RecipeSubingredient
+
+#title
+Almíbar de entremets
+#default
 - `150g` Azúcar
 - `150g` Agua
 :::
@@ -34,7 +53,7 @@ icon: fluent-emoji:chocolate-bar
 
 ::RecipeProcess{:process="true"}
 
-📺 [**Referencia**](https://www.youtube.com/watch?v=1AP7UzWD4Gs)
+:📺: [**Referencia**](https://www.youtube.com/watch?v=1AP7UzWD4Gs)
 
 **Paso previo a todo**: Enmantecar los moldes (o de tener uno solo, bueno uno solo) para los bizcochuelos y llevarlos al freezer.
 
@@ -59,7 +78,7 @@ En el bowl de la batidora:
 8. Incorporar los huevos de a uno mientras se mezcla
 9. Tamizar la harina y el polvo de hornear y mezclar hasta que la totalidad de la harina se encuentre hidratada.
 
-⚠️ **No trabajar tanto la harina para no desarrollar tanto el gluten.** Gluten desarrollado = masa elástica. No desarrolado: masa quebradiza y sedosa.
+;⚠️; **No trabajar tanto la harina para no desarrollar tanto el gluten.** Gluten desarrollado = masa elástica. No desarrolado: masa quebradiza y sedosa.
 
 10. Colocar la masa en el molde y al horno.
 
@@ -69,7 +88,7 @@ En el bowl de la batidora:
 2. En otro bowl, integrar el cafe con el cacao como en los pasos del bizcochuelo.
 3. En otro bowl (si, un tercer bowl) integrar el dulce de leche con la manteca
 
-💡 *¿Por qué dividir en tantos bowls? Para que se integren mejor todos los ingredientes, y con menos trabajo.*
+;💡; *¿Por qué dividir en tantos bowls? Para que se integren mejor todos los ingredientes, y con menos trabajo.*
 
 4. Integrar todas las preparaciones de los 3 bowls, dejando la de la crema y el chocolate cobertura para el final.
 5. Separar 300g de esta crema en otro bowl

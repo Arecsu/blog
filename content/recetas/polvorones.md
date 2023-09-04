@@ -6,10 +6,10 @@ draft: true
 
 ::RecipeIngredients
 :::RecipeSubingredient{name="Mantecado"}
-- `500 gr` 🥛 Harina 000
+- `500 gr` ;🥛; Harina 000
 - `250 gr` Grasa vacuna
 - `250 gr` Azúcar
-- `6` 🥚 Huevos
+- `6` ;🥚; Huevos
 - `10 gr` Bicarbonato de amonio
 - `?` Esencia de Vainilla
 - `?` Esencia de limón

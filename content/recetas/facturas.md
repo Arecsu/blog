@@ -12,47 +12,47 @@ alt: Flan
 ::RecipeIngredients
 
 :::RecipeSubingredient{name="Cosas"}
-- 🧻 Papel film
+- ;🧻; Papel film
 - Tupper (opcional)
-- 🖌️ Pincel
+- ;🖌️; Pincel
 :::
 
 :::RecipeSubingredient{name="Amasijo"}
-- `600 gr` 🌽 Harina 0000
-- `225 ml` 🥛 Leche Entera
+- `600 gr` ;🌽; Harina 0000
+- `225 ml` ;🥛; Leche Entera
 - `10 gr` Levadura fresca
-- `10 gr` 🧂 Sal
+- `10 gr` ;🧂; Sal
 - `100 gr` Azúcar
-- `2` 🥚 Huevos
-- `10 gr` 🍯 Miel
-- `3 gr` 🍦 Esencia de vainilla
-- Ralladura de `media` 🍊 naranja
+- `2` ;🥚; Huevos
+- `10 gr` ;🍯; Miel
+- `3 gr` ;🍦; Esencia de vainilla
+- Ralladura de `media` ;🍊; naranja
 :::
 
 :::RecipeSubingredient{name="Empaste"}
-- `200 gr` 🧈 Manteca blanda
+- `200 gr` ;🧈; Manteca blanda
 :::
 
 :::RecipeSubingredient{name="Doradura"}
-- `2` 🥚 Huevos
+- `2` ;🥚; Huevos
 - `100 gr` Leche
-- `1 cucharadita` 🍯 Miel
+- `1 cucharadita` ;🍯; Miel
 - `1 pizca` Sal
 :::
 
 :::RecipeSubingredient{name="Almíbar"}
 - `300 gr` Agua
 - `300 gr` Azúcar
-- Jugo de `1` 🍊 naranja
-- `20 gr` o `1 buena cucharada` 🍯 Miel
+- Jugo de `1` ;🍊; naranja
+- `20 gr` o `1 buena cucharada` ;🍯; Miel
 :::
 
 :::RecipeSubingredient{name="Crema Pastelera"}
-- `335 ml` 🥛 Leche
+- `335 ml` ;🥛; Leche
 - `100 gr` Azúcar
 - `10 gr` Almidón de maiz
 - `27 gr` Harina 0000
-- `4` 🥚 Yemas
+- `4` ;🥚; Yemas
 - `A ojo` Esencia de vainilla
 :::
 
@@ -63,7 +63,7 @@ alt: Flan
 ::
 
 ::RecipeProcess{:process="true"}
-⭐ Ver el [video](https://www.youtube.com/watch?v=3BPFp2uPmRk&feature=emb_title) al menos una primera vez es **NECESARIO**.
+;⭐; Ver el [video](https://www.youtube.com/watch?v=3BPFp2uPmRk&feature=emb_title) al menos una primera vez es **NECESARIO**.
 
 Los pasos aquí son una referencia básica si ya tenés la experiencia. Hay etapas, como el armado del amasijo y el empaste, que es mucho mejor seguirlos con el video.
 
@@ -79,7 +79,7 @@ Con la manteca pomada:
 2. Aplastarla con las manos y luego con el palo de amasar para darle forma rectangular
 3. Llevar este empaste a la heladera por un tiempo.
 
-⏲️ De qué depende el tiempo? De que se endurezca el empaste lo suficiente.
+;⏲️; De qué depende el tiempo? De que se endurezca el empaste lo suficiente.
 
 El empaste tiene que estar un poquito duro. Si está muy blando, puede resultar en un desastre y explotar al momento de estirarlo junto a la masa.
 
@@ -128,7 +128,7 @@ Te puede pasar como a mí que la heladera no llegar a darle ese frío necesario 
 
 Este proceso de estirado y dar vueltas la masa (hojaldrado) se sugiere hacer 2 vueltas doble, 2 veces.
 
-⚠️ Nota IMPORTANTE: luego de realizado todo el proceso de hojaldrado, NO DEJAR por más que el tiempo mencionado en la heladera: entre 1hs y 2hs. Yo solía hacer la masa a la noche, terminar todo el hojaldrado y dejarla hasta el otro día en la heladera para despertar y hacer el resto de los pasos. Pero en todas esas horas la masa empieza a leudar en la heladera y las cosas no salen bien.
+;⚠️; Nota IMPORTANTE: luego de realizado todo el proceso de hojaldrado, NO DEJAR por más que el tiempo mencionado en la heladera: entre 1hs y 2hs. Yo solía hacer la masa a la noche, terminar todo el hojaldrado y dejarla hasta el otro día en la heladera para despertar y hacer el resto de los pasos. Pero en todas esas horas la masa empieza a leudar en la heladera y las cosas no salen bien.
 
 Así que respetar esos tiempos y no dejar las cosas de más.
 
@@ -137,12 +137,12 @@ Así que respetar esos tiempos y no dejar las cosas de más.
 1. En una cacerola colocamos toda la leche y la mitad del azúcar de los ingredientes. Tenemos `100g`, así que agregaremos `50g`
 2. Llevar la cacerola a un fuego medio
 
-🥣 En otro bowl:
+;🥣; En otro bowl:
 
 3. Colocar el almidón de maiz, harina y el restante del azúcar.
 4. Agregamos los huevos y mezclamos
 
-🥛 Con la leche ya caliente de la cacerola:
+;🥛; Con la leche ya caliente de la cacerola:
 
 5. Agregamos un poco de la leche al bowl, y mezclamos
 6. Toda la preparación del bowl la vertimos en la cacerola
