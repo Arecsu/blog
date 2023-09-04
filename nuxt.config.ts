@@ -1,5 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 
+const monthCacheControl = 2592000
+
 export default defineNuxtConfig({
    modules: [
       '@nuxtjs/color-mode',
@@ -13,7 +15,7 @@ export default defineNuxtConfig({
    ssr: true,
    css: [
       "@/assets/css/inter.css",
-      "@fontsource/fira-mono",
+      "@fontsource/fira-mono",   
       "@fontsource/noto-serif/400.css",
       // "@fontsource/noto-serif/400-italic.css",
       // "@fontsource/noto-serif/700.css",
@@ -30,8 +32,8 @@ export default defineNuxtConfig({
       classPrefix: 'theme-',
       storageKey: 'nuxt-color-mode',
       themeColors: {
-         dark: '#0e141b',
-         light: '#fbf9f3',
+         dark: '#01080f',
+         light: '#fbeec0',
       }
    },
    content: {
@@ -46,7 +48,7 @@ export default defineNuxtConfig({
       // changes in content files and refresh on change
       watch: {
          ws: {
-            hostname: 'localhost'
+            hostname: 'wsl.local'
          }
       }
    },
@@ -62,6 +64,19 @@ export default defineNuxtConfig({
          ] 
       }   
    },
+    
 
+   /* not sure if any of this works, 
+   Cloudflare CDN seems to give aprox 3 days of cache (decent) to every file anyways.
+   It makes a small request to their server for each assets just to validate a hash.
+   Github pages gives cache-control=600 (10 minutes) to everything. Zzzz.
+   
+        nitro: {
+      routeRules: {
+         "/assets/**": { swr: monthCacheControl },
+         "/_nuxt/*.woff2": { swr: monthCacheControl } 
+      },
+   },
+   */
 })
 
