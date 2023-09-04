@@ -20,9 +20,9 @@
         </nav>
         <div class="header-right-side">
           <!-- <Weather /> -->
-          <ClientOnly>
+        <!-- <ClientOnly> -->
             <HeaderThemeSwitch class="dark-mode-button" />
-          </ClientOnly>
+        <!-- </ClientOnly> -->
           <span class="header-arrow">↙</span>
         </div>
       </header>
