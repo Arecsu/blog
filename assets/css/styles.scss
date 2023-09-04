@@ -156,3 +156,14 @@ ul.ul-1,
 		}
 	}
 }
+
+.emoji-inline,
+.emoji-inline-svg > svg {
+  display: inline;
+  width: 1.1em;
+  vertical-align: -0.19em;
+  height: auto;
+  // margin: .1em;
+  padding-inline: 0.1em;
+  box-sizing: content-box;
+}
