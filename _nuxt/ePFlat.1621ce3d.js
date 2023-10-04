@@ -1,0 +1,1 @@
+import{_ as t}from"./Emoji.vue.b7111869.js";import{l as a,o as f,j as n}from"./entry.4900819f.js";import"./asyncData.93e0105c.js";const m=a({__name:"ePFlat",props:{e:{},t:{default:"f"},i:{type:Boolean,default:!1},f:{default:"img"}},setup(p){return(e,r)=>{const o=t;return f(),n(o,{e:e.e,t:e.t,f:e.f,i:e.i},null,8,["e","t","f","i"])}}});export{m as default};
