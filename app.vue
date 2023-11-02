@@ -6,10 +6,12 @@
 </template>
 
 <script setup>
-// You might choose this based on an API call or logged-in status
+// Pre-cache font files and embedded them in the head.
+// We import them to know the exact compiled path of the font files.
 import notoserif400 from "@fontsource/noto-serif/files/noto-serif-latin-400-normal.woff2?url"
-import interItalic from "./assets/font-inter/Inter-roman.var.woff2?url"
-import interRoman from "./assets/font-inter/Inter-italic.var.woff2?url"
+// import interItalic from "./assets/font-inter/Inter-roman.var.woff2?url"
+// import interRoman from "./assets/font-inter/Inter-italic.var.woff2?url"
+import inter from "./assets/font-inter/Inter.var.woff2?url"
 
 
 useHead({
@@ -22,8 +24,9 @@ useHead({
        but also from the CSS @font-face of each font.
        */
     { rel: "preload", as: "font", href: notoserif400, type: "font/woff2", crossorigin: "anonymous", key: 'noto-serif-400' },
-    { rel: "preload", as: "font", href: interRoman, type: "font/woff2", crossorigin: "anonymous", key: 'inter-var-roman' },
-    { rel: "preload", as: "font", href: interItalic, type: "font/woff2", crossorigin: "anonymous", key: 'inter-var-italic' },
+    // { rel: "preload", as: "font", href: interRoman, type: "font/woff2", crossorigin: "anonymous", key: 'inter-var-roman' },
+    // { rel: "preload", as: "font", href: interItalic, type: "font/woff2", crossorigin: "anonymous", key: 'inter-var-italic' },
+    { rel: "preload", as: "font", href: inter, type: "font/woff2", crossorigin: "anonymous", key: 'inter-var-experimental' },
   ],
 })
 </script>
