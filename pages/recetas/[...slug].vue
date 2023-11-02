@@ -1,11 +1,14 @@
 <template>
   <div class="recipe-layout">
+    <Head>
+      <Title>{{ recipe.title.toLowerCase() }}</Title>
+    </Head>
     <RecipeSidebar :icon="recipe.icon" :title="recipe.title" />
     <div class="recipe-container">
       <span class="recipe-title" ref="recipeTitle">
         <Icon class="recipe-icon-title" v-if="recipe.icon" :name="recipe.icon" />{{ recipe.title }}
       </span>
-      <ContentDoc class="recipe" tag="div" />
+      <ContentDoc :head="false" class="recipe" tag="div" />
     </div>
   </div>
 </template>
@@ -15,17 +18,28 @@ const route = useRoute()
 const slug = route.params.slug[0]
 const dataKey = `recipe-${slug}`
 
+/* 
 useContentHead({
   head: {
     titleTemplate: (title) => `${title.toLowerCase()} · a9r`,
   }
-})
+}) 
+*/
 
 // need to use useAsyncData otherwise it doesn't work at static generation
 const { data: recipe } = await useAsyncData(dataKey, () => {
-  return queryContent('recetas').where({ _path: route.path }).findOne()
+  return queryContent("recetas").where({ _path: route.path }).findOne()
 })
 
+onMounted(() => {
+  useHeaderTitle().value = recipe.value.title.toLowerCase()
+})
+
+
+onBeforeRouteLeave((to, from) => {
+  useHeaderTitle().value = ""
+})
+// useHeaderTitle().value = recipe.value.title.toLowerCase()
 
 </script>
 
