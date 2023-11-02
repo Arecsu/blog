@@ -43,9 +43,10 @@ Tapas
 7. Esperar a que sequen las masas unos minutos. Deberían quedar con una capa de "piel" en la superficie.
 8. A un horno medio/bajo hasta que el exterior endurezca solo un poco.
 
-### Relleno de :e{e="🍫"} Chocolate
+### Relleno de :🍫: Chocolate
 
 1. Mezclar la bebida alcohólica con el café instantáneo
 2. Integrar esta mezcla con el dulce de leche
 3. Derretir el chocolate semiamargo
 4. Mezclar el chocolate derretido con la mezcla anterior
+::
