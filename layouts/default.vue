@@ -65,7 +65,7 @@ main {
 
 .global-container {
   display: grid;
-  height: 100vh;
+  height: 100dvh;
   /* overflow: hidden; */
 }
 
