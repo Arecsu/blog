@@ -45,7 +45,6 @@ const { data: recipe } = await useAsyncData(dataKey, () => {
   font-family: var(--font-serif);
   /* letter-spacing: -.06em; */
   /* text-transform: lowercase; */
-
 }
 
 .recipe-container {
@@ -105,6 +104,7 @@ const { data: recipe } = await useAsyncData(dataKey, () => {
     /* font-weight: 600; */
     font-weight: 400;
     line-height: 1.3;
+    word-break: break-word;
   }
 
   h1 {
@@ -113,19 +113,19 @@ const { data: recipe } = await useAsyncData(dataKey, () => {
   }
 
   h2 {
-    font-size: clamp(3rem, 5vw, 3.998rem);
+    font-size: clamp(1.8rem, 7vw, 4rem);
   }
 
   h3 {
-    font-size: 2.827rem;
+    font-size: clamp(1.6rem, 7vw, 2.8rem);
   }
 
   h4 {
-    font-size: 1.999rem;
+    font-size: clamp(1.4rem, 7vw, 2rem);
   }
 
   h5 {
-    font-size: 1.414rem;
+    font-size: clamp(1.2rem, 7vw, 1.4rem);
   }
 
   ul,
