@@ -1,7 +1,7 @@
 <template>
   <div class="subingredient">
     <h5 class="recipe-subingredient-title" v-if="name">{{ name }}</h5>
-    <h5 class="recipe-subingredient-title" v-else>
+    <h5 class="recipe-subingredient-title" v-else-if="$slots.title">
       <ContentSlot :use="$slots.title" unwrap="p" />
     </h5>
     <ContentSlot :use="$slots.default" />
