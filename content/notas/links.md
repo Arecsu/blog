@@ -11,7 +11,7 @@ title: Links
 - [Seth's Blog](https://seths.blog)
 - [LOW-TECH MAGAZINE](https://solar.lowtechmagazine.com/)
 - [The Imperfectionist – Oliver Burkeman](https://www.oliverburkeman.com/posts)
-- [James Clear](https://jamesclear.com)
+- [James Clear](https://jamesclear.com/articles)
 - [Mr Money Mustache](https://www.mrmoneymustache.com/2013/02/22/getting-rich-from-zero-to-hero-in-one-blog-post/) — Striving to be independent of the system
 - [Slate Star Codex](https://slatestarcodex.com/) — Ciencia, psiquiatría, filosofía, política y futurismo.
 - [Astral Codex Ten](https://astralcodexten.substack.com/) — Continuación de Slate Star Codex
@@ -19,6 +19,7 @@ title: Links
 - [The Public Domain Review](https://publicdomainreview.org/) - A website that curates interesting and unusual works from the public domain, including literature, art, and photography.
 - [Atlas Obscura](https://www.atlasobscura.com/) - A website that celebrates the world's most curious and unusual places, from hidden underground cities to bizarre museums.
 - [Paul Graham's essays](http://www.paulgraham.com/articles.html)
+- [Nela Dunato](https://neladunato.com/blog/)
 
 ## ;🖼️; Inspiración
 
@@ -32,6 +33,47 @@ title: Links
 - [Wikipedia: Current Events](https://en.wikipedia.org/wiki/Portal:Current_events) — Noticias del mundo. Minimalista.
 - [The Brutalist Report](https://brutalist.report/) — Agregador de muchas fuentes. Solo títulos. Excelente.
 
+## ;👕; Ropa
+
+- [BATUK / HUOKY](https://batukjeans.com.ar/)
+- [Boston Hype](https://bostonhype.com.ar/)
+- [Deliver Ind](https://deliverind.com.ar/)
+- [REVOLVER](https://roparevolver.com/)
+- [This Is Feliz Navidad](https://www.thisisfeliznavidad.com/)
+- [HIPPY KILLER](https://www.hippykillercompany.com/)
+- [VALLES](https://vallesoficial.com)
+- [SER.BASICS](https://serbasics.com/)
+- [Adidas](https://adidas.com.ar/)
+- [FRÈRES](https://freres.ar/)
+- [Zara](https://www.zara.com/ar/)
+- [ESTUDIO_NERO](https://estudionero.com.ar/)
+- [Roland](https://tiendaroland.com/)
+- [nös](https://www.nosstore.com.ar/)
+- [Benkyo](https://benkyo.com.ar/)
+- [ABC](https://abcnotfound.com/)
+- [Tienda Basis](https://basisbs.com/)
+- [AY NOT DEAD](https://aynotdead.com/)
+- [Bowen](https://www.bowen.com.ar/)
+- [Levi's](https://www.levi.com.ar/)
+
+### ;👟; Calzados
+
+- [Moov](https://www.moovbydexter.com.ar/)
+- [Dexter](https://www.dexter.com.ar/)
+- [Adidas](https://adidas.com.ar/)
+- [Nike](https://www.nike.com/ar/)
+- [Vans](https://www.vans.com.ar/)
+- [Converse](https://www.converse.com.ar/)
+- [Dafiti](https://www.dafiti.com.ar/)
+- [Salomon](https://salomonstore.com.ar/)
+- [Oggi](https://oggi.com.ar/)
+- [Hush Puppies](https://www.hushpuppies.com.ar/)
+- [Grimoldi](https://www.grimoldi.com/)
+- [Febo](https://www.zapateriafebo.com/)
+- [giorgiobeneti](https://www.giorgiobeneti.com/)
+- [Federico Marconcini](https://www.federicomarconcini.com.ar/)
+- [POSCO](https://www.federicomarconcini.com.ar/)
+
 ## ;🎾; Fitness
 
 - [Stronger by Science](https://www.strongerbyscience.com/) — Uno de los mejores recursos sobre nutrición y entrenamiento de fuerza
@@ -40,7 +82,7 @@ title: Links
 
 ## ;✂️; Utilidades
 
-- [Posy's improved cursors for Windows 10/11](http://www.michieldb.nl/other/cursors/) — SON GENIALES ;🖱️;
+- [Posy's improved cursors for Windows 10/11](http://www.michieldb.nl/other/cursors/)
 - [Sound schemes for Windows](https://github.com/ORelio/Sound-Manager)
 - [Libgen](https://libgen.fun/) — Buscador de libros y papers
 - [Sci-hub](https://sci-hub.se/) — Otro buscador de papers
@@ -56,6 +98,7 @@ title: Links
 - [Wiby.me](https://wiby.me/)
 - [The Forest](https://theforest.link/)
 - [Cloudhiker](https://cloudhiker.net/)
+- [PointlessSites](https://www.pointlesssites.com/)
 
 ## :🤔: ???
 
@@ -77,6 +120,12 @@ title: Links
 - [My 90's TV](https://my90stv.com/)
 - [SUPP.AI](https://supp.ai/) - Discover Supplement-Drug Interactions
 - [FREEMEDIAHECKYEAH](https://old.reddit.com/r/FREEMEDIAHECKYEAH/wiki/index)
+- [Animated knots](https://www.animatedknots.com/)
+- [CPU.land](https://cpu.land)
+- [Chiptune.app](https://chiptune.app/)
+- [kohina](https://kohina.com/)
+- [RateYourMusic](https://rateyourmusic.com/)
+- [Archillect TV](https://archillect.com/tv)
 
 ## :🍪: Cocina
 
