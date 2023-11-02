@@ -1,12 +1,14 @@
 <template>
   <div class="notas-index-container">
-    <ul class="ul-1">
+    <p class="under-construction"><ESFlat e="🚧" /> EN CONSTRUCCIÓN <br /></p>
+    <p>Por mientras, tengo esta <NuxtLink to="/notas/links">colección de links</NuxtLink></p>
+    <!-- <ul class="ul-1">
       <li v-for="{ _path, title } in notas" :key="_path">
         <NuxtLink :to="_path">
           {{ title }}
         </NuxtLink>
       </li>
-    </ul>
+    </ul> -->
   </div>
 </template>
 
@@ -25,6 +27,11 @@ const { data: notas } = await useAsyncData("notas", () => {
 </script>
 
 <style>
+.under-construction {
+  margin: 0;
+  margin-bottom: 1.6em;
+}
+
 .notas-index-container {
   display: flex;
   flex-direction: column;
@@ -34,10 +41,10 @@ const { data: notas } = await useAsyncData("notas", () => {
 </style>
 
 <style scoped lang="scss">
-a {
-  text-decoration: none;
-  padding-bottom: 0.1em;
-  font-weight: 400;
-  box-sizing: border-box;
-}
+// a {
+//   text-decoration: none;
+//   padding-bottom: 0.1em;
+//   font-weight: 400;
+//   box-sizing: border-box;
+// }
 </style>
