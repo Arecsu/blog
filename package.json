@@ -22,7 +22,6 @@
     "@fontsource/noto-serif": "^5.0.9",
     "@fontsource/noto-serif-display": "^5.0.9",
     "@fontsource/unbounded": "^5.0.8",
-    "@nuxtjs/color-mode": "^3.3.0",
     "@vueuse/components": "^10.3.0",
     "@vueuse/core": "^10.3.0",
     "@vueuse/nuxt": "^10.3.0",

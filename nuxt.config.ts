@@ -25,19 +25,6 @@ export default defineNuxtConfig({
       "@/assets/css/styles.scss",
       // "@/assets/css/tippy.scss",
    ],
-   /*
-   colorMode: {
-      preference: 'system',
-      fallback: 'light',
-      classSuffix: '',
-      classPrefix: 'theme-',
-      storageKey: 'nuxt-color-mode',
-      themeColors: {
-         dark: '#01080f',
-         light: '#fbeec0',
-      }
-   },
-   */
    content: {
       markdown: {
          anchorLinks: false,
