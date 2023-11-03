@@ -1,5 +1,5 @@
 <template>
-  <button v-if="!useColorLoaded" class="button-no-style">
+  <button v-if="!currentColorScheme" class="button-no-style">
     <div class="colormode-placeholder-dark">
       <Icon name="tabler:ghost-filled" size="1.2em" />
     </div>
@@ -30,7 +30,6 @@ const owlIcon = `<img class="emoji-inline" width="64" height="64" src="data:imag
 const computerIcon = `<img class="emoji-inline" width="64" height="64" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32'%3E%3Cpath fill='%23635994' d='M30 7.876v18.277A3.845 3.845 0 0 1 26.149 30H5.85A3.845 3.845 0 0 1 2 26.153V5.847A3.845 3.845 0 0 1 5.851 2h18.257c.93 0 1.82.37 2.48 1.02l2.392 2.378c.65.66 1.02 1.548 1.02 2.478Z'/%3E%3Cpath fill='%23E6E6E6' d='M6 18h20v12H6V18Z'/%3E%3Cpath fill='%23F8312F' d='M6 17.5A1.5 1.5 0 0 1 7.5 16h17a1.5 1.5 0 0 1 1.5 1.5V19H6v-1.5Z'/%3E%3Cpath fill='%23321B41' d='M24.116 2A3.53 3.53 0 0 1 26 2.551v8.7c0 .97-.79 1.75-1.75 1.75H7.75A1.747 1.747 0 0 1 6 11.25V2h18.116Z'/%3E%3Cpath fill='%23E6E6E6' d='M22.64 12H12.36c-.75 0-1.36-.61-1.36-1.36V3.27c0-.7.57-1.27 1.27-1.27H24v8.64c0 .75-.61 1.36-1.36 1.36Z'/%3E%3Cpath fill='%23321B41' d='M22.03 11h-2.06a.978.978 0 0 1-.97-.982V3.982c0-.54.436-.982.97-.982h2.06c.534 0 .97.441.97.982v6.046a.976.976 0 0 1-.97.972Z'/%3E%3C/svg%3E" alt="💾">`
 
 // ↓ this thing prevents SSR problems and icon uncertainty during initial client load
-const useColorLoaded = ref(false)
 const systemColorScheme = ref()
 const currentColorScheme = ref()
 
@@ -73,6 +72,7 @@ onMounted(() => {
       ? systemColorScheme.value 
       : currentColorScheme.value
     )
+    localStorage.setItem("theme-setting", currentColorScheme.value)
   })
 
     watch(systemColorScheme, () => {
@@ -81,8 +81,6 @@ onMounted(() => {
       }
     })
 
-  // watchEffect(() => (asd.value = cycleThemeState.value))
-  useColorLoaded.value = true
 })
 </script>
 
