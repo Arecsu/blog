@@ -1,4 +1,4 @@
-const colorScheme = localStorage.getItem('theme-color') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+const systemColor = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+const savedThemeSetting = localStorage.getItem('theme-setting')
+const colorScheme = savedThemeSetting === 'system' || !savedThemeSetting ? systemColor : savedThemeSetting
 document.documentElement.setAttribute('theme', colorScheme)
-// implement theme color in head, probably an array from colorScheme
-console.log(colorScheme)
