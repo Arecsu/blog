@@ -25,6 +25,7 @@ export default defineNuxtConfig({
       "@/assets/css/styles.scss",
       // "@/assets/css/tippy.scss",
    ],
+   /*
    colorMode: {
       preference: 'system',
       fallback: 'light',
@@ -36,6 +37,7 @@ export default defineNuxtConfig({
          light: '#fbeec0',
       }
    },
+   */
    content: {
       markdown: {
          anchorLinks: false,

@@ -13,11 +13,13 @@ import notoserif400 from "@fontsource/noto-serif/files/noto-serif-latin-400-norm
 // import interRoman from "./assets/font-inter/Inter-italic.var.woff2?url"
 import inter from "./assets/font-inter/Inter.var.woff2?url"
 
+import headThemeSwitch from './scripts/headThemeSwitch.js?raw'
 
 useHead({
   titleTemplate: (titleChunk) => {
     return titleChunk ? `${titleChunk} · a9r` : "a9r"
   },
+  script: [{ children: headThemeSwitch }],
   link: [
     /* crossorigin is mandatory to enable proper cache-control by cloudflare and probably every
        other CDN / server provider. Otherwise, it will request not only the font from this header,

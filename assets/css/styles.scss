@@ -29,7 +29,7 @@ When using this, you will likely need to set font-variation-settings explicitly,
 
 
 :root,
-html.theme-light {
+html[theme="light"] {
   --font-mono: "Fira Mono", monospace;
   --font-serif: "Noto Serif", serif;
   --color-bg-0: rgb(251, 249, 243);
@@ -82,7 +82,7 @@ html.theme-light {
   // --bg-dotted-background: #f5eed7;
 }
 
-html.theme-dark {
+html[theme="dark"] {
   color-scheme: dark;
   --color-text: hsl(0, 0%, 90%);
   --color-link: hsl(223, 100%, 74%);
