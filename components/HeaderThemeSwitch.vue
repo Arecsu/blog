@@ -7,12 +7,9 @@
       <Icon name="ic:outline-lightbulb" size="1.1em" />
     </div>
   </button>
-  <button
-    v-else
+  <button v-else
     v-tippy="{ content: `${themeState.tooltip}`, placement: 'bottom-end', delay: [50, 150], allowHTML: true }"
-    class="button-no-style"
-    @click="nextColorScheme()"
-  >
+    class="button-no-style" @click="nextColorScheme()">
     <Transition name="slide-up">
       <div v-if="themeState.icon === 'dark'">
         <Icon name="tabler:ghost-filled" size="1.2em" />
@@ -60,6 +57,19 @@ const systemSchemeInit = () => {
   systemDarkMatchMedia.addEventListener("change", e => e.matches ? systemColorScheme.value = "dark" : systemColorScheme.value = "light");
 }
 
+const metaThemeColorChange = (theme) => {
+  document.querySelector('meta[name="theme-color"]').setAttribute('content',
+    theme === 'dark'
+      ? '#01080f'
+      : '#fbeec0'
+  )
+}
+
+const updateThemeDOM = (theme) => {
+  document.documentElement.setAttribute('theme', theme)
+  metaThemeColorChange(theme)
+}
+
 onMounted(() => {
   // initial currentColorSetting. If localstore has value, adopt that. Otherwise, 'system'
   currentColorScheme.value = localStorage.getItem("theme-setting") || 'system'
@@ -67,21 +77,16 @@ onMounted(() => {
   systemSchemeInit()
 
   watch(currentColorScheme, () => {
-    document.documentElement.setAttribute('theme',
-      currentColorScheme.value === 'system' 
-      ? systemColorScheme.value 
-      : currentColorScheme.value
-    )
+    currentColorScheme.value === 'system' ? updateThemeDOM(systemColorScheme.value) : updateThemeDOM(currentColorScheme.value)
     localStorage.setItem("theme-setting", currentColorScheme.value)
   })
 
-    watch(systemColorScheme, () => {
-      if (currentColorScheme.value === 'system') {
-        document.documentElement.setAttribute('theme', systemColorScheme.value)
-      }
-    })
-
+  // watch for system color scheme changes
+  watch(systemColorScheme, () => {
+    if (currentColorScheme.value === 'system') updateThemeDOM(systemColorScheme.value)
+  })
 })
+
 </script>
 
 <style>
@@ -121,7 +126,7 @@ button {
   width: 1.85em;
 }
 
-button > div {
+button>div {
   grid-area: 1 / 1 / 2 / 2;
   margin-top: 0.1em;
 }
