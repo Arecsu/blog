@@ -4,7 +4,6 @@ const monthCacheControl = 2592000
 
 export default defineNuxtConfig({
    modules: [
-      '@nuxtjs/color-mode',
       '@vueuse/nuxt',
       '@nuxt/content',
       'nuxt-icon',
