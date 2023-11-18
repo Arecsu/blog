@@ -21,19 +21,23 @@ title: Links
 - [Paul Graham's essays](http://www.paulgraham.com/articles.html)
 - [Nela Dunato](https://neladunato.com/blog/)
 
-## ;🖼️; Inspiración
+## ;🖼️; Inspiration
 
 - [100R](http://100r.co)
 - [Web Design Museum](https://www.webdesignmuseum.org/)
 - [RANDOM GHOST](https://randomghost.tumblr.com/)
 
-## ;📰; Noticias
+## ;📰; News
 
 - [Legible News](https://legiblenews.com/) — Buen wrapper de Wikipedia's Current Events
 - [Wikipedia: Current Events](https://en.wikipedia.org/wiki/Portal:Current_events) — Noticias del mundo. Minimalista.
 - [The Brutalist Report](https://brutalist.report/) — Agregador de muchas fuentes. Solo títulos. Excelente.
 
-## ;👕; Ropa
+## ;👕; Fashion brands
+
+Those are **Argentinian brands**. 
+
+Been collecting and curating this list for the past couple of years. You don't know how hard discovering interesting brands is, at least here!
 
 - [BATUK / HUOKY](https://batukjeans.com.ar/)
 - [Boston Hype](https://bostonhype.com.ar/)
@@ -56,7 +60,7 @@ title: Links
 - [Bowen](https://www.bowen.com.ar/)
 - [Levi's](https://www.levi.com.ar/)
 
-### ;👟; Calzados
+### ;👟; Footwear
 
 - [Moov](https://www.moovbydexter.com.ar/)
 - [Dexter](https://www.dexter.com.ar/)
@@ -80,7 +84,7 @@ title: Links
 - [The Definitive Diet Setup Guide — Stronger by Science](https://www.strongerbyscience.com/diet/)
 - [Legion Athletics](https://legionathletics.com/blog/) — Para cosas específicas, como los mejores ejercicios – y por qué – para desarrollar un grupo muscular o saber la forma mecánicamente eficiente de hacerlos, voy aquí.
 
-## ;✂️; Utilidades
+## ;✂️; Utilities
 
 - [Posy's improved cursors for Windows 10/11](http://www.michieldb.nl/other/cursors/)
 - [Sound schemes for Windows](https://github.com/ORelio/Sound-Manager)
@@ -127,7 +131,7 @@ title: Links
 - [RateYourMusic](https://rateyourmusic.com/)
 - [Archillect TV](https://archillect.com/tv)
 
-## :🍪: Cocina
+## :🍪: Cooking
 
 - [King Arthur Baking](https://www.kingarthurbaking.com/recipes/)
 - [Serious Eats](https://www.seriouseats.com/) eats is solid, although the new site leaves something to be desired.

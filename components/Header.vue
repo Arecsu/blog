@@ -16,7 +16,7 @@
               <NuxtLink to="/"><span style="font-style: italic">/--</span>base</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/notas">notas</NuxtLink>
+              <NuxtLink to="/notes">notes</NuxtLink>
             </li>
             <li>
               <NuxtLink to="/recetas">recetas</NuxtLink>

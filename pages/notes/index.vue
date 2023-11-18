@@ -1,7 +1,7 @@
 <template>
   <div class="notas-index-container">
-    <p class="under-construction"><ESFlat e="🚧" /> EN CONSTRUCCIÓN <br /></p>
-    <p>Por mientras, tengo esta <NuxtLink to="/notas/links">colección de links</NuxtLink></p>
+    <p class="under-construction"><ESFlat e="🚧" /> UNDER CONSTRUCTION <br /></p>
+    <p>Meanwhile, I collect some <NuxtLink to="/notes/links">bookmarks here</NuxtLink>.</p>
     <!-- <ul class="ul-1">
       <li v-for="{ _path, title } in notas" :key="_path">
         <NuxtLink :to="_path">
@@ -17,8 +17,8 @@ useHead({
   title: "notas",
 })
 
-const { data: notas } = await useAsyncData("notas", () => {
-  return queryContent("notas")
+const { data: notas } = await useAsyncData("notes", () => {
+  return queryContent("notes")
     .where({ draft: { $ne: true } })
     .sort({ title: 1 })
     .only(["_path", "title"])
