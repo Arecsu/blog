@@ -1,24 +1,28 @@
 <template>
   <div class="base-container">
-    <p>hola! <ESColor e="🤗" /> soy Alejandro</p>
+    <p>hello! <ESColor e="🤗" /> I'm Alejandro</p>
     <p>
-      hago <a href="https://martyr.shop">martyr⁠—</a>
+      making <a href="https://martyr.shop">martyr⁠—</a>
       <br />
-      y estoy en otros proyectos con gente alrededor del mundo <ESFlat e="🌎" />
+      and actively engaged in projects with people all around the globe <ESFlat e="🌎" />
     </p>
-    <p>exploro la intersección entre la ingeniería de software y las artes visuales</p>
-    <p style="margin: 0">fuera del trabajo, también:</p>
+    <p>
+      I love to create beautiful, blazing fast, and stunning web experiences 
+      <br />
+      as well as explore the intersection between software and visual arts <ESColor e="✨" />
+    </p>
+    <p style="margin: 0">apart from work, I also:</p>
     <ul class="list-type-1">
-      <li>me gusta leer y aprender cosas nuevas <ESFlat e="📖" /></li>
-      <li>disfruto mucho mi tiempo con familia y amigos</li>
-      <li>exploro nuevas comidas en la cocina y comparto algunas <NuxtLink to="/recetas">aquí</NuxtLink></li>
-      <li>hago Yoga y entreno fuerza</li>
+      <li>like to read and learn new things <ESFlat e="📖" /></li>
+      <li>enjoy time with family and friends</li>
+      <li>cook (fan of sweet things), and share some recipes <NuxtLink to="/recetas">here</NuxtLink></li>
+      <li>do Yoga and train to stay in shape</li>
       <li>
-        y escuchar música es <a href="https://www.last.fm/user/Alejandro9R" target="_blank">parte de mi día a día</a>
+        and music is a huge part <a href="https://www.last.fm/user/Alejandro9R" target="_blank">of my daily life</a>
       </li>
     </ul>
     <p>
-      desde Tucumán, Argentina
+      from Tucumán, Argentina
       <Icon name="twemoji:flag-argentina" style="vertical-align: -0.15em; margin-left: 0.2em" />
     </p>
     <!-- <p> -->
