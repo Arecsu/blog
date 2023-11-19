@@ -4,12 +4,10 @@
     <p>
       making <a href="https://martyr.shop">martyr⁠—</a>
       <br />
-      and actively engaged in projects with people all around the globe <ESFlat e="🌎" />
+      and actively working in projects with people all around the globe <ESFlat e="🌎" />
     </p>
     <p>
-      I love to create beautiful, blazing fast, and stunning web experiences 
-      <br />
-      as well as explore the intersection between software and visual arts <ESColor e="✨" />
+      I love to create beautiful, blazing fast, and stunning web experiences. Exploring the intersection between software and visual arts <ESColor e="✨" />
     </p>
     <p style="margin: 0">apart from work, I also:</p>
     <ul class="list-type-1">
@@ -22,7 +20,7 @@
       </li>
     </ul>
     <p>
-      from Tucumán, Argentina
+      — from Tucumán, Argentina
       <Icon name="twemoji:flag-argentina" style="vertical-align: -0.15em; margin-left: 0.2em" />
     </p>
     <!-- <p> -->
@@ -67,6 +65,7 @@ useHead({
   display: flex;
   flex-direction: column;
   // margin-bottom: 1em;
+  max-width: 56ch;
   // margin: 3em;
   margin: 2.2vw 2.5vw 3vw 2.2vw;
   p,
