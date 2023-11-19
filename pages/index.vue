@@ -4,7 +4,7 @@
     <p>
       making <a href="https://martyr.shop">martyr⁠—</a>
       <br />
-      and actively working in projects with people all around the globe <ESFlat e="🌎" />
+      and working on projects with people all around the globe <ESFlat e="🌎" />
     </p>
     <p>
       I love to create beautiful, blazing fast, and stunning web experiences. Exploring the intersection between software and visual arts <ESColor e="✨" />
