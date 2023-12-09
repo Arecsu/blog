@@ -36,7 +36,6 @@ html[theme="light"] {
   --color-header-bg: rgba(252, 250, 245, 0.9);
   --color-bg-1: hsl(209, 36%, 86%);
   --color-bg-2: hsl(224, 44%, 95%);
-  --color-bg-3: hsl(33.7, 100%, 55.3%);
   --color-fg-1: hsl(0, 0%, 0%);
   --color-underline-link-1: hsl(0, 0%, 50%);
   --color-underline-link-1-hover: hsl(0, 0%, 10%);
@@ -59,7 +58,8 @@ html[theme="light"] {
   /* --header-height: clamp(3em, 1.5em + 2vw, 4em); */
   --header-height: 2.3rem;
   /* --header-border-bottom: solid 1px var(--color-text); */
-  --header-border-bottom: dashed var(--border-size-1) var(--color-subingredient-name);
+  --color-header-border-bottom: var(--color-subingredient-name);
+  --header-border-bottom: dashed var(--border-size-1) var(--color-header-border-bottom);
   --sidebar-recipe-border: dashed var(--border-size-1) var(--color-subingredient-name);
   // --sidebar-recipe-border: dashed var(--border-size-1) var(--color-fg-1);
   --tippy-border: dashed var(--border-size-2) var(--color-fg-1);
@@ -86,13 +86,13 @@ html[theme="light"] {
 html[theme="dark"] {
   color-scheme: dark;
   --color-text: hsl(0, 0%, 90%);
-  --color-link: hsl(196, 72%, 55%);
+  --color-link: hsl(41, 82%, 58%);
   --pre-bg: hsl(0, 0%, 20%);
   --color-underline-link-1: hsl(0, 0%, 90%);
   --color-underline-link-1-hover: hsl(0, 0%, 80%);
 
   --color-bg-0: rgb(14, 20, 27);
-  --color-bg-3: rgb(36, 87, 102);
+  --color-header-border-bottom: rgb(36, 87, 102);
   --color-header-bg: rgb(14, 20, 27, 0.7);
   --color-fg-1: hsl(0, 0%, 100%);
   --color-bg-quantity-subingredient: rgba(19, 82, 116, 0.233);
