@@ -1,6 +1,6 @@
 ---
 title: Tarta de higo
-# icon: fluent-emoji:shortcake
+icon: fluent-emoji:shortcake
 alt: Tarta de higo
 ---
 
@@ -13,11 +13,11 @@ Adaptar los ingredientes de acuerdo a los distintos tamaños.
 :::
 
 :::RecipeSubingredient{name="Masa sablée"}
-- `300 gr` Harina 0000
-- `180 gr` Manteca
-- `3` Yemas
+- `300 gr` ;🌽; Harina 0000
+- `180 gr` ;🧈; Manteca
+- `3` ;🥚; Yemas
 - `120 gr` Azúcar impalpable
-- `1 pizca` Sal
+- `1 pizca` ;🧂; Sal
 - `1 cucharadita` Esencia de vainilla
 :::
 
@@ -35,10 +35,9 @@ Se puede comprar higos ya en almíbar, o hacerlos con:
 :::
 
 :::RecipeSubingredient{name="Nueces caramelizadas"}
-- `50 gr` Nueces sin cáscara
+- `50 gr` ;🥜; Nueces sin cáscara
 - Azúcar
 - Agua
-- Manteca
 :::
 
 :::RecipeSubingredient{name="Etc"}
