@@ -60,7 +60,7 @@ const systemSchemeInit = () => {
 const metaThemeColorChange = (theme) => {
   document.querySelector('meta[name="theme-color"]').setAttribute('content',
     theme === 'dark'
-      ? '#0d242a'
+      ? '#0e141b'
       : '#fbeec0'
   )
 }

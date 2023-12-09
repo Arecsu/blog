@@ -4,7 +4,7 @@ const colorScheme = savedThemeSetting === 'system' || !savedThemeSetting ? syste
 
 const metaThemeColor = document.createElement('meta')
 metaThemeColor.name = 'theme-color'
-metaThemeColor.content = colorScheme === 'dark' ? '#0d242a' : '#fbeec0'
+metaThemeColor.content = colorScheme === 'dark' ? '#0e141b' : '#fbeec0'
 
 document.documentElement.setAttribute('theme', colorScheme)
 document.head.appendChild(metaThemeColor)
