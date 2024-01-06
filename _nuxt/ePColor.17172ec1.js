@@ -1,0 +1,1 @@
+import{_ as t}from"./Emoji.vue.a7692e1d.js";import{n as a,o as n,l as f}from"./entry.02f71ddd.js";import"./asyncData.356285f0.js";const m=a({__name:"ePColor",props:{e:{},t:{default:"c"},i:{type:Boolean,default:!1},f:{default:"img"}},setup(r){return(e,p)=>{const o=t;return n(),f(o,{e:e.e,t:e.t,f:e.f,i:e.i},null,8,["e","t","f","i"])}}});export{m as default};
