@@ -20,6 +20,7 @@
 
 .ingredients {
    grid-area: two;
+   padding-bottom: 1rem;
 }
 
 .subingredients {

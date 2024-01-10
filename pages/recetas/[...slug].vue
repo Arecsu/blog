@@ -112,7 +112,6 @@ onBeforeRouteLeave((to, from) => {
   h3,
   h4,
   h5 {
-    margin: 3rem 0 1.38rem;
     font-family: var(--font-serif);
     letter-spacing: -0.03em;
     /* font-weight: 600; */
@@ -122,23 +121,27 @@ onBeforeRouteLeave((to, from) => {
   }
 
   h1 {
-    margin-top: 0;
+    margin-block: 1.2em 0.6em;
     font-size: 5.653rem;
   }
 
   h2 {
+    margin-block: 1em 0.6em;
     font-size: clamp(1.8rem, 7vw, 4rem);
   }
 
   h3 {
+    margin-block: 1.2em 0.5em;
     font-size: clamp(1.6rem, 7vw, 2.8rem);
   }
 
   h4 {
+    margin-block: 2em 0.5em;
     font-size: clamp(1.4rem, 7vw, 2rem);
   }
 
   h5 {
+    margin-block: 2.4em 1em;
     font-size: clamp(1.2rem, 7vw, 1.4rem);
   }
 

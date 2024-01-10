@@ -48,10 +48,6 @@ defineProps({
   grid-area: three;
 }
 
-.recipe-process :nth-child(2) {
-  margin-top: 0;
-}
-
 .recipe-process {
   ul {
     list-style: none;
