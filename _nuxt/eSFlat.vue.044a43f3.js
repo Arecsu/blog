@@ -1,1 +1,0 @@
-import{_ as t}from"./Emoji.vue.a7692e1d.js";import{n,o as a,l as f}from"./entry.02f71ddd.js";const l=n({__name:"eSFlat",props:{e:{},t:{default:"f"},i:{type:Boolean,default:!0},f:{default:"svg"}},setup(r){return(e,s)=>{const o=t;return a(),f(o,{e:e.e,t:e.t,f:e.f,i:e.i},null,8,["e","t","f","i"])}}});export{l as _};
