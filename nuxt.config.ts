@@ -36,7 +36,7 @@ export default defineNuxtConfig({
       // changes in content files and refresh on change
       watch: {
          ws: {
-            hostname: 'wsl.local'
+            hostname: 'localhost'
          }
       }
    },

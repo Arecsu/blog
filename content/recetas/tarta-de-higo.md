@@ -23,7 +23,7 @@ Adaptar los ingredientes de acuerdo a los distintos tamaños.
 
 :::RecipeSubingredient{name="Crema chantilly"}
 - `300 gr` Crema doble de leche (mayor a 34% grasa)
-- `60 gr` Azúcar impalpable o azúcar
+- `60 gr` Azúcar
 :::
 
 :::RecipeSubingredient{name="Higos en almíbar"}
