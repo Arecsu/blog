@@ -6,11 +6,11 @@ alt: Crema Pastelera
 
 
 ::RecipeIngredients
-- `315 mL` ;🥛; Leche entera
-- `4` ;🥚; Yemas
-- `90 gr` Azúcar
-- `25 gr` ;🌽; Almidon de maíz
-- `10 gr` ;🧈; Manteca 
+- `472 mL` ;🥛; Leche entera
+- `6` ;🥚; Yemas
+- `135 gr` Azúcar
+- `37 gr` ;🌽; Almidon de maíz
+- `15 gr` ;🧈; Manteca 
 - ;🍦; Esencia de vainilla
 ::
 

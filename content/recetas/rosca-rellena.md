@@ -23,12 +23,12 @@ Esponja
 #title
 Crema Pastelera
 #default
-- `250 gr` Leche
-- `100 gr` Azúcar
-- `1` Huevo
-- `15 gr` Almidon de maíz
-- `15 gr` Harina
-- Extracto de vainilla
+- `472 mL` ;🥛; Leche entera
+- `6` ;🥚; Yemas
+- `135 gr` Azúcar
+- `37 gr` ;🌽; Almidon de maíz
+- `15 gr` ;🧈; Manteca 
+- ;🍦; Esencia de vainilla
 :::
 
 :::RecipeSubingredient
