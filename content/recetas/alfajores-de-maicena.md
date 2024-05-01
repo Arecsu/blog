@@ -10,6 +10,7 @@ alt: Alfajores de maicena
 :::RecipeSubingredient{name="Masa"}
 - `200gr` Harina 0000
 - `300gr` Almidón de maíz
+- `200gr` Manteca
 - `3` Yemas
 - `1` Clara
 - `150g` Azúcar
