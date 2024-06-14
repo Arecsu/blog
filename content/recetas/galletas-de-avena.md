@@ -11,7 +11,8 @@ alt: Galletas de Avena
 ---
 
 ::RecipeIngredients
-- `380g` Harina leudante
+- `380g` Harina 0000
+- `17g` Polvo de hornear
 - `140g` Avena
 - `4gr` ;🧂; Sal
 - `200g` ;🧈; Manteca blanda
