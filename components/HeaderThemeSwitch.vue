@@ -33,12 +33,12 @@ const currentColorScheme = ref()
 const themeState = computed(() => {
   switch (currentColorScheme.value) {
     case "light":
-      return { tooltip: `vitamina D ${beachIcon}`, icon: "light" }
+      return { tooltip: `vitamin D ${beachIcon}`, icon: "light" }
     case "dark":
-      return { tooltip: `oscuro ${owlIcon}`, icon: "dark" }
+      return { tooltip: `darkness ${owlIcon}`, icon: "dark" }
   }
   // case 'system':
-  return { tooltip: `igual que el sistema ${computerIcon}`, icon: systemColorScheme.value /* could be 'light' or 'dark' */ }
+  return { tooltip: `same as system ${computerIcon}`, icon: systemColorScheme.value /* could be 'light' or 'dark' */ }
 })
 
 const colorSchemes = ["dark", "light", "system"]

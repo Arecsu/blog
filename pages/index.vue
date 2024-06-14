@@ -1,27 +1,16 @@
 <template>
   <div class="base-container">
-    <p>hello! <ESColor e="🤗" /> I'm Alejandro</p>
-    <p>
-      making <a href="https://martyr.shop">martyr⁠—</a>
-      <br />
-      and working on projects with people all around the globe <ESFlat e="🌎" />
+    <p>hello! I'm Alejandro</p>
+    <p class="text-lowercase">
+      Founder of <a href="https://martyr.shop">martyr⁠—</a> and creative at <a href="https://www.monkstudeyo.com/" target="_blank">mönk</a>
     </p>
-    <p>
-      I love to create beautiful, blazing fast, and stunning web experiences. Exploring the intersection between software and visual arts <ESColor e="✨" />
-    </p>
-    <p style="margin: 0">apart from work, I also:</p>
-    <ul class="list-type-1">
-      <li>like to read and learn new things <ESFlat e="📖" /></li>
-      <li>enjoy time with family and friends</li>
-      <li>cook (fan of sweet things), and share some recipes <NuxtLink to="/recetas">here</NuxtLink></li>
-      <li>do Yoga and train to stay in shape</li>
-      <li>
-        and music is a huge part <a href="https://www.last.fm/user/Alejandro9R" target="_blank">of my daily life</a>
-      </li>
-    </ul>
-    <p>
-      — from Tucumán, Argentina
-      <Icon name="twemoji:flag-argentina" style="vertical-align: -0.15em; margin-left: 0.2em" />
+    <p class="text-lowercase">    Based in argentina. Born in 1994. Exploring the intersection between technology and human interaction.
+      <br>
+      <br> Amidst the chaos that surrounds us, how does beauty and simplicity come to light?
+      <br>
+      <br> My work is a lifelong, continuous journey to find the answer.
+      <br>
+      <br> For authentic people. By authentic people. ←
     </p>
     <!-- <p> -->
     <!-- <a href="https://www.youtube.com/watch?v=lGMyPamuPjk" target="_blank"><i>don't be a sellout</i></a> -->
@@ -30,9 +19,11 @@
     <div class="text-small text-footer">
     <!-- <div class="text-footer"> -->
       <p style="white-space: pre">
+        <a href="mailto:alejandro@martyr.shop">email</a>: alejandro@martyr.shop
+        <br>
         <a href="https://github.com/Arecsu/" target="_blank">github</a>{{ "  //  "
-        }}<a href="https://instagram.com/alejandro9r" target="_blank">instagram</a>
-        <br/><a href="mailto:alejandro@martyr.shop">email</a>: alejandro@martyr.shop
+        }}<a href="https://instagram.com/alejandro9r" target="_blank">instagram</a>{{ "  //  "
+      }}<a href="https://www.last.fm/user/Alejandro9R" target="_blank">last.fm</a>
       </p>
     </div>
     <!-- 
@@ -92,9 +83,13 @@ useHead({
 }
 
 .text-small {
-  font-size: 0.85em;
+  font-size: 0.9em;
+  line-height: 1.8em;
   a {
     text-underline-offset: 0.12em;
   }
+}
+.text-lowercase {
+  text-transform: lowercase;
 }
 </style>
