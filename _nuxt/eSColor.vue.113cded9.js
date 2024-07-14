@@ -1,0 +1,1 @@
+import{_ as t}from"./Emoji.vue.2d6f5a34.js";import{n,o as a,l as r}from"./entry.244688e3.js";const l=n({__name:"eSColor",props:{e:{},t:{default:"c"},i:{type:Boolean,default:!0},f:{default:"svg"}},setup(s){return(e,f)=>{const o=t;return a(),r(o,{e:e.e,t:e.t,f:e.f,i:e.i},null,8,["e","t","f","i"])}}});export{l as _};
