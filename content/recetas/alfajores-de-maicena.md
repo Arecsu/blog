@@ -10,10 +10,11 @@ alt: Alfajores de maicena
 :::RecipeSubingredient{name="Masa"}
 - `200gr` Harina 0000
 - `300gr` Almidón de maíz
-- `200gr` Manteca
+- `200gr` Manteca pomada
 - `3` Yemas
 - `1` Clara
 - `150g` Azúcar
+- `1 cucharada` Café coñac
 - `1/2 cucharadita` Bicarbonato de sodio
 - `1 cucharadita` Esencia de vainilla
 - `1 y 1/2 cucharadita` Ralladura de limón
@@ -28,43 +29,17 @@ alt: Alfajores de maicena
 
 ::RecipeProcess{:process="true"}
 
-### Masa
-
-La manteca debe estar pomada. Lo ideal es que alcance ese punto estando en temperatura ambiente.
-
-Si no, se puede ayudar un poco con un microondas y setearlo en 10 segundos. Comprobar y seguir si falta un poco más. No tiene que derretirse. Solo ablandarse.
-
-Importante NO USAR manteca derretida, en estado líquido. La masa no va a salir bien así. Lo digo por experiencia :🙃:
-
-Luego, en un bowl, mezclar en orden:
-
-1. Manteca
-2. Azúcar impalpable
-3. Las yemas y esencia de vainilla
-
-Una vez incorporados los ingredientes:
-
-4. Pasar la harina y sal por el tamizador hacia el bowl.
-5. Mezclar hasta que no quede ningun rastro de harina visible en la masa, pero no más que eso. De lo contrario, trabajaría más el gluten y haría la masa más elástica.
-
-Colocamos la masa sobre un papel film. La aplastamos para que quede plana y con un grosor un poco más alto que el final que llevará en el molde.
-
-La cubrimos completamente con el papel film. Llevar a la heladera por ;⌚; 30 minutos. Necesitamos que esté más fría y lo suficientemente dura como para que sea amasable con un palo de amasar.
-
-### Al molde
-
-Sacamos la masa de la heladera. La estiramos con el palo de amasar sobre una superficie un poquito enharinada o sobre el mismo papel film.
-
-Si es sobre el mismo film, lo podemos usar para llevar la masa al molde más fácilmente.
-
-Ya con la masa en el grosor y tamaño adecuado, llevar al molde. Con sumo cuidado, porque es bastante frágil. 
-
-Si en el proceso se corta un poco, se puede tratar de unificar esas partes ya dentro del molde. Pero si está muy cortada, lo mejor es volver a unir todo y estirar de nuevo fuera del molde.
-
-Con las manos, acomodar la masa a los bordes y fondo del molde. También, para dejar la masa lo más prolija posible.
-
-Si sobra masa, se puede reutilizar para hacer galletitas luego.
-
-Una vez terminado, llevar al freezer a congelar hasta que sea una piedra. Siempre que necesitamos cocinar una masa que lleve mucha manteca y no tiene que perder la forma en el horno, hay que hacer este proceso.
+1. Tamizar el almidón de maíz, la harina, bicarbonato, y el polvo de hornear.
+2. En un bowl, batir la manteca con el azúcar
+3. Agregar las yemas de a una, mezclado e incorporandolas bien a la mezcla previa.
+4. Luego, agregar el café coñac, esencia de vainila y ralladura de limón.
+5. Incorporar poco a poco los ingredientes secos ya tamizados
+6. En este punto, si la masa está muy blanda, llevar a la heladera en el mismo bowl y esperar a que endurezca un poco. Si la masa tiene buen cuerpo, se puede omitir este paso.
+7. Amasar y estirar de 5mm de espesor sobre una mesa espolvoreada de harina
+8. Cortar medallones de 4cm de diámetro
+9. Colocar los medallones sobre una chapa sin enmantecar
+10. Llevar a un horno moderado durante 15 minutos aproximadamente. Dependerá del horno de cada uno mas bien, asi que tener un ojo a este paso.
+11. Desmoldar y enfriar
+12. Formar los alfajores con el dulce de leche y el coco.
 
 ::
