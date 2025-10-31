@@ -30,7 +30,7 @@ Salsa de caramelo salado
 - `50 g` Azúcar blanca
 - `50 g` Azúcar rubia clara
 - `60 g` ;🧈; Manteca sin sal
-- `3 cda` ;🍯; Miel clara (reemplazo del jarabe de maíz)
+- `3 cda` ;🍯; Glucosa (reemplazo del jarabe de maíz)
 - `¼ cdta` Sal
 - `1 cdta` Esencia de vainilla
 :::
@@ -73,7 +73,7 @@ Buttercream de caramelo y queso crema
 
 **Rinde:** aproximadamente 360 ml (1½ tazas)
 
-1. En una olla mediana, calentar **120 g** de crema con los azúcares, la manteca, la miel y la sal a fuego medio-alto.
+1. En una olla mediana, calentar **120 g** de crema con los azúcares, la manteca, la glucosa y la sal a fuego medio-alto.
 2. Revolver hasta que los azúcares se disuelvan.
 3. Continuar la cocción hasta que la mezcla tome un color ámbar y espese (unos 125 °C, si tenés termómetro).
 4. Retirar del fuego y añadir **los 120 g restantes de crema** y la esencia de vainilla con cuidado (puede salpicar).
