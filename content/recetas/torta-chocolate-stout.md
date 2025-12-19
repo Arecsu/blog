@@ -2,6 +2,7 @@
 title: Torta de Chocolate Stout
 icon: fluent-emoji:chocolate-bar
 alt: Torta de Chocolate Stout
+draft: true
 ---
 
 ::RecipeIngredients
@@ -24,7 +25,7 @@ Bizcochuelo de chocolate y stout
 :::RecipeSubingredient
 
 #title
-Salsa de caramelo salado
+Salsa de caramelo salado NEED COMPLETE REWORK
 #default
 - `240 g` ;🥛; Crema de leche
 - `50 g` Azúcar blanca
