@@ -1,0 +1,1 @@
+import{_ as a}from"./j-jin78D.js";import{m as o,h as f,o as n}from"./B-_7ZC1D.js";import"./DXy1NodK.js";const s=o({__name:"ePFlat",props:{e:{},t:{default:"f"},i:{type:Boolean,default:!1},f:{default:"img"}},setup(e){return(m,i)=>{const t=a;return n(),f(t,{e:e.e,t:e.t,f:e.f,i:e.i},null,8,["e","t","f","i"])}}});export{s as default};

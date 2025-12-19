@@ -1,0 +1,1 @@
+import{_ as o}from"./DlAUqK2U.js";import{c as t,o as r,p as c}from"./B-_7ZC1D.js";const s={},n={class:"recipe-intro"};function a(e,d){return r(),t("div",n,[c(e.$slots,"default",{},void 0,!0)])}const i=o(s,[["render",a],["__scopeId","data-v-d86fa855"]]);export{i as default};
