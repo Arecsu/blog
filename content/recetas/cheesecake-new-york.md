@@ -14,7 +14,7 @@ alt: Cheesecake New York
 :::RecipeSubingredient{name="Relleno"}
 - `600 g` Queso crema
 - `100 g` ;🍚; Azúcar
-- `10 g` Almidón
+- `10 g` Almidón de maíz
 - `3` ;🥚; Huevos
 - `200 g` ;🥛; Crema
 :::
@@ -35,9 +35,9 @@ alt: Cheesecake New York
 1. En un bol, mezcla la manteca a temperatura ambiente con el azúcar hasta obtener una crema homogénea.
 2. Agrega la yema y sigue mezclando.
 3. Incorpora la harina y amasa hasta obtener una masa uniforme.
-4. Envuelve la masa en papel film y déjala reposar en la heladera durante al menos 30 minutos.
-5. Estira la masa sobre un molde desmontable de 22 cm de diámetro, asegurándote de que quede bien compacta y uniforme.
-6. Hornea a 200 °C durante 10 minutos o hasta que esté ligeramente dorada. Deja enfriar antes de agregar el relleno.
+4. Envuelve la masa en papel film y déjala reposar en la heladera durante al menos 30 minutos, o hasta que esté firme al tacto. En climas cálidos puede requerir más tiempo (1-2 horas); la masa debe estar lo suficientemente dura para poder estirarla sin que se pegue.
+5. Espolvorea una buena cantidad de harina sobre la mesada y sobre la masa. Estírala con palote hasta obtener un disco del tamaño del molde. Forra un molde desmontable de 22 cm de diámetro, asegurándote de que quede bien compacta y uniforme.
+6. Hornea a 200 °C durante 10 minutos o hasta que esté *apenas* dorada. La base debe quedar solo parcialmente cocida, ya que terminará de cocinarse junto con el relleno. Deja enfriar antes de agregar el relleno.
 
 ### Relleno
 
