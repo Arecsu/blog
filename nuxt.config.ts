@@ -27,10 +27,10 @@ export default defineNuxtConfig({
    content: {
       markdown: {
          anchorLinks: false,
-         remarkPlugins: [
-            'remark-external-links' // Enables opening external links in new tab
-         ],
-         rehypePlugins: []
+         remarkPlugins: [],
+         rehypePlugins: [
+            'rehype-external-links' // Enables opening external links in new tab
+         ]
       },
       // creates a server to watch for 
       // changes in content files and refresh on change
