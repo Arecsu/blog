@@ -1,1 +1,0 @@
-import{_ as o}from"./29BVeRks.js";import{i as a,h as n,o as f}from"./C1yyKl6O.js";const r=a({__name:"eSFlat",props:{e:{},t:{default:"f"},i:{type:Boolean,default:!0},f:{default:"svg"}},setup(e){return(c,i)=>{const t=o;return f(),n(t,{e:e.e,t:e.t,f:e.f,i:e.i},null,8,["e","t","f","i"])}}});export{r as _};
