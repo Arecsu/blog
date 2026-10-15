@@ -4,28 +4,27 @@ description: Una pizza clásica con 24-48 horas de fermentación ⏲️
 icon: fluent-emoji:bread
 alt: Pizza
 draft: true
+inlineAmounts: true
+ingredientGroups:
+  - id: masa
+    label: Masa
+    items:
+      - { id: flour-000, label: Harina 000, quantity: 700, unit: g }
+      - { id: wholemeal-flour, label: Harina integral, quantity: 250, unit: g }
+      - { id: toasted-flour, label: Harina 000 tostada, quantity: 50, unit: g }
+      - { id: water, label: Agua, quantity: 450, unit: g }
+      - { id: salt, label: Sal Marina, quantity: 20, unit: g }
+      - { id: butter, label: Manteca, quantity: 50, unit: g }
+      - { id: sugar, label: Azúcar, quantity: 50, unit: g }
+      - { id: starter, label: Masa madre activa, quantity: 200, unit: g }
+  - id: remojo-de-semillas
+    label: Remojo de semillas
+    items:
+      - { id: seeds, label: Semillas, quantity: 125, unit: g }
+      - { id: warm-water, label: Agua tibia, quantity: 125, unit: g }
 ---
 
 ::RecipeIngredients
-
-:::RecipeSubingredient{name="Masa"}
-
-
-- `700gr` Harina 000
-- `250gr` Harina integral
-- `50gr` Harina 000 tostada
-- `450gr` Agua
-- `20gr` Sal Marina
-- `50gr` Manteca
-- `50gr` Azúcar
-- `200gr` Masa madre activa
-:::
-
-:::RecipeSubingredient{name="Remojo de semillas"}
-- `125gr` Semillas
-- `125gr` Agua tibia
-:::
-
 #IngredientsIntro
 *Para 2 panes ;🍞;*
 ::
@@ -36,7 +35,7 @@ draft: true
 
 El remojo de semillas, en pocas palabras, las hace más digeribles. Eliminan ciertos ácidos y elementos que no son útiles para el organismo, y amplifican la producción de enzimas, beneficiando la microbiota intestinal.
 
-1. En un bowl, mezclas las semillas con agua tibia.
+1. En un bowl, mezclas :RecipeAmount[las semillas]{ingredient="seeds"} con :RecipeAmount[agua tibia]{ingredient="warm-water"}.
 2. Cubrir el bowl, y dejar reposar por 6-8 horas. En verano, con 3-4 horas puede ser suficiente dada la temperatura del ambiente. 
 
 ### Masa madre

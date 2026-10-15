@@ -3,50 +3,38 @@ title: Pan de Papas
 icon: fluent-emoji:potato
 alt: Pan de Papas
 draft: true
+ingredientGroups:
+  - id: esponja
+    label: Esponja
+    items:
+      - { id: sponge-milk, label: Leche, quantity: 100, unit: g }
+      - { id: yeast, label: Levadura, quantity: 20, unit: g }
+      - { id: sponge-flour, label: Harina 000, quantity: 125, unit: g }
+  - id: crema-pastelera
+    label: Crema Pastelera
+    items:
+      - { id: cream-milk, label: Leche, quantity: 250, unit: g }
+      - { id: cream-sugar, label: Azúcar, quantity: 100, unit: g }
+      - { id: cream-egg, label: Huevo, quantity: 1, whole: true }
+      - { id: cornstarch, label: Almidon de maíz, quantity: 15, unit: g }
+      - { id: cream-flour, label: Harina, quantity: 15, unit: g }
+      - { id: cream-vanilla, label: Extracto de vainilla }
+  - id: masa
+    label: Masa
+    items:
+      - { id: flour, label: Harina 000, quantity: 400, unit: g }
+      - { id: sugar, label: Azúcar, quantity: 100, unit: g }
+      - { id: salt, label: Sal, quantity: 10, unit: g }
+      - { id: milk, label: Leche, quantity: 80, unit: g }
+      - { id: eggs, label: Huevos, quantity: 2, whole: true }
+      - { id: butter, label: Manteca, quantity: 100, unit: g }
+      - { id: honey, label: Miel, quantity: 20, unit: g }
+      - { id: zest, label: Rayadura de limón o naranja }
+      - { id: vanilla, label: Extracto de vainilla }
 ---
 
 
 ::RecipeIngredients
-
-:::RecipeSubingredient
-
-#title
-Esponja
-#default
-- `100 gr` Leche
-- `20 gr` Levadura
-- `125 gr` Harina 000
-:::
-
-:::RecipeSubingredient
-
-#title
-Crema Pastelera
-#default
-- `250 gr` Leche
-- `100 gr` Azúcar
-- `1` Huevo
-- `15 gr` Almidon de maíz
-- `15 gr` Harina
-- Extracto de vainilla
-:::
-
-:::RecipeSubingredient
-
-#title
-Masa
-#default
-- `400 gr` Harina 000
-- `100 gr` Azúcar
-- `10 gr` Sal
-- `80 gr` Leche
-- `2` Huevos
-- `100 gr` Manteca
-- `20 gr` Miel
-- Rayadura de limón o naranja
-- Extracto de vainilla
-:::
-
 ::
 
 

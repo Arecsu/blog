@@ -5,15 +5,16 @@
     </Head>
     <RecipeSidebar :icon="recipe.icon" :title="recipe.title" />
     <div class="recipe-container">
-      <span class="recipe-title" ref="recipeTitle">
+      <h1 class="recipe-title">
         <Icon class="recipe-icon-title" v-if="recipe.icon" :name="recipe.icon" />{{ recipe.title }}
-      </span>
-      <ContentDoc :head="false" class="recipe" tag="div" />
+      </h1>
+      <ContentDoc :path="path" :head="false" class="recipe" tag="div" />
     </div>
   </div>
 </template>
 
 <script setup>
+definePageMeta({ key: route => route.path })
 const route = useRoute()
 const slug = route.params.slug[0]
 const dataKey = `recipe-${slug}`
@@ -27,17 +28,25 @@ useContentHead({
 */
 
 // need to use useAsyncData otherwise it doesn't work at static generation
-const { data: recipe } = await useAsyncData(dataKey, () => {
+const { data } = await useAsyncData(dataKey, () => {
   return queryContent("recetas").where({ _path: route.path }).findOne()
 })
 
+if (!data.value) throw createError({ statusCode: 404, statusMessage: 'Receta no encontrada' })
+// While this page transitions out, Nuxt already clears its async data and the route
+// points at the next recipe: keep rendering this page's own recipe and path until it's gone.
+const recipe = shallowRef(data.value)
+watch(data, value => { if (value) recipe.value = value })
+const path = route.path
+createRecipeViewer(recipe)
+const headerTitle = useHeaderTitle()
 onMounted(() => {
-  useHeaderTitle().value = recipe.value.title.toLowerCase()
+  headerTitle.value = recipe.value.title.toLowerCase()
 })
 
 
 onBeforeRouteLeave((to, from) => {
-  useHeaderTitle().value = ""
+  headerTitle.value = ""
 })
 // useHeaderTitle().value = recipe.value.title.toLowerCase()
 
@@ -45,8 +54,16 @@ onBeforeRouteLeave((to, from) => {
 
 <style lang="scss">
 .recipe-layout {
+  --recipe-border: color-mix(in srgb, var(--color-text) 22%, transparent);
+  --recipe-muted: color-mix(in srgb, var(--color-text) 72%, var(--color-bg-0));
   display: flex;
   flex-direction: row;
+  min-width: 0;
+
+  button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible, a:focus-visible {
+    outline: 2px solid var(--color-subingredient-name);
+    outline-offset: 3px;
+  }
 }
 
 .recipe-layout,
@@ -65,6 +82,7 @@ onBeforeRouteLeave((to, from) => {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
+  min-width: 0;
 }
 
 .recipe-icon-title {
@@ -97,6 +115,7 @@ onBeforeRouteLeave((to, from) => {
   align-self: flex-start;
   margin-bottom: 8rem;
 
+  // Keep in sync with the sticky-ingredients query in RecipeIngredients.vue.
   @media (max-width: 90rem) {
     grid-template-areas:
       "one"

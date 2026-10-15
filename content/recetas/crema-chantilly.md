@@ -1,15 +1,19 @@
 ---
 title: Crema chantilly
-icon: fluent-emoji:soft-ice-cream 
+icon: fluent-emoji:soft-ice-cream
+inlineAmounts: true
+ingredientGroups:
+  - id: ingredientes
+    items:
+      - { id: cream, label: Crema doble de leche, quantity: 300, unit: g, note: mayor a 34% grasa }
+      - { id: sugar, label: Azúcar común, quantity: 60, unit: g }
+      - { id: vanilla, label: Esencia de vainilla, quantity: 1, unit: cucharadita, note: opcional }
+      - { id: mixer, label: Batidora o mixer }
+      - { id: bowls, label: 1 bowl grande y 1 mediano }
+      - { id: ice, label: Hielos }
 ---
 
 ::RecipeIngredients
-- `300 gr` Crema doble de leche (mayor a 34% grasa)
-- `60 gr` Azúcar común
-- `1 cucharadita` Esencia de vainilla (opcional)
-- Batidora o mixer
-- `1` bowl grande y `1` mediano
-- Hielos
 ::
 
 ::RecipeProcess{:process="true"}
@@ -23,7 +27,7 @@ icon: fluent-emoji:soft-ice-cream
 
 1. Poner hielos en el bowl más grande, y colocar el bowl más pequeño encima.
 2. Con esto, el bowl donde prepararemos la crema debería quedar _flotando_ sobre los hielos. Le darán ese frío extra desde abajo mientras preparamos la crema. En clímas calientes, esto es muy importante.
-3. Vertir la crema, el azúcar y si lleva la esencia de vainilla en el bowl. 
+3. Vertir :RecipeAmount[la crema]{ingredient="cream"}, :RecipeAmount[el azúcar]{ingredient="sugar"} y si lleva :RecipeAmount[la esencia de vainilla]{ingredient="vanilla"} en el bowl. 
 4. Mezclar con la batidora.
 
 El punto final es cuando la crema quede lo suficientemente dura que no se cae con la gravedad cuando la levantamos con los batidores. Mucho cuidado de no pasar ese punto porque podría cortarse la crema.

@@ -2,37 +2,43 @@
 title: Tarta de Frambuesa y Chocolate
 icon: fluent-emoji:shortcake
 alt: Tarta de Frambuesa y Chocolate
+inlineAmounts: true
+ingredientGroups:
+  - id: masa-sablee
+    label: Masa Sablée
+    items:
+      - { id: butter, label: ';🧈; Manteca', quantity: 100, unit: g, note: 'pomada, pero fría al manipular' }
+      - { id: sugar, label: ';🍚; Azúcar', quantity: 75, unit: g }
+      - { id: yolks, label: ';🥚; Yemas', quantity: 2, whole: true }
+      - { id: cocoa, label: ';🍫; Cacao amargo', quantity: 15, unit: g }
+      - { id: flour, label: ';🌾; Harina 0000', quantity: 150, unit: g }
+  - id: cremoso-de-frambuesa
+    label: Cremoso de Frambuesa
+    items:
+      - { id: cremoso-yolks, label: ';🥚; Yemas', quantity: 6, whole: true }
+      - { id: cremoso-sugar, label: ';🍚; Azúcar', quantity: 150, unit: g }
+      - { id: raspberries, label: ';🍇; Frambuesas', quantity: 225, unit: g, note: congeladas y descongeladas }
+      - { id: cremoso-cream, label: ';🥛; Crema de leche', quantity: 225, unit: g }
+      - { id: gelatin, label: ';🧪; Gelatina en polvo', quantity: 7, unit: g }
+      - { id: gelatin-water, label: ';💧; Agua', quantity: 35, unit: g, note: para hidratar la gelatina }
+  - id: crema-dulce-de-chocolate
+    label: Crema Dulce de Chocolate
+    items:
+      - { id: ganache-cream, label: ';🥛; Crema de leche', quantity: 100, unit: g }
+      - { id: chocolate, label: ';🍫; Chocolate semiamargo', quantity: 100, unit: g, note: cobertura }
+      - { id: white-chocolate, label: ';🍫; Chocolate blanco', quantity: 30, unit: g, note: decoración }
+      - { id: dulce-de-leche, label: ';🍮; Dulce de leche repostero', quantity: 200, unit: g }
+  - id: etc
+    label: Etc
+    items:
+      - { id: mixer, label: Batidora con accesorio “lira”, note: o pala de repostería }
+      - { id: tin, label: Molde desmontable de 18–20 cm }
+      - { id: weights, label: Papel aluminio y garbanzos (u otro peso) para horneado a ciegas }
+      - { id: thermometer, label: Termómetro de cocina, note: opcional }
+      - { id: colouring, label: Colorante rojo en pasta o líquido }
 ---
 
 ::RecipeIngredients
-:::RecipeSubingredient{name="Masa Sablée"}
-- `100 g` ;🧈; Manteca (pomada, pero fría al manipular)  
-- `75 g` ;🍚; Azúcar  
-- `2` ;🥚; Yemas  
-- `15 g` ;🍫; Cacao amargo  
-- `150 g` ;🌾; Harina 0000  
-:::
-:::RecipeSubingredient{name="Cremoso de Frambuesa"}
-- `6` ;🥚; Yemas  
-- `150 g` ;🍚; Azúcar  
-- `225 g` ;🍇; Frambuesas (congeladas y descongeladas)  
-- `225 g` ;🥛; Crema de leche  
-- `7 g` ;🧪; Gelatina en polvo  
-- `35 g` ;💧; Agua (para hidratar la gelatina)  
-:::
-:::RecipeSubingredient{name="Crema Dulce de Chocolate"}
-- `100 g` ;🥛; Crema de leche  
-- `100 g` ;🍫; Chocolate semiamargo (cobertura)  
-- `30g` ;🍫; Chocolate blanco (decoración)  
-- `200 g` ;🍮; Dulce de leche repostero  
-:::
-:::RecipeSubingredient{name="Etc"}
-- Batidora con accesorio “lira” (o pala de repostería)  
-- Molde desmontable de 18–20 cm  
-- Papel aluminio y garbanzos (u otro peso) para horneado a ciegas  
-- Termómetro de cocina (opcional)  
-- Colorante rojo en pasta o líquido  
-:::
 ::
 
 
@@ -41,11 +47,11 @@ alt: Tarta de Frambuesa y Chocolate
 :📺: [Referencia](https://www.youtube.com/watch?v=lMVyrK7aMYM)
 
 #### Masa sablée de chocolate  
-1. **Batir manteca + azúcar**: Coloca la manteca pomada y el azúcar en el bowl. Usa la lira y bate hasta que la mezcla *no se aclare más* ni incorpore aire extra. Debes ver que la textura deja de modificarse; es señal de que ya integró todo el aire posible.  
+1. **Batir manteca + azúcar**: Coloca :RecipeAmount[la manteca pomada]{ingredient="butter"} y :RecipeAmount[el azúcar]{ingredient="sugar"} en el bowl. Usa la lira y bate hasta que la mezcla *no se aclare más* ni incorpore aire extra. Debes ver que la textura deja de modificarse; es señal de que ya integró todo el aire posible.  
 
-2. **Agregar cacao y yemas**: Incorpora el cacao tamizado y las dos yemas. Bate apenas hasta integrar.  
+2. **Agregar cacao y yemas**: Incorpora :RecipeAmount[el cacao tamizado]{ingredient="cocoa"} y :RecipeAmount[las yemas]{ingredient="yolks"}. Bate apenas hasta integrar.  
 
-3. **Añadir harina**: Agrega la harina de golpe y “dale unas vueltitas” con la pala: mezcla justo hasta que deje de verse harina suelta. No sobrebatir: cuida que la masa quede homogénea pero sin activar demasiado el gluten.
+3. **Añadir harina**: Agrega :RecipeAmount[la harina]{ingredient="flour"} de golpe y “dale unas vueltitas” con la pala: mezcla justo hasta que deje de verse harina suelta. No sobrebatir: cuida que la masa quede homogénea pero sin activar demasiado el gluten.
 
 4. **Formar y refrigerar**: Con las manos, forma un disco plano, envuélvelo en film y lleva al freezer al menos 20 min para que esté bien firme.  
 
@@ -59,9 +65,9 @@ alt: Tarta de Frambuesa y Chocolate
 4. **Enfriar**: Deja que la base atempere antes de desmoldar.  
 
 #### Cremoso de frambuesa (tipo crema inglesa con gelatina)  
-1. **Hidratar gelatina**: Espolvorea 7 g de gelatina en 35 g de agua fría. Reserva.  
+1. **Hidratar gelatina**: Espolvorea :RecipeAmount[la gelatina]{ingredient="gelatin"} en :RecipeAmount[agua fría]{ingredient="gelatin-water"}. Reserva.  
 
-2. **Mezclar ingredientes**: En un bowl, combina las 6 yemas, 150 g de azúcar, las frambuesas descongeladas y 225 g de crema. Mezcla suavemente para no deshacer toda la pulpita.  
+2. **Mezclar ingredientes**: En un bowl, combina :RecipeAmount[las yemas]{ingredient="cremoso-yolks"}, :RecipeAmount[el azúcar]{ingredient="cremoso-sugar"}, :RecipeAmount[las frambuesas descongeladas]{ingredient="raspberries"} y :RecipeAmount[la crema]{ingredient="cremoso-cream"}. Mezcla suavemente para no deshacer toda la pulpita.  
 
 3. **Cocción al baño María**: Lleva el bowl sobre agua hirviendo (“baño María fuerte”) y remueve con batidor.  
 
@@ -74,9 +80,9 @@ alt: Tarta de Frambuesa y Chocolate
 5. **Verter en base y enfriar**: Vierte el cremoso sobre la masa ya fría. Deja atemperar a temperatura ambiente, luego refrigera mínimo 4 h (ideal de un día para otro) hasta que gelifique por completo.  
 
 #### Crema dulce de chocolate
-1. **Preparar la ganache**: Calienta 100 g de crema en microondas hasta que humee. Añade 100 g de chocolate semiamargo picado y deja reposar 1 min. Mezcla con espátula hasta formar una ganache lisa.  
+1. **Preparar la ganache**: Calienta :RecipeAmount[la crema]{ingredient="ganache-cream"} en microondas hasta que humee. Añade :RecipeAmount[el chocolate semiamargo]{ingredient="chocolate"} picado y deja reposar 1 min. Mezcla con espátula hasta formar una ganache lisa.  
 
-2. **Integrar dulce de leche**: Incorpora 200 g de dulce de leche repostero a la ganache. Como el dulce de leche es más denso, refrigera un poco la mezcla para que espese y luego remueve hasta homogeneizar sin eliminar la textura.  
+2. **Integrar dulce de leche**: Incorpora :RecipeAmount[el dulce de leche repostero]{ingredient="dulce-de-leche"} a la ganache. Como el dulce de leche es más denso, refrigera un poco la mezcla para que espese y luego remueve hasta homogeneizar sin eliminar la textura.  
 
 3. **Montar y decorar**: Coloca la crema dulce de chocolate en manga pastelera con boquilla redonda. Decora haciendo un espiral sobre el cremoso de frambuesa. Ralla un poco de chocolate blanco por encima para dar dimensión y cubrir imperfecciones.  
 

@@ -3,50 +3,38 @@ title: Rosca Rellena
 # icon: fluent-emoji:shortcake
 alt: Rosca Rellena
 draft: true
+ingredientGroups:
+  - id: esponja
+    label: Esponja
+    items:
+      - { id: sponge-milk, label: Leche, quantity: 100, unit: g }
+      - { id: yeast, label: Levadura, quantity: 20, unit: g }
+      - { id: sponge-flour, label: Harina 000, quantity: 125, unit: g }
+  - id: crema-pastelera
+    label: Crema Pastelera
+    items:
+      - { id: cream-milk, label: ';🥛; Leche entera', quantity: 472, unit: ml }
+      - { id: yolks, label: ';🥚; Yemas', quantity: 6, whole: true }
+      - { id: cream-sugar, label: Azúcar, quantity: 135, unit: g }
+      - { id: cornstarch, label: ';🌽; Almidon de maíz', quantity: 37, unit: g }
+      - { id: cream-butter, label: ';🧈; Manteca', quantity: 15, unit: g }
+      - { id: cream-vanilla, label: ';🍦; Esencia de vainilla' }
+  - id: masa
+    label: Masa
+    items:
+      - { id: flour, label: Harina 000, quantity: 400, unit: g }
+      - { id: sugar, label: Azúcar, quantity: 100, unit: g }
+      - { id: salt, label: Sal, quantity: 10, unit: g }
+      - { id: milk, label: Leche, quantity: 80, unit: g }
+      - { id: eggs, label: Huevos, quantity: 2, whole: true }
+      - { id: butter, label: Manteca, quantity: 100, unit: g }
+      - { id: honey, label: Miel, quantity: 20, unit: g }
+      - { id: zest, label: Rayadura de limón o naranja }
+      - { id: vanilla, label: Extracto de vainilla }
 ---
 
 
 ::RecipeIngredients
-
-:::RecipeSubingredient
-
-#title
-Esponja
-#default
-- `100 gr` Leche
-- `20 gr` Levadura
-- `125 gr` Harina 000
-:::
-
-:::RecipeSubingredient
-
-#title
-Crema Pastelera
-#default
-- `472 mL` ;🥛; Leche entera
-- `6` ;🥚; Yemas
-- `135 gr` Azúcar
-- `37 gr` ;🌽; Almidon de maíz
-- `15 gr` ;🧈; Manteca 
-- ;🍦; Esencia de vainilla
-:::
-
-:::RecipeSubingredient
-
-#title
-Masa
-#default
-- `400 gr` Harina 000
-- `100 gr` Azúcar
-- `10 gr` Sal
-- `80 gr` Leche
-- `2` Huevos
-- `100 gr` Manteca
-- `20 gr` Miel
-- Rayadura de limón o naranja
-- Extracto de vainilla
-:::
-
 ::
 
 

@@ -17,28 +17,31 @@ const encodeSVG = (svgString) => {
   )
 }
 
-const inlineElement = async (emoji, followingChar) => {
+const loadSVG = async (emoji, followingChar) => {
   const unicodeEmoji = [...emoji].map((e) => e.codePointAt(0).toString(16)).join(`-`)
   const pathWithUnicode = `assets/fluent-emoji/${unicodeEmoji}`
   const pathFull = followingChar === ":" ? `${pathWithUnicode}/color.min.svg` : `${pathWithUnicode}/flat.min.svg`
 
   const systemFilePath = path.join(process.cwd(), pathFull)
 
-  let svgData
-
-  if (svgCache.has(systemFilePath)) svgData = svgCache.get(systemFilePath)
-  else {
-    try {
-      svgData = await fs.promises.readFile(systemFilePath, 'utf-8')
-      svgCache.set(systemFilePath, svgData);
-    }
-    catch {
-      return `\\[rip emoji ${emoji}\\]`
-    }
+  if (svgCache.has(systemFilePath)) return svgCache.get(systemFilePath)
+  try {
+    const svgData = await fs.promises.readFile(systemFilePath, 'utf-8')
+    svgCache.set(systemFilePath, svgData);
+    return svgData
   }
-  const svgURI = encodeSVG(svgData)
-  return `<img class="emoji-inline" width="64" height="64" src="data:image/svg+xml,${svgURI}" alt="${emoji}" />`
+  catch {
+    return undefined
+  }
 }
+
+const inlineElement = async (emoji, followingChar) => {
+  const svgData = await loadSVG(emoji, followingChar)
+  if (!svgData) return `\\[rip emoji ${emoji}\\]`
+  return `<img class="emoji-inline" width="64" height="64" src="${emojiSrc(svgData)}" alt="${emoji}" />`
+}
+
+const emojiSrc = (svgData) => `data:image/svg+xml,${encodeSVG(svgData)}`
 
 async function replaceAsync(string, regexp, replacerFunction) {
   const replacements = await Promise.all(
@@ -48,16 +51,57 @@ async function replaceAsync(string, regexp, replacerFunction) {
   return string.replace(regexp, () => replacements[i++]);
 }
 
-const emoji_process = async (file) =>
-  await replaceAsync(file.body, emoji_reg, async (match, emoji, followingChar) => 
+// Frontmatter is YAML data, not Markdown: inlining <img> markup there would corrupt it.
+const frontmatter_reg = /^---\r?\n[\s\S]*?\r?\n---(?:\r?\n|$)/
+
+const emoji_process = async (file) => {
+  const [head = ''] = file.body.match(frontmatter_reg) || []
+  const content = file.body.slice(head.length)
+  return head + await replaceAsync(content, emoji_reg, async (match, emoji, followingChar) =>
     await inlineElement(emoji, followingChar)
   )
+}
+
+// Structured recipe ingredients use the same `;🧈;` syntax in their labels and notes.
+// Emoji become image parts (`labelParts`, `noteParts`) and the text itself stays plain.
+const any_emoji_reg = new RegExp(emoji_reg.source, 'gu')
+
+const emojiParts = async (text) => {
+  if (typeof text !== 'string' || !text.match(any_emoji_reg)) return undefined
+  const parts = []
+  let last = 0
+  for (const match of text.matchAll(any_emoji_reg)) {
+    const svgData = await loadSVG(match[1], match[2])
+    if (match.index > last) parts.push({ text: text.slice(last, match.index) })
+    parts.push(svgData ? { emoji: { alt: match[1], src: emojiSrc(svgData) } } : { text: `[rip emoji ${match[1]}]` })
+    last = match.index + match[0].length
+  }
+  if (last < text.length) parts.push({ text: text.slice(last) })
+  return parts
+}
+const plainText = (text) => text.replace(any_emoji_reg, '').replace(/[ \t]+/g, ' ').trim()
+
+const ingredient_emoji_process = async (groups) => {
+  for (const owner of [...groups, ...groups.flatMap(group => group.items || [])]) {
+    for (const [key, partsKey] of [['label', 'labelParts'], ['note', 'noteParts']]) {
+      const parts = await emojiParts(owner[key])
+      if (!parts) continue
+      owner[partsKey] = parts
+      owner[key] = plainText(owner[key])
+    }
+  }
+}
 
 
 export default defineNitroPlugin((nitroApp) => {
   nitroApp.hooks.hook('content:file:beforeParse', async (file) => {
     if (file._id.endsWith('.md')) {
       file.body = await emoji_process(file)
+    }
+  })
+  nitroApp.hooks.hook('content:file:afterParse', async (file) => {
+    if (Array.isArray(file.ingredientGroups)) {
+      await ingredient_emoji_process(file.ingredientGroups)
     }
   })
 })

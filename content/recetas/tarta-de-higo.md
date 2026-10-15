@@ -2,53 +2,52 @@
 title: Tarta de higo
 icon: fluent-emoji:shortcake
 alt: Tarta de higo
+inlineAmounts: true
+ingredientGroups:
+  - id: nota
+    label: Nota
+    note: "Esta receta es para molde de 27cm de diámetro y 4cm de alto.\n\nAdaptar los ingredientes de acuerdo a los distintos tamaños."
+    items: []
+  - id: masa-sablee
+    label: Masa sablée
+    items:
+      - { id: flour, label: ';🌽; Harina 0000', quantity: 300, unit: g }
+      - { id: butter, label: ';🧈; Manteca', quantity: 180, unit: g }
+      - { id: yolks, label: ';🥚; Yemas', quantity: 3, whole: true }
+      - { id: icing-sugar, label: Azúcar impalpable, quantity: 120, unit: g }
+      - { id: salt, label: ';🧂; Sal', quantity: 1, unit: pizca }
+      - { id: vanilla, label: Esencia de vainilla, quantity: 1, unit: cucharadita }
+  - id: crema-chantilly
+    label: Crema chantilly
+    items:
+      - { id: cream, label: Crema doble de leche, quantity: 300, unit: g, note: mayor a 34% grasa }
+      - { id: cream-sugar, label: Azúcar, quantity: 60, unit: g }
+  - id: higos-en-almibar
+    label: Higos en almíbar
+    note: 'Se puede comprar higos ya en almíbar, o hacerlos con:'
+    items:
+      - { id: figs, label: Higos, quantity: 100, unit: g }
+      - { id: fig-sugar, label: Azúcar, quantity: 75, unit: g }
+      - { id: fig-water, label: Agua }
+  - id: nueces-caramelizadas
+    label: Nueces caramelizadas
+    items:
+      - { id: walnuts, label: ';🥜; Nueces sin cáscara', quantity: 50, unit: g }
+      - { id: walnut-sugar, label: Azúcar }
+      - { id: walnut-water, label: Agua }
+  - id: etc
+    label: Etc
+    items:
+      - { id: cherries, label: Cerezas en almíbar }
+      - { id: dulce-de-leche, label: Dulce de leche }
+      - { id: sieve, label: Colador tamizador }
+      - { id: film, label: Papel film }
+      - { id: foil, label: Papel de aluminio }
+      - { id: weights, label: Porotos o algo para hacer peso sobre la masa en el horno }
 ---
 
 
 ::RecipeIngredients
-:::RecipeSubingredient{name="Nota"}
-Esta receta es para molde de 27cm de diámetro y 4cm de alto.
-
-Adaptar los ingredientes de acuerdo a los distintos tamaños.
-:::
-
-:::RecipeSubingredient{name="Masa sablée"}
-- `300 gr` ;🌽; Harina 0000
-- `180 gr` ;🧈; Manteca
-- `3` ;🥚; Yemas
-- `120 gr` Azúcar impalpable
-- `1 pizca` ;🧂; Sal
-- `1 cucharadita` Esencia de vainilla
-:::
-
-:::RecipeSubingredient{name="Crema chantilly"}
-- `300 gr` Crema doble de leche (mayor a 34% grasa)
-- `60 gr` Azúcar
-:::
-
-:::RecipeSubingredient{name="Higos en almíbar"}
-Se puede comprar higos ya en almíbar, o hacerlos con:
-
-- `100 gr` Higos
-- `75 gr` Azúcar
-- Agua
-:::
-
-:::RecipeSubingredient{name="Nueces caramelizadas"}
-- `50 gr` ;🥜; Nueces sin cáscara
-- Azúcar
-- Agua
-:::
-
-:::RecipeSubingredient{name="Etc"}
-- Cerezas en almíbar
-- Dulce de leche
-- Colador tamizador
-- Papel film
-- Papel de aluminio
-- Porotos o algo para hacer peso sobre la masa en el horno
-:::
-
 ::
 
 ::RecipeProcess{:process="true"}
@@ -65,13 +64,13 @@ Importante NO USAR manteca derretida, en estado líquido. La masa no va a salir 
 
 Luego, en un bowl, mezclar en orden:
 
-1. Manteca
-2. Azúcar impalpable
-3. Las yemas y esencia de vainilla
+1. :RecipeAmount[Manteca]{ingredient="butter"}
+2. :RecipeAmount[Azúcar impalpable]{ingredient="icing-sugar"}
+3. :RecipeAmount[Las yemas]{ingredient="yolks"} y :RecipeAmount[esencia de vainilla]{ingredient="vanilla"}
 
 Una vez incorporados los ingredientes:
 
-4. Pasar la harina y sal por el tamizador hacia el bowl.
+4. Pasar :RecipeAmount[la harina]{ingredient="flour"} y :RecipeAmount[sal]{ingredient="salt"} por el tamizador hacia el bowl.
 5. Mezclar hasta que no quede ningun rastro de harina visible en la masa, pero no más que eso. De lo contrario, trabajaría más el gluten y haría la masa más elástica.
 
 Colocamos la masa sobre un papel film. La aplastamos para que quede plana y con un grosor un poco más alto que el final que llevará en el molde.
@@ -119,7 +118,7 @@ Las proporciones de los ingredientes son las listadas en esta receta.
 ### Nueces caramelizadas
 
 1. En una sartén, vertir azúcar y un poco de agua. Calentar.
-2. Luego, agregar las nueces
+2. Luego, agregar :RecipeAmount[las nueces]{ingredient="walnuts"}
 3. Mover constantemente hasta que el azúcar se seque y se haga polvo
 4. Seguir moviendo hasta que se derrita el azúcar y se abrillanten las nueces
 5. Retirar las nueces del fuego a una superficie

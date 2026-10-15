@@ -7,59 +7,66 @@ cover:
   width: 2000
   height: 1500
 alt: Flan
+inlineAmounts: true
+ingredientGroups:
+  - id: cosas
+    label: Cosas
+    items:
+      - { id: film, label: ';🧻; Papel film' }
+      - { id: tupper, label: Tupper, note: opcional }
+      - { id: brush, label: ';🖌️; Pincel' }
+  - id: amasijo
+    label: Amasijo
+    items:
+      - { id: flour, label: ';🌽; Harina 0000', quantity: 600, unit: g }
+      - { id: milk, label: ';🥛; Leche Entera', quantity: 225, unit: ml }
+      - { id: yeast, label: Levadura fresca, quantity: 10, unit: g }
+      - { id: salt, label: ';🧂; Sal', quantity: 10, unit: g }
+      - { id: sugar, label: Azúcar, quantity: 100, unit: g }
+      - { id: eggs, label: ';🥚; Huevos', quantity: 2, whole: true }
+      - { id: honey, label: ';🍯; Miel', quantity: 10, unit: g }
+      - { id: vanilla, label: ';🍦; Esencia de vainilla', quantity: 3, unit: g }
+      - { id: zest, label: 'Ralladura de {} ;🍊; naranja', quantity: 0.5 }
+  - id: empaste
+    label: Empaste
+    items:
+      - { id: butter, label: ';🧈; Manteca blanda', quantity: 200, unit: g }
+  - id: doradura
+    label: Doradura
+    items:
+      - { id: wash-eggs, label: ';🥚; Huevos', quantity: 2, whole: true }
+      - { id: wash-milk, label: Leche, quantity: 100, unit: g }
+      - { id: wash-honey, label: ';🍯; Miel', quantity: 1, unit: cucharadita }
+      - { id: wash-salt, label: Sal, quantity: 1, unit: pizca }
+  - id: almibar
+    label: Almíbar
+    items:
+      - { id: syrup-water, label: Agua, quantity: 300, unit: g }
+      - { id: syrup-sugar, label: Azúcar, quantity: 300, unit: g }
+      - { id: orange-juice, label: 'Jugo de {} ;🍊; naranja', quantity: 1 }
+      - { id: syrup-honey, label: '{} o {1 cucharada} ;🍯; Miel', quantity: 20, unit: g, note: bien cargada }
+  - id: crema-pastelera
+    label: Crema Pastelera
+    items:
+      - { id: cream-milk, label: ';🥛; Leche', quantity: 335, unit: ml }
+      - id: cream-sugar
+        label: Azúcar
+        quantity: 100
+        unit: g
+        allocations:
+          - { id: milk-half, label: Con la leche, quantity: 50 }
+          - { id: bowl-half, label: En el bowl, quantity: 50 }
+      - { id: cornstarch, label: Almidón de maiz, quantity: 10, unit: g }
+      - { id: cream-flour, label: Harina 0000, quantity: 27, unit: g }
+      - { id: yolks, label: ';🥚; Yemas', quantity: 4, whole: true }
+      - { id: cream-vanilla, label: Esencia de vainilla, amount: A ojo }
+  - id: membrillo
+    label: Membrillo
+    items:
+      - { id: quince, label: Dulce de membrillo., amount: A ojo? }
 ---
 
 ::RecipeIngredients
-
-:::RecipeSubingredient{name="Cosas"}
-- ;🧻; Papel film
-- Tupper (opcional)
-- ;🖌️; Pincel
-:::
-
-:::RecipeSubingredient{name="Amasijo"}
-- `600 gr` ;🌽; Harina 0000
-- `225 ml` ;🥛; Leche Entera
-- `10 gr` Levadura fresca
-- `10 gr` ;🧂; Sal
-- `100 gr` Azúcar
-- `2` ;🥚; Huevos
-- `10 gr` ;🍯; Miel
-- `3 gr` ;🍦; Esencia de vainilla
-- Ralladura de `media` ;🍊; naranja
-:::
-
-:::RecipeSubingredient{name="Empaste"}
-- `200 gr` ;🧈; Manteca blanda
-:::
-
-:::RecipeSubingredient{name="Doradura"}
-- `2` ;🥚; Huevos
-- `100 gr` Leche
-- `1 cucharadita` ;🍯; Miel
-- `1 pizca` Sal
-:::
-
-:::RecipeSubingredient{name="Almíbar"}
-- `300 gr` Agua
-- `300 gr` Azúcar
-- Jugo de `1` ;🍊; naranja
-- `20 gr` o `1 buena cucharada` ;🍯; Miel
-:::
-
-:::RecipeSubingredient{name="Crema Pastelera"}
-- `335 ml` ;🥛; Leche
-- `100 gr` Azúcar
-- `10 gr` Almidón de maiz
-- `27 gr` Harina 0000
-- `4` ;🥚; Yemas
-- `A ojo` Esencia de vainilla
-:::
-
-:::RecipeSubingredient{name="Membrillo"}
-- `A ojo?` Dulce de membrillo.
-:::
-
 ::
 
 ::RecipeProcess{:process="true"}
@@ -73,7 +80,7 @@ Muchos detalles, secretos y cosas importantes allí. Muy buen material.
 
 Vamos con el empaste primero, ya que deberá descansar un rato en el freezer/heladera al mismo tiempo que hacemos el amasijo.
 
-Con la manteca pomada:
+Con :RecipeAmount[la manteca pomada]{ingredient="butter"}:
 
 1. Colocarla sobre papel film o papeles plásticos. Que la envuelva de atrás y de adelante.
 2. Aplastarla con las manos y luego con el palo de amasar para darle forma rectangular
@@ -134,13 +141,13 @@ Así que respetar esos tiempos y no dejar las cosas de más.
 
 #### Crema Pastelera
 
-1. En una cacerola colocamos toda la leche y la mitad del azúcar de los ingredientes. Tenemos `100g`, así que agregaremos `50g`
+1. En una cacerola colocamos toda :RecipeAmount[la leche]{ingredient="cream-milk"} y :RecipeAmount[la mitad del azúcar]{ingredient="cream-sugar" allocation="milk-half"} de los ingredientes.
 2. Llevar la cacerola a un fuego medio
 
 ;🥣; En otro bowl:
 
-3. Colocar el almidón de maiz, harina y el restante del azúcar.
-4. Agregamos los huevos y mezclamos
+3. Colocar :RecipeAmount[el almidón de maiz]{ingredient="cornstarch"}, :RecipeAmount[harina]{ingredient="cream-flour"} y :RecipeAmount[el restante del azúcar]{ingredient="cream-sugar" allocation="bowl-half"}.
+4. Agregamos :RecipeAmount[los huevos]{ingredient="yolks"} y mezclamos
 
 ;🥛; Con la leche ya caliente de la cacerola:
 

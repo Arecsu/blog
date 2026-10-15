@@ -2,37 +2,39 @@
 title: Alfajores de maicena
 # icon: fluent-emoji:shortcake
 alt: Alfajores de maicena
+inlineAmounts: true
+ingredientGroups:
+  - id: masa
+    label: Masa
+    items:
+      - { id: flour, label: Harina 0000, quantity: 200, unit: g }
+      - { id: cornstarch, label: Almidón de maíz, quantity: 300, unit: g }
+      - { id: butter, label: Manteca pomada, quantity: 200, unit: g }
+      - { id: yolks, label: Yemas, quantity: 3, whole: true }
+      - { id: white, label: Clara, quantity: 1, whole: true }
+      - { id: sugar, label: Azúcar, quantity: 150, unit: g }
+      - { id: cognac, label: Café coñac, quantity: 1, unit: cucharada }
+      - { id: baking-soda, label: Bicarbonato de sodio, quantity: 0.5, unit: cucharadita }
+      - { id: vanilla, label: Esencia de vainilla, quantity: 1, unit: cucharadita }
+      - { id: lemon-zest, label: Ralladura de limón, quantity: 1.5, unit: cucharadita }
+      - { id: baking-powder, label: Polvo de hornear, quantity: 2, unit: cucharadita }
+  - id: relleno
+    label: Relleno
+    items:
+      - { id: dulce-de-leche, label: Dulce de leche }
+      - { id: coconut, label: Coco rallado }
 ---
 
 
 ::RecipeIngredients
-
-:::RecipeSubingredient{name="Masa"}
-- `200gr` Harina 0000
-- `300gr` Almidón de maíz
-- `200gr` Manteca pomada
-- `3` Yemas
-- `1` Clara
-- `150g` Azúcar
-- `1 cucharada` Café coñac
-- `1/2 cucharadita` Bicarbonato de sodio
-- `1 cucharadita` Esencia de vainilla
-- `1 y 1/2 cucharadita` Ralladura de limón
-- `2 cucharaditas` Polvo de hornear
-:::
-
-:::RecipeSubingredient{name="Relleno"}
-- Dulce de leche
-- Coco rallado
-:::
 ::
 
 ::RecipeProcess{:process="true"}
 
-1. Tamizar el almidón de maíz, la harina, bicarbonato, y el polvo de hornear.
-2. En un bowl, batir la manteca con el azúcar
-3. Agregar las yemas de a una, mezclado e incorporandolas bien a la mezcla previa.
-4. Luego, agregar el café coñac, esencia de vainila y ralladura de limón.
+1. Tamizar :RecipeAmount[el almidón de maíz]{ingredient="cornstarch"}, :RecipeAmount[la harina]{ingredient="flour"}, :RecipeAmount[bicarbonato]{ingredient="baking-soda"}, y :RecipeAmount[el polvo de hornear]{ingredient="baking-powder"}.
+2. En un bowl, batir :RecipeAmount[la manteca]{ingredient="butter"} con :RecipeAmount[el azúcar]{ingredient="sugar"}
+3. Agregar :RecipeAmount[las yemas]{ingredient="yolks"} de a una, mezclado e incorporandolas bien a la mezcla previa.
+4. Luego, agregar :RecipeAmount[el café coñac]{ingredient="cognac"}, :RecipeAmount[esencia de vainila]{ingredient="vanilla"} y :RecipeAmount[ralladura de limón]{ingredient="lemon-zest"}.
 5. Incorporar poco a poco los ingredientes secos ya tamizados
 6. En este punto, si la masa está muy blanda, llevar a la heladera en el mismo bowl y esperar a que endurezca un poco. Si la masa tiene buen cuerpo, se puede omitir este paso.
 7. Amasar y estirar de 5mm de espesor sobre una mesa espolvoreada de harina

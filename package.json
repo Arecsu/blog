@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
+    "test": "node --test tests/*.test.mjs",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -15,7 +16,8 @@
     "gh-pages": "^6.3.0",
     "nuxt": "~3",
     "nuxt-icon": "~0",
-    "sass": "^1.97.1"
+    "sass": "^1.97.1",
+    "yaml": "2.8.2"
   },
   "dependencies": {
     "@fontsource/fira-mono": "^5.2.7",

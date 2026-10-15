@@ -2,26 +2,30 @@
 title: Mantecados y Polvorones
 # icon: fluent-emoji:cookie
 draft: true
+ingredientGroups:
+  - id: mantecado
+    label: Mantecado
+    items:
+      - { id: flour, label: ';🥛; Harina 000', quantity: 500, unit: g }
+      - { id: tallow, label: Grasa vacuna, quantity: 250, unit: g }
+      - { id: sugar, label: Azúcar, quantity: 250, unit: g }
+      - { id: eggs, label: ';🥚; Huevos', quantity: 6, whole: true }
+      - { id: ammonium, label: Bicarbonato de amonio, quantity: 10, unit: g }
+      - { id: vanilla, label: Esencia de Vainilla, amount: '?' }
+      - { id: lemon, label: Esencia de limón, amount: '?' }
+      - { id: colouring, label: Colorante líquido, amount: '?' }
+  - id: polvorone
+    label: Polvorone
+    items:
+      - { id: cocoa, label: Cacao amargo, quantity: 50, unit: g }
+      - { id: caramel-colouring, label: Colorante caramelo, amount: '?' }
+  - id: etc
+    label: Etc
+    items:
+      - { id: cutter, label: → Cortante de 8cm de diámetro }
 ---
 
 ::RecipeIngredients
-:::RecipeSubingredient{name="Mantecado"}
-- `500 gr` ;🥛; Harina 000
-- `250 gr` Grasa vacuna
-- `250 gr` Azúcar
-- `6` ;🥚; Huevos
-- `10 gr` Bicarbonato de amonio
-- `?` Esencia de Vainilla
-- `?` Esencia de limón
-- `?` Colorante líquido
-:::
-:::RecipeSubingredient{name="Polvorone"}
-- `50 gr` Cacao amargo
-- `?` Colorante caramelo
-:::
-:::RecipeSubingredient{name="Etc"}
-- → Cortante de 8cm de diámetro
-:::
 ::
 
 ::RecipeProcess{:process="true"}

@@ -2,33 +2,36 @@
 title: Red Velvet Cake
 icon: fluent-emoji:shortcake
 alt: Torta Red Velvet de varias capas con buttercream de queso crema
+inlineAmounts: true
+ingredientGroups:
+  - id: bizcochuelo
+    label: Bizcochuelo
+    items:
+      - { id: butter, label: ';🧈; Manteca pomada', quantity: 200, unit: g }
+      - { id: sugar, label: Azúcar, quantity: 400, unit: g }
+      - { id: vanilla, label: Extracto de vainilla, quantity: 2, unit: cdta }
+      - { id: eggs, label: ';🥚; Huevos', quantity: 4, whole: true }
+      - { id: milk, label: ';🥛; Leche', quantity: 100, unit: g }
+      - { id: vinegar, label: Vinagre blanco o jugo de limón, quantity: 20, unit: g }
+      - { id: colouring, label: Colorante rojo comestible, quantity: 2, unit: cdta, note: preferentemente en pasta }
+      - { id: flour, label: ';🌾; Harina 0000', quantity: 350, unit: g }
+      - { id: cocoa, label: ';🍫; Cacao amargo', quantity: 50, unit: g }
+      - { id: baking-powder, label: Polvo de hornear, quantity: 15, unit: g }
+  - id: almibar
+    label: Almíbar
+    items:
+      - { id: syrup-sugar, label: Azúcar, quantity: 150, unit: g }
+      - { id: syrup-water, label: Agua, quantity: 150, unit: g }
+  - id: cream-cheese-buttercream
+    label: Cream cheese buttercream
+    items:
+      - { id: frosting-butter, label: ';🧈; Manteca', quantity: 250, unit: g }
+      - { id: cream-cheese, label: Queso crema firme, quantity: 250, unit: g }
+      - { id: icing-sugar, label: Azúcar impalpable, quantity: 750, unit: g }
+      - { id: salt, label: Sal, quantity: 1, unit: pizca }
 ---
 
 ::RecipeIngredients
-:::RecipeSubingredient{name="Bizcochuelo"}
-- `200 g` ;🧈; Manteca pomada
-- `400 g` Azúcar
-- `2 cdtas` Extracto de vainilla
-- `4` ;🥚; Huevos
-- `100 g` ;🥛; Leche
-- `20 g` Vinagre blanco o jugo de limón
-- `2 cdtas` Colorante rojo comestible (preferentemente en pasta)
-- `350 g` ;🌾; Harina 0000
-- `50 g` ;🍫; Cacao amargo
-- `15 g` Polvo de hornear
-:::
-
-:::RecipeSubingredient{name="Almíbar"}
-- `150 g` Azúcar
-- `150 g` Agua
-:::
-
-:::RecipeSubingredient{name="Cream cheese buttercream"}
-- `250 g` ;🧈; Manteca
-- `250 g` Queso crema firme
-- `750 g` Azúcar impalpable
-- `1 pizca` Sal
-:::
 ::
 
 ::RecipeProcess{:process="true"}
@@ -42,27 +45,27 @@ alt: Torta Red Velvet de varias capas con buttercream de queso crema
 
 ### Buttermilk
 
-1. Mezclar la leche con el vinagre y dejar reposar unos minutos, hasta que la leche se vea cortada. Reservar.
+1. Mezclar :RecipeAmount[la leche]{ingredient="milk"} con :RecipeAmount[el vinagre]{ingredient="vinegar"} y dejar reposar unos minutos, hasta que la leche se vea cortada. Reservar.
 
 ### Bizcochuelo
 
-1. Batir la manteca pomada con el azúcar y el extracto de vainilla hasta obtener una mezcla cremosa y aireada.
-2. Agregar los huevos de a uno, batiendo solo hasta que se integren.
+1. Batir :RecipeAmount[la manteca pomada]{ingredient="butter"} con :RecipeAmount[el azúcar]{ingredient="sugar"} y :RecipeAmount[el extracto de vainilla]{ingredient="vanilla"} hasta obtener una mezcla cremosa y aireada.
+2. Agregar :RecipeAmount[los huevos]{ingredient="eggs"} de a uno, batiendo solo hasta que se integren.
 3. Incorporar el buttermilk de a poco. Es posible que la mezcla parezca cortada; continuar con la receta.
-4. Agregar el colorante rojo y mezclar hasta distribuirlo de manera pareja.
-5. Tamizar juntos la harina, el cacao y el polvo de hornear. Incorporarlos a la preparación en tandas, mezclando solo hasta integrar.
+4. Agregar :RecipeAmount[el colorante rojo]{ingredient="colouring"} y mezclar hasta distribuirlo de manera pareja.
+5. Tamizar juntos :RecipeAmount[la harina]{ingredient="flour"}, :RecipeAmount[el cacao]{ingredient="cocoa"} y :RecipeAmount[el polvo de hornear]{ingredient="baking-powder"}. Incorporarlos a la preparación en tandas, mezclando solo hasta integrar.
 6. Repartir la masa entre los moldes preparados. Si no se cuenta con balanza, dividirla lo más parejo posible.
 7. Hornear las capas a 200 °C durante unos 20 minutos, o hasta que al insertar un palillo en el centro salga limpio. Si se usa un solo molde, hornear a 160–180 °C y comprobar la cocción con el palillo.
 8. Dejar enfriar por completo antes de desmoldar y armar.
 
 ### Almíbar
 
-1. Poner el agua y el azúcar en una olla pequeña. Calentar hasta que el azúcar se disuelva.
+1. Poner :RecipeAmount[el agua]{ingredient="syrup-water"} y :RecipeAmount[el azúcar]{ingredient="syrup-sugar"} en una olla pequeña. Calentar hasta que el azúcar se disuelva.
 2. Retirar del fuego y dejar enfriar.
 
 ### Cream cheese buttercream
 
-1. Batir la manteca, el queso crema, el azúcar impalpable y la sal hasta obtener una crema aireada y homogénea, aproximadamente 10 minutos.
+1. Batir :RecipeAmount[la manteca]{ingredient="frosting-butter"}, :RecipeAmount[el queso crema]{ingredient="cream-cheese"}, :RecipeAmount[el azúcar impalpable]{ingredient="icing-sugar"} y :RecipeAmount[la sal]{ingredient="salt"} hasta obtener una crema aireada y homogénea, aproximadamente 10 minutos.
 2. Si el queso crema es blando, batir primero la manteca con el azúcar impalpable y la sal; incorporar el queso crema al final y batir solo hasta integrar para evitar que la crema se afloje.
 3. Si queda demasiado blanda, llevarla a la heladera mientras se prepara la torta.
 

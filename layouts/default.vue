@@ -5,25 +5,21 @@
         <!-- <Header v-if="$route.path !== '/'" /> -->
         <Header />
       </Transition>
-      <NoScript>
-        <style>
-          main {
-            display: block !important;
-          }
-          .header-container {
-            display: grid !important;
-          }
-          .dark-mode-button {
-            display: none !important;
-          }
-        </style>
-      </NoScript>
       <main>
         <slot />
       </main>
     </div>
   </div>
 </template>
+
+<script setup>
+// Vue drops <style> tags inside templates, so the no-JS fallback lives in <head>.
+useHead({
+  noscript: [{
+    innerHTML: '<style>main { display: block !important; } .header-container { display: grid !important; } .dark-mode-button { display: none !important; }</style>'
+  }]
+})
+</script>
 
 <style lang="scss">
 /* we will explain what these classes do next! */

@@ -2,16 +2,19 @@
 title: Brownies
 icon: fluent-emoji:chocolate-bar
 alt: Brownies
+ingredientGroups:
+  - id: ingredientes
+    items:
+      - { id: butter, label: ';🧈; Manteca', quantity: 75, unit: g }
+      - { id: chocolate, label: ';🍫; Chocolate Cobertura Semiamargo', quantity: 100, unit: g }
+      - { id: sugar, label: Azúcar, quantity: 225, unit: g }
+      - { id: eggs, label: ';🥚; Huevos', quantity: 3, whole: true }
+      - { id: flour, label: Harina, quantity: 100, unit: g }
+      - { id: cocoa, label: ';🍫; Cacao amargo', quantity: 10, unit: g }
 ---
 
 
 ::RecipeIngredients
--  `75 g` ;🧈; Manteca
--  `100 g` ;🍫; Chocolate Cobertura Semiamargo
--  `225 g` Azúcar
--  `3` ;🥚; Huevos
--  `100 g` Harina
--  `10 g` ;🍫; Cacao amargo
 ::
 
 

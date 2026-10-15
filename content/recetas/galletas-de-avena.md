@@ -8,20 +8,24 @@ cover:
   width: 1516
   height: 1102
 alt: Galletas de Avena
+inlineAmounts: true
+ingredientGroups:
+  - id: ingredientes
+    items:
+      - { id: flour, label: Harina 0000, quantity: 380, unit: g }
+      - { id: baking-powder, label: Polvo de hornear, quantity: 17, unit: g }
+      - { id: oats, label: Avena, quantity: 140, unit: g }
+      - { id: salt, label: ';🧂; Sal', quantity: 4, unit: g }
+      - { id: butter, label: ';🧈; Manteca blanda', quantity: 200, unit: g }
+      - { id: sugar, label: Azúcar blanca, quantity: 360, unit: g }
+      - { id: brown-sugar, label: Azúcar mascabo, quantity: 70, unit: g }
+      - { id: eggs, label: '{} Yemas y {2} Claras', quantity: 3, whole: true, note: ';🥚; {2} huevos y {1} yema adicional' }
+      - { id: vanilla, label: ';🍦; Esencia de vainilla real', quantity: 18, unit: g }
+      - { id: chocolate, label: ';🍫; Chips de chocolate o chocolate picado', quantity: 230, unit: g }
+      - { id: walnuts, label: Nueces picadas, quantity: 70, unit: g, note: opcional }
 ---
 
 ::RecipeIngredients
-- `380g` Harina 0000
-- `17g` Polvo de hornear
-- `140g` Avena
-- `4gr` ;🧂; Sal
-- `200g` ;🧈; Manteca blanda
-- `360g` Azúcar blanca
-- `70g` Azúcar mascabo
-- `3` Yemas y `2` Claras (;🥚; 2 huevos y 1 yema adicional)
-- `18g` ;🍦; Esencia de vainilla real
-- `230g` ;🍫; Chips de chocolate o chocolate picado
-- `Opcional 70g` Nueces picadas
 ::
 
 ::RecipeProcess{:process="true"}
@@ -29,10 +33,10 @@ alt: Galletas de Avena
 
 Mezclar en orden:
 
-1. Azúcar, manteca, esencia de vainilla y sal
+1. Azúcar, :RecipeAmount[manteca]{ingredient="butter"}, :RecipeAmount[esencia de vainilla]{ingredient="vanilla"} y :RecipeAmount[sal]{ingredient="salt"}
 2. Huevos
-3. Harina. ;⚠️; Solamente mezclar hasta integrar la harina. No amasar más que eso, para no desarrollar el glúten. De lo contrario, haría una masa elástica que no es muy atractiva de comer. Queremos algo quebradizo.
-4. Avena, trocitos de chocolate y nueces. De nuevo: hasta integrar, amasando lo menos posible.
+3. :RecipeAmount[Harina]{ingredient="flour"}. ;⚠️; Solamente mezclar hasta integrar la harina. No amasar más que eso, para no desarrollar el glúten. De lo contrario, haría una masa elástica que no es muy atractiva de comer. Queremos algo quebradizo.
+4. :RecipeAmount[Avena]{ingredient="oats"}, :RecipeAmount[trocitos de chocolate]{ingredient="chocolate"} y :RecipeAmount[nueces]{ingredient="walnuts"}. De nuevo: hasta integrar, amasando lo menos posible.
 
 **Nueces**: lo que yo hago para trituar las nueces es ponerlas sobre un plato o tabla de madera, y las cubro con una servilleta de tela, de esas grandes para uso general en la cocina. Y con un martillo de cocina las voy aplastando. Así no salen volando a todos lados.
 

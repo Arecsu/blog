@@ -7,29 +7,33 @@ cover:
   width: 2000
   height: 1500
 alt: Flan
+inlineAmounts: true
+ingredientGroups:
+  - id: flan
+    label: Flan
+    items:
+      - { id: milk, label: ';🥛; Leche', quantity: 1, unit: litro }
+      - { id: eggs, label: ';🥚; Huevos completos', quantity: 6, whole: true }
+      - { id: yolks, label: ';🥚; Yemas', quantity: 6, whole: true }
+      - { id: sugar, label: Azúcar blanca, quantity: 250, unit: g }
+      - { id: vanilla, label: Esencia de Vainilla, amount: A ojo }
+  - id: caramelo
+    label: Caramelo
+    items:
+      - { id: caramel-sugar, label: Azúcar blanca, amount: A ojo }
 ---
 
 ::RecipeIngredients
-:::RecipeSubingredient{name="Flan"}
-- `1 litro` ;🥛; Leche
-- `6` ;🥚; Huevos completos
-- `6` ;🥚; Yemas
-- `250g` Azúcar blanca
-- `A ojo` Esencia de Vainilla
-:::
-:::RecipeSubingredient{name="Caramelo"}
-- `A ojo` Azúcar blanca
-:::
 ::
 
 ::RecipeProcess{:process="true"}
 
-1. Mezclar los 6 huevos completos + las 6 yemas extras + 250gr de azúcar.
+1. Mezclar :RecipeAmount[los huevos completos]{ingredient="eggs"} + :RecipeAmount[las yemas extras]{ingredient="yolks"} + :RecipeAmount[el azúcar]{ingredient="sugar"}.
 2. Revolver con el **batidor** francés solo un poco, muy despacio para no meter aire en la mezcla y asi evitar agujeritos y grumos en la cocción. Que los alambres pasen entre los huevos simplemente.
 
 La mezcla tiene que estar líquida, que no tenga estructura fuerte. Levantar el batidor francés para comprobarlo.
 
-3. En otro bowl, mezclar la esencia de vainilla (buena cantidad) con la leche. La leche tiene que estar fría. Se puede hacer con leche caliente para ahorrar tiempo de cocción pero la técnica es más complicada.
+3. En otro bowl, mezclar la esencia de vainilla (buena cantidad) con :RecipeAmount[la leche]{ingredient="milk"}. La leche tiene que estar fría. Se puede hacer con leche caliente para ahorrar tiempo de cocción pero la técnica es más complicada.
 
 ### Caramelo
 

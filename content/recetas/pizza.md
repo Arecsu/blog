@@ -7,28 +7,32 @@ cover:
   width: 1152
   height: 768
 alt: Pizza
+inlineAmounts: true
+ingredientGroups:
+  - id: masa
+    label: Masa
+    items:
+      - { id: flour, label: Harina 000, quantity: 500, unit: g }
+      - { id: water, label: Agua, quantity: 300, unit: g }
+      - { id: salt, label: 'Sal marina, o {13 g} sal común', quantity: 10, unit: g }
+      - { id: yeast, label: Levadura, quantity: 2, unit: g }
+      - { id: olive-oil, label: Aceite de oliva, quantity: 20, unit: g }
+  - id: salsa
+    label: Salsa
+    items:
+      - { id: tomatoes, label: 'Tomates triturados :🍅:' }
+      - { id: garlic, label: 'Ajo en polvo. De no ser posible, un ajo cortado en trozitos pequeños.' }
+      - { id: basil, label: Hojas de albahaca }
+      - { id: sauce-oil, label: Aceite de oliva }
+      - { id: sauce-salt, label: Sal }
+      - { id: pepper, label: Pimienta }
+  - id: queso
+    label: Queso
+    items:
+      - { id: mozzarella, label: Mozzarella fior di latte, quantity: 260, unit: g }
 ---
 
 ::RecipeIngredients
-:::RecipeSubingredient{name="Masa"}
-- `500 gr` Harina 000
-- `300 gr` Agua
-- `10 gr` Sal marina, o `13 gr` sal común
-- `2 gr` Levadura
-- `20 gr` Aceite de oliva
-:::
-:::RecipeSubingredient{name="Salsa"}
-- Tomates triturados :🍅:
-- Ajo en polvo. De no ser posible, un ajo cortado en trozitos pequeños.
-- Hojas de albahaca
-- Aceite de oliva
-- Sal
-- Pimienta
-:::
-:::RecipeSubingredient{name="Queso"}
-- `260 gr` Mozzarella fior di latte
-:::
-
 #IngredientsIntro
 *Para **2 pizzas** :🍕: grandes*
 ::
@@ -43,9 +47,9 @@ Para re-utilizar esa levadura abierta ya antes, se recomendaría aumentar un poc
 
 ### Masa
 
-1. Mezclar agua + sal + levadura.
-2. Luego integrar todo con la harina. Si la masa está seca, aumentar agua **MUY de a poco**. La masa ideal es una que debería pegarse un poquito con los dedos.
-3. Una vez hecha la masa, mezclar con un poco de aceite de oliva.
+1. Mezclar :RecipeAmount[agua]{ingredient="water"} + :RecipeAmount[sal]{ingredient="salt"} + :RecipeAmount[levadura]{ingredient="yeast"}.
+2. Luego integrar todo con :RecipeAmount[la harina]{ingredient="flour"}. Si la masa está seca, aumentar agua **MUY de a poco**. La masa ideal es una que debería pegarse un poquito con los dedos.
+3. Una vez hecha la masa, mezclar con :RecipeAmount[un poco de aceite de oliva]{ingredient="olive-oil"}.
 4. No hay que amasar demasiado. Taparla con un bowl y dejar descansar 10-15 minutos. Esto deberia ayudar a que la masa se relaje y sea mejor para amasar.
 5. Amasar por 30 segundos. Bollar y tapar con el bowl.
 6. Dejar descansar 10 minutos.
@@ -71,7 +75,7 @@ Cortar en pedazitos las hojas de albahaca y el ajo.
 1. Luego de reposar la masa todos esos días en la heladera, sacarla.
 2. Tirar harina sobre la mesada.
 3. Estirar la masa del centro hacia afuera, teniendo cuidado de proteger el aire en los bordes. No importa si no es perfecto o se rompe un poco tampoco. Igual estará muy rica :🥳:
-4. Colocar la salsa y el queso, y al horno.
+4. Colocar la salsa y :RecipeAmount[el queso]{ingredient="mozzarella"}, y al horno.
 
 Para el horno, lo ideal sería tener un horno de barro o pizzero. No es común ver eso en las casas. Probablemente tengas un horno común y corriente, como yo. Así que aquí va un pro tip con el que hago mis pizzas:
 
