@@ -1,0 +1,1 @@
+import{_ as o}from"./29BVeRks.js";import{i as a,h as n,o as f}from"./C1yyKl6O.js";import"./BYUTwoiC.js";const s=a({__name:"ePColor",props:{e:{},t:{default:"c"},i:{type:Boolean,default:!1},f:{default:"img"}},setup(e){return(i,c)=>{const t=o;return f(),n(t,{e:e.e,t:e.t,f:e.f,i:e.i},null,8,["e","t","f","i"])}}});export{s as default};
