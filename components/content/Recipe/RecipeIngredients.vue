@@ -1,14 +1,16 @@
 <template>
   <section id="ingredientes" ref="ingredientsElement" class="ingredients" :class="{ 'is-sticky': sticky }" :aria-labelledby="`${id}-title`"
     :style="viewer?.drawerOpen.value ? { minHeight: `${placeholderHeight}px` } : undefined">
-    <h2 :id="`${id}-title`" class="ingredients-title">
-      <Icon name="fluent-emoji:spoon" /> Ingredientes
-    </h2>
+    <div class="ingredients-heading">
+      <h2 :id="`${id}-title`" class="ingredients-title">
+        <Icon name="fluent-emoji:spoon" /> Ingredientes
+      </h2>
+      <RecipeScaleMenu />
+    </div>
     <div ref="panel" class="recipe-ingredient-panel">
       <!-- Markdown slots render once (v-once): re-invoking them on reactive updates
            makes Vue warn about slots called outside the render function. -->
       <div v-once class="recipe-ingredients-intro"><slot name="IngredientsIntro" /></div>
-      <RecipeControls />
       <div v-if="viewer?.groups.value.length" class="subingredients">
           <RecipeSubingredient v-for="group in viewer.groups.value" :key="group.id" :name="group.label" :name-parts="group.labelParts" :group-id="group.id">
             <template v-if="group.note">
@@ -46,6 +48,7 @@
       </div>
       <footer class="recipe-drawer-header">
         <h2 :id="`${id}-drawer-title`">Ingredientes</h2>
+        <RecipeScaleMenu placement="above" />
         <button type="button" aria-label="Cerrar ingredientes y volver al procedimiento" @click="closeDrawer">×</button>
       </footer>
     </dialog>
@@ -57,7 +60,7 @@ import { useId } from 'vue'
 import { formatRecipeAmount, formatRecipeNumber, hasPrimaryAmount } from '~/utils/recipe.mjs'
 const viewer = useRecipeViewer()
 // Scaling and the drawer need JavaScript; hide their controls otherwise.
-useHead({ noscript: [{ innerHTML: '<style>.recipe-mobile-dock, .recipe-controls { display: none !important; }</style>' }] })
+useHead({ noscript: [{ innerHTML: '<style>.recipe-mobile-dock, .recipe-scale-menu { display: none !important; }</style>' }] })
 const id = `recipe-ingredients-${useId()}`
 const ingredientsElement = ref<HTMLElement>()
 const placeholderHeight = ref(0)
@@ -242,12 +245,28 @@ onBeforeUnmount(() => {
   }
 }
 
-.ingredients-title {
-  svg {
-    margin-left: -.1em;
-    transform: translateY(-.1em);
+.ingredients-heading {
+  display: flex; align-items: center; flex-wrap: wrap; gap: .25rem 1.25rem;
+  // The row takes the title's margins (h2 in pages/recetas/[...slug].vue), so the chip
+  // centers on the title's letters rather than on its margins.
+  font-size: clamp(1.8rem, 7vw, 4rem); margin-block: 1em .4em;
+  // `.recipe h2` has the same specificity; without the extra class, whichever stylesheet
+  // loaded last would win, and the title briefly got its margins back during page load.
+  > h2.ingredients-title { margin-block: 0; }
+  // Sized to sit beside the large title, not like the small text of the list.
+  // Scales with the title (1.05rem beside the 4rem desktop title), never below the list's
+  // amount chips. Its height follows: the 44px touch target is an invisible extension.
+  .recipe-scale-chip {
+    font-size: clamp(.88rem, .2625em, 1.05rem); padding: .5em .75em; min-height: 0;
+    background: var(--color-bg-quantity-subingredient);
+    @media (pointer: coarse) {
+      position: relative;
+      &::before { content: ''; position: absolute; inset: 50% 0 auto; height: 44px; translate: 0 -50%; }
+    }
   }
 }
+
+.ingredients-title svg { margin-left: -.1em; }
 
 .subingredients {
   width: 100%;
@@ -301,13 +320,14 @@ onBeforeUnmount(() => {
   --recipe-sheet-padding: max(var(--recipe-column-inset, 0px), var(--padding-inline-main, 1rem));
 }
 .recipe-drawer-header {
-  display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-shrink: 0;
+  display: flex; justify-content: space-between; align-items: center; gap: .5rem; flex-shrink: 0;
   // Inset line like the dock's: blank space at both ends, title and × aligned to it.
   margin-inline: var(--recipe-sheet-padding);
   padding: .35rem 0 max(.35rem, env(safe-area-inset-bottom));
   border-top: var(--sidebar-recipe-border);
-  h2 { margin: 0; font-size: 1.6rem; line-height: 44px; }
-  button { background: none; border: 0; color: inherit; font-size: 2rem; line-height: 1; min-width: 44px; min-height: 44px; margin-right: -.5rem; }
+  // Two classes, to beat `.recipe h2` regardless of stylesheet order.
+  .recipe-ingredient-drawer & h2 { margin: 0 auto 0 0; font-size: 1.6rem; line-height: 44px; }
+  > button { background: none; border: 0; color: inherit; font-size: 2rem; line-height: 1; min-width: 44px; min-height: 44px; margin-right: -.5rem; }
 }
 .recipe-drawer-tabs {
   display: flex; gap: 1.25rem; padding: .25rem var(--recipe-sheet-padding); flex-shrink: 0;
@@ -371,7 +391,7 @@ onBeforeUnmount(() => {
   .recipe-mobile-dock, .recipe-mobile-dock.is-reading-process { transition: none; }
 }
 @media print {
-  .recipe-mobile-dock, .recipe-ingredient-drawer, .recipe-controls { display: none !important; }
+  .recipe-mobile-dock, .recipe-ingredient-drawer { display: none !important; }
   .ingredients.is-sticky { position: static; }
 }
 </style>

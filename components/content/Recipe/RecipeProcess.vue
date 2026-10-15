@@ -66,7 +66,6 @@ onBeforeUnmount(() => {
 </script>
 
 <style lang="scss">
-.recipe-process-icon { transform: translateY(-0.1em); }
 .recipe-process {
   min-width: 0; max-width: 40em; grid-area: three; scroll-margin-top: calc(var(--header-height) + 1rem);
   h3, h4 { scroll-margin-top: calc(var(--header-height) + 1rem); }
@@ -75,6 +74,9 @@ onBeforeUnmount(() => {
   ul li:before { content: '- '; }
   ul li, ol li { margin-bottom: 0.8em; }
   .recipe-process-content { display: contents; }
+  // The first step heading follows the title at the title's own spacing; its larger top
+  // margin (meant to separate steps) would win the collapse and leave a gap.
+  .recipe-process-content > :first-child { margin-top: 0; }
   .recipe-scaled-notice { font-size: .82rem; border-left: 2px solid var(--color-subingredient-name); padding: .6rem .9rem; background: var(--color-bg-quantity-subingredient); margin-block: 0 1.5rem; }
 }
 </style>

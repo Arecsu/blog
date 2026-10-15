@@ -155,3 +155,19 @@ export function resolveRecipeAmount(groups, ingredientId, allocationId) {
   }
   throw new Error(`Unknown recipe ingredient: ${ingredientId}`)
 }
+
+// Recipe titles are sized on the server to fit their column on one line: their width in
+// em, from the font's own advance widths, becomes `100cqi / width` in CSS. Keep these in
+// sync with .recipe-title and .recipe-icon-title in pages/recetas/[...slug].vue.
+const TITLE_LETTER_SPACING = -0.05
+// The emoji: .9em wide, -.02em/.15em margins in its own (.9em) size.
+const TITLE_ICON_WIDTH = 0.9 * (1 - 0.02 + 0.15)
+// Unknown characters (none in the Latin table) count as a wide letter.
+const TITLE_FALLBACK_WIDTH = 0.7
+
+export function recipeTitleWidth(title, hasIcon, metrics) {
+  let width = hasIcon ? TITLE_ICON_WIDTH : 0
+  for (const char of title) width += (metrics[char] ?? TITLE_FALLBACK_WIDTH) + TITLE_LETTER_SPACING
+  // A hair of slack for subpixel rounding, so the last word never wraps by a pixel.
+  return Math.round(width * 1.01 * 1000) / 1000
+}

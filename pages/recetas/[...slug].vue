@@ -5,15 +5,21 @@
     </Head>
     <RecipeSidebar :icon="recipe.icon" :title="recipe.title" />
     <div class="recipe-container">
-      <h1 class="recipe-title">
+      <h1 class="recipe-title" :style="{ '--recipe-title-width': titleWidth }">
         <Icon class="recipe-icon-title" v-if="recipe.icon" :name="recipe.icon" />{{ recipe.title }}
       </h1>
-      <ContentDoc :path="path" :head="false" class="recipe" tag="div" />
+      <!-- Render the document already fetched above. <ContentDoc> queried it again in the
+           browser, and on a URL with a trailing slash (static hosts redirect to one) that
+           missed the prerendered data: the whole recipe re-rendered after load. -->
+      <ContentRenderer :value="recipe" class="recipe" tag="div" />
     </div>
   </div>
 </template>
 
 <script setup>
+import { recipeTitleWidth } from '~/utils/recipe.mjs'
+import titleMetrics from '~/utils/recipe-title-metrics.json'
+
 definePageMeta({ key: route => route.path })
 const route = useRoute()
 const slug = route.params.slug[0]
@@ -29,16 +35,18 @@ useContentHead({
 
 // need to use useAsyncData otherwise it doesn't work at static generation
 const { data } = await useAsyncData(dataKey, () => {
-  return queryContent("recetas").where({ _path: route.path }).findOne()
+  // Content paths have no trailing slash; static hosts add one to /recetas/x/.
+  return queryContent("recetas").where({ _path: route.path.replace(/(.)\/$/, '$1') }).findOne()
 })
 
 if (!data.value) throw createError({ statusCode: 404, statusMessage: 'Receta no encontrada' })
 // While this page transitions out, Nuxt already clears its async data and the route
-// points at the next recipe: keep rendering this page's own recipe and path until it's gone.
+// points at the next recipe: keep rendering this page's own recipe until it's gone.
 const recipe = shallowRef(data.value)
 watch(data, value => { if (value) recipe.value = value })
-const path = route.path
 createRecipeViewer(recipe)
+// Computed while rendering (on the server too), so the title is sized in the first paint.
+const titleWidth = computed(() => recipeTitleWidth(recipe.value.title, Boolean(recipe.value.icon), titleMetrics))
 const headerTitle = useHeaderTitle()
 onMounted(() => {
   headerTitle.value = recipe.value.title.toLowerCase()
@@ -83,6 +91,8 @@ onBeforeRouteLeave((to, from) => {
   flex-direction: column;
   margin-top: 1rem;
   min-width: 0;
+  // The title measures itself against this column (cqi units).
+  container-type: inline-size;
 }
 
 .recipe-icon-title {
@@ -93,7 +103,12 @@ onBeforeRouteLeave((to, from) => {
 }
 
 .recipe-title {
-  font-size: clamp(4em, 3em + 4vw, 8em);
+  // One line across the column: --recipe-title-width is the title's width in em (set by
+  // the server, see recipeTitleWidth), so 100cqi / width fits it exactly. Never larger
+  // than the usual size, and never below 2.5rem: a long title on a phone wraps instead,
+  // in balanced lines.
+  font-size: max(2.5rem, min(clamp(4em, 3em + 4vw, 8em), 100cqi / var(--recipe-title-width, 1)));
+  text-wrap: balance;
   margin-bottom: .3em;
   font-weight: 500;
   /* font-weight: 600; */
@@ -145,8 +160,21 @@ onBeforeRouteLeave((to, from) => {
   }
 
   h2 {
-    margin-block: 1em 0.6em;
+    margin-block: 1em 0.4em;
     font-size: clamp(1.8rem, 7vw, 4rem);
+
+    // Trim the line box to the capitals so controls beside a title center on its letters.
+    // Padding gives back what was trimmed (~.29em a side in Noto Serif), so the layout
+    // matches browsers without text-box. Margins wouldn't: they collapse and the first
+    // child's is zeroed.
+    @supports (text-box: trim-both cap alphabetic) {
+      text-box: trim-both cap alphabetic;
+      padding-block: 0.29em;
+    }
+
+    // Emoji stand on the baseline like the letters (nuxt-icon centers them). Fluent emoji
+    // leave 2/32 of blank space below the drawing, hence the extra nudge down.
+    > .icon { vertical-align: calc(-2em / 32); }
   }
 
   h3 {

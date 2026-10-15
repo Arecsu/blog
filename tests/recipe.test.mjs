@@ -1,7 +1,8 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { formatRecipeAmount, recipeTextParts, recipePlainLabel, stepRecipeScale, validRecipeScale, recipeSectionId, legacyRecipeGroups,
-  validateRecipeIngredients, resolveRecipeAmount } from '../utils/recipe.mjs'
+  validateRecipeIngredients, resolveRecipeAmount, recipeTitleWidth } from '../utils/recipe.mjs'
+import titleMetrics from '../utils/recipe-title-metrics.json' with { type: 'json' }
 
 const splitRecipe = () => [{ id: 'masa', label: 'Masa', items: [
   { id: 'sugar', label: 'Azúcar', quantity: 500, unit: 'g', allocations: [
@@ -120,4 +121,12 @@ test('reads legacy group names without reinterpreting or dropping ingredient con
   const snapshot = JSON.stringify(body)
   assert.deepEqual(legacyRecipeGroups(body), [{ id: 'flan', label: 'Flan' }, { id: 'relleno', label: '🍫 Relleno' }])
   assert.equal(JSON.stringify(body), snapshot)
+})
+
+test('recipe title width matches the browser measurement of Noto Serif', () => {
+  // Chrome measures this text at 11.748em (letter-spacing -.05em); the emoji adds 1.017em.
+  assert.equal(recipeTitleWidth('Galletas de avena con chips', false, titleMetrics), Math.round(11.748 * 1.01 * 1000) / 1000)
+  assert.equal(recipeTitleWidth('Galletas de avena con chips', true, titleMetrics), Math.round(12.765 * 1.01 * 1000) / 1000)
+  // Accented letters and Spanish punctuation are in the table (no fallback guesses).
+  assert.ok([...'¡Ñandú, crème brûlée?'].every(char => char in titleMetrics))
 })
