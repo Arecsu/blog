@@ -1,3 +1,5 @@
+@use 'shadows' as *;
+
 :root {
   font-family: "Inter", sans-serif;
 }
@@ -80,6 +82,16 @@ html[theme="light"] {
     rgba(255, 0, 0, 0) 70%
   );
   --bg-noise-background-opacity: 1;
+  // Shadows (layered-shadow() in _shadows.scss): warm brown on the cream page. Raised
+  // surfaces (popovers, the ingredients sheet) keep the page color here; the shadow alone,
+  // with a faint halo on every side, lifts them.
+  --shadow-color: 70 45 10;
+  --shadow-strength: 1;
+  --shadow-highlight: 0;
+  --shadow-popover: #{layered-shadow(24px, 5, .31, $spread: .18, $ambient: 12px, $ambient-opacity: .05)};
+  --shadow-sheet: #{layered-shadow(28px, 5, .31, $direction: -1, $spread: .18, $ambient: 12px, $ambient-opacity: .05)};
+  --color-bg-raised: var(--color-bg-0);
+  --backdrop-opacity: .3;
   // --bg-dotted-background: #f5eed7;
 }
 
@@ -108,6 +120,15 @@ html[theme="dark"] {
     rgba(255, 0, 0, 0) 70%
   );
   --bg-noise-background-opacity: 0.1;
+  // On the dark page a shadow alone reads flat: raised surfaces are lighter than the page,
+  // with a lit top edge, a heavier black shadow with a wide halo, and a darker backdrop.
+  --shadow-color: 0 0 0;
+  --shadow-strength: 3.2;
+  --shadow-highlight: .08;
+  --shadow-popover: #{layered-shadow(28px, 5, .36, $spread: 0, $ambient: 24px, $ambient-opacity: .12)};
+  --shadow-sheet: #{layered-shadow(32px, 5, .36, $direction: -1, $spread: 0, $ambient: 24px, $ambient-opacity: .12)};
+  --color-bg-raised: rgb(28, 37, 49);
+  --backdrop-opacity: .45;
   // --bg-dotted-background: #1a2531;
 }
 

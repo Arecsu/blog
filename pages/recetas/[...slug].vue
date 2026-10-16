@@ -141,11 +141,12 @@ onBeforeRouteLeave((to, from) => {
     align-self: stretch;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
+  // Element defaults go in :where() so they weigh like a lone `.recipe`: any component
+  // rule (`.subingredients ul`, `h5.recipe-subingredient-title`) beats them whichever
+  // stylesheet comes last. Nuxt inlines component CSS in the server HTML and then adds
+  // the same files as <link>s while hydrating, so that order changes during page load;
+  // Firefox paints in between, and ties made the ingredient list jump.
+  :where(h1, h2, h3, h4, h5) {
     font-family: var(--font-serif);
     letter-spacing: -0.03em;
     /* font-weight: 600; */
@@ -154,12 +155,12 @@ onBeforeRouteLeave((to, from) => {
     word-break: break-word;
   }
 
-  h1 {
+  :where(h1) {
     margin-block: 1.2em 0.6em;
     font-size: 5.653rem;
   }
 
-  h2 {
+  :where(h2) {
     margin-block: 1em 0.4em;
     font-size: clamp(1.8rem, 7vw, 4rem);
 
@@ -177,27 +178,26 @@ onBeforeRouteLeave((to, from) => {
     > .icon { vertical-align: calc(-2em / 32); }
   }
 
-  h3 {
+  :where(h3) {
     margin-block: 1.2em 0.5em;
     font-size: clamp(1.6rem, 7vw, 2.8rem);
   }
 
-  h4 {
+  :where(h4) {
     margin-block: 2em 0.5em;
     font-size: clamp(1.4rem, 7vw, 2rem);
   }
 
-  h5 {
+  :where(h5) {
     margin-block: 2.4em 1em;
     font-size: clamp(1.2rem, 7vw, 1.4rem);
   }
 
-  ul,
-  ol {
+  :where(ul, ol) {
     padding-left: 2em;
   }
 
-  p {
+  :where(p) {
     margin-block: 1em;
   }
 

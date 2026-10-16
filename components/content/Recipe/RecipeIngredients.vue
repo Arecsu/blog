@@ -49,7 +49,7 @@
       <footer class="recipe-drawer-header">
         <h2 :id="`${id}-drawer-title`">Ingredientes</h2>
         <RecipeScaleMenu placement="above" />
-        <button type="button" aria-label="Cerrar ingredientes y volver al procedimiento" @click="closeDrawer">×</button>
+        <button type="button" aria-label="Cerrar ingredientes y volver al procedimiento" @click="closeDrawer"><Icon name="tabler:x" aria-hidden="true" /></button>
       </footer>
     </dialog>
   </section>
@@ -248,22 +248,15 @@ onBeforeUnmount(() => {
 .ingredients-heading {
   display: flex; align-items: center; flex-wrap: wrap; gap: .25rem 1.25rem;
   // The row takes the title's margins (h2 in pages/recetas/[...slug].vue), so the chip
-  // centers on the title's letters rather than on its margins.
-  font-size: clamp(1.8rem, 7vw, 4rem); margin-block: 1em .4em;
-  // `.recipe h2` has the same specificity; without the extra class, whichever stylesheet
-  // loaded last would win, and the title briefly got its margins back during page load.
+  // centers on the title's letters rather than on its margins. No top margin: it opens the
+  // section, and `.recipe > * > :first-child` (same specificity, another stylesheet) would
+  // otherwise win or lose depending on load order.
+  font-size: clamp(1.8rem, 7vw, 4rem); margin-block: 0 .4em;
   > h2.ingredients-title { margin-block: 0; }
   // Sized to sit beside the large title, not like the small text of the list.
   // Scales with the title (1.05rem beside the 4rem desktop title), never below the list's
-  // amount chips. Its height follows: the 44px touch target is an invisible extension.
-  .recipe-scale-chip {
-    font-size: clamp(.88rem, .2625em, 1.05rem); padding: .5em .75em; min-height: 0;
-    background: var(--color-bg-quantity-subingredient);
-    @media (pointer: coarse) {
-      position: relative;
-      &::before { content: ''; position: absolute; inset: 50% 0 auto; height: 44px; translate: 0 -50%; }
-    }
-  }
+  // amount chips.
+  .recipe-scale-chip { font-size: clamp(.88rem, .2625em, 1.05rem); }
 }
 
 .ingredients-title svg { margin-left: -.1em; }
@@ -308,11 +301,11 @@ onBeforeUnmount(() => {
 
 .recipe-ingredient-drawer {
   position: fixed; inset: auto var(--recipe-column-right, 0) 0 var(--recipe-column-left, 0); margin: 0; padding: 0; width: auto; max-width: none;
-  max-height: 86dvh; color: var(--color-text); background: var(--color-bg-0);
+  max-height: 86dvh; color: var(--color-text); background: var(--color-bg-0); box-shadow: var(--shadow-sheet);
   border: 0; border-radius: 1rem 1rem 0 0; overflow: hidden;
   &[open] { display: flex; flex-direction: column; animation: recipe-drawer-in .38s cubic-bezier(.16, 1, .3, 1); }
   &.is-closing { animation: recipe-drawer-out .26s cubic-bezier(.4, 0, 1, 1) forwards; }
-  &::backdrop { background: rgb(0 0 0 / .3); }
+  &::backdrop { background: rgb(0 0 0 / var(--backdrop-opacity, .3)); }
   &[open]::backdrop { animation: recipe-backdrop-in .38s ease-out; }
   &.is-closing::backdrop { animation: recipe-backdrop-out .26s ease-in forwards; }
   // Breathing room inside the sheet on both sides; on tablets the left one still lines
@@ -323,11 +316,17 @@ onBeforeUnmount(() => {
   display: flex; justify-content: space-between; align-items: center; gap: .5rem; flex-shrink: 0;
   // Inset line like the dock's: blank space at both ends, title and × aligned to it.
   margin-inline: var(--recipe-sheet-padding);
-  padding: .35rem 0 max(.35rem, env(safe-area-inset-bottom));
+  // Same height as the bottom bar it takes the place of.
+  padding: .5rem 0 max(.5rem, env(safe-area-inset-bottom));
   border-top: var(--sidebar-recipe-border);
-  // Two classes, to beat `.recipe h2` regardless of stylesheet order.
-  .recipe-ingredient-drawer & h2 { margin: 0 auto 0 0; font-size: 1.6rem; line-height: 44px; }
-  > button { background: none; border: 0; color: inherit; font-size: 2rem; line-height: 1; min-width: 44px; min-height: 44px; margin-right: -.5rem; }
+  // Title, chip and × centered on the row between the dashed line and the sheet's bottom:
+  // the title trimmed to its capitals (like the page's section titles), the × an icon
+  // rather than a glyph, which sat low on the font's math axis.
+  .recipe-ingredient-drawer & h2 { margin: 0 auto 0 0; padding: 0; font-size: 1.6rem; line-height: 1; text-box: trim-both cap alphabetic; }
+  > button {
+    display: grid; place-items: center; min-width: 44px; min-height: 44px; margin-right: -.5rem; padding: 0;
+    background: none; border: 0; color: inherit; font-size: 1.75rem;
+  }
 }
 .recipe-drawer-tabs {
   display: flex; gap: 1.25rem; padding: .25rem var(--recipe-sheet-padding); flex-shrink: 0;
@@ -360,7 +359,7 @@ onBeforeUnmount(() => {
   .recipe-mobile-dock {
     display: flex; position: fixed; z-index: 4; align-items: center; justify-content: space-between; gap: .75rem;
     inset: auto var(--recipe-column-right, 0) 0 var(--recipe-column-left, 0);
-    padding: .35rem 0 max(.35rem, env(safe-area-inset-bottom));
+    padding: .75rem 0 max(.75rem, env(safe-area-inset-bottom));
     background: var(--color-bg-0); border-top: var(--sidebar-recipe-border);
     transform: translateY(calc(100% + 2px)); visibility: hidden;
     transition: transform .28s cubic-bezier(.4, 0, 1, 1), visibility 0s linear .28s;
@@ -368,15 +367,24 @@ onBeforeUnmount(() => {
       transform: none; visibility: visible;
       transition: transform .38s cubic-bezier(.16, 1, .3, 1), visibility 0s;
     }
+    // Shaped like the scale chip: wider than tall, text trimmed to its capitals so the
+    // padding is even, and the 44px tap target an invisible extension.
     > button {
-      border: 0; border-radius: .2em; background: var(--color-bg-quantity-subingredient); color: inherit;
-      min-height: 44px; padding: .4rem .8rem; white-space: nowrap; font: inherit; font-weight: 500;
+      position: relative; border: 0; border-radius: .35em; background: var(--color-bg-quantity-subingredient); color: inherit;
+      padding: .8em 1.1em; white-space: nowrap; font: inherit; font-weight: 500; line-height: 1;
+      text-box: trim-both cap alphabetic;
+      &::before { content: ''; position: absolute; inset: 50% 0 auto; height: 44px; translate: 0 -50%; }
     }
     small { padding-left: .5rem; font-variant-numeric: tabular-nums; }
   }
-  .recipe-dock-section { display: flex; flex-direction: column; min-width: 0; font-size: .85rem; line-height: 1.3; }
+  // Both lines trimmed to capitals and baseline, so the label (from the top of "Estás" to
+  // the section's baseline) centers on the bar like the button's text.
+  .recipe-dock-section { display: flex; flex-direction: column; gap: .4rem; min-width: 0; font-size: .85rem; line-height: 1; }
+  .recipe-dock-section > * { text-box: trim-both cap alphabetic; }
   .recipe-dock-section > span { font-size: .7rem; opacity: .6; }
-  .recipe-dock-section strong { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  // Clipped sideways only: `overflow: hidden` would also cut the descenders off the
+  // trimmed line.
+  .recipe-dock-section strong { font-weight: 500; overflow-x: clip; text-overflow: ellipsis; white-space: nowrap; }
 }
 
 @property --recipe-fade-top { syntax: '<length>'; inherits: false; initial-value: 0px; }
