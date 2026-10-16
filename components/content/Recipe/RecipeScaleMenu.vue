@@ -3,12 +3,12 @@
     <!-- The chip always shows the current scale; the stepper and options live in a popover
          so they take no room in the list and never move when the list reflows. -->
     <button type="button" class="recipe-scale-chip" :style="{ 'anchor-name': recipePopoverAnchor(popoverId) }" :class="`is-${placement}`"
-      :popovertarget="popoverId" aria-haspopup="dialog" :aria-expanded="open" title="Ajustar cantidades"
+      :popovertarget="popoverId" aria-haspopup="dialog" @click.prevent="menu?.toggle($event)" :aria-expanded="open" title="Ajustar cantidades"
       :aria-label="`Ajustar cantidades (${formatRecipeNumber(viewer.scale.value)}×)`">
       <span>{{ formatRecipeNumber(viewer.scale.value) }}<span class="recipe-times">×</span></span>
       <Icon name="tabler:chevron-down" aria-hidden="true" />
     </button>
-    <RecipePopover :id="popoverId" :placement="placement" class="recipe-scale-popover" aria-label="Ajustar cantidades"
+    <RecipePopover ref="menu" :id="popoverId" :placement="placement" class="recipe-scale-popover" aria-label="Ajustar cantidades"
       @toggle="open = $event">
       <RecipeControls />
     </RecipePopover>
@@ -25,6 +25,7 @@ withDefaults(defineProps<{ placement?: 'above' | 'below' }>(), { placement: 'bel
 const viewer = useRecipeViewer()
 const popoverId = `recipe-scale-${useId()}`
 const open = ref(false)
+const menu = ref<{ toggle: (event: Event) => void }>()
 </script>
 
 <style lang="scss">

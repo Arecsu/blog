@@ -1,9 +1,9 @@
 <template>
   <span class="recipe-inline-ingredient"><ContentSlot v-once :use="$slots.default" unwrap="p" /><template v-if="viewer && viewer.showAmounts.value && resolved">{{ ' ' }}<button
       type="button" class="recipe-inline-amount" :popovertarget="id" :style="{ 'anchor-name': recipePopoverAnchor(id) }"
-      aria-haspopup="dialog" :aria-expanded="open" :aria-label="`${label}: ${amount}. Ver detalle`">{{ amount }}</button><RecipePopover
-      :id="id" tag="span" class="recipe-amount-popover" :aria-label="label" @toggle="open = $event">
-      <span class="recipe-amount-popover-heading"><strong>{{ label }}</strong><button type="button" :popovertarget="id" popovertargetaction="hide" aria-label="Cerrar detalle"><Icon name="tabler:x" aria-hidden="true" /></button></span>
+      aria-haspopup="dialog" :aria-expanded="open" @click.prevent="popover?.toggle($event)" :aria-label="`${label}: ${amount}. Ver detalle`">{{ amount }}</button><RecipePopover
+      ref="popover" :id="id" tag="span" class="recipe-amount-popover" :aria-label="label" @toggle="open = $event">
+      <span class="recipe-amount-popover-heading"><strong>{{ label }}</strong><button type="button" :popovertarget="id" popovertargetaction="hide" aria-label="Cerrar detalle" @click.prevent="popover?.hide()"><Icon name="tabler:x" aria-hidden="true" /></button></span>
       <span class="recipe-amount-group">{{ resolved.group.label }}</span>
       <span v-if="resolved.allocation">{{ resolved.allocation.label }}: <strong>{{ amount }}</strong></span>
       <span v-else>Cantidad: <strong>{{ amount }}</strong></span>
@@ -23,6 +23,7 @@ const props = defineProps<{ ingredient: string; allocation?: string }>()
 const viewer = useRecipeViewer()
 const id = `recipe-amount-${useId()}`
 const open = ref(false)
+const popover = ref<{ toggle: (event: Event) => void; hide: () => void }>()
 const resolved = computed(() => viewer ? resolveRecipeAmount(viewer.groups.value, props.ingredient, props.allocation) : undefined)
 // A range ("15-20 ml") belongs to the whole ingredient, not to one of its allocations.
 const range = computed(() => resolved.value?.allocation ? undefined : resolved.value?.ingredient.quantityMax)
