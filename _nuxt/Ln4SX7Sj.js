@@ -1,0 +1,1 @@
+import{_ as o}from"./CYOyIgRC.js";import{i as a,h as n,o as f}from"./bxORjxT5.js";import"./CqGSFJvL.js";const s=a({__name:"eSColor",props:{e:{},t:{default:"c"},i:{type:Boolean,default:!0},f:{default:"svg"}},setup(e){return(c,i)=>{const t=o;return f(),n(t,{e:e.e,t:e.t,f:e.f,i:e.i},null,8,["e","t","f","i"])}}});export{s as default};

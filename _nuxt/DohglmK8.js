@@ -1,1 +1,0 @@
-import{r}from"./C_xH9eg0.js";import{_ as t}from"./DlAUqK2U.js";import{c as o,o as n}from"./CgJQMn7D.js";import"./B8IaAclc.js";const s={},c={class:"recipe-subingredient-title"};function i(e,a){return n(),o("h5",c,[r(e.$slots,"default",{unwrap:"p"})])}const m=t(s,[["render",i]]);export{m as default};
