@@ -1,0 +1,43 @@
+---
+import { getCollection } from "astro:content"
+import Base from "@layouts/Base.astro"
+
+const recetas = (await getCollection("recetas"))
+	.filter((entry) => !entry.data.draft)
+	.sort((a, b) => a.data.title.localeCompare(b.data.title, "es"))
+---
+
+<Base title="recetas" lang="es">
+	<div class="recipes-list-container">
+		{recetas.map((entry) => (
+			<a href={`/recetas/${entry.id}/`}><span>{entry.data.title}</span></a>
+		))}
+	</div>
+</Base>
+
+<style lang="scss">
+	a {
+		text-decoration: none;
+		padding-bottom: 0.1em;
+		font-weight: 400;
+		text-transform: lowercase;
+		box-sizing: border-box;
+		background: var(--color-underline-link), var(--color-underline-link-hover);
+		background-size: 100% 3px, 0 3px;
+		background-position: 100% 100%, 0 100%;
+		background-repeat: no-repeat;
+		transition: background-size 400ms;
+	}
+
+	a:hover {
+		background-size: 0 3px, 100% 3px;
+	}
+
+	.recipes-list-container {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		font-size: 1.3em;
+		align-items: flex-start;
+	}
+</style>

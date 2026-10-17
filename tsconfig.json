@@ -1,4 +1,18 @@
 {
-  // https://v3.nuxtjs.org/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json"
+	"extends": "astro/tsconfigs/strict",
+	"compilerOptions": {
+		"resolveJsonModule": true,
+		"paths": {
+			"@/*": ["./src/*"],
+			"@components/*": ["./src/components/*"],
+			"@layouts/*": ["./src/layouts/*"],
+			"@styles/*": ["./src/styles/*"],
+			"@scripts/*": ["./src/scripts/*"],
+			"@lib/*": ["./src/lib/*"],
+			"@config/*": ["./src/config/*"]
+		},
+		"types": ["unplugin-icons/types/astro", "unplugin-icons/types/svelte"]
+	},
+	"include": [".astro/types.d.ts", "src/**/*"],
+	"exclude": ["dist"]
 }

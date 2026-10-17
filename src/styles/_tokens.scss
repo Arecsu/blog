@@ -1,0 +1,134 @@
+// =============================================================================
+// DESIGN TOKENS
+// =============================================================================
+// Native CSS custom properties only. CSS can tokenise every colour, size and
+// timing here, so they stay inspectable in DevTools and overridable at runtime.
+// SCSS variables live in _vars.scss, reserved for media-query breakpoints and
+// mixin values that CSS cannot express.
+//
+// Imported once, in Base.astro, after reset.scss and before base.scss.
+// =============================================================================
+
+@use "shadows" as *;
+
+:root,
+html[theme="light"] {
+	// -------------------------------------------------------------------------
+	// Type
+	// -------------------------------------------------------------------------
+	--font-sans: "InterVariable", "Fluent Emoji Color", sans-serif;
+	--font-serif: "Noto Serif", "Fluent Emoji Color", serif;
+	--font-mono: "Fira Mono", "Fluent Emoji Color", monospace;
+	--font-emoji: "Fluent Emoji Color";
+
+	// -------------------------------------------------------------------------
+	// Palette
+	// -------------------------------------------------------------------------
+	--color-bg-0: rgb(251, 249, 243);
+	--color-header-bg: rgba(252, 250, 245, 0.9);
+	--color-bg-1: hsl(209, 36%, 86%);
+	--color-bg-2: hsl(224, 44%, 95%);
+	--color-fg-1: hsl(0, 0%, 0%);
+	--color-underline-link-1: hsl(0, 0%, 50%);
+	--color-underline-link-1-hover: hsl(0, 0%, 10%);
+	--color-theme-1: #ff5117;
+	--color-theme-2: #40b3ff;
+	--color-text: hsl(0, 0%, 10%);
+	--color-link: hsl(207, 77%, 45%);
+	--color-underline-link: linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1));
+	--color-underline-link-hover: linear-gradient(to right, rgb(70, 87, 175), rgb(20, 58, 185), rgb(118, 39, 244));
+	--color-bg-quantity-subingredient: rgba(255, 153, 0, 0.151);
+	--color-subingredient-name: #ff962e;
+	--color-header-border-bottom: var(--color-subingredient-name);
+	--pre-bg: hsl(0, 0%, 70%);
+	color: var(--color-text);
+
+	--transition-1: 0.15s;
+
+	// Route enter: the same timing as malejandro.com. The viewport snapshot fades,
+	// sharpens and grows by 1%; the live DOM is never transformed.
+	--transition-enter-duration: 250ms;
+	--transition-enter-delay: 40ms;
+	--transition-enter-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+	--transition-enter-blur: 1.5px;
+	--transition-enter-scale: 0.99;
+
+	// -------------------------------------------------------------------------
+	// Rules and borders
+	// -------------------------------------------------------------------------
+	--border-size-1: 1px;
+	--border-size-2: 1.5px;
+	--header-border-bottom: dashed var(--border-size-1) var(--color-header-border-bottom);
+	--sidebar-recipe-border: dashed var(--border-size-1) var(--color-subingredient-name);
+	--tippy-border: dashed var(--border-size-2) var(--color-fg-1);
+
+	// -------------------------------------------------------------------------
+	// Spacing and layout
+	// -------------------------------------------------------------------------
+	--header-height: 2.3rem;
+	--padding-1: clamp(1rem, 0.5rem + 2vw, 2.5rem);
+	--padding-inline-main: var(--padding-1);
+	--padding-block-main: 1.5rem;
+	--padding-inline-header: var(--padding-1);
+	--padding-button: 0.3em;
+
+	// -------------------------------------------------------------------------
+	// Backgrounds
+	// -------------------------------------------------------------------------
+	--bg-radial-gradient: radial-gradient(
+		circle at var(--mouse-x, 50%) 190%,
+		rgba(255, 162, 0, 0.4) 0%,
+		rgba(255, 0, 0, 0) 70%
+	);
+	--bg-noise-background-opacity: 1;
+
+	// -------------------------------------------------------------------------
+	// Raised surfaces
+	// -------------------------------------------------------------------------
+	// Shadows: warm brown on the cream page. Raised surfaces keep the page colour;
+	// the shadow alone lifts them.
+	--shadow-color: 70 45 10;
+	--shadow-strength: 1;
+	--shadow-highlight: 0;
+	--shadow-popover: #{layered-shadow(1.5rem, 5, .31, $spread: .18, $ambient: .75rem, $ambient-opacity: .05)};
+	--shadow-sheet: #{layered-shadow(1.75rem, 5, .31, $direction: -1, $spread: .18, $ambient: .75rem, $ambient-opacity: .05)};
+	--color-bg-raised: var(--color-bg-0);
+	--backdrop-opacity: 0.3;
+}
+
+html[theme="dark"] {
+	color-scheme: dark;
+
+	--color-text: hsl(0, 0%, 90%);
+	--color-link: hsl(41, 82%, 58%);
+	--pre-bg: hsl(0, 0%, 20%);
+	--color-underline-link-1: hsl(0, 0%, 90%);
+	--color-underline-link-1-hover: hsl(0, 0%, 80%);
+
+	--color-bg-0: rgb(14, 20, 27);
+	--color-header-border-bottom: rgb(36, 87, 102);
+	--color-header-bg: rgb(14, 20, 27, 0.7);
+	--color-fg-1: hsl(0, 0%, 100%);
+	--color-bg-quantity-subingredient: rgba(36, 104, 140, 0.25);
+
+	--color-underline-link: linear-gradient(to right, rgb(200, 144, 47), rgb(200, 144, 47));
+	--color-underline-link-hover: linear-gradient(to right, rgb(220, 35, 35), rgb(205, 52, 64), rgb(225, 38, 97));
+
+	--color-subingredient-name: #edac21;
+	--bg-radial-gradient: radial-gradient(
+		circle at var(--mouse-x, 50%) 200%,
+		rgba(151, 2, 2, 0.261) 10%,
+		rgba(255, 0, 0, 0) 70%
+	);
+	--bg-noise-background-opacity: 0.1;
+
+	// On the dark page a shadow alone reads flat: raised surfaces are lighter than
+	// the page, with a lit top edge, a heavier shadow and a darker backdrop.
+	--shadow-color: 0 0 0;
+	--shadow-strength: 3.2;
+	--shadow-highlight: 0.08;
+	--shadow-popover: #{layered-shadow(1.75rem, 5, .36, $spread: 0, $ambient: 1.5rem, $ambient-opacity: .12)};
+	--shadow-sheet: #{layered-shadow(2rem, 5, .36, $direction: -1, $spread: 0, $ambient: 1.5rem, $ambient-opacity: .12)};
+	--color-bg-raised: rgb(28, 37, 49);
+	--backdrop-opacity: 0.45;
+}

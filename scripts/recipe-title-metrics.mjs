@@ -1,4 +1,4 @@
-// Writes utils/recipe-title-metrics.json: the advance width, in em, of each character
+// Writes src/lib/recipe-title-metrics.json: the advance width, in em, of each character
 // in the recipe title font (Noto Serif 400, the weight actually served). The page uses
 // it to size every title to fit its column on the server, with no layout shift.
 // Run again if the title font changes: node scripts/recipe-title-metrics.mjs
@@ -19,6 +19,6 @@ for (let code = 0x20; code <= 0x17f; code++) {
   if (font) widths[char] = Math.round(font.glyphForCodePoint(code).advanceWidth / font.unitsPerEm * 10000) / 10000
 }
 
-const output = new URL('../utils/recipe-title-metrics.json', import.meta.url)
+const output = new URL('../src/lib/recipe-title-metrics.json', import.meta.url)
 writeFileSync(output, JSON.stringify(widths) + '\n')
 console.log(`${Object.keys(widths).length} characters → ${output.pathname}`)

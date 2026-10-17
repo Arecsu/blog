@@ -1,0 +1,36 @@
+// The theme switch's tooltip. The old site used Tippy; this is the same box
+// (dashed rule, page background, small type) without the library.
+.tooltip {
+	position: fixed;
+	top: calc(anchor(bottom) + 0.55em);
+	right: anchor(right);
+	z-index: 20;
+	width: max-content;
+	max-width: min(18rem, calc(100vw - 2rem));
+	padding: 0.3125rem 0.5625rem;
+	border: var(--tippy-border);
+	border-radius: 0.2em;
+	background: var(--color-bg-0);
+	color: var(--color-fg-1);
+	font-size: 0.9em;
+	font-weight: 500;
+	line-height: 1.4;
+	pointer-events: none;
+	opacity: 0;
+	translate: 0 0.4em;
+	transition: opacity var(--transition-1), translate var(--transition-1), visibility var(--transition-1);
+	visibility: hidden;
+
+	.tooltip-trigger:hover + &,
+	.tooltip-trigger:focus-visible + & {
+		opacity: 1;
+		translate: 0 0;
+		visibility: visible;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.tooltip {
+		transition: none;
+	}
+}

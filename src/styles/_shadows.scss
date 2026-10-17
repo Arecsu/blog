@@ -1,0 +1,45 @@
+@use 'sass:math';
+@use 'sass:list';
+
+// Realistic elevation: one shadow is a flat sticker, real ones are soft and wide far
+// from the object but dark and tight where it nearly touches the page. So stack
+// $layers shadows, each twice as far and twice as blurred as the one before, the
+// closest ones darkest. $distance is the farthest layer's offset.
+//
+// Color and strength come from the theme (--shadow-color as "r g b", --shadow-strength,
+// see styles.scss), so one call works in light and dark. Dark mode also gets a faint
+// highlight along the top edge (--shadow-highlight): on a dark page, a shadow alone barely
+// shows, the lit edge is what separates the surface.
+//
+// $direction: 1 casts the shadow downwards (popovers), -1 upwards (bottom sheets).
+// $ring: a hairline outline, so the edge stays crisp where the shadow fades out.
+// $spread: shrinks each layer by that fraction of its blur, keeping the shadow under the
+//   box; 0 lets it show on the sides too, negative grows it past them.
+// $ambient: blur of an extra, unshifted layer all around the box ($ambient-opacity), so
+//   the card reads as lifted on every side, not only below.
+@function layered-shadow($distance: 1.5rem, $layers: 5, $opacity: .3, $direction: 1, $ring: true, $spread: .25, $highlight: true,
+  $ambient: 0rem, $ambient-opacity: .15) {
+  $shadows: ();
+  @if $ring {
+    $shadows: list.append($shadows, 0 0 0 1px #{'rgb(var(--shadow-color) / calc(var(--shadow-strength) * .07))'}, comma);
+  }
+  @for $i from 0 to $layers {
+    // Fraction of the full distance: 1/2^(n-1) … 1/4, 1/2, 1.
+    $ratio: math.div(math.pow(2, $i), math.pow(2, $layers - 1));
+    $y: math.round($distance * $ratio * $direction * 10) * .1;
+    $blur: math.round($distance * $ratio * 2 * 10) * .1;
+    $spread-px: math.round(-$blur * $spread * 10) * .1;
+    // Near layers darker: weights fall from 1 to .4 across the stack, normalized so the
+    // stack's total opacity is about $opacity.
+    $weight: 1 - math.div($i, math.max($layers - 1, 1)) * .6;
+    $alpha: math.div(math.round(math.div($opacity * $weight, $layers * .7) * 1000), 1000);
+    $shadows: list.append($shadows, 0 $y $blur $spread-px #{'rgb(var(--shadow-color) / calc(var(--shadow-strength) * #{$alpha}))'}, comma);
+  }
+  @if $ambient > 0 {
+    $shadows: list.append($shadows, 0 0 $ambient #{'rgb(var(--shadow-color) / calc(var(--shadow-strength) * #{$ambient-opacity}))'}, comma);
+  }
+  @if $highlight {
+    $shadows: list.append($shadows, inset 0 1px 0 #{'rgb(255 255 255 / var(--shadow-highlight))'}, comma);
+  }
+  @return $shadows;
+}

@@ -1,0 +1,28 @@
+---
+import { recipeSectionId } from "@lib/recipe.ts"
+
+interface Props {
+	name?: string
+	groupId?: string
+}
+
+const { name, groupId } = Astro.props
+const id = groupId || (name ? recipeSectionId(name) : undefined)
+---
+
+<div class="subingredient" data-recipe-group={id}>
+	{name && <h5 class="recipe-subingredient-title">{name}</h5>}
+	<slot />
+</div>
+
+<style>
+	.subingredient {
+		break-inside: avoid;
+		margin-bottom: 2rem;
+	}
+
+	h5.recipe-subingredient-title {
+		margin-block: 0 0.4em;
+		color: var(--color-subingredient-name);
+	}
+</style>

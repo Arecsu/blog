@@ -1,34 +1,49 @@
 {
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "test": "node --test tests/*.test.mjs",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "deploy": "nuxt generate && gh-pages --dotfiles -d .output/public",
-    "deploy2": "nuxt generate && sed -i 's/font-display:swap/font-display:block/g' .output/public/index.html && gh-pages --dotfiles -d .output/public",
-    "deployold": "vercel deploy --prod"
-  },
-  "devDependencies": {
-    "@nuxt/content": "~2",
-    "fontkit": "^2.0.4",
-    "gh-pages": "^6.3.0",
-    "nuxt": "~3",
-    "nuxt-icon": "~0",
-    "sass": "^1.97.1",
-    "yaml": "2.8.2"
-  },
-  "dependencies": {
-    "@fontsource/fira-mono": "^5.2.7",
-    "@fontsource/noto-serif": "^5.2.9",
-    "@fontsource/noto-serif-display": "^5.2.9",
-    "@fontsource/unbounded": "^5.2.8",
-    "@vueuse/components": "^14.1.0",
-    "@vueuse/core": "^14.1.0",
-    "@vueuse/nuxt": "^14.1.0",
-    "rehype-external-links": "^3.0.0",
-    "vue-tippy": "^6.7.1"
-  }
+	"name": "hey",
+	"type": "module",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"check": "astro check && svelte-check --workspace .",
+		"generate:title-metrics": "node scripts/recipe-title-metrics.mjs",
+		"deploy": "astro check && astro build && gh-pages --dotfiles --nojekyll -d dist",
+		"deploy-draft": "astro check && astro build && gh-pages --dotfiles --nojekyll -d dist -b deploy-draft",
+		"test:e2e": "pnpm build && playwright test"
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.9.10",
+		"@astrojs/markdown-satteri": "^0.4.4",
+		"@astrojs/mdx": "^8.1.0",
+		"@astrojs/svelte": "^9.1.0",
+		"@fontsource/noto-serif": "^5.3.0",
+		"@sveltejs/vite-plugin-svelte": "^7.3.1",
+		"astro": "^7.4.0",
+		"emoji-regex": "^11.0.0",
+		"gh-pages": "^6.3.0",
+		"nanostores": "^1.5.5",
+		"sass": "^1.105.2",
+		"satteri": "^0.10.5",
+		"svelte": "^5.57.2",
+		"unplugin-icons": "^24.0.0"
+	},
+	"devDependencies": {
+		"@iconify-json/bi": "^1.2.7",
+		"@iconify-json/fluent-emoji": "^1.2.7",
+		"@iconify-json/ic": "^1.2.4",
+		"@iconify-json/tabler": "^1.2.42",
+		"@playwright/test": "^1.64.1",
+		"@types/node": "^24.0.0",
+		"fontkit": "^2.0.4",
+		"svelte-check": "^4.4.4",
+		"typescript": "^6.0.3",
+		"vitest": "^5.0.5",
+		"yaml": "^2.9.1"
+	}
 }

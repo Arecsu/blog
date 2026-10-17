@@ -1,0 +1,22 @@
+/*
+  Inter 4.1 variable fonts. `InterVariable` is the current family: one file per
+  style, a weight axis, optical sizing and the OpenType features the site uses.
+  Static per-weight cuts are unnecessary in every browser that supports
+  font-variation-settings, so only the two variable files are shipped.
+*/
+
+@font-face {
+	font-family: "InterVariable";
+	font-style: normal;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url("../assets/font-inter/InterVariable.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "InterVariable";
+	font-style: italic;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url("../assets/font-inter/InterVariable-Italic.woff2") format("woff2");
+}

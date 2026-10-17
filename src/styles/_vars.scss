@@ -1,0 +1,13 @@
+// SCSS variables live here ONLY for what CSS cannot tokenise itself: media-query
+// breakpoints and values consumed by mixins. Every other design value is a native
+// CSS custom property in _tokens.scss.
+
+// The recipe switches from the stacked layout to the ingredient column beside the
+// procedure at this width. Keep in sync with RecipeIngredients.svelte.
+$recipe-side-by-side: 90rem;
+// The vertical recipe sidebar is hidden below this width.
+$recipe-sidebar-hide: 50rem;
+// Amount/scale popovers centre themselves on phones instead of hugging their button.
+$recipe-popover-mobile: 40rem;
+// Ingredient groups stop using CSS columns on very narrow screens.
+$recipe-subingredients-narrow: 38rem;

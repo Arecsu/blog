@@ -1,0 +1,93 @@
+:root {
+	font-family: var(--font-sans);
+	font-optical-sizing: auto;
+	font-variation-settings: "opsz" 22;
+	font-feature-settings: "calt";
+}
+
+body {
+	background-color: var(--color-bg-0);
+}
+
+pre {
+	font-size: 1rem;
+	font-family: var(--font-mono);
+	background-color: var(--pre-bg);
+	padding: 0.5em;
+	overflow-x: auto;
+	color: var(--color-text);
+}
+
+input,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+article {
+	a,
+	a:visited {
+		color: var(--color-link);
+		text-underline-offset: 0.14em;
+		text-decoration-color: var(--color-link);
+	}
+	a:hover {
+		text-decoration-color: var(--color-link);
+		text-decoration-thickness: 0.12em;
+		text-decoration-thickness: max(2px, 0.12em);
+	}
+}
+
+a {
+	color: var(--color-text);
+	text-underline-offset: 0.14em;
+	text-decoration-color: var(--color-underline-link-1);
+
+	&:hover {
+		text-decoration-color: var(--color-underline-link-1-hover);
+		text-decoration-thickness: 0.12em;
+		text-decoration-thickness: max(2px, 0.12em);
+	}
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.button-no-style {
+	border: none;
+	background: none;
+	padding: var(--padding-button);
+}
+
+ul.ul-1,
+.ul-1-global ul,
+.nota-container article ul {
+	list-style: none;
+	padding: 0;
+
+	li {
+		margin-bottom: 0.5em;
+
+		&:before {
+			content: "-";
+			margin-right: 0.5em;
+		}
+
+		ul {
+			margin-top: 0.5em;
+			margin-left: 1.4em;
+		}
+	}
+}
+
+// Emoji are real glyphs now, painted by the subset Fluent Emoji Colour font.
+// The font sits after each text family in _tokens.scss. This class remains for
+// inline emoji that should not inherit the surrounding line height.
+.emoji-inline {
+	display: inline;
+	width: auto;
+	height: auto;
+	vertical-align: baseline;
+	font-family: var(--font-emoji);
+}

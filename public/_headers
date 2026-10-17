@@ -1,0 +1,22 @@
+# Cache policy shared by hosts that read Netlify-style _headers (Netlify,
+# Cloudflare Pages). HTML is short-lived so a deploy is picked up quickly;
+# hashed build assets are immutable because their URL changes with the content.
+# Fonts, including the emoji chunks, live under /_astro/ and inherit that rule.
+/*
+  Cache-Control: public, max-age=600, must-revalidate
+
+/*.png
+  ! Cache-Control
+  Cache-Control: public, max-age=604800, immutable
+
+/*.svg
+  ! Cache-Control
+  Cache-Control: public, max-age=604800, immutable
+
+/*.ico
+  ! Cache-Control
+  Cache-Control: public, max-age=604800, immutable
+
+/_astro/*
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable

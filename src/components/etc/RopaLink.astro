@@ -1,0 +1,30 @@
+---
+import Icon from "@components/Icon.svelte"
+import { Instagram } from "@components/icons.ts"
+
+interface Props {
+	name: string
+	link: string
+	instagram?: string
+}
+
+const { name, link, instagram } = Astro.props
+---
+
+<a href={link} target="_blank" rel="noopener">{name}</a>
+{
+	instagram && (
+		<>
+			<span> – </span>
+			<a href={instagram} target="_blank" rel="noopener" aria-label={`${name} on Instagram`}>
+				<Icon class="ropa-instagram"><Instagram /></Icon>
+			</a>
+		</>
+	)
+}
+
+<style>
+	.ropa-instagram {
+		vertical-align: -0.1em;
+	}
+</style>

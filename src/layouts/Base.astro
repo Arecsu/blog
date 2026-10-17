@@ -1,0 +1,288 @@
+---
+import "@styles/inter.css"
+import "@styles/reset.scss"
+import "@styles/_tokens.scss"
+import "@styles/base.scss"
+import "@styles/_tooltip.scss"
+import "@fontsource/noto-serif/latin-400.css"
+import "../assets/fluent-emoji-color/FluentEmojiColor.css"
+
+import { ClientRouter } from "astro:transitions"
+import Header from "@components/Header.svelte"
+import interVariableUrl from "../assets/font-inter/InterVariable.woff2?url"
+import notoSerif400Url from "@fontsource/noto-serif/files/noto-serif-latin-400-normal.woff2?url"
+import headThemeSwitch from "@scripts/head-theme-switch.js?raw"
+import headRecipeAmounts from "@scripts/head-recipe-amounts.js?raw"
+
+interface Props {
+	title?: string
+	headerTitle?: string
+	lang?: string
+}
+
+const { title = "", headerTitle = "", lang = "es" } = Astro.props
+const pageTitle = title ? `${title} · a9r` : "a9r"
+const activePath = Astro.url.pathname
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{pageTitle}</title>
+		<meta name="generator" content={Astro.generator} />
+		<meta name="theme-color" content="#fbeec0" transition:persist />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+		<!-- Fonts are request-critical for the first paint. crossorigin is required for a
+		     CDN/browser cache hit; without it the font is fetched twice with different
+		     cache keys. -->
+		<link
+			rel="preload"
+			as="font"
+			href={interVariableUrl}
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			as="font"
+			href={notoSerif400Url}
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+
+		<!-- Apply saved display preferences before first paint. -->
+		<script is:inline set:html={headThemeSwitch} />
+		<script is:inline set:html={headRecipeAmounts} />
+
+		<!--
+			Hashed assets are served through a CDN that caches by URL. A URL that does
+			not exist yet — a deploy still propagating — can answer with the site's HTML
+			fallback and a 200, which the edge then caches under the asset's immutable
+			headers. The browser refuses to execute that as a module ("blocked because
+			of a disallowed MIME type") and the page silently loses the script.
+
+			Resource errors do not bubble, hence the capture listener. One retry with a
+			query string escapes the poisoned entry, because cache keys include the
+			query: it reaches the real file. The retry carries the marker, so a genuinely
+			missing file cannot loop. Kept inline and first in the head so it is
+			registered before any bundled module is fetched.
+		-->
+		<script is:inline>
+			addEventListener(
+				"error",
+				(event) => {
+					const failed = event.target
+					if (!(failed instanceof HTMLScriptElement)) return
+					if (failed.type !== "module" || failed.hasAttribute("data-script-retried")) return
+					if (new URL(failed.src, location.href).origin !== location.origin) return
+					const retry = document.createElement("script")
+					retry.type = "module"
+					retry.src = `${failed.src}?retry=${Date.now()}`
+					retry.setAttribute("data-script-retried", "")
+					document.head.append(retry)
+				},
+				true,
+			)
+		</script>
+
+		<ClientRouter />
+		<script is:inline>
+			/*
+				The inline head scripts set display preferences on <html> before first
+				paint. ClientRouter then replaces every root attribute with the incoming
+				document's, whose markup was parsed without those scripts, so a dark page
+				briefly painted light and hidden amounts flashed back in. Carry the
+				preferences onto the incoming root before the swap. The new page's `lang`
+				and transition attributes still come from its own markup.
+			*/
+			document.addEventListener("astro:before-swap", (event) => {
+				const root = event.newDocument.documentElement
+				for (const name of ["theme", "data-recipe-amounts"]) {
+					const value = document.documentElement.getAttribute(name)
+					if (value !== null) root.setAttribute(name, value)
+				}
+			})
+		</script>
+		<script src="@scripts/page-scroll.ts"></script>
+		<noscript>
+			<style>
+				main {
+					display: block !important;
+				}
+				.header-container {
+					display: grid !important;
+				}
+				.header-theme,
+				.recipe-scale-menu,
+				.recipe-mobile-dock {
+					display: none !important;
+				}
+			</style>
+		</noscript>
+	</head>
+	<body>
+		<!--
+			The page scroll owner is this viewport-sized element, not the document. A
+			view-transition name on a document-height `main` would scale the snapshot
+			around the middle of the whole page: at the bottom of a long recipe the
+			scale would happen far above the reader. `.page-scroll` is always exactly
+			the visible viewport, so its centre is the reader's centre at any scroll
+			offset. See docs/architecture.md.
+		-->
+		<div class="page-scroll" tabindex="0" role="region" aria-label="Page">
+			<div class="the-page">
+				<Header client:idle activePath={activePath} headerTitle={headerTitle} />
+				<main>
+					<slot />
+				</main>
+			</div>
+		</div>
+	</body>
+</html>
+
+<style is:global>
+	html,
+	body {
+		overflow: hidden;
+	}
+
+	/*
+		Body is a stable viewport-sized shell; the scrollport tracks the visible
+		viewport with `dvh`, while the page inside it grows with the content. The
+		layout is not transformed or contained, so fixed UI (dock, drawer) keeps
+		the viewport as its containing block.
+	*/
+	body {
+		height: 100vh;
+		height: 100dvh;
+		background-color: var(--color-bg-0);
+	}
+
+	.page-scroll {
+		height: 100%;
+		width: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+		/* Keyboard scrolling belongs to this region; it must not paint a UA focus
+		   ring around the viewport snapshot when focus is restored here. */
+		outline: none;
+		view-transition-name: route-viewport;
+	}
+
+	.the-page {
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+	}
+
+	main {
+		padding-block: var(--padding-block-main);
+		flex-grow: 1;
+		flex-shrink: 0;
+		display: flex;
+		padding-inline: var(--padding-inline-main);
+	}
+
+	/*
+		The scrollbar is painted into its owner's snapshot and cannot be named as
+		its own layer. Hide only its paint while the route snapshot scales, keeping
+		the gutter and scroll offset intact (see page-scroll.ts for the pending
+		marker that survives the transition's end).
+	*/
+	html[data-astro-transition] .page-scroll,
+	.page-scroll[data-scrollbar-pending] {
+		scrollbar-color: transparent transparent;
+	}
+
+	/*
+		Exit is instant: the reader sees only the incoming page. Every named group
+		keeps `animation: none`, otherwise the UA morphs its box from the old
+		position/size to the new one — on a scrolled page an off-screen piece would
+		fly in from above instead of appearing in place.
+	*/
+	::view-transition-group(root),
+	::view-transition-group(route-viewport),
+	::view-transition-group(site-header) {
+		animation: none;
+	}
+
+	::view-transition-old(root),
+	::view-transition-new(root) {
+		animation: none;
+	}
+
+	::view-transition-old(route-viewport),
+	::view-transition-old(site-header) {
+		display: none;
+	}
+
+	/* The header is identical in place on every route; only its active link and
+	   page title change, so it swaps instantly while the viewport fades in. */
+	::view-transition-new(site-header) {
+		animation: none;
+	}
+
+	::view-transition-image-pair(root) {
+		isolation: auto;
+	}
+
+	::view-transition-old(root),
+	::view-transition-new(root),
+	::view-transition-new(route-viewport) {
+		mix-blend-mode: normal;
+	}
+
+	/*
+		Only the viewport snapshot transforms, never the live DOM. Its origin is
+		`center`, which for a 100dvh scrollport is the visible viewport centre no
+		matter where the reader is in the document.
+	*/
+	@keyframes route-enter {
+		from {
+			opacity: 0;
+			filter: blur(var(--transition-enter-blur));
+			transform: scale(var(--transition-enter-scale));
+		}
+
+		to {
+			opacity: 1;
+			filter: blur(0);
+			transform: scale(1);
+		}
+	}
+
+	::view-transition-new(route-viewport) {
+		transform-origin: center;
+		animation: route-enter var(--transition-enter-duration)
+			var(--transition-enter-ease) var(--transition-enter-delay) both;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		::view-transition-new(route-viewport) {
+			animation: none;
+		}
+	}
+
+	/* Printing has no viewport to scroll: restore normal document flow so the whole
+	   recipe paginates instead of being clipped to the first screen. */
+	@media print {
+		html,
+		body {
+			height: auto;
+			overflow: visible;
+		}
+
+		.page-scroll {
+			height: auto;
+			overflow: visible;
+			view-transition-name: none;
+		}
+
+		.the-page {
+			min-height: 0;
+		}
+	}
+</style>

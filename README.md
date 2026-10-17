@@ -1,42 +1,45 @@
-# Nuxt 3 Minimal Starter
+# hey
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Source for [hey.malejandro.com](https://hey.malejandro.com), a static personal site:
+home, notes, and a recipe collection with scaled ingredients and an inline amount
+detail popover.
 
-## Setup
+- **Astro 7** static output, **ClientRouter** view transitions, content collections.
+- **Svelte 5** islands for the interactive header, theme switch, and recipe viewer.
+- **SCSS** with native CSS custom-property tokens; Sass only for breakpoints/mixins.
+- **Fluent Emoji Colour** subset font for body emoji; **unplugin-icons** for inline
+  title/ingredient/process icons.
+- **Sätteri** Markdown/MDX plugins (emoji syntax and external links).
+- **Vitest** unit/content tests and **Playwright** end-to-end tests.
 
-Make sure to install the dependencies:
+## Commands
 
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
+```sh
+pnpm dev                 # Astro dev server on :4321
+pnpm build               # astro check + static build to dist/
+pnpm preview             # preview the built site
+pnpm check               # astro check + svelte-check
+pnpm test                # Vitest (recipe math, content, emoji)
+pnpm test:e2e            # build + Playwright (uses installed Chrome)
+pnpm generate:title-metrics  # regenerate src/lib/recipe-title-metrics.json
+pnpm deploy              # build + gh-pages
 ```
 
-## Development Server
+Use pnpm only. The Node version is pinned in `.node-version`.
 
-Start the development server on http://localhost:3000
+## Documentation
 
-```bash
-npm run dev
-```
+Read [`AGENTS.md`](AGENTS.md) for working rules, then
+[`docs/index.md`](docs/index.md) to find the document that matches your task.
 
-## Production
+- [`docs/architecture.md`](docs/architecture.md) — rendering, islands, state, caching.
+- [`docs/content.md`](docs/content.md) — recipe/notes authoring and MDX components.
+- [`docs/recipes.md`](docs/recipes.md) — scaling, drawer, popovers, accessibility.
+- [`docs/styles.md`](docs/styles.md) — SCSS tokens, breakpoints, conventions.
+- [`docs/deployment.md`](docs/deployment.md) — cache headers, trailing slash, deploy.
+- [`docs/performance.md`](docs/performance.md) — mobile drawer notes and measurements.
 
-Build the application for production:
+## History
 
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+The previous Nuxt/Vue implementation is archived on the `nuxt` branch. The current
+work lives on `hey`.

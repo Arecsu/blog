@@ -1,0 +1,33 @@
+---
+import {
+	formatRecipeAmount,
+	recipePlainLabel,
+	resolveRecipeAmount,
+} from "@lib/recipe.ts"
+
+interface Props {
+	ingredient: string
+	allocation?: string
+}
+
+const { ingredient, allocation } = Astro.props
+const groups = Astro.locals.recipe?.groups
+if (!groups) throw new Error("RecipeAmount must be rendered inside a recipe page")
+const resolved = resolveRecipeAmount(groups, ingredient, allocation)
+const range = allocation ? undefined : resolved.ingredient.quantityMax
+const amount =
+	formatRecipeAmount(resolved.quantity, resolved.ingredient.unit, 1, range) ||
+	resolved.ingredient.amount ||
+	""
+const label = recipePlainLabel(resolved.ingredient)
+---
+
+<span class="recipe-inline-ingredient"><slot /><span class="recipe-inline-space" aria-hidden="true">&nbsp;</span><button
+		type="button"
+		class="recipe-inline-amount"
+		data-ingredient={ingredient}
+		data-allocation={allocation}
+		data-label={label}
+		aria-haspopup="dialog"
+		aria-label={`${label}: ${amount}. Ver detalle`}
+	>{amount}</button></span>
