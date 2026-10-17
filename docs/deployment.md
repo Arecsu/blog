@@ -71,13 +71,20 @@ rule, update the config and that host's redirect rules together.
 
 ## gh-pages
 
+Pushes to `hey` run `.github/workflows/deploy.yml`: install, `pnpm check`,
+`pnpm test`, `pnpm build`, then publish `dist/` to the `gh-pages` branch with
+`peaceiris/actions-gh-pages` (`force_orphan`, `enable_jekyll: false`, CNAME
+`hey.malejandro.com`). The Pages source is the `gh-pages` branch root; the workflow
+push also triggers GitHub's built-in Pages build.
+
 ```sh
-pnpm deploy        # astro check + build + gh-pages -d dist
+pnpm deploy        # manual equivalent: astro check + build + gh-pages -d dist
 pnpm deploy-draft  # same, pushes to the deploy-draft branch
 ```
 
 The scripts use `--dotfiles --nojekyll`. `public/.nojekyll` is also present.
-`dist/` is gitignored; never commit it.
+`dist/` is gitignored; never commit it. If the custom domain changes, update
+`public/CNAME` **and** the `cname` input in the workflow together.
 
 ## Netlify / Cloudflare Pages
 
