@@ -22,9 +22,8 @@ phone is fast.
 ## What the port does
 
 - **Native `<dialog>` + `showModal()`**, opened synchronously in the store
-  subscription. There is no `nextTick` before opening. The existing panel is moved
-  into the dialog (not cloned) and a same-height placeholder is inserted; the page
-  does not jump.
+  subscription. There is no `nextTick` before opening. The dialog renders its own
+  list from the same groups, so the page keeps its panel and does not jump.
 - **One shared amount popover** for every inline amount, anchored with CSS
   `position-anchor` + `anchor()`. Buttons are static server HTML; the process island
   only updates their text/`aria-label` and opens the one popover.

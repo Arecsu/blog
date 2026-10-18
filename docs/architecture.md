@@ -223,7 +223,8 @@ head. See [`deployment.md`](deployment.md).
 ## Performance notes
 
 The recipe page ships three Svelte islands and no Vue/Nuxt runtime. The ingredient
-drawer uses a native `<dialog>`, moves the existing panel (never a copy), inserts one
-placeholder, and uses overlay gradient fades instead of `mask-image`. The amount
+drawer uses a native `<dialog>` that renders its own copy of the list from the same
+groups (the page panel stays in place, so there is no placeholder), and uses overlay
+gradient fades instead of `mask-image`. The amount
 popover is shared by every inline amount. See [`performance.md`](performance.md) for
 the measured comparison with the Nuxt implementation.

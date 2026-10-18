@@ -56,8 +56,6 @@
 	let previousGutter = ""
 	let scrollport: HTMLElement | undefined
 	let lockedScroll = 0
-	let placeholder: HTMLElement | undefined
-	let panelHome: Comment | undefined
 	const drawerScrolls = new Map<string, number>()
 
 	const groupLabels = $derived(
@@ -79,13 +77,10 @@
 		)
 	})
 
-	function isGroupHidden(group: RecipeIngredientGroup) {
-		return Boolean(
-			$drawerOpen &&
-				$drawerScope === "current" &&
-				activeGroup &&
-				group.id !== activeGroup.id,
-		)
+	// The drawer renders its own list from the same groups; the page keeps its panel in
+	// place, so nothing is moved and nothing has to hold the page's height.
+	function isGroupFiltered(group: RecipeIngredientGroup) {
+		return Boolean(activeGroup && $drawerScope === "current" && group.id !== activeGroup.id)
 	}
 
 	function readLegacyGroups() {
@@ -102,13 +97,12 @@
 	}
 
 	function updateLegacyVisibility() {
-		if (hasGroups || !panel) return
-		// Read the store imperatively: this also runs from drawerOpen.subscribe, where
-		// the component's `$drawerOpen` auto-subscription has not updated yet.
-		const open = drawerOpen.get()
+		if (hasGroups || !drawerContent) return
+		// Read the store imperatively: this also runs from drawerScope.subscribe, where
+		// the component's `$drawerScope` auto-subscription has not updated yet.
 		const active = activeGroup
-		const onlyCurrent = open && drawerScope.get() === "current" && active
-		for (const element of panel.querySelectorAll<HTMLElement>(".subingredient")) {
+		const onlyCurrent = drawerScope.get() === "current" && active
+		for (const element of drawerContent.querySelectorAll<HTMLElement>(".subingredient")) {
 			const groupId =
 				element.dataset.recipeGroup ||
 				recipeSectionId(element.querySelector(".recipe-subingredient-title")?.textContent ?? "")
@@ -120,35 +114,8 @@
 		return drawerScope.get() === "current" && activeGroup ? activeGroup.id : "all"
 	}
 
-	function movePanel(intoDrawer: boolean) {
-		if (!panel || !drawerContent) return
-		if (intoDrawer && panel.parentNode !== drawerContent) {
-			panelHome = document.createComment("recipe-ingredient-panel")
-			panel.before(panelHome)
-			drawerContent.append(panel)
-		} else if (!intoDrawer && panelHome) {
-			panelHome.replaceWith(panel)
-			panelHome = undefined
-		}
-	}
-
-	function addPlaceholder() {
-		if (!panel || placeholder) return
-		placeholder = document.createElement("div")
-		placeholder.className = "recipe-ingredient-placeholder"
-		placeholder.style.height = `${panel.getBoundingClientRect().height}px`
-		panel.before(placeholder)
-	}
-
-	function removePlaceholder() {
-		placeholder?.remove()
-		placeholder = undefined
-	}
-
 	function openDrawer() {
 		if (!drawer || drawer.open) return
-		addPlaceholder()
-		movePanel(true)
 		// The page scroll owner is the inner viewport scrollport, not the document.
 		// Locking `documentElement` would leave the list scrolling behind the sheet.
 		scrollport = ingredientsElement?.closest<HTMLElement>(".page-scroll") ?? undefined
@@ -202,8 +169,6 @@
 
 	function onClose() {
 		drawerScrolls.set(scopeKey(), drawerContent?.scrollTop || 0)
-		movePanel(false)
-		removePlaceholder()
 		drawerOpen.set(false)
 		unlock()
 		document
@@ -331,12 +296,60 @@
 	})
 
 	onDestroy(() => {
-		movePanel(false)
-		removePlaceholder()
 		drawer?.close()
 		unlock()
 	})
 </script>
+
+<!-- The drawer renders its own list from the same groups: the page keeps its panel
+     where it is, so opening the sheet moves nothing and shifts nothing. -->
+{#snippet groupList(inDrawer: boolean)}
+		{#each groups as group (group.id)}
+			<div
+				class="subingredient"
+				data-recipe-group={group.id}
+				hidden={inDrawer && isGroupFiltered(group)}
+			>
+				{#if group.label}
+					<h5 class="recipe-subingredient-title">
+						<RecipeRichText text={group.label} scale={$scale} />
+					</h5>
+				{/if}
+				{#if group.note}
+					{#each group.note.split(/\n{2,}/) as paragraph, index (index)}
+						<p><RecipeRichText text={paragraph} scale={$scale} /></p>
+					{/each}
+				{/if}
+				<ul>
+					{#each group.items as item (item.id)}
+						<li>
+							{#if !hasPrimaryAmount(item.label) && (item.quantity !== undefined || item.amount)}
+								<span class="recipe-ingredient-quantity"
+									>{item.quantity !== undefined
+										? formatRecipeAmount(
+												item.quantity,
+												item.unit,
+												$scale,
+												item.quantityMax,
+											)
+										: item.amount}</span
+								>{' '}
+							{/if}
+							<RecipeRichText text={item.label} {item} scale={$scale} chips />
+							{#if item.note || item.allocations?.length}
+								({#if item.note}<RecipeRichText text={item.note ?? ""} {item} scale={$scale} />{/if}{#if item.note && item.allocations?.length}; {/if}{#if item.allocations?.length}{item.allocations
+										.map(
+											(part) =>
+												`${formatRecipeAmount(part.quantity, item.unit, $scale)} ${part.label.toLowerCase()}`,
+										)
+										.join(" + ")}{/if})
+							{/if}
+						</li>
+					{/each}
+				</ul>
+			</div>
+		{/each}
+{/snippet}
 
 <section
 	id="ingredientes"
@@ -359,53 +372,7 @@
 			{#if hasExtra && children}
 				<div class="recipe-ingredients-intro">{@render children()}</div>
 			{/if}
-			<div class="subingredients">
-				{#each groups as group (group.id)}
-					<div
-						class="subingredient"
-						data-recipe-group={group.id}
-						hidden={isGroupHidden(group)}
-					>
-						{#if group.label}
-							<h5 class="recipe-subingredient-title">
-								<RecipeRichText text={group.label} scale={$scale} />
-							</h5>
-						{/if}
-						{#if group.note}
-							{#each group.note.split(/\n{2,}/) as paragraph, index (index)}
-								<p><RecipeRichText text={paragraph} scale={$scale} /></p>
-							{/each}
-						{/if}
-						<ul>
-							{#each group.items as item (item.id)}
-								<li>
-									{#if !hasPrimaryAmount(item.label) && (item.quantity !== undefined || item.amount)}
-										<span class="recipe-ingredient-quantity"
-											>{item.quantity !== undefined
-												? formatRecipeAmount(
-														item.quantity,
-														item.unit,
-														$scale,
-														item.quantityMax,
-													)
-												: item.amount}</span
-										>{' '}
-									{/if}
-									<RecipeRichText text={item.label} {item} scale={$scale} chips />
-									{#if item.note || item.allocations?.length}
-										({#if item.note}<RecipeRichText text={item.note ?? ""} {item} scale={$scale} />{/if}{#if item.note && item.allocations?.length}; {/if}{#if item.allocations?.length}{item.allocations
-												.map(
-													(part) =>
-														`${formatRecipeAmount(part.quantity, item.unit, $scale)} ${part.label.toLowerCase()}`,
-												)
-												.join(" + ")}{/if})
-									{/if}
-								</li>
-							{/each}
-						</ul>
-					</div>
-				{/each}
-			</div>
+			<div class="subingredients">{@render groupList(false)}</div>
 		{:else}
 			<div class="subingredients">{@render children?.()}</div>
 		{/if}
@@ -430,7 +397,16 @@
 				class="recipe-drawer-content"
 				tabindex="-1"
 				onscroll={() => updateFades()}
-			></div>
+			>
+				{#if hasGroups}
+					{#if hasExtra && children}
+						<div class="recipe-ingredients-intro">{@render children()}</div>
+					{/if}
+					<div class="subingredients">{@render groupList(true)}</div>
+				{:else}
+					<div class="subingredients">{@render children?.()}</div>
+				{/if}
+			</div>
 			<div class="recipe-drawer-fade is-top" aria-hidden="true"></div>
 			<div class="recipe-drawer-fade is-bottom" aria-hidden="true"></div>
 		</div>

@@ -174,6 +174,9 @@ test("the inner viewport scrollport owns scrolling and back restores its positio
 	const scrollTop = () =>
 		page.evaluate(() => document.querySelector<HTMLElement>(".page-scroll")?.scrollTop ?? 0)
 
+	// Scroll only once the header island is hydrated: its `onMount` records the offset,
+	// and a scroll before that makes `is-title` unreachable.
+	await expect(page.locator("astro-island[ssr]")).toHaveCount(0)
 	await page.evaluate(() => {
 		const scroller = document.querySelector<HTMLElement>(".page-scroll")
 		if (scroller) scroller.scrollTop = 1400
@@ -342,7 +345,10 @@ test("markdown keeps the authored punctuation and tight note parentheses", async
 	await expect(page.locator(".recipe-process")).not.toContainText("pues…")
 
 	await page.goto("/recetas/crema-chantilly/")
-	const cream = page.locator(".subingredients li", { hasText: "Crema doble de leche" })
+	// The drawer renders a second copy of the list, so the page panel is the one to read.
+	const cream = page.locator(".recipe-ingredient-panel .subingredients li", {
+		hasText: "Crema doble de leche",
+	})
 	await expect(cream).toContainText("(mayor a 34% grasa)")
 	await expect(cream).not.toContainText("grasa )")
 })

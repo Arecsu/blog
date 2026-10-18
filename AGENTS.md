@@ -140,8 +140,9 @@ lives on `hey`.
   page token; the store resets when the token changes. A ClientRouter navigation
   gets a fresh token from `astro:before-swap`, so returning to a recipe resets the
   scale to 1. The `$show-amounts` preference persists; the scale does not.
-- The ingredient drawer moves the existing panel DOM into a native `<dialog>` and
-  inserts a same-height placeholder. Do not render a second list.
+- The ingredient drawer is a native `<dialog>` that renders its own copy of the list
+  from the same `ingredientGroups` (one `{#snippet}`, rendered twice). The page panel
+  stays where it is, so opening the sheet never moves anything or shifts the page.
 - Inline amount chips are static HTML from the Sätteri/MDX pipeline. The process
   island enhances them and owns the single shared amount popover; do not create one
   popover per amount. The space before a chip is a `.recipe-inline-space` node that

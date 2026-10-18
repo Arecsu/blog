@@ -49,9 +49,9 @@ the original amount when scaled. The scale store updates the button text and
 - The dock slides in when the reading line enters the process and slides out above it.
   It stays laid out (just off screen) so its height never shifts the reading line.
 - The drawer is a native `<dialog>` shown with `showModal()`:
-  - the existing `.recipe-ingredient-panel` is moved into the dialog (one list in
-    the DOM, never a copy);
-  - a same-height placeholder stays in the page so the procedure does not move;
+  - the dialog renders its own list from the same `ingredientGroups` (one
+    `{#snippet}`, rendered in the page panel and in the drawer), so the page list
+    stays where it is and nothing below it moves;
   - `.page-scroll` (the inner viewport scrollport) locks while open; the document is
     already non-scrolling;
   - `Escape`, the close button, or a backdrop press close it;
@@ -121,7 +121,8 @@ prevents a ClientRouter navigation from briefly painting the previous recipe's s
 `e2e/site.spec.ts` covers the scale menu, presets, list and inline amount updates,
 amount popover content, Escape, notes/emoji, theme switch, and ClientRouter scale
 reset. `e2e/mobile.spec.ts` covers the dock, drawer open/filter/fades/close, and the
-single-panel invariant. Unit/content tests cover the math and data.
+page-list-in-place invariant and the absence of a layout shift when the sheet opens.
+Unit/content tests cover the math and data.
 
 ## Constraints
 
