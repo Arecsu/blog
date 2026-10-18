@@ -76,6 +76,11 @@
 
 		> span {
 			text-box: trim-both cap alphabetic;
+			// The popover is anchored to the chip's right edge, so a label that grows
+			// ("1×" becomes "1,1×") would drag the open popover sideways under the
+			// pointer. Reserve the widest label — three tabular digits, the comma and
+			// the × — so the chip keeps its width for every scale from 0,1 to 10.
+			min-inline-size: 3.6ch;
 		}
 
 		:global(.recipe-scale-chevron) {

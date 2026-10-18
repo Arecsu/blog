@@ -170,6 +170,8 @@
 		font: inherit;
 		color: inherit;
 		cursor: pointer;
+		/* Repeat-tapping the stepper selected the − / + glyphs instead of counting. */
+		user-select: none;
 	}
 
 	.recipe-scale-stepper {
