@@ -166,6 +166,15 @@ const activePath = Astro.url.pathname
 		width: 100%;
 		overflow-x: hidden;
 		overflow-y: auto;
+		/*
+			Browser scroll anchoring would silently move the scroll position whenever
+			content above the reader changes height — the scaled-amounts notice is the
+			one such block (it appears at scale ≠ 1). That compensating scroll fires a
+			scroll event, which made the header think the reader scrolled back up and
+			closed any open recipe popover. The content shift is the honest result of
+			adding a status line, so anchoring is off here. See docs/architecture.md.
+		*/
+		overflow-anchor: none;
 		/* Keyboard scrolling belongs to this region; it must not paint a UA focus
 		   ring around the viewport snapshot when focus is restored here. */
 		outline: none;

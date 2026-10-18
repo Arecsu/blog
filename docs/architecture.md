@@ -171,6 +171,16 @@ While the snapshot scales, the scrollbar keeps its gutter but not its paint
 (`html[data-astro-transition] .page-scroll` + the pending marker). `page-scroll.ts`
 removes the marker on the next real scroll.
 
+`.page-scroll` sets `overflow-anchor: none`. The only block that appears and
+disappears above the reader is the scaled-amounts notice; with anchoring on, the
+browser compensated for its height by moving `scrollTop` (39-65px), and that
+compensating scroll fired a scroll event. The `Header` state machine read it as a
+short scroll up and brought the menu back, and `RecipePopover` read it as a
+scroll-away and closed — so tapping + or − across the 1× boundary closed the scale
+popover. Without anchoring, the content below the notice shifts by its height, which
+is the honest result of inserting a status line. Do not re-enable it without teaching
+both consumers to ignore scrolls that did not move what the reader sees.
+
 ### Inner-scroll restoration
 
 `src/scripts/page-scroll.ts` owns scroll restoration for `.page-scroll`; Astro's own
