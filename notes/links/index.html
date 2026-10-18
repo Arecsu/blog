@@ -1,0 +1,278 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Links · a9r</title><meta name="generator" content="Astro v7.4.0"><meta data-astro-transition-persist="astro-gyrtbwwo-1" name="theme-color" content="#fbeec0"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><!-- Fonts are request-critical for the first paint. crossorigin is required for a
+		     CDN/browser cache hit; without it the font is fetched twice with different
+		     cache keys. --><link rel="preload" as="font" href="/_astro/InterVariable.DiVDrmQJ.woff2" type="font/woff2" crossorigin="anonymous"><link rel="preload" as="font" href="/_astro/noto-serif-latin-400-normal.BV_iYGc9.woff2" type="font/woff2" crossorigin="anonymous"><!-- Apply saved display preferences before first paint. --><script>// Runs inline in <head>, before first paint, so the saved theme is applied
+// without a flash of the other palette. Kept dependency-free on purpose.
+const systemColor = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+
+let savedThemeSetting
+try {
+	savedThemeSetting = localStorage.getItem("theme-setting")
+} catch {
+	// Storage can be blocked; fall back to the system preference.
+}
+
+const colorScheme =
+	savedThemeSetting === "system" || !savedThemeSetting ? systemColor : savedThemeSetting
+
+let metaThemeColor = document.querySelector('meta[name="theme-color"]')
+if (!metaThemeColor) {
+	metaThemeColor = document.createElement("meta")
+	metaThemeColor.name = "theme-color"
+	document.head.appendChild(metaThemeColor)
+}
+metaThemeColor.setAttribute("content", colorScheme === "dark" ? "#0e141b" : "#fbeec0")
+
+document.documentElement.setAttribute("theme", colorScheme)
+</script><script>// Runs inline in <head>, before first paint, so a reader who hid the inline
+// amounts never sees them flash in and reflow the process text. The recipe
+// island reads the same preference after hydration and keeps the attribute and
+// the store in sync. Absence of the attribute means visible.
+try {
+	if (localStorage.getItem("recipe-show-amounts") === "false") {
+		document.documentElement.dataset.recipeAmounts = "hidden"
+	}
+} catch {
+	// Storage blocked: default to visible.
+}
+</script><!--
+			Hashed assets are served through a CDN that caches by URL. A URL that does
+			not exist yet — a deploy still propagating — can answer with the site's HTML
+			fallback and a 200, which the edge then caches under the asset's immutable
+			headers. The browser refuses to execute that as a module ("blocked because
+			of a disallowed MIME type") and the page silently loses the script.
+
+			Resource errors do not bubble, hence the capture listener. One retry with a
+			query string escapes the poisoned entry, because cache keys include the
+			query: it reaches the real file. The retry carries the marker, so a genuinely
+			missing file cannot loop. Kept inline and first in the head so it is
+			registered before any bundled module is fetched.
+		--><script>
+			addEventListener(
+				"error",
+				(event) => {
+					const failed = event.target
+					if (!(failed instanceof HTMLScriptElement)) return
+					if (failed.type !== "module" || failed.hasAttribute("data-script-retried")) return
+					if (new URL(failed.src, location.href).origin !== location.origin) return
+					const retry = document.createElement("script")
+					retry.type = "module"
+					retry.src = `${failed.src}?retry=${Date.now()}`
+					retry.setAttribute("data-script-retried", "")
+					document.head.append(retry)
+				},
+				true,
+			)
+		</script><meta name="astro-view-transitions-enabled" content="true"> <meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.DZigdzQl.js"></script><script>
+			/*
+				The inline head scripts set display preferences on <html> before first
+				paint. ClientRouter then replaces every root attribute with the incoming
+				document's, whose markup was parsed without those scripts, so a dark page
+				briefly painted light and hidden amounts flashed back in. Carry the
+				preferences onto the incoming root before the swap. The new page's `lang`
+				and transition attributes still come from its own markup.
+			*/
+			document.addEventListener("astro:before-swap", (event) => {
+				const root = event.newDocument.documentElement
+				for (const name of ["theme", "data-recipe-amounts"]) {
+					const value = document.documentElement.getAttribute(name)
+					if (value !== null) root.setAttribute(name, value)
+				}
+			})
+		</script><script type="module">var e=new Map,t=document.querySelector(`.page-scroll`),n=window.navigation.currentEntry?.key,r=!1,i=!1;function a(r=!0){if(!t||!n)return;let i={left:t.scrollLeft,top:t.scrollTop};if(e.set(n,i),r)try{sessionStorage.setItem(`page-scroll:${n}`,`${i.left},${i.top}`)}catch{}}function o(r){if(!t||!n)return;let i=r?e.get(n):void 0;if(r&&!i)try{let e=sessionStorage.getItem(`page-scroll:${n}`);if(e){let[t,n]=e.split(`,`).map(Number);Number.isFinite(t)&&Number.isFinite(n)&&(i={left:t,top:n})}}catch{}if(i)t.scrollTo({...i,behavior:`instant`});else if(t.scrollTo({left:0,top:0,behavior:`instant`}),location.hash)try{let e=decodeURIComponent(location.hash.slice(1));(document.getElementById(e)??document.getElementsByName(e)[0])?.scrollIntoView({block:`start`,behavior:`instant`})}catch{}document.activeElement===document.body&&t.focus({preventScroll:!0})}var s;function c(e){s?.abort();let t=new AbortController;return s=t,e.dataset.scrollbarPending=``,()=>{requestAnimationFrame(()=>{!t.signal.aborted&&e.isConnected&&e.addEventListener(`scroll`,()=>{delete e.dataset.scrollbarPending,s=void 0},{once:!0,passive:!0,signal:t.signal})})}}window.navigation.addEventListener(`navigate`,()=>{r||a()}),window.navigation.addEventListener(`currententrychange`,e=>{let t=window.navigation.currentEntry;if(!t||t.key===n||r)return;let i=new URL(e.from.url??location.href),s=new URL(t.url??location.href);i.pathname===s.pathname&&i.search===s.search&&queueMicrotask(()=>{r||window.navigation.currentEntry?.key!==t.key||(n=t.key,o(e.navigationType===`traverse`),a())})}),document.addEventListener(`astro:before-preparation`,e=>{a(),r=!0,e.signal.addEventListener(`abort`,()=>{r=!1},{once:!0})}),document.addEventListener(`astro:before-swap`,e=>{a(),i=e.navigationType===`traverse`;let n=e.newDocument.querySelector(`.page-scroll`),r=n&&c(n);e.viewTransition.finished.then(()=>{n!==t||e.signal.aborted||r?.()},()=>{})}),document.addEventListener(`astro:after-swap`,()=>{t=document.querySelector(`.page-scroll`),n=window.navigation.currentEntry?.key,o(i),r=!1,a()}),document.addEventListener(`scroll`,e=>{e.target===t&&a(!1)},{capture:!0,passive:!0}),document.addEventListener(`scrollend`,e=>{e.target===t&&a()},{capture:!0,passive:!0}),window.addEventListener(`pagehide`,()=>a()),window.addEventListener(`pageshow`,e=>{e.persisted&&o(!0)});var l=performance.getEntriesByType(`navigation`)[0]?.type;o(l===`reload`||l===`back_forward`);</script><noscript><style>
+				main {
+					display: block !important;
+				}
+				.header-container {
+					display: grid !important;
+				}
+				.header-theme,
+				.recipe-scale-menu,
+				.recipe-mobile-dock {
+					display: none !important;
+				}
+			</style></noscript><link rel="stylesheet" href="/_astro/style.Ibs3PoVZ.css"><link rel="stylesheet" href="/_astro/style.reoElBLR.css"><script type="module" src="/_astro/page.D-hZag5v.js"></script></head> <body> <!--
+			The page scroll owner is this viewport-sized element, not the document. A
+			view-transition name on a document-height `main` would scale the snapshot
+			around the middle of the whole page: at the bottom of a long recipe the
+			scale would happen far above the reader. `.page-scroll` is always exactly
+			the visible viewport, so its centre is the reader's centre at any scroll
+			offset. See docs/architecture.md.
+		--><div class="page-scroll" tabindex="0" role="region" aria-label="Page"> <div class="the-page"> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(function(){let e=(e,t)=>{let n=async()=>{await(await e())()},r=typeof t.value==`object`?t.value:void 0,i={timeout:r==null?void 0:r.timeout};`requestIdleCallback`in window?window.requestIdleCallback(n,i):setTimeout(n,i.timeout||200)};(self.Astro||(self.Astro={})).idle=e,window.dispatchEvent(new Event(`astro:idle`))})();</script><script>(function(){function e(t){"@babel/helpers - typeof";return e=typeof Symbol==`function`&&typeof Symbol.iterator==`symbol`?function(e){return typeof e}:function(e){return e&&typeof Symbol==`function`&&e.constructor===Symbol&&e!==Symbol.prototype?`symbol`:typeof e},e(t)}function t(t,n){if(e(t)!=`object`||!t)return t;var r=t[Symbol.toPrimitive];if(r!==void 0){var i=r.call(t,n||`default`);if(e(i)!=`object`)return i;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(n===`string`?String:Number)(t)}function n(n){var r=t(n,`string`);return e(r)==`symbol`?r:r+``}function r(e,t,r){return(t=n(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r,e}let i=/* @__PURE__ */ new Set([`__proto__`,`constructor`,`prototype`]);{let e={0:e=>a(e),1:e=>n(e),2:e=>new RegExp(e),3:e=>new Date(e),4:e=>new Map(n(e)),5:e=>new Set(n(e)),6:e=>BigInt(e),7:e=>new URL(e),8:e=>new Uint8Array(e),9:e=>new Uint16Array(e),10:e=>new Uint32Array(e),11:e=>1/0*e},t=t=>{let[n,r]=t;return n in e?e[n](r):void 0},n=e=>e.map(t),a=e=>typeof e!=`object`||!e?e:Object.fromEntries(Object.entries(e).map(([e,n])=>[e,t(n)]));class o extends HTMLElement{constructor(...e){super(...e),r(this,`Component`,void 0),r(this,`hydrator`,void 0),r(this,`hydrate`,async()=>{var e;if(!this.hydrator||!this.isConnected)return;let t=(e=this.parentElement)==null?void 0:e.closest(`astro-island[ssr]`);if(t){t.addEventListener(`astro:hydrate`,this.hydrate,{once:!0});return}let n=this.querySelectorAll(`astro-slot`),r={},i=this.querySelectorAll(`template[data-astro-template]`);for(let e of i){let t=e.closest(this.tagName);t!=null&&t.isSameNode(this)&&(r[e.getAttribute(`data-astro-template`)||`default`]=e.innerHTML,e.remove())}for(let e of n){let t=e.closest(this.tagName);t!=null&&t.isSameNode(this)&&(r[e.getAttribute(`name`)||`default`]=e.innerHTML)}let o;try{o=this.hasAttribute(`props`)?a(JSON.parse(this.getAttribute(`props`))):{}}catch(e){let t=this.getAttribute(`component-url`)||`<unknown>`,n=this.getAttribute(`component-export`);throw n&&(t+=` (export ${n})`),console.error(`[hydrate] Error parsing props for component ${t}`,this.getAttribute(`props`),e),e}await this.hydrator(this)(this.Component,o,r,{client:this.getAttribute(`client`)}),this.removeAttribute(`ssr`),this.dispatchEvent(new CustomEvent(`astro:hydrate`))}),r(this,`unmount`,()=>{this.isConnected||this.dispatchEvent(new CustomEvent(`astro:unmount`))})}disconnectedCallback(){document.removeEventListener(`astro:after-swap`,this.unmount),document.addEventListener(`astro:after-swap`,this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute(`await-children`)||document.readyState===`interactive`||document.readyState===`complete`)this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener(`DOMContentLoaded`,e),t.disconnect(),this.childrenConnectedCallback()},t=new MutationObserver(()=>{var t;((t=this.lastChild)==null?void 0:t.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue===`astro:end`&&(this.lastChild.remove(),e())});t.observe(this,{childList:!0}),document.addEventListener(`DOMContentLoaded`,e)}}async childrenConnectedCallback(){let e=this.getAttribute(`before-hydration-url`);e&&await import(e),this.start()}getRetryImportUrl(e){let t=new URL(e,document.baseURI);return t.searchParams.set(`astro-retry`,Date.now().toString()),t.toString()}async importWithRetry(e){try{return await import(e)}catch(t){return await new Promise(e=>setTimeout(e,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let t=this.getAttribute(`component-url`),n=new CustomEvent(`astro:hydration-error`,{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:t}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${t}`,e)}async start(){let e=JSON.parse(this.getAttribute(`opts`)),t=this.getAttribute(`client`);if(Astro[t]===void 0)window.addEventListener(`astro:${t}`,()=>this.start(),{once:!0});else try{await Astro[t](async()=>{let e=this.getAttribute(`renderer-url`);try{let[t,{default:n}]=await Promise.all([this.importWithRetry(this.getAttribute(`component-url`)),e?this.importWithRetry(e):Promise.resolve({default:()=>()=>{}})]),r=this.getAttribute(`component-export`)||`default`;if(r.includes(`.`)){this.Component=t;for(let e of r.split(`.`)){if(i.has(e)||!this.Component||typeof this.Component!=`object`&&typeof this.Component!=`function`||!Object.hasOwn(this.Component,e))throw Error(`Invalid component export path: ${r}`);this.Component=this.Component[e]}}else{if(i.has(r))throw Error(`Invalid component export path: ${r}`);this.Component=t[r]}return this.hydrator=n,this.hydrate}catch(e){return this.handleHydrationError(e),()=>{}}},e,this)}catch(e){this.handleHydrationError(e)}}attributeChangedCallback(){this.hydrate()}}r(o,`observedAttributes`,[`props`]),customElements.get(`astro-island`)||customElements.define(`astro-island`,o)}})();</script><astro-island uid="ZVnlco" component-url="/_astro/Header.EqVt45Kt.js" component-export="default" renderer-url="/_astro/client.svelte.DQIV5Arz.js" props="{&quot;activePath&quot;:[0,&quot;/notes/links/&quot;],&quot;headerTitle&quot;:[0,&quot;&quot;]}" ssr client="idle" opts="{&quot;name&quot;:&quot;Header&quot;,&quot;value&quot;:true}" await-children><!--[--><div class="header-container svelte-oiwvqb"><header class="svelte-oiwvqb"><nav class="svelte-oiwvqb"><ul class="header-menu svelte-oiwvqb"><li><a href="/" class="svelte-oiwvqb"><span class="slash svelte-oiwvqb">/--</span>base</a></li> <li><a href="/notes/" aria-current="page" class="svelte-oiwvqb active">notes</a></li> <li><a href="/recetas/" class="svelte-oiwvqb">recetas</a></li></ul> <span class="header-title svelte-oiwvqb" aria-hidden="true">→ </span></nav> <div class="header-right-side svelte-oiwvqb"><div class="header-theme svelte-oiwvqb"><span class="theme-switch svelte-14ttdid"><!--[0--><button type="button" class="button-no-style theme-button svelte-14ttdid" aria-label="Cambiar tema"><span class="placeholder-dark svelte-14ttdid"><span class="icon svelte-13so817" style="--i-s--size: 1.2em" aria-hidden="true"><svg viewBox="0 0 24 24" width="1.2em" height="1.2em"><path fill="currentColor" d="M12 3a8 8 0 0 1 7.996 7.75L20 11l-.001 6.954l.01.103a2.78 2.78 0 0 1-1.468 2.618l-.163.08c-1.053.475-2.283.248-3.129-.593l-.137-.146a.65.65 0 0 0-1.024 0a2.65 2.65 0 0 1-4.176 0a.65.65 0 0 0-.512-.25c-.2 0-.389.092-.55.296a2.78 2.78 0 0 1-4.859-2.005l.008-.091L4 11l.004-.25A8 8 0 0 1 12 3m2.82 10.429a1 1 0 0 0-1.391-.25a2.5 2.5 0 0 1-2.858 0a1 1 0 0 0-1.142 1.642a4.5 4.5 0 0 0 5.142 0a1 1 0 0 0 .25-1.392zM10.01 9l-.127.007A1 1 0 0 0 10 11l.127-.007A1 1 0 0 0 10.01 9m4 0l-.127.007A1 1 0 0 0 14 11l.127-.007A1 1 0 0 0 14.01 9"></path></svg><!----></span><!----></span> <span class="placeholder-light svelte-14ttdid"><span class="icon svelte-13so817" style="--i-s--size: 1.1em" aria-hidden="true"><svg viewBox="0 0 24 24" width="1.2em" height="1.2em"><path fill="currentColor" d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74c0-3.86-3.14-7-7-7m2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6A5 5 0 0 1 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1"></path></svg><!----></span><!----></span></button><!--]--></span><!----></div> <span class="header-arrow svelte-oiwvqb">↙</span></div></header></div><!--]--><!--astro:end--></astro-island> <main>  <div class="nota-container"> <article><h2 id="️-blogs">✏️ Blogs</h2>
+<ul>
+<li><a href="https://ciechanow.ski/" target="_blank" rel="nofollow noopener">ciechanow.ski</a> — Funcionamiento de piezas de tecnología, conceptos físicos y matemáticos. Muy interactivo.</li>
+<li><a href="https://www.arun.is/" target="_blank" rel="nofollow noopener">Arun.is</a> — Diseño y tecnología</li>
+<li><a href="http://www.thekeyboard.org.uk/" target="_blank" rel="nofollow noopener">Theories with Problems</a></li>
+<li><a href="https://markmanson.net/archive" target="_blank" rel="nofollow noopener">Mark Manson</a> — Filosofía de vida y consejos</li>
+<li><a href="https://seths.blog" target="_blank" rel="nofollow noopener">Seth&#39;s Blog</a></li>
+<li><a href="https://solar.lowtechmagazine.com/" target="_blank" rel="nofollow noopener">LOW-TECH MAGAZINE</a></li>
+<li><a href="https://www.oliverburkeman.com/posts" target="_blank" rel="nofollow noopener">The Imperfectionist – Oliver Burkeman</a></li>
+<li><a href="https://jamesclear.com/articles" target="_blank" rel="nofollow noopener">James Clear</a></li>
+<li><a href="https://www.mrmoneymustache.com/2013/02/22/getting-rich-from-zero-to-hero-in-one-blog-post/" target="_blank" rel="nofollow noopener">Mr Money Mustache</a> — Striving to be independent of the system</li>
+<li><a href="https://slatestarcodex.com/" target="_blank" rel="nofollow noopener">Slate Star Codex</a> — Ciencia, psiquiatría, filosofía, política y futurismo.</li>
+<li><a href="https://astralcodexten.substack.com/" target="_blank" rel="nofollow noopener">Astral Codex Ten</a> — Continuación de Slate Star Codex</li>
+<li><a href="https://waitbutwhy.com/" target="_blank" rel="nofollow noopener">Wait But Why</a> - A long-form blog that delves into a wide range of topics, from science and technology to philosophy and self-improvement.</li>
+<li><a href="https://publicdomainreview.org/" target="_blank" rel="nofollow noopener">The Public Domain Review</a> - A website that curates interesting and unusual works from the public domain, including literature, art, and photography.</li>
+<li><a href="https://www.atlasobscura.com/" target="_blank" rel="nofollow noopener">Atlas Obscura</a> - A website that celebrates the world&#39;s most curious and unusual places, from hidden underground cities to bizarre museums.</li>
+<li><a href="http://www.paulgraham.com/articles.html" target="_blank" rel="nofollow noopener">Paul Graham&#39;s essays</a></li>
+<li><a href="https://neladunato.com/blog/" target="_blank" rel="nofollow noopener">Nela Dunato</a></li>
+</ul>
+<h2 id="️-inspiration">🖼️ Inspiration</h2>
+<ul>
+<li><a href="http://100r.co" target="_blank" rel="nofollow noopener">100R</a></li>
+<li><a href="https://www.webdesignmuseum.org/" target="_blank" rel="nofollow noopener">Web Design Museum</a></li>
+<li><a href="https://randomghost.tumblr.com/" target="_blank" rel="nofollow noopener">RANDOM GHOST</a></li>
+</ul>
+<h2 id="-news">📰 News</h2>
+<ul>
+<li><a href="https://legiblenews.com/" target="_blank" rel="nofollow noopener">Legible News</a> — Buen wrapper de Wikipedia&#39;s Current Events</li>
+<li><a href="https://en.wikipedia.org/wiki/Portal:Current_events" target="_blank" rel="nofollow noopener">Wikipedia: Current Events</a> — Noticias del mundo. Minimalista.</li>
+<li><a href="https://brutalist.report/" target="_blank" rel="nofollow noopener">The Brutalist Report</a> — Agregador de muchas fuentes. Solo títulos. Excelente.</li>
+</ul>
+<h2 id="-fashion-brands">👕 Fashion brands</h2>
+<p>Those are <strong>Argentinian brands</strong>.</p>
+<p>Been collecting and curating this list for the past couple of years. You don&#39;t know how hard discovering interesting brands is, at least here!</p>
+<ul>
+<li><a href="https://batukjeans.com.ar/" target="_blank" rel="nofollow noopener">BATUK / HUOKY</a></li>
+<li><a href="https://bostonhype.com.ar/" target="_blank" rel="nofollow noopener">Boston Hype</a></li>
+<li><a href="https://deliverind.com.ar/" target="_blank" rel="nofollow noopener">Deliver Ind</a></li>
+<li><a href="https://roparevolver.com/" target="_blank" rel="nofollow noopener">REVOLVER</a></li>
+<li><a href="https://www.thisisfeliznavidad.com/" target="_blank" rel="nofollow noopener">This Is Feliz Navidad</a></li>
+<li><a href="https://www.hippykillercompany.com/" target="_blank" rel="nofollow noopener">HIPPY KILLER</a></li>
+<li><a href="https://vallesoficial.com" target="_blank" rel="nofollow noopener">VALLES</a></li>
+<li><a href="https://serbasics.com/" target="_blank" rel="nofollow noopener">SER.BASICS</a></li>
+<li><a href="https://adidas.com.ar/" target="_blank" rel="nofollow noopener">Adidas</a></li>
+<li><a href="https://freres.ar/" target="_blank" rel="nofollow noopener">FRÈRES</a></li>
+<li><a href="https://www.zara.com/ar/" target="_blank" rel="nofollow noopener">Zara</a></li>
+<li><a href="https://estudionero.com.ar/" target="_blank" rel="nofollow noopener">ESTUDIO_NERO</a></li>
+<li><a href="https://tiendaroland.com/" target="_blank" rel="nofollow noopener">Roland</a></li>
+<li><a href="https://www.humanwearsolutions.com/" target="_blank" rel="nofollow noopener">HUMAN WEAR SOLUTIONS</a></li>
+<li><a href="https://www.abscisa.com.ar/" target="_blank" rel="nofollow noopener">ABSCISA</a></li>
+<li><a href="https://www.beblackmamba.com/" target="_blank" rel="nofollow noopener">BLACKMAMBA</a></li>
+<li><a href="https://www.pineapple.com.ar/" target="_blank" rel="nofollow noopener">Pineapple</a></li>
+<li><a href="https://roomiedesign.com/tienda/" target="_blank" rel="nofollow noopener">Roomie Design</a></li>
+<li><a href="https://www.nosstore.com.ar/" target="_blank" rel="nofollow noopener">nös</a></li>
+<li><a href="https://benkyo.com.ar/" target="_blank" rel="nofollow noopener">Benkyo</a></li>
+<li><a href="https://abcnotfound.com/" target="_blank" rel="nofollow noopener">ABC</a></li>
+<li><a href="https://basisbs.com/" target="_blank" rel="nofollow noopener">Tienda Basis</a></li>
+<li><a href="https://aynotdead.com/" target="_blank" rel="nofollow noopener">AY NOT DEAD</a></li>
+<li><a href="https://www.bowen.com.ar/" target="_blank" rel="nofollow noopener">Bowen</a></li>
+<li><a href="https://www.levi.com.ar/" target="_blank" rel="nofollow noopener">Levi&#39;s</a></li>
+</ul>
+<h3 id="-footwear">👟 Footwear</h3>
+<ul>
+<li><a href="https://www.moovbydexter.com.ar/" target="_blank" rel="nofollow noopener">Moov</a></li>
+<li><a href="https://www.dexter.com.ar/" target="_blank" rel="nofollow noopener">Dexter</a></li>
+<li><a href="https://adidas.com.ar/" target="_blank" rel="nofollow noopener">Adidas</a></li>
+<li><a href="https://www.nike.com/ar/" target="_blank" rel="nofollow noopener">Nike</a></li>
+<li><a href="https://www.vans.com.ar/" target="_blank" rel="nofollow noopener">Vans</a></li>
+<li><a href="https://www.converse.com.ar/" target="_blank" rel="nofollow noopener">Converse</a></li>
+<li><a href="https://www.dafiti.com.ar/" target="_blank" rel="nofollow noopener">Dafiti</a></li>
+<li><a href="https://salomonstore.com.ar/" target="_blank" rel="nofollow noopener">Salomon</a></li>
+<li><a href="https://oggi.com.ar/" target="_blank" rel="nofollow noopener">Oggi</a></li>
+<li><a href="https://www.hushpuppies.com.ar/" target="_blank" rel="nofollow noopener">Hush Puppies</a></li>
+<li><a href="https://www.grimoldi.com/" target="_blank" rel="nofollow noopener">Grimoldi</a></li>
+<li><a href="https://www.zapateriafebo.com/" target="_blank" rel="nofollow noopener">Febo</a></li>
+<li><a href="https://www.giorgiobeneti.com/" target="_blank" rel="nofollow noopener">giorgiobeneti</a></li>
+<li><a href="https://www.federicomarconcini.com.ar/" target="_blank" rel="nofollow noopener">Federico Marconcini</a></li>
+<li><a href="https://www.federicomarconcini.com.ar/" target="_blank" rel="nofollow noopener">POSCO</a></li>
+</ul>
+<h2 id="-fitness">🎾 Fitness</h2>
+<ul>
+<li><a href="https://www.strongerbyscience.com/" target="_blank" rel="nofollow noopener">Stronger by Science</a> — Uno de los mejores recursos sobre nutrición y entrenamiento de fuerza</li>
+<li><a href="https://www.strongerbyscience.com/diet/" target="_blank" rel="nofollow noopener">The Definitive Diet Setup Guide — Stronger by Science</a></li>
+<li><a href="https://legionathletics.com/blog/" target="_blank" rel="nofollow noopener">Legion Athletics</a> — Para cosas específicas, como los mejores ejercicios – y por qué – para desarrollar un grupo muscular o saber la forma mecánicamente eficiente de hacerlos, voy aquí.</li>
+</ul>
+<h2 id="️-utilities">✂️ Utilities</h2>
+<ul>
+<li><a href="http://www.michieldb.nl/other/cursors/" target="_blank" rel="nofollow noopener">Posy&#39;s improved cursors for Windows 10/11</a></li>
+<li><a href="https://github.com/ORelio/Sound-Manager" target="_blank" rel="nofollow noopener">Sound schemes for Windows</a></li>
+<li><a href="https://libgen.fun/" target="_blank" rel="nofollow noopener">Libgen</a> — Buscador de libros y papers</li>
+<li><a href="https://sci-hub.se/" target="_blank" rel="nofollow noopener">Sci-hub</a> — Otro buscador de papers</li>
+</ul>
+<h2 id="-links">+ Links</h2>
+<ul>
+<li><a href="https://hotlinewebring.club/" target="_blank" rel="nofollow noopener">Hotline Webring</a></li>
+<li><a href="https://links.yesterweb.org/" target="_blank" rel="nofollow noopener">Yesterlinks</a></li>
+<li><a href="https://href.cool/" target="_blank" rel="nofollow noopener">href.cool</a>
+<ul>
+<li><a href="https://href.cool/2010s/" target="_blank" rel="nofollow noopener">href.cool: Links of the 2010s</a></li>
+</ul>
+</li>
+<li><a href="https://indieseek.xyz" target="_blank" rel="nofollow noopener">Indieseek.xyz Indie Web Directory</a></li>
+<li><a href="https://jason.nabein.me/#links" target="_blank" rel="nofollow noopener">Jason&#39;s homepage</a></li>
+<li><a href="https://wiby.me/" target="_blank" rel="nofollow noopener">Wiby.me</a></li>
+<li><a href="https://theforest.link/" target="_blank" rel="nofollow noopener">The Forest</a></li>
+<li><a href="https://cloudhiker.net/" target="_blank" rel="nofollow noopener">Cloudhiker</a></li>
+<li><a href="https://www.pointlesssites.com/" target="_blank" rel="nofollow noopener">PointlessSites</a></li>
+</ul>
+<h2 id="-">🤔 ???</h2>
+<ul>
+<li><a href="https://hmpg.net/" target="_blank" rel="nofollow noopener">END OF THE INTERNET</a></li>
+<li><a href="https://river-runner-global.samlearner.com/" target="_blank" rel="nofollow noopener">River Runner</a> — Click para tirar una gota y seguirla hasta donde desemboca 💧</li>
+<li><a href="https://www.windy.com/" target="_blank" rel="nofollow noopener">Windy</a> — Mapa de vientos</li>
+<li><a href="https://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html" target="_blank" rel="nofollow noopener">If the moon were only 1 pixel</a></li>
+<li><a href="https://everynoise.com/" target="_blank" rel="nofollow noopener">Every Noise at Once</a> — Mapa de géneros musicales. Útil para descubrir nuevos sonidos, aunque por ahí se desmadra zarpado.</li>
+<li><a href="https://oskarstalberg.com/Townscaper/" target="_blank" rel="nofollow noopener">Townscaper</a> 🕹️</li>
+<li><a href="https://pointerpointer.com/" target="_blank" rel="nofollow noopener">Pointer Pointer</a></li>
+<li><a href="https://noclip.website/" target="_blank" rel="nofollow noopener">noclip</a> — Entornos icónicos de videojuegos en el explorador</li>
+<li><a href="https://pudding.cool/2018/04/birthday-paradox/" target="_blank" rel="nofollow noopener">The Birthday Paradox</a></li>
+<li><a href="https://blinkies.cafe" target="_blank" rel="nofollow noopener">blinkies.cafe</a> — Build a blinkie!</li>
+<li><a href="https://www.lofi.cafe/" target="_blank" rel="nofollow noopener">lofi.cafe</a></li>
+<li><a href="https://gossipsweb.net/" target="_blank" rel="nofollow noopener">Gossip&#39;s Web</a> - The directory of handmade webpages</li>
+<li><a href="http://www.falstad.com/circuit/" target="_blank" rel="nofollow noopener">Circuit Simulator Applet</a></li>
+<li><a href="https://v2.windows93.xyz" target="_blank" rel="nofollow noopener">Windows 93</a></li>
+<li><a href="https://riju.codes/" target="_blank" rel="nofollow noopener">Riju.code</a> - Fast online playground for every programming language</li>
+<li><a href="https://my90stv.com/" target="_blank" rel="nofollow noopener">My 90&#39;s TV</a></li>
+<li><a href="https://supp.ai/" target="_blank" rel="nofollow noopener">SUPP.AI</a> - Discover Supplement-Drug Interactions</li>
+<li><a href="https://old.reddit.com/r/FREEMEDIAHECKYEAH/wiki/index" target="_blank" rel="nofollow noopener">FREEMEDIAHECKYEAH</a></li>
+<li><a href="https://www.animatedknots.com/" target="_blank" rel="nofollow noopener">Animated knots</a></li>
+<li><a href="https://cpu.land" target="_blank" rel="nofollow noopener">CPU.land</a></li>
+<li><a href="https://chiptune.app/" target="_blank" rel="nofollow noopener">Chiptune.app</a></li>
+<li><a href="https://kohina.com/" target="_blank" rel="nofollow noopener">kohina</a></li>
+<li><a href="https://rateyourmusic.com/" target="_blank" rel="nofollow noopener">RateYourMusic</a></li>
+<li><a href="https://archillect.com/tv" target="_blank" rel="nofollow noopener">Archillect TV</a></li>
+<li><a href="https://www.tree.fm/" target="_blank" rel="nofollow noopener">tree.fm</a></li>
+<li><a href="https://ambiph.one/" target="_blank" rel="nofollow noopener">ambiphone</a></li>
+<li><a href="https://goodenough.us" target="_blank" rel="nofollow noopener">Good Enough.</a></li>
+</ul>
+<h2 id="-cooking">🍪 Cooking</h2>
+<ul>
+<li><a href="https://www.kingarthurbaking.com/recipes/" target="_blank" rel="nofollow noopener">King Arthur Baking</a></li>
+<li><a href="https://www.seriouseats.com/" target="_blank" rel="nofollow noopener">Serious Eats</a> eats is solid, although the new site leaves something to be desired.</li>
+<li><a href="https://www.americastestkitchen.com/" target="_blank" rel="nofollow noopener">America&#39;s Test Kitchen</a> is another good all-around choice, as is <a href="https://www.epicurious.com/" target="_blank" rel="nofollow noopener">Epicurious</a> and <a href="https://food52.com/" target="_blank" rel="nofollow noopener">Food52</a></li>
+<li><a href="https://norecipes.com/" target="_blank" rel="nofollow noopener">No Recipes</a> is great for Japanese food</li>
+<li><a href="https://thewoksoflife.com/" target="_blank" rel="nofollow noopener">The Woks of Life</a> for Chinese-American and Cantonese food, also <a href="https://www.marionskitchen.com/" target="_blank" rel="nofollow noopener">Marion&#39;s Kitchen</a> for a more pan-east-Asian approach.</li>
+<li><a href="https://www.maangchi.com/" target="_blank" rel="nofollow noopener">Maangchi</a> for Korean</li>
+<li><a href="https://www.bbc.co.uk/food/recipes" target="_blank" rel="nofollow noopener">BBC Food</a> has a solid and diverse recipe collection</li>
+<li><a href="https://www.brianlagerstrom.com/" target="_blank" rel="nofollow noopener">Brian Lagerstrom</a> - an American chef with a new-ish YouTube channel.</li>
+<li><a href="https://akispetretzikis.com/" target="_blank" rel="nofollow noopener">Akis Petretzikis</a> for Greek</li>
+<li><a href="https://www.rickbayless.com/" target="_blank" rel="nofollow noopener">Rick Bayless</a> for Mexican</li>
+<li><a href="https://hot-thai-kitchen.com/" target="_blank" rel="nofollow noopener">Hot Thai Kitchen</a> for Thai</li>
+<li><a href="https://youtube.com/c/helenrennie" target="_blank" rel="nofollow noopener">Helen Rennie</a> - Excellent for Russian / Eastern European and also general western style food. Her poached egg method is the best way I&#39;ve found to poach a lot of eggs at once.</li>
+<li><a href="https://youtube.com/c/ChineseCookingDemystified" target="_blank" rel="nofollow noopener">Chinese Cooking Demystified</a>, for more of a deep dive into Chinese cuisine. Generally very good content, although for some reason I find their take on HK cuisine to be a bit off.</li>
+<li><a href="https://youtube.com/channel/UCg0m_Ah8P_MQbnn77-vYnYw" target="_blank" rel="nofollow noopener">Chef Wang Gang</a> - another deep dive into Chinese cuisine. His egg fried rice (and fried rice tips in general) are worth checking out at least.</li>
+<li><a href="https://youtube.com/c/foodwishes" target="_blank" rel="nofollow noopener">Food Wishes / Chef John</a> - Very popular, solid technical instruction and great for explaining how to be a better home chef. For whatever reason his recipes aren&#39;t usually how I cook, so I don&#39;t make his stuff. He&#39;s obviously skilled and an excellent teacher though.</li>
+<li><a href="https://youtube.com/c/MiddleEats" target="_blank" rel="nofollow noopener">Middle Eats</a> - A small channel that does a great job of showing homestyle ME cooking. Watch the hummus video at least.</li>
+<li><a href="https://youtube.com/c/Recipe30" target="_blank" rel="nofollow noopener">Recipe30</a> - Australian. Beautiful cinematography. Great classic recipes and simplified versions of them.</li>
+<li><a href="https://youtube.com/c/MadeWithLau" target="_blank" rel="nofollow noopener">Made with Lau</a> - More great Chinese-American and Guangzhou cuisine.</li>
+<li><a href="https://youtube.com/c/ChefJonKung" target="_blank" rel="nofollow noopener">Chef John Kung</a> - Hip, modern, good. Interesting 3rd culture fusion take on a lot of things.</li>
+<li><a href="https://youtube.com/c/SipandFeast" target="_blank" rel="nofollow noopener">Sip &amp; Feast</a> - Italian-American food done well. His giant 14&quot; pan is great.</li>
+<li><a href="https://youtube.com/c/CHEFSLABO" target="_blank" rel="nofollow noopener">Chefs Labo</a> - Japanese,  great rationale explanations. Good yoshoku and washoku.</li>
+<li><a href="https://youtube.com/c/mynameisandong" target="_blank" rel="nofollow noopener">My Name is Andong</a> - German/Asian Fusion. Sometimes Russian food. Great ideas and historical bent to the channel.</li>
+<li><a href="https://youtube.com/c/internetshaquille" target="_blank" rel="nofollow noopener">Internet Shaquille</a> - NetShaq is great. No-nonsense and info-packed.</li>
+<li><a href="https://youtube.com/user/patriciajinich" target="_blank" rel="nofollow noopener">Pati Jinich</a> - More great Mexican food.</li>
+<li><a href="https://youtube.com/user/adamliaw" target="_blank" rel="nofollow noopener">Adam Liaw</a> - More great East Asian cuisine.</li>
+<li><a href="https://youtube.com/c/HanbitCho" target="_blank" rel="nofollow noopener">Hanbit Cho</a> - Excellent baking channel. Korean, but he trained in the UK. All around great recipes and explanations.</li>
+<li><a href="https://youtube.com/c/KunalKapur" target="_blank" rel="nofollow noopener">Kunal Kapoor</a> - Great Indian channel.</li>
+<li><a href="https://youtube.com/c/WayofRamen" target="_blank" rel="nofollow noopener">Way of Ramen</a> - Obviously it&#39;s Turkish food. Or maybe it&#39;s a ramen channel.</li>
+<li><a href="https://youtube.com/c/SpiceNPans" target="_blank" rel="nofollow noopener">Spice &#39;n Pans</a> - More good Chinese cuisine.</li>
+<li><a href="https://youtube.com/c/Yakitoriguy" target="_blank" rel="nofollow noopener">Yakitori Guy</a> - All yakitori all the time.</li>
+<li><a href="https://youtube.com/c/ProtoCookswithChefFrank" target="_blank" rel="nofollow noopener">Protocooks with Chef Frank</a> - Culinary instructor with grest explanations.</li>
+<li><a href="https://www.justonecookbook.com/" target="_blank" rel="nofollow noopener">Just One Cookbook</a> - Another great Japanese food resource.</li>
+<li><a href="https://youtube.com/c/FrenchGuyCooking" target="_blank" rel="nofollow noopener">Alex French Guy Cooking</a> - Likes to do extraordinary deep dives into specific topics, like meatballs. The pathos is a little over the top sometimes.</li>
+<li><a href="https://youtube.com/c/CookwithE" target="_blank" rel="nofollow noopener">Ethan Chlebowski</a> - Good content for the most part. His episode on hoagies/grinders is probably my favorite of his contributions.</li>
+<li><a href="https://youtube.com/user/aragusea" target="_blank" rel="nofollow noopener">Adam Ragusea</a> - Journalist turned food YouTuber. Often makes some excellent points and delivers on the food.</li>
+<li><a href="https://youtube.com/c/BrunoAlbouze" target="_blank" rel="nofollow noopener">Bruno Albouze</a> - German/French chef, very classical.</li>
+<li><a href="https://youtube.com/c/ChefChusKitchen" target="_blank" rel="nofollow noopener">Chef Chu&#39;s Kitchen</a> - Lots of good Chinese baking (HK style)</li>
+<li><a href="https://youtube.com/c/rajshrifood" target="_blank" rel="nofollow noopener">Rajshri Food</a> - another good Indian channel</li>
+</ul></article> </div>  </main> </div> </div> </body> </html>
