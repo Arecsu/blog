@@ -83,6 +83,38 @@ test("mobile ingredient drawer opens, filters and closes without moving the page
 	await expect.poll(scrollportState).toEqual({ overflow: "", top: lockedAt.top })
 })
 
+test("tablet drawer keeps its painted surface inside the animated shell", async ({ page }) => {
+	await page.setViewportSize({ width: 840, height: 933 })
+	await page.goto("/recetas/torta-matilda/")
+	await page.locator(".page-scroll").evaluate((element) => {
+		element.scrollTop = element.scrollHeight
+	})
+
+	const dock = page.locator(".recipe-mobile-dock")
+	await expect(dock.locator("strong")).toHaveText("Armado final")
+	await dock.locator("button").click()
+
+	const dialog = page.locator(".recipe-ingredient-drawer")
+	const surface = dialog.locator(":scope > .recipe-drawer-surface")
+	await expect(surface).toBeVisible()
+	await expect(dialog.locator(".subingredient:not([hidden]) h5")).toHaveText([
+		"Bizcochuelo",
+		"Crema de chocolate",
+		"Falsa mousse",
+		"Almíbar de entremets",
+	])
+	await expect(dialog).toHaveCSS("box-shadow", "none")
+	await expect(surface).not.toHaveCSS("box-shadow", "none")
+	await expect(surface.locator(".recipe-drawer-content")).toBeFocused()
+
+	// A press inside the new surface must not be treated as a backdrop press.
+	await surface.locator("h2").click()
+	await expect(dialog).toHaveAttribute("open")
+	await page.keyboard.press("Escape")
+	await expect(dialog).not.toHaveAttribute("open")
+	await expect(dock.locator("button")).toBeFocused()
+})
+
 test("legacy recipe drawer reads groups from the rendered list", async ({ page, isMobile }) => {
 	test.skip(!isMobile, "mobile drawer only")
 

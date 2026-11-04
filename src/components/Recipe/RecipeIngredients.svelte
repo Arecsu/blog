@@ -391,54 +391,56 @@
 		}}
 		onclick={onBackdrop}
 	>
-		<div class="recipe-drawer-scroll" class:can-scroll-up={fadeUp} class:can-scroll-down={fadeDown}>
-			<div
-				bind:this={drawerContent}
-				class="recipe-drawer-content"
-				tabindex="-1"
-				onscroll={() => updateFades()}
-			>
-				{#if hasGroups}
-					{#if hasExtra && children}
-						<div class="recipe-ingredients-intro">{@render children()}</div>
+		<div class="recipe-drawer-surface">
+			<div class="recipe-drawer-scroll" class:can-scroll-up={fadeUp} class:can-scroll-down={fadeDown}>
+				<div
+					bind:this={drawerContent}
+					class="recipe-drawer-content"
+					tabindex="-1"
+					onscroll={() => updateFades()}
+				>
+					{#if hasGroups}
+						{#if hasExtra && children}
+							<div class="recipe-ingredients-intro">{@render children()}</div>
+						{/if}
+						<div class="subingredients">{@render groupList(true)}</div>
+					{:else}
+						<div class="subingredients">{@render children?.()}</div>
 					{/if}
-					<div class="subingredients">{@render groupList(true)}</div>
-				{:else}
-					<div class="subingredients">{@render children?.()}</div>
-				{/if}
+				</div>
+				<div class="recipe-drawer-fade is-top" aria-hidden="true"></div>
+				<div class="recipe-drawer-fade is-bottom" aria-hidden="true"></div>
 			</div>
-			<div class="recipe-drawer-fade is-top" aria-hidden="true"></div>
-			<div class="recipe-drawer-fade is-bottom" aria-hidden="true"></div>
-		</div>
-		{#if activeGroup}
-			<div class="recipe-drawer-tabs" role="group" aria-label="Ingredientes que se muestran">
-				<button
-					type="button"
-					aria-pressed={$drawerScope === "current"}
-					onclick={() => setScope("current")}>{activeGroup.label}</button
-				>
-				<button
-					type="button"
-					aria-pressed={$drawerScope === "all"}
-					onclick={() => setScope("all")}>Todos</button
-				>
-			</div>
-		{/if}
-		<footer class="recipe-drawer-header">
-			<h2 id={`${id}-drawer-title`}>Ingredientes</h2>
-			{#if hasGroups}
-				<RecipeScaleMenu
-					id={`${id}-scale-drawer`}
-					placement="above"
-					hasInlineAmounts={recipeData.inlineAmounts}
-				/>
+			{#if activeGroup}
+				<div class="recipe-drawer-tabs" role="group" aria-label="Ingredientes que se muestran">
+					<button
+						type="button"
+						aria-pressed={$drawerScope === "current"}
+						onclick={() => setScope("current")}>{activeGroup.label}</button
+					>
+					<button
+						type="button"
+						aria-pressed={$drawerScope === "all"}
+						onclick={() => setScope("all")}>Todos</button
+					>
+				</div>
 			{/if}
-			<button
-				type="button"
-				aria-label="Cerrar ingredientes y volver al procedimiento"
-				onclick={closeDrawer}><Icon><X /></Icon></button
-			>
-		</footer>
+			<footer class="recipe-drawer-header">
+				<h2 id={`${id}-drawer-title`}>Ingredientes</h2>
+				{#if hasGroups}
+					<RecipeScaleMenu
+						id={`${id}-scale-drawer`}
+						placement="above"
+						hasInlineAmounts={recipeData.inlineAmounts}
+					/>
+				{/if}
+				<button
+					type="button"
+					aria-label="Cerrar ingredientes y volver al procedimiento"
+					onclick={closeDrawer}><Icon><X /></Icon></button
+				>
+			</footer>
+		</div>
 	</dialog>
 </section>
 
@@ -532,11 +534,9 @@
 		max-width: none;
 		max-height: 86dvh;
 		color: var(--color-text);
-		background: var(--color-bg-0);
-		box-shadow: var(--shadow-sheet);
+		background: transparent;
 		border: 0;
-		border-radius: 1rem 1rem 0 0;
-		overflow: hidden;
+		overflow: visible;
 		--recipe-sheet-padding: max(
 			var(--recipe-column-inset, 0px),
 			var(--padding-inline-main, 1rem)
@@ -563,6 +563,19 @@
 		&.is-closing::backdrop {
 			animation: recipe-backdrop-out 0.26s ease-in forwards;
 		}
+	}
+
+	/* Keep the animated top-layer shell separate from its painted surface.
+	   Chromium repeats expensive rounded-shadow work when the dialog owns both;
+	   a child surface preserves the exact shadow without forcing a GPU layer. */
+	.recipe-drawer-surface {
+		display: flex;
+		flex-direction: column;
+		max-height: inherit;
+		background: var(--color-bg-0);
+		box-shadow: var(--shadow-sheet);
+		border-radius: 1rem 1rem 0 0;
+		overflow: hidden;
 	}
 
 	.recipe-drawer-header {

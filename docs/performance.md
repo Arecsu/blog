@@ -69,6 +69,50 @@ about a specific device. The inner viewport scrollport is part of this measureme
 the drawer, dock, popovers and scroll restoration all run with the document itself
 not scrolling.
 
+## Tablet drawer: animated shell and painted surface
+
+A separate Chrome reproduction at 840×933 CSS px, DPR 2, at the bottom of Torta
+Matilda (dock: “Armado final”, all four groups) exposed repeated rendering work
+from the rounded, layered shadow on the animated top-layer dialog. The earlier
+phone measurements above do not rule out this case.
+
+The dialog is now a transparent, unclipped animated shell. One child,
+`.recipe-drawer-surface`, owns the unchanged background, shadow, rounded corners
+and clipping. No image assets, reduced shadow layers, forced transforms or
+permanent `will-change` are needed.
+
+Official Chrome DevTools MCP traces, dev server, CPU 1×, no network throttling:
+GPU-process CPU execution summed over the first 450 ms after opening fell from
+about 116 ms to 20 ms. The latter trace recorded no dropped frames in that window.
+These are aggregate thread CPU times, not per-frame times or GPU hardware timings.
+The settled light- and dark-theme screenshots were pixel-identical. Two untraced
+DPR 2 openings also retained the approximately 60 Hz callback cadence.
+
+To measure rendering throughput independently of the display refresh, a separate
+headed Chrome (same M1, ANGLE Metal, DPR 2, 840×933) was launched with
+`--disable-frame-rate-limit --disable-gpu-vsync`. A control launch without them
+produced a 16.7 ms median `requestAnimationFrame` interval; the uncapped launch
+produced 0.2 ms. Six non-warmup openings per variant and theme, alternated:
+
+| Theme | Variant | rAF p50 | rAF p95 | rAF max | Intervals > 8.3 ms |
+| --- | --- | ---: | ---: | ---: | ---: |
+| Light | Dialog owns shadow (before) | 0.9 ms | 18.0 ms | 107.5 ms | 94 |
+| Light | Child surface (after) | 0.4 ms | 1.4 ms | 20.7 ms | 2 |
+| Dark | Dialog owns shadow (before) | 0.8 ms | 19.4 ms | 130.5 ms | 70 |
+| Dark | Child surface (after) | 0.4 ms | 1.3 ms | 4.6 ms | 0 |
+
+GPU-process CPU summed over the first 650 ms of one traced opening per variant fell
+from 211 ms to 30 ms.
+
+What this does and does not show: uncapped `requestAnimationFrame` intervals measure
+how fast Chrome can produce frames, not whether a 60 or 120 Hz display receives them
+on time. With vsync off, presentation and compositor frame states are not
+representative, so the dropped-frame counters from those traces are ignored here.
+The comparison is still meaningful because both variants ran in the same session with
+the same sampling; the before-case needed roughly 18 ms for one frame in five percent
+of sampled frames. Real high-refresh smoothness still has to be confirmed on the
+target hardware. This is also not a cure for every isolated native GPU-process wait.
+
 ## Re-measuring
 
 - Open `/recetas/torta-matilda/`, scroll to the process, open the dock, switch to

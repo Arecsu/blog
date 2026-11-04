@@ -55,7 +55,10 @@ the original amount when scaled. The scale store updates the button text and
   - `.page-scroll` (the inner viewport scrollport) locks while open; the document is
     already non-scrolling;
   - `Escape`, the close button, or a backdrop press close it;
-  - the panel returns to its home and focus returns to the dock button.
+  - the transparent dialog shell owns the animation; `.recipe-drawer-surface`
+    owns the unchanged background, shadow, rounded corners and clipping. Keeping
+    the rounded shadow off the animated dialog avoids repeated work in Chromium;
+  - focus returns to the dock button.
 - The drawer is bottom-up for thumb reach: list, then group tabs, then the title,
   scale chip and close button.
 - If the current process section matches an ingredient group, the drawer opens on
@@ -96,9 +99,9 @@ prevents a ClientRouter navigation from briefly painting the previous recipe's s
 - Structured ingredient lists are Svelte-rendered and update with `$scale`.
 - Legacy ingredient lists are MDX slot content; the Svelte island reads their group
   titles and toggles `hidden` on `.subingredient` elements.
-- The drawer panel is moved, not cloned. `RecipePopover` is a shared Svelte component
-  using the native Popover API and CSS anchor positioning; opening one closes the
-  previous.
+- The page and drawer render separate lists from the same data; opening the drawer
+  does not move the page panel. `RecipePopover` is a shared Svelte component using
+  the native Popover API and CSS anchor positioning; opening one closes the previous.
 
 ## Accessibility
 
